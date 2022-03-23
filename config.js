@@ -36,7 +36,6 @@ module.exports = {
     ALL: process.env.ALL_CAPTION === undefined ? 'MADE BY YOU BOT NAME' : process.env.ALL_CAPTION,
     LG_LOGO: process.env.LOGO_LINK === undefined ? 'https://telegra.ph/file/1986d89402b68b4f4aeca.jpg' : process.env.LOGO_LINK,
     LOGO_NAME: process.env.LOGO_NAME === undefined ? 'Amalser' : process.env.LOGO_NAME,
-    VERIFIED_TICK: process.env.VERIFIED_TICK === undefined ? '[Abu ser bot]\nᴄʀᴇᴀᴛᴇᴅ ʙʏ ɪᴛᴢ ᴍᴇ ᴊɪɴᴜ ' : process.env.VERIFIED_TICK,
     CODE: process.env.C_CODE === undefined ? '91' : process.env.C_CODE,
     MENTION: process.env.TAG_REPLY === undefined ? '917025994178@s.whatsapp.net' : process.env.TAG_REPLY,
     ADDMSG: process.env.ADD_MESSAGE === undefined ? 'default' : process.env.ADD_MESSAGE,
