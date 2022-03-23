@@ -44,7 +44,6 @@ module.exports = {
     BGMFILTER: process.env.BGM_FILTER === undefined ? false : convertToBool(process.env.BGM_FILTER),
     INBO: process.env.INBO_BLOCK === undefined ? 'false' : process.env.INBO_BLOCK,
     INBO1: process.env.INBO_BLOCK === undefined ? 'true' : process.env.INBO_BLOCK,
-    THUMBNAIL: process.env.THUMBNAIL_URL === undefined ? 'https://i.imgur.com/wKFKh2l.jpg' : process.env.THUMBNAIL_URL,
     DISBGM: process.env.DISABLE_JID_BGM_FILTER === undefined ? false : process.env.DISABLE_JID_BGM_FILTER,
     STICKERP: process.env.AUTO_STICKER === undefined ? true : convertToBool(process.env.AUTO_STICKER),
     DISSTICKER: process.env.DISABLE_STICKER === undefined ? false : process.env.DISABLE_STICKER,
