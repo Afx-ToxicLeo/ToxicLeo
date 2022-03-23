@@ -262,16 +262,6 @@
             "required": false,
             "value": "default"
         },
-        "INSTA": {
-            "description": "Insta ID",
-            "required": true,
-            "value": "https://instagram.com/_.lino_ox"
-        },
-        "GROUP": {
-            "description": "Group Link",
-            "required": true,
-            "value": "https://chat.whatsapp.com/Bq0eHs3UpGJ2BKIHOmy7mk"
-        },
         "NO_ONLINE": {
             "description": "Çevrimiçi görünmek istemiyorsanız true yazın. Type true if you don't want to appear online.",
             "required": false,
