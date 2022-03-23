@@ -66,16 +66,6 @@
             "required": false,
             "value": "false"
         },
-        "INSTA": {
-            "description": "Insta ID",
-            "required": false,
-            "value": "https://instagram.com/_.lino_ox"
-        },
-        "GROUP": {
-            "description": "Group Link",
-            "required": false,
-            "value": "https://chat.whatsapp.com/Bq0eHs3UpGJ2BKIHOmy7mk"
-        },
         "GIF_BYE": {
             "description": "Fill here any gif link if you selected gif as WEELCOME",
             "required": false,
@@ -271,6 +261,16 @@
             "description": "Customizable AFK Message! Use => default, to change back.",
             "required": false,
             "value": "default"
+        },
+        "INSTA": {
+            "description": "Insta ID",
+            "required": true,
+            "value": "https://instagram.com/_.lino_ox"
+        },
+        "GROUP": {
+            "description": "Group Link",
+            "required": true,
+            "value": "https://chat.whatsapp.com/Bq0eHs3UpGJ2BKIHOmy7mk"
         },
         "NO_ONLINE": {
             "description": "Çevrimiçi görünmek istemiyorsanız true yazın. Type true if you don't want to appear online.",
