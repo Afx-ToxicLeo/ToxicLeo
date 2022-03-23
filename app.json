@@ -66,6 +66,16 @@
             "required": false,
             "value": "false"
         },
+        "INSTA": {
+            "description": "Insta ID",
+            "required": false,
+            "value": "https://instagram.com/_.lino_ox"
+        },
+        "GROUP": {
+            "description": "Group Link",
+            "required": false,
+            "value": "https://chat.whatsapp.com/Bq0eHs3UpGJ2BKIHOmy7mk"
+        },
         "GIF_BYE": {
             "description": "Fill here any gif link if you selected gif as WEELCOME",
             "required": false,
