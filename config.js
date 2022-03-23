@@ -50,6 +50,8 @@ module.exports = {
     ALIVE_BUTTON: process.env.ALIVE_BUTTON === undefined ? 'ʜᴀᴘᴘʏ' : process.env.ALIVE_BUTTON,
     INSTA: process.env.INSTA_LINK === undefined ? 'https://instagram.com/_.lino_ox' : process.env.INSTA_LINK,
     GROUP: process.env.GROUP_LINK === undefined ? 'https://chat.whatsapp.com/Bq0eHs3UpGJ2BKIHOmy7mk' : process.env.GROUP_LINK,
+    THUMBNAIL: process.env.THUMBNAIL_URL === undefined ? 'https://i.imgur.com/wKFKh2l.jpg' : process.env.THUMBNAIL_URL,
+    VERIFIED_TICK: process.env.VERIFIED_TICK === undefined ? '[Abu ser bot]\nᴄʀᴇᴀᴛᴇᴅ ʙʏ ɪᴛᴢ ᴍᴇ ᴊɪɴᴜ ' : process.env.VERIFIED_TICK,
     NOLOG: process.env.NO_LOG === undefined ? 'true' : process.env.NO_LOG,
     THERI_KICK: process.env.THERI_KICK === undefined ? 'false' : process.env.THERI_KICK,
     SONGD: process.env.SONGD === undefined ? 'ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ꜱᴏɴɢ🎶' : process.env.SONGD,
