@@ -31,8 +31,6 @@ module.exports = {
     OWNER: process.env.OWNER_NAME === undefined ? 'default' : process.env.OWNER_NAME,
     PHONE: process.env.NUMBER === undefined ? '+917025994178' : process.env.NUMBER,   
     OA_NAME: process.env.DEPLOYER === undefined ? 'Abu ser' : process.env.DEPLOYER,
-    ALIVEBUTTON: process.env.ALIVEBUTTON === undefined ? 'sᴇᴅ' : process.env.ALIVEBUTTON,
-    ALIVE_BUTTON: process.env.ALIVE_BUTTON === undefined ? 'ʜᴀᴘᴘʏ' : process.env.ALIVE_BUTTON,
     ALL: process.env.ALL_CAPTION === undefined ? 'MADE BY YOU BOT NAME' : process.env.ALL_CAPTION,
     LG_LOGO: process.env.LOGO_LINK === undefined ? 'https://telegra.ph/file/1986d89402b68b4f4aeca.jpg' : process.env.LOGO_LINK,
     LOGO_NAME: process.env.LOGO_NAME === undefined ? 'Amalser' : process.env.LOGO_NAME,
