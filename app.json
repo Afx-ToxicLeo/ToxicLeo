@@ -262,6 +262,16 @@
              "required": true,
              "value": "https://chat.whatsapp.com/Bq0eHs3UpGJ2BKIHOmy7mk"
          },
+        "ALIVEBUTTON": {
+             "description": "Set the alive message two name",
+             "required": true,
+             "value": "ʜᴀᴘᴘʏ 💞"
+         },
+         "ALIVE_BUTTON": {
+             "description": "Set the Alive message first name",
+             "required": true,
+             "value": "sᴇᴅ 😥"
+         },
         "NO_ONLINE": {
             "description": "Çevrimiçi görünmek istemiyorsanız true yazın. Type true if you don't want to appear online.",
             "required": false,
