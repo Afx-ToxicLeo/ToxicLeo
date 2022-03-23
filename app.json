@@ -142,7 +142,7 @@
             "value": "hear me friends"
         },
         "CMD_LIST":			  {
-            "description": "You can change Command list emojis like: help/❤️/😅/🍃/💌.)",
+            "description": "You can change Command list emojis like: (help/❤️/😅/🍃/💌.)",
             "required": true,
             "value": "YOUR BOT NAME/💙/🌟/🥀/🐾"
         },
