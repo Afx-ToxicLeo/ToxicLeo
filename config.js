@@ -48,6 +48,8 @@ module.exports = {
     BOT: process.env.BOT_NAME === undefined ? '⊢‒‒‒ ⋈ ᴀʙᴜsᴇʀ ⋈ ‒‒‒⊣' : process.env.BOT_NAME,
     ALIVEBUTTON: process.env.ALIVEBUTTON === undefined ? 'sᴇᴅ' : process.env.ALIVEBUTTON,
     ALIVE_BUTTON: process.env.ALIVE_BUTTON === undefined ? 'ʜᴀᴘᴘʏ' : process.env.ALIVE_BUTTON,
+    INSTA: process.env.INSTA_LINK === undefined ? 'https://instagram.com/_.lino_ox' : process.env.INSTA_LINK,
+    GROUP: process.env.GROUP_LINK === undefined ? 'https://chat.whatsapp.com/Bq0eHs3UpGJ2BKIHOmy7mk' : process.env.GROUP_LINK,
     NOLOG: process.env.NO_LOG === undefined ? 'true' : process.env.NO_LOG,
     THERI_KICK: process.env.THERI_KICK === undefined ? 'false' : process.env.THERI_KICK,
     SONGD: process.env.SONGD === undefined ? 'ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ꜱᴏɴɢ🎶' : process.env.SONGD,
