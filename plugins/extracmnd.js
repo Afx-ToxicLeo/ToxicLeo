@@ -11,8 +11,7 @@ const Config = require('../config');
 Asena.addCommand({pattern: 'extracmnd', fromMe: true, desc: '*Extra Commands By Spark Shadow*'}, (async (message, match) => {
 
   
-
-    await message.sendMessage("```👇 EXTRA COMMANDS 👇```\n💻Usage: *.logos*\nℹ️Desc: *Advanced logo making tool by *Shadow**\n\n💻Usage: *.mpack*\nℹ️Desc: *A plugin where different and fun things are found together.*\n\n💻Usage: *.npack*\nℹ️Desc: *Thats a plugin with enjoyable tools together inside.*\n\n💻Usage: *.barcode*\nℹ️Desc: *This tool is using for make barcode.*\n\n💻Usage: *.mmpack*\nℹ️Desc: *Advanced meme tool*\n\n💻Usage: *.gm*\nℹ️Desc: *it will send diffrent good morng messages.*\n\n💻Usage: *.gn*\nℹ️Desc: *it will send different good night messages.*\n\n💻Usage: *.miasay*\nℹ️Desc: *Convert the text to mia post.*\n\n💻Usage: *.makermenu*\nℹ️Desc: *Advanced text effect tool.*\n\n💻Usage: *.fake id*\nℹ️Desc: *It will give a fake id.*\n\nCodded by *` + config.OWNER + `*");
+    await message.sendMessage("```👇 EXTRA COMMANDS 👇```\n💻Usage: *.logos*\nℹ️Desc: *Advanced logo making tool by *Shadow**\n\n💻Usage: *.mpack*\nℹ️Desc: *A plugin where different and fun things are found together.*\n\n💻Usage: *.npack*\nℹ️Desc: *Thats a plugin with enjoyable tools together inside.*\n\n💻Usage: *.barcode*\nℹ️Desc: *This tool is using for make barcode.*\n\n💻Usage: *.mmpack*\nℹ️Desc: *Advanced meme tool*\n\n💻Usage: *.gm*\nℹ️Desc: *it will send diffrent good morng messages.*\n\n💻Usage: *.gn*\nℹ️Desc: *it will send different good night messages.*\n\n💻Usage: *.miasay*\nℹ️Desc: *Convert the text to mia post.*\n\n💻Usage: *.makermenu*\nℹ️Desc: *Advanced text effect tool.*\n\n💻Usage: *.fake id*\nℹ️Desc: *It will give a fake id.*\n\nCodded by * +config.OWNER+ *");
 
 }));
 
