@@ -34,8 +34,6 @@
         Reserved |
     <br> 
 </p>
-<img src=https://i.imgur.com/8LiFere.png>
-</p>
 
 
 <a href="https://github.com/Afx-Abu/Abu_ser/fork"><img align="center" src="https://i.imgur.com/vUIRd80.png" alt="Fork and deploy" height="112" width="300" /></a>
