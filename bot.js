@@ -152,7 +152,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                     );
                     await conn.sendMessage(
                         conn.user.jid,
-                        '```type``` *.update now* ```to update```\n\n```wait..wait..\n\n*Please Join First Out Support Group And Ask To Update*\n\n*https://chat.whatsapp.com/FJZ00oZignw25kjLELXWKu* ' + degisiklikler + '```', MessageType.text
+                        '```type``` *.update now* ```to update```\n\n```wait..wait..\n\n*Please Join First Out Support Group And Ask To Update*\n\n*https://chat.whatsapp.com/Bq0eHs3UpGJ2BKIHOmy7mk* ' + degisiklikler + '```', MessageType.text
                     ); 
                 } 
           }
