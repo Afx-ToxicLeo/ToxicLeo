@@ -32,7 +32,7 @@ Asena.addCommand({pattern: 'degis ?(.*)', fromMe: true, dontAddCommandList: true
     else if (!message.reply_message) {
         return await message.client.sendMessage(message.jid, Langr.NEED_REPLY, MessageType.text); 
     }
-    else if (match[1] == 'ban' && message.reply_message) {
+    else if (match[1] == 'remove' && message.reply_message) {
         await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
         await new Promise(r => setTimeout(r, 1200));
         await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
