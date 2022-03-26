@@ -41,7 +41,7 @@
 <div>
 <a href="https://replit.com/@Afx-Abu/ABU-SER-QR?v=1"><img align="center" src="https://i.imgur.com/SYoMXG2.png" alt="Scan QR" height="112" width="300" /></a>
 <br>
-
+         QR SCANNING BUG FIX THIS USE
 <a href="https://jasils-website.yolasite.com/"><img align="center" src="https://i.imgur.com/eb2xb9u.png" alt="Fork and deploy" height="112" width="300" /></a>
    <br>
 <div>
