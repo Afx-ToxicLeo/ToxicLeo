@@ -480,7 +480,7 @@ if (config.WORKTYPE == 'private') {
             });
     }));
 
-    Asena.addCommand({pattern: 'git', fromMe: false, desc: Lang.NUMBER}, (async (message, match) => {
+    Asena.addCommand({pattern: 'owner', fromMe: false, desc: Lang.NUMBER}, (async (message, match) => {
 
             const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
@@ -488,7 +488,7 @@ if (config.WORKTYPE == 'private') {
             + 'ORG:ABU SER;\n' 
             + 'TEL;type=CELL;type=VOICE;waid=' + Config.PHONE + ':' + Config.PHONE + ' \n'
             + 'END:VCARD'
-await message.client.sendMessage(message.jid, {displayname: "' + Config.OA_NAME + '", vcard: vcard}, MessageType.contact);
+await message.client.sendMessage(message.jid, {displayname: "ABU SER", vcard: vcard}, MessageType.contact);
 
   }));
     
@@ -1128,7 +1128,7 @@ else if (config.WORKTYPE == 'public') {
           )
       },
     )
-    Asena.addCommand({pattern: 'git', fromMe: false, desc: Lang.NUMBER}, (async (message, match) => {
+    Asena.addCommand({pattern: 'owner', fromMe: false, desc: Lang.NUMBER}, (async (message, match) => {
 
             const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
@@ -1136,7 +1136,7 @@ else if (config.WORKTYPE == 'public') {
             + 'ORG:Abu ser;\n' 
             + 'TEL;type=CELL;type=VOICE;waid=' + Config.PHONE + ':' + Config.PHONE + ' \n'
             + 'END:VCARD'
-await message.client.sendMessage(message.jid, {displayname: " + Config.OA_NAME + ", vcard: vcard}, MessageType.contact);
+await message.client.sendMessage(message.jid, {displayname: "ABU SER", vcard: vcard}, MessageType.contact);
 
   }));
    
