@@ -23,7 +23,7 @@ async function checkImAdmin(message, user = message.client.user.jid) {
     return sonuc.includes(true);
 }
 
-Asena.addCommand({pattern: 'ban ?(.*)', fromMe: true, desc: Lang.BAN_DESC}, (async (message, match) => {  
+Asena.addCommand({pattern: 'kick ?(.*)', fromMe: true, desc: Lang.BAN_DESC}, (async (message, match) => {  
     if (message.jid.endsWith('@g.us')) {
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
