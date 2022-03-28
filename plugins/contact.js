@@ -4,7 +4,7 @@ const exec = require('child_process').exec;
 const os = require("os");
 const fs = require('fs');
 const Config = require('../config')
-Ktb.addCommand({ pattern: 'creater ?(.*)', fromMe: false, desc: 'owner number' }, (async (message, match) => {
+Ktb.addCommand({ pattern: 'creater ?(.*)', fromMe: false, desc: 'creater number' }, (async (message, match) => {
 
 //coded by saidali
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
