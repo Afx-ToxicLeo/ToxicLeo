@@ -22,7 +22,7 @@ Abu.addCommand({pattern: 'alive', fromMe: whb, dontAddCommandList: true}, (async
       
       const buttonMessage = {
           contentText: '```'+Config.BOT+'\n\n```'+Config.ALIVEMSG+'\n',
-          footerText: '© ᴀʙᴜ sᴇʀ ™',
+          footerText: '© '+Config.ABU+' ™',
           buttons: buttons,
           headerType: 1
       }
