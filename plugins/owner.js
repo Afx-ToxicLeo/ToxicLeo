@@ -14,7 +14,7 @@ var ddd = ggg.toString('utf-8')
 
 let whb = Config.WORKTYPE == 'public' ? false : true
 
-Abu.addCommand({pattern: 'owner', fromMe: whb, dontAddCommandList: true}, (async (message, match) => {
+Abu.addCommand({pattern: 'developer', fromMe: whb, dontAddCommandList: true}, (async (message, match) => {
 // send a buttons message!
 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 var plk_here = new Date().toLocaleDateString(get_localized_date)
@@ -28,7 +28,7 @@ var afnplk = '```⏱ Time :' + plk_say + '```\n\n ```📅 Date :' + plk_here + '
       
       const buttonMessage = {
           contentText: '╭───𒆜ᴏᴡɴᴇʀ𒆜\n│💙 ` + config.OWNER + `\n╰───────────────𒈒',
-          footerText: '© ᴀʙᴜ sᴇʀ™',
+          footerText: '© '+Config.ABU+' ™',
           buttons: buttons,
           headerType: 1
       }
