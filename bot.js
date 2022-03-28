@@ -102,7 +102,7 @@ async function whatsAsena () {
     conn.on('connecting', async () => {
         console.log(`${chalk.green.bold('Whats')}${chalk.blue.bold('Asena')}
 ${chalk.white.bold('Version:')} ${chalk.red.bold(config.VERSION)}
-${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
+${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait.')}`);
     });
     
 
@@ -110,6 +110,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         console.log(
             chalk.green.bold('✅ Login successful!')
         );
+
         console.log(
             chalk.blueBright.italic('⬇️ Installing external plugins...')
         );
@@ -127,14 +128,24 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         });
 
         console.log(
-            chalk.blueBright.italic('⬇️Installing plugins...')
+            chalk.blueBright.italic('⬇️  Installing plugins...')
         );
 
         fs.readdirSync('./plugins').forEach(plugin => {
             if(path.extname(plugin).toLowerCase() == '.js') {
-                        require('./plugins/' + plugin);
+                require('./plugins/' + plugin);
             }
         });
+
+        fs.readdirSync('./database/PLUGINS').forEach(plugin => {
+            if(path.extname(plugin).toLowerCase() == '.js') {
+                require('./database/PLUGINS/' + plugin);
+            }
+        });
+
+        console.log(
+            chalk.blueBright.italic('✅ Plugins Installed...')
+        );
 
         console.log(
             chalk.green.bold('Abu ser Working ' + config.WORKTYPE + ' 𝚗𝚘𝚠 🍃'));
