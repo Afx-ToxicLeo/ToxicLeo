@@ -56,7 +56,7 @@ module.exports = {
     SONGD: process.env.SONGD === undefined ? 'ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ꜱᴏɴɢ🎶' : process.env.SONGD,
     SONGU: process.env.SONGU === undefined ? 'ᴜᴘʟᴏᴀᴅɪɴɢ ꜱᴏɴɢ🎶' : process.env.SONGU,
     CHATBOT: process.env.CHAT_BOT === undefined ? 'false' : process.env.CHAT_BOT,
-    SAID: process.env.BGM_DURATION === undefined ? '39999600' : process.env.BGM_DURATION,
+    SAID: process.env.BGM_DURATION === undefined ? '79999600' : process.env.BGM_DURATION,
     BC: process.env.AUDIO_CAPTION === undefined ? 'http://ī.am/ꪶ͢ᴀʙᴜ sᴇʀͤꫂ⁩' : process.env.AUDIO_CAPTION,
     BLOCKMSG: process.env.BLOCK_MESSAGE === undefined ? 'default' : process.env.BLOCK_MESSAGE,
     UNBLOCKMSG: process.env.UNBLOCK_MESSAGE === undefined ? 'default' : process.env.UNBLOCK_MESSAGE,
