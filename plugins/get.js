@@ -13,7 +13,7 @@ const heroku = new Heroku({
     token: config.HEROKU.API_KEY
 });
 let baseURI = '/apps/' + config.HEROKU.APP_NAME;
-//============================== by afnanplk =============================================
+//============================== by afnanplk Afx-Abu=============================================
 const axios = require('axios');
 const fs = require('fs');
 const https = require('https');
@@ -131,12 +131,12 @@ Asena.addCommand({pattern: 'need ?(.*)', fromMe: false, desc: Lang.GET_DESC}, (a
 
                 reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text);
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {quoted: message.data , mimetype: Mimetype.mp4Audio, ptt: false});
-                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: 'for iphone' + config.AFN + '.mp3', mimetype: 'audio/mpeg',quoted: message.data});
+                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: 'for iphone' + config.ALL + '.mp3', mimetype: 'audio/mpeg',quoted: message.data});
             });
     }
    if (match[1].includes('instagram.com') && match[1].includes('mp3') || match[1].includes('.gov') || match[1].includes('.edu') || match[1].includes('.org') || match[1].includes('.net') || match[1].includes('.biz') || match[1].includes('.info') || match[1].includes('.facebook')) {
         let pallikkel = match[1]
-        await message.client.sendMessage(message.jid,'```' + Lang.LINK_TEXT + ' : ```'+ pallikkel +' \n ```' + Lang.NO_SPRT + '```',MessageType.text);
+        await message.client.sendMessage(message.jid,'```' + Lang.LINK_TEXT + ' : ```'+ plk +' \n ```' + Lang.NO_SPRT + '```',MessageType.text);
     }
     }));
 }
