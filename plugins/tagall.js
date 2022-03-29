@@ -21,7 +21,7 @@ async function checkImAdmin(message, user = message.client.user.jid) {
     return sonuc.includes(true);
 }
 
-Asena.addCommand({pattern: 'tag ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
+Asena.addCommand({pattern: 'tagall ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
    
     if (!message.reply_message) {
         if (match[1] !== '') {
@@ -42,7 +42,7 @@ Asena.addCommand({pattern: 'tag ?(.*)', fromMe: true, dontAddCommandList: true, 
             mesaj = '';
             grup['participants'].map(
                 async (uye) => {
-                    mesaj += '\n 👤 @' + uye.id.split('@')[0] + 'ㅤ';
+                    mesaj += '\n 💌 @' + uye.id.split('@')[0] + 'ㅤ';
                     jids.push(uye.id.replace('c.us', 's.whatsapp.net'));
                 }
             );
@@ -69,7 +69,7 @@ else if (Config.WORKTYPE == 'public') {
     
   
     
-    Asena.addCommand({pattern: 'tag ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
+    Asena.addCommand({pattern: 'tagall ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
         
     if (!message.reply_message) {
         if (match[1] !== '') {
@@ -90,7 +90,7 @@ else if (Config.WORKTYPE == 'public') {
             mesaj = '';
             grup['participants'].map(
                 async (uye) => {
-                    mesaj += '\n 🦋 @' + uye.id.split('@')[0] + 'ㅤ🍁';
+                    mesaj += '\n 💌 @' + uye.id.split('@')[0] + 'ㅤ';
                     jids.push(uye.id.replace('c.us', 's.whatsapp.net'));
                 }
             );
@@ -110,6 +110,19 @@ else if (Config.WORKTYPE == 'public') {
         var tx = message.reply_message.text
         await message.client.sendMessage(message.jid,tx, MessageType.extendedText, {contextInfo: {mentionedJid: jids}, previewType: 0})
     }
+}));
+var stag_dsc = ''
+if (Config.LANG !== 'ML') stag_dsc = 'Sends the replied message to all members in the group.'
+if (Config.LANG == 'ML') stag_dsc = 'ഗ്രൂപ്പിലെ എല്ലാ അംഗങ്ങൾക്കും മറുപടി സന്ദേശം അയയ്ക്കുന്നു.'
+
+Asena.addCommand({pattern: 'bc$', fromMe: true, desc: stag_dsc }, (async (message, match) => {
+    if (!message.reply_message) return await message.client.sendMessage(message.jid,SLang.NEED_REPLY, MessageType.text)
+    grup = await message.client.groupMetadata(message.jid);
+    var jids = [];
+    mesaj = '';
+    grup['participants'].map(async (uye) => {
+        await message.client.sendMessage(uye.jid, message.reply_message.text, MessageType.text)
+    })
 }));
 
 }
@@ -155,7 +168,7 @@ async function checkImAdmin(message, user = message.client.user.jid) {
             mesaj = '';
             grup['participants'].map(
                 async (uye) => {
-                    mesaj += '\n 🦋 @' + uye.id.split('@')[0] + 'ㅤ🍁';
+                    mesaj += '\n 🌀 @' + uye.id.split('@')[0] + 'ㅤ';
                     jids.push(uye.id.replace('c.us', 's.whatsapp.net'));
                 }
             );
