@@ -1,10 +1,9 @@
-/* Codded by @phaticusthiccy
-Telegram: t.me/phaticusthiccy
-Instagram: www.instagram.com/kyrie.baran
+/* Codded by @Afx-Abu
+Instagram: jasil_xo
 */
 
-const Asena = require('../events');
-const {MessageType,Mimetype} = require('@adiwajshing/baileys');
+const Asena = require('../ets');
+const {MessageType,Mimetype} = requie('@adiwajshing/baileys');
 const fs = require('fs');
 const ffmpeg = require('fluent-ffmpeg');
 const {execFile} = require('child_process');
