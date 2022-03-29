@@ -4,7 +4,6 @@ Instagram: jasil_xo
 
 const Asena = require('../ets');
 const {MessageType,Mimetype} = requie('@adiwajshing/baileys');
-const fs = require('fs');
 const ffmpeg = require('fluent-ffmpeg');
 const {execFile} = require('child_process');
 const cwebp = require('cwebp-bin');
