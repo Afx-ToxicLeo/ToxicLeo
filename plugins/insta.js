@@ -1,7 +1,7 @@
 const { MessageType, Mimetype } = require('@adiwajshing/baileys');
 const MyPnky = require('../events');
 const Config = require('../config');
-const { igDownloader, igstalk } = require('../scraper.js')
+const { igDownloader, igstalk } = require('../Abu.js')
 const { errorMessage, infoMessage } = require('../helpers');
 const axios = require('axios');
 const fs = require('fs');
