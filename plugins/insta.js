@@ -20,8 +20,8 @@ MyPnky.addCommand({pattern: 'insta ?(.*)', fromMe: wk, desc: "download from Inst
     ytm = res.result
     const profileBuffer = await axios.get(`${ytm.link}`, {responseType: 'arraybuffer'})
     const msg = `${ytm.link}`
-     if (msg.includes('.mp4')) { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, { caption: `video`, quoted: message.data })}
-     if (msg.includes('.jpg')) { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, { caption: `image`, quoted: message.data })}
+     if (msg.includes('.mp4')) { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, { caption: `ɪɴsᴛᴀ ᴠɪᴅᴇᴏ `, quoted: message.data })}
+     if (msg.includes('.jpg')) { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, { caption: `ɪɴsᴛᴀ ɪᴍᴀɢᴇ `, quoted: message.data })}
   } catch {
      await message.sendMessage("error")
   }
