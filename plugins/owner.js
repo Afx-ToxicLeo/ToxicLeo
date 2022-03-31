@@ -10,7 +10,7 @@ var ggg = Buffer.from(clh.cd, 'base64')
 var ddd = ggg.toString('utf-8')
 
 
-Abu.addCommand({pattern: 'help', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+Abu.addCommand({pattern: 'owner', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 // send a list message!
     const rows = [
         {title: '𝙽𝙰𝙼𝙴', description: "🍁 ɴᴀᴍᴇ ᴏғ ᴏᴡɴᴇʀ 🍁.\n\n\n+Config.BOT+\n ", rowId:" rowid1"},
