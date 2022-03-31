@@ -1168,6 +1168,27 @@ await message.client.sendMessage(message.jid, {displayname: "➪ ʙᴏᴛ ᴏᴡ
 
   }));
 
+  Abu.addCommand({pattern: 'owner', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+     // send a list message!
+    const rows = [
+        {title: '𝙽𝙰𝙼𝙴', description: "🍁 ɴᴀᴍᴇ ᴏғ ᴏᴡɴᴇʀ 🍁.\n\n\n+Config.BOT+\n ", rowId:" rowid1"},
+        {title: '𝙸𝙽𝚂𝚃𝙰 ', description: "🍁 ɪɴsᴛᴀɢʀᴀᴍ 🍁.\n\n\n+Config.INSTA+\n ", rowId:" rowid2"},
+        {title: '𝙽𝚄𝙼𝙱𝙴𝚁', description: "🍁 ɴᴜᴍʙᴇʀ 🍁.\n\n\nhttp://wa.me/+Config.PHONE+\n ", rowId:" rowid3"},
+        ]
+       
+       const sections = [{title: "+Config.BOT+️", rows: rows}]
+       
+       const button = {
+        buttonText: '+Config.BOT+',
+        description: "💫 ᴏᴡɴᴇʀ ᴅᴇᴛᴀɪʟs",
+        sections: sections,
+        listType: 1
+       }
+       
+       await message.client.sendMessage(message.jid, button, MessageType.listMessage)
+    
+    }));
+
     Asena.addCommand({pattern: "covid ?(.*)", fromMe: false, desc: Clang.COV_DESC}, (async (message, match) => {
         if (match[1] === "") {
             try{
