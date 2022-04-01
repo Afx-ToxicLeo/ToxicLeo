@@ -2,7 +2,8 @@ const Abu = require('../events');
 const {MessageType, GroupSettingChange, Mimetype, MessageOptions} = require('@adiwajshing/baileys');
 const fs = require('fs');
 const Config = require('../config')
-const config = require('../config')
+const Config = require('./config');
+if (Config.HANDLERS == 'false') Config.HANDLERS = '^'
 const axios = require('axios')
 const request = require('request');
 const os = require('os');
