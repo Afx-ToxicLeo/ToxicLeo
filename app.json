@@ -77,7 +77,7 @@
             "value": "https://chat.whatsapp.com/DNP9Fd1eWrjKz2DalRI2CX"
         },
         "INBO_BLOCK": {
-            "description": "Inbox Blocking System. True koduthal ningalude pml vann chila bad words upoayogikunnavare bot block aakum block aakendengil false kodukuka",
+            "description": "Pm Blocking System. True koduthal ningalude pml vann chila bad words upoayogikunnavare bot block aakum block aakendengil false kodukuka",
             "required": true,
             "value": "false"
         },
@@ -129,6 +129,15 @@
             "description": " Set true for auto date, time in biography.",
             "required": true,
             "value": "false"        
+        },
+         "PM_BLOCK": {
+
+            "description": "Link Blocking System.",
+
+            "required": true,
+
+            "value": "false"
+
         },
          "BAD_WORDS": {
             "description": "enter the word you dont allow in your group ",
