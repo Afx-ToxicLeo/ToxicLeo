@@ -13,15 +13,15 @@ var ddd = ggg.toString('utf-8')
 Abu.addCommand({pattern: 'owner', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 // send a list message!
     const rows = [
-        {title: '𝙽𝙰𝙼𝙴', description: "🍁 ɴᴀᴍᴇ ᴏғ ᴏᴡɴᴇʀ 🍁.\n\n\n+Config.BOT+\n ", rowId:" rowid1"},
-        {title: '𝙸𝙽𝚂𝚃𝙰 ', description: "🍁 ɪɴsᴛᴀɢʀᴀᴍ 🍁.\n\n\n+Config.INSTA+\n ", rowId:" rowid2"},
-        {title: '𝙽𝚄𝙼𝙱𝙴𝚁', description: "🍁 ɴᴜᴍʙᴇʀ 🍁.\n\n\nhttp://wa.me/+Config.PHONE+\n ", rowId:" rowid3"},
+        {title: '𝙽𝙰𝙼𝙴', description: "🍁 ɴᴀᴍᴇ ᴏғ ᴏᴡɴᴇʀ 🍁.\n\n\n` + config.OWNER + `\n ", rowId:" rowid1"},
+        {title: '𝙸𝙽𝚂𝚃𝙰 ', description: "🍁 ɪɴsᴛᴀɢʀᴀᴍ 🍁.\n\n\n` + config.INSTA + `\n ", rowId:" rowid2"},
+        {title: '𝙽𝚄𝙼𝙱𝙴𝚁', description: "🍁 ɴᴜᴍʙᴇʀ 🍁.\n\n\nhttp://wa.me/` + config.PHONE + `\n ", rowId:" rowid3"},
         ]
        
-       const sections = [{title: "+Config.BOT+️", rows: rows}]
+       const sections = [{title: "` + config.BOT + `", rows: rows}]
        
        const button = {
-        buttonText: '+Config.BOT+',
+        buttonText: '+` + config.BOT + `',
         description: "💫 ᴏᴡɴᴇʀ ᴅᴇᴛᴀɪʟs",
         sections: sections,
         listType: 1
