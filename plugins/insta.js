@@ -14,7 +14,7 @@ let wk = Config.WORKTYPE == 'public' ? false : true
 Abu.addCommand({pattern: 'insta ?(.*)', fromMe: wk, desc: "download from Instagram"}, async (message, match) => {
   try{
     if (!match[1]) return await message.sendMessage("enter a link");
-    await message.sendMessage("ᴡᴀɪᴛ ʙʀᴏ ɪᴘᴘᴏ sᴇᴛᴀᴋᴀ...")
+    await message.sendMessage("ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ʏᴏᴜʀ ɪɴsᴛᴀ ʀᴇᴇʟ...")
 
     res = await igDownloader(match[1])
     ytm = res.result
