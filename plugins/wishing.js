@@ -10,7 +10,7 @@ const Config = require('../config');
 
 if (Config.WORKTYPE == 'private') {
 
-asena.addCommand({pattern: 'gdmrng', fromMe: true, deleteCommand: true, desc: GM,}, (async (message, match) => {
+asena.addCommand({pattern: 'gm', fromMe: true, deleteCommand: true, desc: GM,}, (async (message, match) => {
 
     var r_text = new Array ();
 
@@ -36,11 +36,11 @@ asena.addCommand({pattern: 'gdmrng', fromMe: true, deleteCommand: true, desc: GM
 
     }));
 
-asena.addCommand({pattern: 'gdni8', fromMe: true, deleteCommand: true, desc: GN,}, (async (message, match) => {
+asena.addCommand({pattern: 'gm', fromMe: true, deleteCommand: true, desc: GN,}, (async (message, match) => {
 
         var r_text = new Array ();
 
-        r_text[1] = "😘𝙂𝙤𝙤𝙙 🙈𝙣𝙞𝙜𝙝𝙩 💫✨";
+        r_text[1] = "💫𝑮𝑶𝑶𝑫 𝑵𝑰𝑮𝑻𝑯 𝑮𝑼𝒀𝒁✨";
 
         r_text[2] ="🤗𝓖𝓸𝓸𝓭 🧚‍♀𝓷𝓲𝓰𝓱𝓽 ❄️✨";
 
@@ -62,11 +62,11 @@ asena.addCommand({pattern: 'gdni8', fromMe: true, deleteCommand: true, desc: GN,
 
     if (Config.WORKTYPE == 'public') {
 
-        asena.addCommand({pattern: 'gdmrng', fromMe: false, deleteCommand: true, desc: GM,}, (async (message, match) => {
+        asena.addCommand({pattern: 'gm', fromMe: false, deleteCommand: true, desc: GM,}, (async (message, match) => {
 
             var r_text = new Array ();
 
-            r_text[1] = "❀🍃Good❀ ❀morning❀🥰❀";
+            r_text[1] = "💫𝑮𝑶𝑶𝑫 𝑴𝑶𝑹𝑵𝑰𝑵𝑮 𝑮𝑼𝒀𝒁 💋 𝑬𝑽𝑨𝑫𝑬 𝑬𝑳𝑳𝑨𝑹𝑼𝑴 ❤️";
 
             r_text[2] ="☘️𝐺𝑜𝑜𝑑 🌅𝑚𝑜𝑟𝑛𝑖𝑛𝑔 💐";
 
@@ -88,11 +88,11 @@ asena.addCommand({pattern: 'gdni8', fromMe: true, deleteCommand: true, desc: GN,
 
             }));
 
-        asena.addCommand({pattern: 'gdni8', fromMe: false, deleteCommand: true, desc: GN,}, (async (message, match) => {
+        asena.addCommand({pattern: 'gn', fromMe: false, deleteCommand: true, desc: GN,}, (async (message, match) => {
 
                 var r_text = new Array ();
 
-                r_text[1] = "😘𝙂𝙤𝙤𝙙 🙈𝙣𝙞𝙜𝙝𝙩 💫✨";
+                r_text[1] = "💫𝑮𝑶𝑶𝑫 𝑵𝑰𝑮𝑻𝑯 𝑮𝑼𝒀𝒁✨𝑩𝒀 𝑩𝒀 ❤️";
 
                 r_text[2] ="🤗𝓖𝓸𝓸𝓭 🧚‍♀𝓷𝓲𝓰𝓱𝓽 ❄️✨";
 
