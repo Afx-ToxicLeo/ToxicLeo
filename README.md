@@ -45,8 +45,7 @@
    <br>
 <div>
 
-<img src=VID-20220405-WA0345.mp4" alt="video" width="300" height="270"/>
-</p>
+            𝑻𝑯𝑰𝑺 𝑽𝑰𝑫𝑬𝑶 𝑾𝑨𝑪𝑯 𝑭𝑼𝑳𝑳 𝑷𝑳𝒁 
 
 
 1. Click [SCAN](https://replit.com/@Afx-Abu/ABU-SER-QR?v=1) and scan QR through Whatsapp Linked Devices Option in Your whatsapp App.
