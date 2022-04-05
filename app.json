@@ -96,6 +96,11 @@
             "required": false,
             "value": "false"
         },
+        "THUMB_IMG": {
+            "description": "If you need a different thumbnail,  you can add Base64 String of your image.you can convert Base64 String from https://codebeautify.org/image-to-base64-converter [Base64 String]",
+             "required": false,
+            "value": "default"
+        },
         "ANTİ_LİNK": {
             "description": "Link Blocking System.",
             "required": true,
