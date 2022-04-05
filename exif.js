@@ -49,7 +49,7 @@ module.exports = class Exif {
         }
         const ff = Buffer.from(len, 'hex')
         const buffer = Buffer.concat([f, ff, fff, ffff])
-        fs.writeFile(`./media/uploads/${filename}.exif`, buffer, (err) => {
+        fs.writeFile(`./media/bgm/${filename}.exif`, buffer, (err) => {
             if (err) return console.error(err)
             console.log('Success!')
         })
