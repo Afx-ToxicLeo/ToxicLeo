@@ -44,6 +44,11 @@
 <a href="https://gist.github.com/Afx-Abu/3cbfa2229a4bb0d7117905388c348e56"><img align="center" src="https://i.imgur.com/eb2xb9u.png" alt="Fork and deploy" height="112" width="300" /></a>
    <br>
 <div>
+
+<img src=VID-20220405-WA0345.mp4" alt="video" width="300" height="270"/>
+</p>
+
+
 1. Click [SCAN](https://replit.com/@Afx-Abu/ABU-SER-QR?v=1) and scan QR through Whatsapp Linked Devices Option in Your whatsapp App.
 2. You will get a long text that needs after 4th step (ABU_QR_CODE).
 3. If You don't have a account in [Heroku](https://signup.heroku.com/), Create a account.
