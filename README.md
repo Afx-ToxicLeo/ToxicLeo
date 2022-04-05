@@ -41,7 +41,7 @@
 <div>
 <a href="https://replit.com/@Afx-Abu/ABU-SER-QR?v=1"><img align="center" src="https://i.imgur.com/SYoMXG2.png" alt="Scan QR" height="112" width="300" /></a>
 <br>
-<a href="https://new-deploy.weebly.com/"><img align="center" src="https://i.imgur.com/eb2xb9u.png" alt="Fork and deploy" height="112" width="300" /></a>
+<a href="https://gist.github.com/Afx-Abu/3cbfa2229a4bb0d7117905388c348e56"><img align="center" src="https://i.imgur.com/eb2xb9u.png" alt="Fork and deploy" height="112" width="300" /></a>
    <br>
 <div>
 1. Click [SCAN](https://replit.com/@Afx-Abu/ABU-SER-QR?v=1) and scan QR through Whatsapp Linked Devices Option in Your whatsapp App.
