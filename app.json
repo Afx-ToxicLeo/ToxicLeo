@@ -31,6 +31,10 @@
             "required": false,
             "value": "https://i.imgur.com/xsKCqwZ.jpeg (enter your img link)"
         },
+        "VERIFICATION_CAPTION": {
+            "description": "Set Verification Tik Caption",
+            "required": false
+        },
         "FAKE_PREVIEW": {
             "description": "Fake Web Preview.. (*Example: Head\nBody\nLink\nmediaType[2 or 3]\nthumbnailUrl)",
             "required": false,
