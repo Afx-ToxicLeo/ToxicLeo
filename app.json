@@ -111,6 +111,26 @@
             "required": true,
             "value": "false"
         },
+        "V_HEADER": {
+            "description": "Set the Header name logo",
+            "required": true,
+            "value": "YOUR HEADER HERE"
+        },
+        "VERIFIED": {
+            "description": "Give with number jid",
+            "required": true,
+            "value": "0@s.whatsapp.net"
+        },
+        "ALL_IMG": {
+            "description": "Set the logo",
+            "required": true,
+            "value": "https://i.imgur.com/nLUMShe.jpg"
+        },
+        "DIALOGUE": {
+            "description": "set the Dialouge",
+            "required": true,
+            "value": "Muthe i love you"
+        },
         "C_CODE": {
             "description": "Fake number not  removing country code.",
             "required": true,
