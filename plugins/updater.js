@@ -29,16 +29,16 @@ Asena.addCommand({pattern: 'update check$', fromMe: true, desc: Lang.UPDATER_DES
             Lang.UPDATE, MessageType.text
         );    
     } else {
-        var abuupdate = Lang.NEW_UPDATE;
-                commits['all'].map(
-                    (commit) => {
-                        shadowupdate += '│➩ [' + commit.date.substring(0, 10) + '] ➠  *' + commit.message + '*   ↱ ' + commit.author_name + ' ↲\n';
-                    }
-                );
+        var degisiklikler = Lang.NEW_UPDATE;
+        commits['all'].map(
+            (commit) => {
+                degisiklikler += '🔹 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' <' + commit.author_name + '>\n';
+            }
+        );
         
         await message.client.sendMessage(
             message.jid,
-            '╭──────────────────────────╮\n│➣ 𝐁𝐨𝐭 𝐔𝐩𝐝𝐚𝐭𝐞  \n│\n```│' + abuupdate + '│\n│ ☞ 𝚃𝚢𝚙𝚎 .𝐮𝐩𝐝𝐚𝐭𝐞 𝐧𝐨𝐰 𝚝𝚘 𝚄𝚙𝚍𝚊𝚝𝚎 𝚈𝚘𝚞𝚛 𝙱𝚘𝚝\n╰──────────────────────────╯\n◩ 𝐂𝐨𝐝𝐞𝐝 𝐁𝐲 𝐀𝐛𝐮 𝐬𝐞𝐫\n╭──────────────────────────╮\n➣ 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐎𝐰𝐧𝐞𝐫...\n✆ wa.me/917025994178?text=Hi\n╰──────────────────────────╯', MessageType.text
+            degisiklikler + '```', MessageType.text
         ); 
     }
 }));
