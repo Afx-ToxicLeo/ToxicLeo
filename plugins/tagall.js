@@ -189,7 +189,7 @@ async function checkImAdmin(message, user = message.client.user.jid) {
     }
 }));
     
-     Abu.addCommand({pattern: 'warn ?(.*)', fromMe: false, desc: 'to Warn someone'}, (async (message, match) => {
+     Abu.addCommand({pattern: 'war ?(.*)', fromMe: false, desc: 'to Warn someone'}, (async (message, match) => {
         if (match[1] == '') {
             let grup = await message.client.groupMetadata(message.jid);
             var jids = [];
