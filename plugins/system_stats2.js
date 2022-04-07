@@ -21,7 +21,7 @@ Abu.addCommand({pattern: 'alive', fromMe: whb, dontAddCommandList: true}, (async
       ]
       
       const buttonMessage = {
-          contentText: '```'+Config.BOT+'\n\n```'+Config.ALIVEMSG+'\n',
+          contentText: '      \n╔══╗╔╗─╔══╗╔╗─╔╗╔═╗        \n║╔╗║║║─╚║║╝║╚╦╝║║╦╝        \n║╠╣║║╚╗╔║║╗╚╗║╔╝║╩╗        \n╚╝╚╝╚═╝╚══╝─╚═╝─╚═╝ \n\n *╔✘ 𝐈𝐀𝐌 𝐒𝐓𝐈𝐋𝐋 𝐀𝐋𝐈𝐕𝐄 𝐁𝐑𝐎*»\n*║✘Bᴏᴛ ɴᴀᴍᴇ :* ' + Config.BOT + '\n** ' + Config.OWNER + '*\n*║✘ᴛɪᴍᴇ   :* ```' + plk_say + '```\n*║✘Wᴏʀᴋ ᴛʏᴘᴇ : ' + Config.WORKTYPE + '*\n*║✘ Pʀᴇғɪx : ' + Config.HANDLERS + '*    \n *╚✘*\n           ** ' + Config.OA_NAME + '⁩*         \n\n*╭◪ ᴛʜᴀɴᴋs ᴀʟʟ ɢᴜʏᴢꫂ*\n*╰─────────────────❋ཻུ۪۪⸙*\n',
           footerText: '© '+Config.ABU+' ™',
           buttons: buttons,
           headerType: 1
