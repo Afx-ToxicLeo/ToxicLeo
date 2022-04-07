@@ -7,7 +7,7 @@ const axios = require('axios');
 let wk = Config.WORKTYPE == 'public' ? false : true
 
 Abu.addCommand({pattern: 'test ?(.*)', fromMe: wk, dontAddCommandList: true }, (async (message, match) => {
-const AbuBuffer = await axios.get(`https://i.imgur.com/nLUMShe.jpg`, { responseType: 'arraybuffer' })
+const AbuBuffer = await axios.get(Abu.THUMBNAIL, { responseType: 'arraybuffer' })
 await message.client.sendMessage(message.jid, Buffer.from(AbuBuffer.data), MessageType.image, {mimetype: Mimetype.jpg })
 
 }));
