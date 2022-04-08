@@ -61,7 +61,7 @@ Asena.addCommand({pattern: 'plugin ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC
         try {
             require('./' + plugin_name);
         } catch (e) {
-            fs.unlinkSync('/root/WhatsAsenaDuplicated/plugins/' + plugin_name + '.js')
+            fs.unlinkSync('/root/WhatsAbu/plugins/' + plugin_name + '.js')
             return await message.client.sendMessage(message.jid,Lang.INVALID_PLUGIN + ' ```' + e + '```', MessageType.text);
         }
         var DEG = { level: 5 }
@@ -87,22 +87,22 @@ Asena.addCommand({pattern: 'plugin ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC
         if (find.includes(plugin_name)) {
             await message.client.sendMessage(message.jid, LANG.duplicate, MessageType.text)
             await new Promise(r => setTimeout(r, 400))
-            fs.unlinkSync('/root/WhatsAsenaDuplicated/plugins/' + plugin_name + '.js')
+            fs.unlinkSync('/root/WhatsAbu/plugins/' + plugin_name + '.js')
         }
         else if (response.body.includes('formation') && !match[1].includes('phaticusthiccy')) {
             await message.client.sendMessage(message.jid, LANG.harmful, MessageType.text)
             await new Promise(r => setTimeout(r, 400))
-            fs.unlinkSync('/root/WhatsAsenaDuplicated/plugins/' + plugin_name + '.js')
+            fs.unlinkSync('/root/WhatsAbu/plugins/' + plugin_name + '.js')
         } 
         else if ((response.body.includes('commands.map') || response.body.includes('PluginDB') || response.body.includes('groupRemove') || response.body.includes('groupAdd') || response.body.includes('groupMakeAdmin') || response.body.includes('groupDemoteAdmin') || response.body.includes('groupSettingChange') || response.body.includes('groupInviteCode') || response.body.includes('Math.round((new Date()).getTime() / 1000)') || response.body.includes('https://thiccyscarbonapi.herokuapp.com/?code=') || response.body.includes('filtreler.map') || response.body.includes('heroku.delete') || response.body.includes('heroku.patch') || response.body.includes('Chrome/80.0.3987.149 Mobile Safari/537.36') || response.body.includes('groupLeave') || response.body.includes('updateProfilePicture') || response.body.includes('blockUser') || response.body.includes("Language.getString('system_stats')") || response.body.includes("commits['all'].map") || response.body.includes('await git.fetch') || response.body.includes('jids.push')) && !match[1].includes('phaticusthiccy')) {
             await message.client.sendMessage(message.jid, LANG.imside, MessageType.text)
             await new Promise(r => setTimeout(r, 400))
-            fs.unlinkSync('/root/WhatsAsenaDuplicated/plugins/' + plugin_name + '.js')
+            fs.unlinkSync('/root/WhatsAbu/plugins/' + plugin_name + '.js')
         } 
         else {
             if (!match[1].includes('phaticusthiccy') && DEG.level > 99) {
                 await message.client.sendMessage(message.jid,LANG.limit + DEG.level + '_', MessageType.text)
-                fs.unlinkSync('/root/WhatsAsenaDuplicated/plugins/' + plugin_name + '.js')
+                fs.unlinkSync('/root/WhatsAbu/plugins/' + plugin_name + '.js')
             }
             else if (!match[1].includes('phaticusthiccy') && DEG.level < 100) {
                 await Db.installPlugin(url, plugin_name)
