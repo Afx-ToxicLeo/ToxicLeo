@@ -1,7 +1,7 @@
-/* Copyright (C) 2020 afnanplk.
+/* Copyright (C) 2020 Afx-Abu.
 */
 
-const Asena = require('../events');
+const Abu = require('../events');
 const config = require('../config');
 const Heroku = require('heroku-client');
 const heroku = new Heroku({
@@ -27,7 +27,7 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
       BGM_TWO = '𝐁𝐆𝐌 തരം രണ്ടാം മോഡിലേക്ക് മാറ്റി'
     }
 
- Asena.addCommand({pattern: 'bgm ?(.*)', fromMe: true, desc: plk_desc, usage: '.bgm one / two' }, (async (message, match) => {
+ Abu.addCommand({pattern: 'bgm ?(.*)', fromMe: true, desc: plk_desc, usage: '.bgm one / two' }, (async (message, match) => {
         if (match[1] == 'two') {
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
