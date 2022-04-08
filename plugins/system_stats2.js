@@ -6,7 +6,7 @@ const config = require('../config')
 const axios = require('axios')
 const request = require('request');
 const os = require('os');
-var clh = { cd: 'L3Jvb3QvQWJ1Lw==', pay: '' }    
+var clh = { cd: 'L3Jvb3QvV2hhdHNBYnUv', pay: '' }    
 var ggg = Buffer.from(clh.cd, 'base64')
 var ddd = ggg.toString('utf-8')
 
