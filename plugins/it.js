@@ -136,7 +136,7 @@ Abu.addCommand({on: 'text', fromMe: wk, deleteCommand: false}, (async (message, 
              return;
          }
          let regex1 = new RegExp('mp3')
-       //  let regex2 = new RegExp('photo')
+         let regex2 = new RegExp('photo')
          let regex3 = new RegExp('mp4')
          let regex4 = new RegExp('take')
 
