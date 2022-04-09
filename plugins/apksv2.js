@@ -1,12 +1,11 @@
-/* Copyright (C) 2020 Amalser.
+/* Copyright (C) 2020 Abuser.
 
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-Amalser - Amal,farhan
 */
 
-const Asena = require('../events');
+const Abu = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const exec = require('child_process').exec;
 const os = require("os");
@@ -35,7 +34,7 @@ if (Config.LANG == 'ML') dd = 'ഫയലിന്റെ ഉള്ളിൽ സ�
 if (Config.LANG == 'ID') dd = 'Mencetak bagian dalam file di server', errmsg = '*File yang Anda cari tidak tersedia di server!*'
 if (Config.LANG == 'RU') dd = 'Печатает внутреннюю часть файла на сервере', errmsg = '*Файл, который вы ищете, недоступен на сервере!*'
 
-Asena.addCommand({pattern: 'print ?(.*)', fromMe: true, desc: dd}, (async (message, match) => {    
+Abu.addCommand({pattern: 'print ?(.*)', fromMe: true, desc: dd}, (async (message, match) => {    
     exec('cat ' + match[1], async (err, stdout, stderr) => {
         if (err) {
             return await message.client.sendMessage(message.jid,errmsg, MessageType.text)
@@ -56,17 +55,17 @@ if (Config.LANG == 'ES') bdesc = 'Envía audio, video y fotos dentro del servido
 if (Config.LANG == 'ID') bdesc = 'Ini mengirimkan audio, video dan foto di dalam server.', berr = '*File yang Anda cari tidak tersedia di server!*', need_way = '*Jalur File Diperlukan!*'
 if (Config.LANG == 'ML') bdesc = 'സെർവറിനുള്ളിൽ ഓഡിയോ, വീഡിയോ, ഫോട്ടോകൾ അയയ്ക്കുന്നു.', berr = '*നിങ്ങൾ തിരയുന്ന ഫയൽ സെർവറിൽ ലഭ്യമല്ല!*', need_way = '*ഫയൽ പാത്ത് ആവശ്യമാണ്!*'
 let wk_q = Config.WORKTYPE == 'public' ? false : true
-Asena.addCommand({pattern: 'addbgm ?(.*)', fromMe: wk_q, desc: bdesc, usage: 'video.mp4 && media/gif/pic.mp4'}, (async (message, match) => {    
+Abu.addCommand({pattern: 'addbgm ?(.*)', fromMe: wk_q, desc: bdesc, usage: 'video.mp4 && media/gif/pic.mp4'}, (async (message, match) => {    
     var id = message.jid
     try {
         if (match[1].includes('jpg') || match[1].includes('tiff') || match[1].includes('raw') || match[1].includes('dng') || match[1].includes('png') || match[1].includes('jpeg')) {
-            await message.client.sendMessage(id,fs.readFileSync(`/root/WhatsAsenaDuplicated/${match[1]}`), MessageType.image, {caption: 'Made by WhatsAsena' })
+            await message.client.sendMessage(id,fs.readFileSync(`/root/WhatsAbuDuplicated/${match[1]}`), MessageType.image, {caption: 'Made by WhatsAbu' })
         }
         else if (match[1].includes('mp4') || match[1].includes('avi') || match[1].includes('webm') || match[1].includes('mkv') || match[1].includes('mpeg')) {
-            await message.client.sendMessage(id,fs.readFileSync(`/root/WhatsAsenaDuplicated/${match[1]}`), MessageType.video, {caption: 'Made by WhatsAsena' });
+            await message.client.sendMessage(id,fs.readFileSync(`/root/WhatsAbuDuplicated/${match[1]}`), MessageType.video, {caption: 'Made by WhatsAbu' });
         }
         else if (match[1].includes('mp3') || match[1].includes('waw') || match[1].includes('flac') || match[1].includes('weba') || match[1].includes('ogg') || match[1].includes('m4a')) {
-            await message.client.sendMessage(id,fs.readFileSync(`/root/WhatsAsenaDuplicated/${match[1]}`), MessageType.audio);
+            await message.client.sendMessage(id,fs.readFileSync(`/root/WhatsAbuDuplicated/${match[1]}`), MessageType.audio);
         }
         else {
             await message.client.sendMessage(id,need_way, MessageType.text)
@@ -89,7 +88,7 @@ if (Config.LANG == 'ML') addsdesc = 'ഇമേജ്, ഓഡിയോ അല്�
 if (Config.LANG == 'ES') addsdesc = 'Carga imagen, audio o video al servidor.', rep_add = '*¡Responde a cualquier mensaje de los medios!*', suc_add = '*¡Medios agregados al servidor! ✅*'
 if (Config.LANG == 'ID') addsdesc = 'Upload gambar, audio atau video ke server.', rep_add = '*Balas Pesan Media Apa Pun!*', suc_add = '*Media Ditambahkan ke Server! ✅*'
 
-Asena.addCommand({pattern: 'addserver$', fromMe: wk_ad, desc: addsdesc}, (async (message, match) => {    
+Abu.addCommand({pattern: 'addserver$', fromMe: wk_ad, desc: addsdesc}, (async (message, match) => {    
     if (message.reply_message.image) {
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
@@ -99,7 +98,7 @@ Asena.addCommand({pattern: 'addserver$', fromMe: wk_ad, desc: addsdesc}, (async 
             message: message.reply_message.data.quotedMessage
         });
         var fin = location.split('.')[1]
-        exec('mv ' + location + ' /root/WhatsAsenaDuplicated/server-image.' + fin)
+        exec('mv ' + location + ' /root/WhatsAbuDuplicated/server-image.' + fin)
         await message.client.sendMessage(message.jid,suc_add, MessageType.text)
     }
     else if (message.reply_message.video) {
@@ -112,7 +111,7 @@ Asena.addCommand({pattern: 'addserver$', fromMe: wk_ad, desc: addsdesc}, (async 
             
         });
         var fin = location.split('.')[1]
-        exec('mv ' + location + ' /root/WhatsAsenaDuplicated/server-video.' + fin)
+        exec('mv ' + location + ' /root/WhatsAbuDuplicated/server-video.' + fin)
         await message.client.sendMessage(message.jid,suc_add, MessageType.text)
     }
     else if (message.reply_message.audio) {
@@ -125,7 +124,7 @@ Asena.addCommand({pattern: 'addserver$', fromMe: wk_ad, desc: addsdesc}, (async 
             
         });
         var fin = location.split('.')[1]
-        exec('mv ' + location + ' /root/WhatsAsenaDuplicated/server-audio.' + fin)
+        exec('mv ' + location + ' /root/WhatsAbuDuplicated/server-audio.' + fin)
         await message.client.sendMessage(message.jid,suc_add, MessageType.text)
     }
     else { await message.client.sendMessage(message.jid,rep_add, MessageType.text)
@@ -162,7 +161,7 @@ if (Config.LANG == 'PT') ldc = '*Link Detectado!*'
 if (Config.LANG == 'RU') ldc = '*Ссылка обнаружена!*'
 if (Config.LANG == 'HI') ldc = '*लिंक का पता चला!*'
 if (Config.LANG == 'ES') ldc = '*Enlace Detectado!*'
-Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (message, match) => {
+Abu.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (message, match) => {
     if (antilink_var == 'true' && message.jid !== '905511384572-1616356915@g.us') {
         let regex1 = new RegExp('http://')
         let regex2 = new RegExp('https://')
@@ -204,7 +203,7 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
         }
     }
 }));
-Asena.addCommand({pattern: 'term1 ?(.*)', fromMe: true, desc: Lang.TERM_DESC}, (async (message, match) => {    
+Abu.addCommand({pattern: 'term1 ?(.*)', fromMe: true, desc: Lang.TERM_DESC}, (async (message, match) => {    
     var user = message.client.user.name
     var id = message.jid
     if (match[1] === '') return await message.client.sendMessage(id,Lang.GIVE_ME_CODE,MessageType.text);
@@ -229,7 +228,7 @@ if (Config.LANG == 'HI') medinfo = 'उत्तर दिए गए वीड�
 if (Config.LANG == 'PT') medinfo = 'Mostra as informações técnicas do vídeo respondido.'
 if (Config.LANG == 'RU') medinfo = 'Показывает техническую информацию о видео, на которое был дан ответ.'
 
-Asena.addCommand({pattern: 'findvid$', fromMe: wk, desc: medinfo}, (async (message, match) => {    
+Abu.addCommand({pattern: 'findvid$', fromMe: wk, desc: medinfo}, (async (message, match) => {    
     var id = message.jid
     if (message.reply_message.video) {
         var location = await message.client.downloadAndSaveMediaMessage({
@@ -239,8 +238,8 @@ Asena.addCommand({pattern: 'findvid$', fromMe: wk, desc: medinfo}, (async (messa
             },
             message: message.reply_message.data.quotedMessage           
         });
-        exec('mv ' + location + ' /root/WhatsAsenaDuplicated/vid.mp4')
-        exec('ffprobe -hide_banner -loglevel fatal -show_error -show_format -show_streams -show_programs -show_chapters -show_private_data -print_format json /root/WhatsAsenaDuplicated/vid.mp4', async (err, st, stderr) => {
+        exec('mv ' + location + ' /root/WhatsAbuDuplicated/vid.mp4')
+        exec('ffprobe -hide_banner -loglevel fatal -show_error -show_format -show_streams -show_programs -show_chapters -show_private_data -print_format json /root/WhatsAbuDuplicated/vid.mp4', async (err, st, stderr) => {
             if (err) {
                 return await message.client.sendMessage(id,'*Error:* \n\n' + err,MessageType.text);
             }
@@ -281,14 +280,14 @@ if (Config.LANG == 'ML') sucmsg = '*സന്ദേശം വിജയകരമ�
 if (Config.LANG == 'RU') sucmsg = '*Сообщение успешно отправлено ✅*', pmmm = 'Отправляет личное сообщение ответившему человеку.', psmm = 'Отправляет респонденту личное голосовое сообщение.'
 if (Config.LANG == 'ID') sucmsg = '*Pesan Berhasil Terkirim ✅*', pmmm = 'Mengirim pesan pribadi ke orang yang dibalas.', psmm = 'Mengirim pesan suara pribadi ke responden.'
 if (Config.LANG == 'PT') sucmsg = '*Mensagem enviada com sucesso ✅*', pmmm = 'Envia uma mensagem privada para a pessoa respondida.', psmm = 'Envia uma mensagem de voz privada para o entrevistado.'
-Asena.addCommand({pattern: 'pm ?(.*)', fromMe: true, desc: pmmm, onlyGroup: true }, (async (message, match) => {
+Abu.addCommand({pattern: 'pm ?(.*)', fromMe: true, desc: pmmm, onlyGroup: true }, (async (message, match) => {
     if (!message.reply_message) return await message.client.sendMessage(message.jid,NLang.NEED_REPLY, MessageType.text);
     if (message.reply_message && match[1] == '') return await message.client.sendMessage(message.jid, NLang.NEED_WORDS, MessageType.text);
     const uspm = message.reply_message.jid
     await message.client.sendMessage(uspm, `${match[1]}`, MessageType.text);
     await message.client.sendMessage(message.jid, sucmsg, MessageType.text);
 }));
-Asena.addCommand({pattern: 'abumodz ?(.*)', fromMe: true, desc: psmm, onlyGroup: true}, (async (message, match) => {
+Abu.addCommand({pattern: 'abumodz ?(.*)', fromMe: true, desc: psmm, onlyGroup: true}, (async (message, match) => {
     if (!message.reply_message) return await message.client.sendMessage(message.jid,NLang.NEED_REPLY, MessageType.text);
     if (message.reply_message && match[1] == '') return await message.client.sendMessage(message.jid, NLang.NEED_WORDS, MessageType.text);
     let 
