@@ -29,10 +29,10 @@ Abu.addCommand({on: 'text', fromMe: wk, deleteCommand: false}, (async (message, 
              return;
          }
          let regex1 = new RegExp('Kick')
-       //  let regex2 = new RegExp('Add')
+         let regex2 = new RegExp('Add')
          let regex3 = new RegExp('Promote')
          let regex4 = new RegExp('Demote')
-        // let regex5 = new RegExp('Mute')
+         let regex5 = new RegExp('Mute')
 	 let regex6 = new RegExp('Unmute')
 	 let regex7 = new RegExp('Invite')
 	 let regex8 = new RegExp('Link rest')
