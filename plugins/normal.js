@@ -52,7 +52,7 @@ Abu.addCommand({on: 'text', fromMe: wk, deleteCommand: false}, (async (message, 
              return;
          }
          let regex1 = new RegExp('Ttp')
-       //  let regex2 = new RegExp('Attp')
+         let regex2 = new RegExp('Attp')
          let regex3 = new RegExp('Emoji')
 
     if (regex1.test(message.message)) {
