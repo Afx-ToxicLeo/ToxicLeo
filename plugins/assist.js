@@ -5,7 +5,7 @@ const fs = require("fs")
 const axios = require('axios');
 let wk = Config.WORKTYPE == 'public' ? false : true
 const Language = require('../language');
-const Lang = Language.getString('_asena');
+const Lang = Language.getString('_abu');
 const hrs = new Date().getHours({ timeZone: 'Asia/Kolkata' })
 
 Abu.addCommand({pattern: 'assist ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
