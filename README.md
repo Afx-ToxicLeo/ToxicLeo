@@ -65,3 +65,24 @@ https://heroku.com/deploy?template=https://github.com/Afx-Abu/Abu_ser
    * Click [Contact](https://wa.me/7025994178?text=Need+Help🙂) Here For Contact Afx-Abu
 # Contact for help:
    * Click [Contact](https://wa.me/9567489404?text=Need+Help🙂) Here For Contact Shefin 
+
+            
+
+ 
+
+
+   . NO ERROR FORM JEST TRY
+
+
+   <a href="https://gist.github.com/Afx-Abu/2af5e461e64719eb355d1d81903ee1ed"><img src="https://img.shields.io/badge/-DEPLOY+SERVER 1-30D14D?style=for-the-badge&logo=heroku&logoColor=white">
+   <br>
+<br>
+   <a href="https://gist.github.com/Afx-Abu/02138d5e0b877456c1275a57797d039"><img src="https://img.shields.io/badge/-DEPLOY+SERVER 2-30D14D?style=for-the-badge&logo=heroku&logoColor=white">
+   <br>
+<br>
+   <a href="https://gist.github.com/Afx-Abu/7eaf0d72a2ad90a2654d9f74e0cda29e"><img src="https://img.shields.io/badge/-DEPLOY+SERVER 3-30D14D?style=for-the-badge&logo=heroku&logoColor=white">
+   <br>
+<br>
+   <a href="https://gist.github.com/Afx-Abu/1338401c0a4920815f6496f3f29148a1"><img src="https://img.shields.io/badge/-DEPLOY+SERVER 4-30D14D?style=for-the-badge&logo=heroku&logoColor=white">
+   <br>
+<br>
