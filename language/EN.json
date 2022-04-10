@@ -153,7 +153,7 @@
         },
         "profile": {
             "KICKME_DESC": "It kicks you from the group you are using it in.",
-            "KICKME": "```Bye bye! Abu ser ini varathilla 🥲```",
+            "KICKME": "```Bye bye! Lizamwol ini varathilla 🥲```",
             "PP_DESC": "Makes the profile photo what photo you reply.",
             "NEED_PHOTO": "*Give me a photo!*",
             "PPING": "```Setting profile photo...```",
@@ -166,7 +166,7 @@
             "NEED_USER": "Give me a user!",
             "JID_DESC": "Giving user's JID.",
             "JID": "```JID address of``` @{} ```: {}```",
-            "JID_CHAT": "```.s{}```"
+            "JID_CHAT": "```Chat's JID address: {}```"
         },
         "removebg": {
             "REMOVEBG_DESC": "Removes the background of the photos.",
