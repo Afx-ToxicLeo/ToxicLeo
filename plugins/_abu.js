@@ -363,7 +363,7 @@ async function checkImAdmin(message, user = message.client.user.jid) {
 
 else if (Config.WORKTYPE == 'public') {
 
-    Abu.addCommand({pattern: 'list ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+    Abu.addCommand({pattern: 'menu ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
         var CMD_HELP = '';
         if (match[1] === '') {
