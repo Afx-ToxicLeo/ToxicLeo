@@ -41,22 +41,20 @@
 <div>
 <a href="https://replit.com/@Afx-Abu/ABU-SER-QR?v=1"><img align="center" src="https://i.imgur.com/SYoMXG2.png" alt="Scan QR" height="112" width="300" /></a>
 <br>
-<a href="https://abu-ser-deploy.vercel.app"><img align="center" src="https://i.imgur.com/eb2xb9u.png" alt="Fork and deploy" height="112" width="300" /></a>
+
+    *ETHANKILUM ONN CLICK CHAYYU💝*
+
+
+<a href="https://gist.github.com/Afx-Abu/02138d5e0b877456c1275a57797d039"><img align="center" src="https://i.imgur.com/eb2xb9u.png" alt="Fork and deploy" height="112" width="300" /></a>
+   <br>
+<div>
+<a href="https://gist.github.com/Afx-Abu/7eaf0d72a2ad90a2654d9f74e0cda29e"><img align="center" src="https://i.imgur.com/eb2xb9u.png" alt="Fork and deploy" height="112" width="300" /></a>
+   <br>
+<div>
+<a href="https://gist.github.com/Afx-Abu/1338401c0a4920815f6496f3f29148a1"><img align="center" src="https://i.imgur.com/eb2xb9u.png" alt="Fork and deploy" height="112" width="300" /></a>
    <br>
 <div>
 
-
-
-
- 
-
-
-   . NO ERROR FORM JEST TRY
-
-
-   <a href="https://gist.github.com/Afx-Abu/2af5e461e64719eb355d1d81903ee1ed"><img src="https://img.shields.io/badge/-DEPLOY+SERVER 1-30D14D?style=for-the-badge&logo=heroku&logoColor=white">
-   <br>
-<br>
    <a href="https://gist.github.com/Afx-Abu/02138d5e0b877456c1275a57797d039"><img src="https://img.shields.io/badge/-DEPLOY+SERVER 2-30D14D?style=for-the-badge&logo=heroku&logoColor=white">
    <br>
 <br>
