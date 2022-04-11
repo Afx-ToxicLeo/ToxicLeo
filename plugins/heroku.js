@@ -688,7 +688,7 @@ Asena.addCommand({pattern: 'delvar ?(.*)', fromMe: true, dontAddCommandList: tru
 
 }));
 
-Asena.addCommand({pattern: 'getvar ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.GETVAR_DESC}, (async (message, match) => {
+Asena.addCommand({pattern: 'sudo list ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.GETVAR_DESC}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.KEY_VAL_MISSING, MessageType.text);
     await heroku.get(baseURI + '/config-vars').then(async (vars) => {
