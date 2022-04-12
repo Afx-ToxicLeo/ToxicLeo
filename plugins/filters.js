@@ -91,7 +91,7 @@ await message.client.sendMessage(message.jid, fs.readFileSync('./media/efx/Hi.mp
 await message.client.sendMessage(message.jid, fs.readFileSync('./media/efx/owner.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,duration: Config.SAID, quoted : message.data, ptt: true})
         }
         var uri = encodeURI(match[1])
-const array = ['efx 1','efx 2','efx 3','efx 4','efx 5','efx 6','efx 7','efx 8','efx 9','efx 10','efx 11','efx 12','efx 13','efx 14','efx 15','efx 16','efx 17','efx 18','efx 19','efx 20','efx 21','efx 22','efx 23','efx 24','efx 25','efx 26','efx 27','efx 28','efx 29','efx 30']
+const array = ['efx 1','efx 2','efx 3','efx 4','efx 5','efx 6','efx 7','efx 8','efx 9','efx 10','efx 11','efx 12','efx 13','efx 14','efx 15','efx 16','efx 17','efx 18','efx 19']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
