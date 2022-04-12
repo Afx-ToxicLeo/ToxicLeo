@@ -209,7 +209,7 @@ else if (Config.WORKTYPE == 'public') {
         usge = '```.doc pinky```'
     }
     
-     Abu.addCommand({pattern: 'doc ?(.*)', fromMe: false, desc: doc_desc , usage : usge}, (async (message, match) => { 
+     Abu.addCommand({pattern: 'take ?(.*)', fromMe: false, desc: doc_desc , usage : usge}, (async (message, match) => { 
       
         if (match[1] === '') return await message.client.sendMessage(message.jid,'give me a name',MessageType.text);  
         const mid = message.jid
