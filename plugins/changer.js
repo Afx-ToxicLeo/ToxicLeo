@@ -17,7 +17,7 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
     
     plk_desc = 'change reply message BGM mode'
     BGM_ONE = 'ʙɢᴍ ᴍᴏᴅᴇ ᴄʜᴀɢɪɴɢ ᴛᴏ ʙɢᴍ ᴏɴᴇ'
-    BGM_TWO = 'ʙɢᴍᴏᴅᴇ ᴄʜᴀɴɢɪɴɢ ᴛᴏ ᴇғx ᴍᴏᴅᴇ :-- ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ ᴛɪᴄᴋ ᴀᴅᴅᴇᴅ ✅️'
+    BGM_TWO = 'ʙɢᴍ ᴍᴏᴅᴇ ᴄʜᴀɴɢɪɴɢ ᴛᴏ ᴇғx ᴍᴏᴅᴇ :-- ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ ᴛɪᴄᴋ ᴀᴅᴅᴇᴅ ✅️'
     }
 
     if (config.LANG == 'ML') {
