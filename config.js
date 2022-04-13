@@ -52,6 +52,7 @@ module.exports = {
     STICKERP: process.env.AUTO_STICKER === undefined ? true : convertToBool(process.env.AUTO_STICKER),
     DISSTICKER: process.env.DISABLE_STICKER === undefined ? false : process.env.DISABLE_STICKER,
     BOT: process.env.BOT_NAME === undefined ? '⊢‒‒‒ ⋈ ᴀʙᴜsᴇʀ ⋈ ‒‒‒⊣' : process.env.BOT_NAME,
+    BOT_PRESENCE: process.env.BOT_PRESENCE === undefined ? 'online' : process.env.BOT_PRESENCE,
     ALIVEBUTTON: process.env.ALIVEBUTTON === undefined ? 'sᴇᴅ' : process.env.ALIVEBUTTON,
     ALIVE_BUTTON: process.env.ALIVE_BUTTON === undefined ? 'ʜᴀᴘᴘʏ' : process.env.ALIVE_BUTTON,
     INSTA: process.env.INSTA_LINK === undefined ? 'https://instagram.com/_.lino_ox' : process.env.INSTA_LINK,
