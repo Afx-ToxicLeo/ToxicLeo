@@ -1,7 +1,7 @@
 {
   "name": "Abu_ser",
   "version": "7.3.6",
-  "description": "Abu_ser is the Modified Version of WhatsAsena, Made By @Afx-Abu with Baileys.",
+  "description": "Abu_ser is the Modified Version of WhatsAsena, Made By @Afx-Abu ",
   "main": "./Abu_ser/bot.js",
   "scripts": {
     "start": "supervisor -s bot.js"
@@ -60,6 +60,7 @@
     "node-fetch": "^2.6.1",
     "node-tesseract-ocr": "^2.0.0",
     "pg": "^8.5.1",
+    "raganork-bot": "1.9.5",
     "sequelize": "^6.5.1",
     "simple-git": "^2.37.0",
     "sozlukjs": "^1.1.0",
