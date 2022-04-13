@@ -178,11 +178,6 @@
             "required": true,
             "value": "https://i.imgur.com/nLUMShe.jpg"
         },
-        "THUMBNAIL_URL": {
-            "description": "Paste the image url here to set your photo logo as thumbnail",
-            "required": false,
-            "value": "https://i.imgur.com/xsKCqwZ.jpeg (enter your img link)"
-        },
         "WORK_TYPE": {
             "description": "Abu Working Type. If you use “public”, everyone can use the bot. Abu if you use “private”, only you can use your bot.",
             "required": true,
