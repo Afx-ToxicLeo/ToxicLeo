@@ -219,12 +219,12 @@
         "LG_LOGO": {
             "description": "LOGO list message image link(https://telegra.ph/)link.",
             "required": true,
-            "value": "https://telegra.ph/file/29caac7b35ddf3a5c8410.jpg"
+            "value": "https://i.imgur.com/bjlbGCZ.jpg"
         },
         "LOGO_NAME": {
             "description": "Set the logo list name",
             "required": true,
-            "value": "☚⃟፝༄ƦUÐҤƦλ☚⃟፝࿐"
+            "value": "𝙸𝚃𝚉 𝙼𝙴 𝙰𝙱𝚄 𝚂𝙴𝚁,"
         },
         "BAN_MESSAGE": {
             "description": "Customizable Ban Message! Use => default, to change back.",
@@ -234,12 +234,12 @@
         "SONGD": {
             "description": "Customizable song DOWNLOADING message instead of 'Dowloading your song'",
             "required": true,
-            "value": "✮⃝🎸ƦUÐҤƦλ ÐØ₩₦ŁØÐł₦G ¥ØUƦ $Ø₦G✮⃝🎧"
+            "value": "✮⃝ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ sᴏɴɢ"
         },
         "SONGU": {
             "description": "Customizable song UPLOADING message instead of 'Uploading your song'",
             "required": true,
-            "value": "✮⃝🎸ƦUÐҤƦλ UPŁØλÐł₦G ¥ØUƦ $Ø₦G✮⃝🎧"
+            "value": "✮⃝ᴜᴘʟᴏᴀᴅɪɴɢ sᴏɴɢ"
         },
         "ADD_MESSAGE": {
             "description": "Customizable Add Message! Use => default, to change back.",
