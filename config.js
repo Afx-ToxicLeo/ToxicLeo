@@ -42,7 +42,7 @@ module.exports = {
     BOTNAME: process.env.BOT_NAME === undefined ? '  ᴀʙᴜ sᴇʀ \n\n   *ωнαтsαρρ вσт™*   \n' : process.env.BOT_NAME,
     INSTA: process.env.INSTA_LINK === undefined ? 'https://instagram.com/_.lino_ox' : process.env.INSTA_LINK,
     GROUP: process.env.GROUP_LINK === undefined ? 'https://chat.whatsapp.com/Bq0eHs3UpGJ2BKIHOmy7mk' : process.env.GROUP_LINK,
-    THUMBNAIL: process.env.THUMBNAIL_URL === undefined ? 'https://i.imgur.com/xsKCqwZ.jpeg' : process.env.THUMBNAIL_URL,
+    LOGOABU: process.env.ALL_IMG === undefined ? 'https://te.legra.ph/file/a9e518393144caf1ac505.jpg' : process.env.ALL_IMG,
     SAID: process.env.BGM_DURATION === undefined ? '79999600' : process.env.BGM_DURATION,
     BOT_PRESENCE: process.env.BOT_PRESENCE === undefined ? 'online' : process.env.BOT_PRESENCE,
     BC: process.env.AUDIO_CAPTION === undefined ? 'http://ī.am/ꪶ͢ᴀʙᴜ sᴇʀͤꫂ⁩' : process.env.AUDIO_CAPTION,
