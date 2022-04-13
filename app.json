@@ -35,6 +35,11 @@
             "description": "Set Verification Tik Caption",
             "required": false
         },
+        "BOT_PRESENCE": {
+            "description": "Type the Presence of bot, presences: online => Always Shows the online, offline => Always Shows offline, typing => Always Shows typing, recording => Always Shows recording.. NOTE : THE PRESENCE WILL BE PERMANENT, UNTIL THE BOT IS ALIVE / RUNNING / WORKING",
+            "required": false,
+            "value": "online"
+        },
         "FAKE_PREVIEW": {
             "description": "Fake Web Preview.. (*Example: Head\nBody\nLink\nmediaType[2 or 3]\nthumbnailUrl)",
             "required": false,
