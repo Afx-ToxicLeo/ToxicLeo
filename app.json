@@ -74,6 +74,11 @@
             "required": true,
             "value": "^[.!;]"
         },
+        "BOT_PRESENCE": {
+            "description": "Type the Presence of bot, presences: online => Always Shows the online, offline => Always Shows offline, typing => Always Shows typing, recording => Always Shows recording.. NOTE : THE PRESENCE WILL BE PERMANENT, UNTIL THE BOT IS ALIVE / RUNNING / WORKING",
+            "required": false,
+            "value": "online"
+        },
         "FULL_EVA": {
             "description": "Turn your account into a chatbot!",
             "required": true,
