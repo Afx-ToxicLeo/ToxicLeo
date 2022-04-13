@@ -20,7 +20,7 @@ const Lang = Language.getString('system_stats');
 
 if (Config.WORKTYPE == 'private') {
 
-    Abu.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
+    Abu.addCommand({pattern: 'menu', fromMe: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
         
         let pp
         try { pp = await message.client.getProfilePicture(message.jid.includes('-') ? message.data.participant : message.jid ); } catch { pp = await message.client.getProfilePicture(); }
