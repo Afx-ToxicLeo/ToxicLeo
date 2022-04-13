@@ -44,6 +44,7 @@ module.exports = {
     GROUP: process.env.GROUP_LINK === undefined ? 'https://chat.whatsapp.com/Bq0eHs3UpGJ2BKIHOmy7mk' : process.env.GROUP_LINK,
     THUMBNAIL: process.env.THUMBNAIL_URL === undefined ? 'https://i.imgur.com/xsKCqwZ.jpeg' : process.env.THUMBNAIL_URL,
     SAID: process.env.BGM_DURATION === undefined ? '79999600' : process.env.BGM_DURATION,
+    BOT_PRESENCE: process.env.BOT_PRESENCE === undefined ? 'online' : process.env.BOT_PRESENCE,
     BC: process.env.AUDIO_CAPTION === undefined ? 'http://ī.am/ꪶ͢ᴀʙᴜ sᴇʀͤꫂ⁩' : process.env.AUDIO_CAPTION,
     ABU: process.env.NAME_STYLE === undefined ? '𝙰𝙱𝚄 𝚂𝙴𝚁' : process.env.NAME_STYLE,
     NOLOG: process.env.NO_LOG === undefined ? 'false' : process.env.NO_LOG,
