@@ -1,14 +1,14 @@
 {
-  "name": "Rudhra",
+  "name": "Abu_ser",
   "version": "7.3.6",
-  "description": "Rudhra is the Modified Version of WhatsAsena, Made By @prince-rudh with Baileys.",
-  "main": "./Rudhra/bot.js",
+  "description": "Abu_ser is the Modified Version of WhatsAsena, Made By @Afx-Abu with Baileys.",
+  "main": "./Abu_ser/bot.js",
   "scripts": {
     "start": "supervisor -s bot.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/prince-rudh/Rudhra.git"
+    "url": "git+https://github.com/Afx-Abu/Abu_ser.git"
   },
   "keywords": [
     "whatsapp",
@@ -17,13 +17,13 @@
     "asena",
     "WhatsAsena"
   ],
-  "author": "prince-rudh",
-  "developer": "@TOXIC-DEVIL / @prince-rudh",
+  "author": "Afx-Abu",
+  "developer": "@Afx-Abu",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/prince-rudh/Rudhra/issues"
+    "url": "https://github.com/Afx-Abu/Abu_ser/issues"
   },
-  "homepage": "https://github.com/prince-rudh/Rudhra#readme",
+  "homepage": "https://github.com/Afx-Abu/Abu_ser#readme",
   "dependencies": {
     "@adiwajshing/baileys": "3.5.3",
     "@lh2020/speedtest-net": "^2.1.1",
