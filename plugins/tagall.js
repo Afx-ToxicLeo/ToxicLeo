@@ -114,7 +114,7 @@ var stag_dsc = ''
 if (Config.LANG !== 'ML') stag_dsc = 'Sends the replied message to all members in the group.'
 if (Config.LANG == 'ML') stag_dsc = 'ഗ്രൂപ്പിലെ എല്ലാ അംഗങ്ങൾക്കും മറുപടി സന്ദേശം അയയ്ക്കുന്നു.'
 
-Abu.addCommand({pattern: 'tag$', fromMe: true, desc: stag_dsc }, (async (message, match) => {
+Abu.addCommand({pattern: 'bc$', fromMe: true, desc: stag_dsc }, (async (message, match) => {
     if (!message.reply_message) return await message.client.sendMessage(message.jid,SLang.NEED_REPLY, MessageType.text)
     grup = await message.client.groupMetadata(message.jid);
     var jids = [];
