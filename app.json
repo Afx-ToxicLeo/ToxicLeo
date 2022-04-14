@@ -40,6 +40,10 @@
             "required": false,
             "value": "pp"
         },
+        "DEPLOYER": {
+            "description": "enter your name here",
+            "required": false
+        },
         "WEL_GIF": {
             "description": "Fill here any gif link if you selected gif as WEELCOME",
             "required": false,
