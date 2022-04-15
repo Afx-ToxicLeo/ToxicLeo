@@ -39,7 +39,7 @@
 <a href="https://github.com/Afx-Abu/Abu_ser/fork"><img align="center" src="https://i.imgur.com/vUIRd80.png" alt="Fork and deploy" height="112" width="300" /></a>
 <br>
 <div>
-<a href="https://replit.com/@Afx-Abu/ABU-SER-QR?v=1"><img align="center" src="https://i.imgur.com/SYoMXG2.png" alt="Scan QR" height="112" width="300" /></a>
+<a href="https://replit.com/@Afx-Abu/Abu-Ser-Qr?v=1"><img align="center" src="https://i.imgur.com/SYoMXG2.png" alt="Scan QR" height="112" width="300" /></a>
 <br>
 
       𝑻𝑯𝑰𝑺 𝑽𝑰𝑫𝑬𝑶 𝑾𝑨𝑪𝑯 𝑭𝑼𝑳𝑳 𝑷𝑳𝒁 
