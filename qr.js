@@ -33,7 +33,7 @@ ${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please Wait.')}`);
         );
         
         if (!fs.existsSync('config.env')) {
-            fs.writeFileSync('config.env', `ABU_SESSION="${st}"`);
+            fs.writeFileSync('config.env', `ASENA_SESSION="${st}"`);
         }
         if (conn.user.jid.startsWith('90')) {
             await conn.sendMessage(conn.user.jid,st, MessageType.text)
