@@ -41,7 +41,7 @@
             "required": false,
             "value": "recording"
         },
-        "LG_NAME": {
+        "LOGO_NAME": {
             "description": "Set the logo list name",
             "required": true,
             "value": "ī.ᴀᴍ/ᴀʙᴜ sᴇʀ⁴⁰⁴"
