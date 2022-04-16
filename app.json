@@ -31,7 +31,7 @@
             "required": false,
             "value": "true"
         },
-        "LG_LOGO": {
+        "ALL_IMG": {
             "description": "LOGO list message image link(https://telegra.ph/)link.",
             "required": true,
             "value": "https://i.imgur.com/snKWQib.jpg"
@@ -41,7 +41,7 @@
             "required": false,
             "value": "online"
         },
-        "LOGO_NAME": {
+        "ALL_NAME": {
             "description": "Set the logo list name",
             "required": true,
             "value": "ABU"
