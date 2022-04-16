@@ -1,7 +1,7 @@
 /* Copyright (C)2020 Yusuf Usta.
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-WhatsAbu - Yusuf Usta
+whatsasena - Yusuf Usta
 */
 
 const fs = require("fs");
@@ -23,7 +23,7 @@ const Language = require('./language');
 const Lang = Language.getString('updater');
 
 // Sql
-const WhatsAbuDB = config.DATABASE.define('WhatsAbu', {
+const whatsasenaDB = config.DATABASE.define('whatsasena', {
     info: {
       type: DataTypes.STRING,
       allowNull: false
@@ -64,9 +64,9 @@ Array.prototype.remove = function() {
     return this;
 };
 
-async function WhatsAbu () {
+async function whatsasena () {
     await config.DATABASE.sync();
-    var StrSes_Db = await WhatsAbuDB.findAll({
+    var StrSes_Db = await whatsasenaDB.findAll({
         where: {
           info: 'StringSession'
         }
@@ -94,7 +94,7 @@ async function WhatsAbu () {
 
         const authInfo = conn.base64EncodedAuthInfo();
         if (StrSes_Db.length < 1) {
-            await WhatsAbuDB.create({ info: "StringSession", value: Session.createStringSession(authInfo) });
+            await whatsasenaDB.create({ info: "StringSession", value: Session.createStringSession(authInfo) });
         } else {
             await StrSes_Db[0].update({ value: Session.createStringSession(authInfo) });
         }
@@ -326,4 +326,4 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
     }
 }
 
-WhatsAbu();
+whatsasena();
