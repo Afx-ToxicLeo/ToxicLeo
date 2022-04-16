@@ -52,7 +52,7 @@
             "required": true,
             "value": "ᴀʙᴜ⁴⁰⁴"
         },
-                "ALIVEBUTTON": {
+        "ALIVEBUTTON": {
             "description": "Set the alive message two name",
             "required": true,
             "value": "ʜᴇʟʟᴏ sᴇʀ"
