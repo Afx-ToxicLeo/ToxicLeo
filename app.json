@@ -15,7 +15,6 @@
         "SUDO": {
             "description": "Don't Chaytge Ok",
             "required": false
-            "value": "917025994178,0"
         },
         "LANGUAGE": {
             "description": "Bot language.English => en",
