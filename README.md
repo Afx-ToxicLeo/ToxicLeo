@@ -39,13 +39,9 @@
 <a href="https://github.com/Afx-Abu/Abu_ser/fork"><img align="center" src="https://i.imgur.com/vUIRd80.png" alt="Fork and deploy" height="112" width="300" /></a>
 <br>
 <div>
-<a href="https://replit.com/@Afx-Abu/Abu-Ser-Qr?v=1"><img align="center" src="https://i.imgur.com/SYoMXG2.png" alt="Scan QR" height="112" width="300" /></a>
+<a href="https://replit.com/@Afx-Abu/ABU-SER-QR?v=1"><img align="center" src="https://i.imgur.com/SYoMXG2.png" alt="Scan QR" height="112" width="300" /></a>
 <br>
 
-      𝑻𝑯𝑰𝑺 𝑽𝑰𝑫𝑬𝑶 𝑾𝑨𝑪𝑯 𝑭𝑼𝑳𝑳 𝑷𝑳𝒁 
-      HEROKO PROBLOMS FIXING VIDEO
-<a href="https://youtu.be/AwlH6vmOz9o"><img src="https://img.shields.io/badge/-DEPLOY%20ERROR%20PROBLOMS-634988?style=for-the-badge&logo=heroku&logoColor=white">
-<br>
 
 1. Click [SCAN](https://replit.com/@Afx-Abu/ABU-SER-QR?v=1) and scan QR through Whatsapp Linked Devices Option in Your whatsapp App.
 2. You will get a long text that needs after 4th step (ABU_QR_CODE).
