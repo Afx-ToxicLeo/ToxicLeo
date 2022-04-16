@@ -1,6 +1,6 @@
 /* Copyright (C) 2020 Yusuf Usta.
 
-WhatsAbu - Yusuf Usta
+WhatsAsena - Yusuf Usta
 */
 
 const { Sequelize } = require('sequelize');
@@ -18,28 +18,30 @@ DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBU
 module.exports = {
     VERSION: 'v7.3.6',
     CHANNEL: 'https://t.me/remasterplugin',
-    SESSION: process.env.ABU_QR_CODE === undefined ? '' : process.env.AHU_QR_CODE,
+    SESSION: process.env.ABU_QR_CODE === undefined ? '' : process.env.ABU_QR_CODE,
     ANTİLİNK: process.env.ANTİ_LİNK === undefined ? 'false' : process.env.ANTİ_LİNK,
     AUTOBİO: process.env.AUTO_BİO === undefined ? 'false' : process.env.AUTO_BİO,
     FAKE: process.env.FAKE_REMOVE === undefined ? 'false' : process.env.FAKE_REMOVE,
     GANSTYLE: process.env.GAN_IMAGE === undefined ? 'https://i.hizliresim.com/loUtAb.jpg' : process.env.GAN_IMAGE,
     LANG: process.env.LANGUAGE === undefined ? 'TR' : process.env.LANGUAGE.toUpperCase(),
-    ALIVEMSG: process.env.ALIVE_MESSAGE === undefined ? 'default' : process.env.ALIVE_MESSAGE, 
+    ALIVEMSG: process.env.ALIVE_MESSAGE === undefined ? 'default' : process.env.ALIVE_MESSAGE,
     KICKMEMSG: process.env.KICKME_MESSAGE === undefined ? 'default' : process.env.KICKME_MESSAGE,
     BLOCKCHAT: process.env.BLOCK_CHAT === undefined ? false : process.env.BLOCK_CHAT,
     WELCOME: process.env.WELCOME === undefined ? 'pp' : process.env.WELCOME,
     OWNER: process.env.OWNER_NAME === undefined ? 'default' : process.env.OWNER_NAME,
+    ABU: process.env.AUDIO_CAPTION === undefined ? '[ABU SER]' : process.env.AUDIO_CAPTION,
     PHONE: process.env.NUMBER === undefined ? '+917025631103' : process.env.NUMBER,   
-    OA_NAME: process.env.DEPLOYER === undefined ? 'Afx-Abu' : process.env.DEPLOYER,
-    ALL: process.env.ALL_CAPTION === undefined ? 'Made By Abu ser' : process.env.ALL_CAPTION,
+    OA_NAME: process.env.DEPLOYER === undefined ? 'Abuser' : process.env.DEPLOYER,
+    ALL: process.env.ALL_CAPTION === undefined ? 'Made By Abu' : process.env.ALL_CAPTION,
     LG_LOGO: process.env.LG_LOGO === undefined ? 'https://telegra.ph/file/1986d89402b68b4f4aeca.jpg' : process.env.LG_LOGO,
     ALIVEBUTTON: process.env.ALIVEBUTTON === undefined ? 'sᴇᴅ' : process.env.ALIVEBUTTON,
     ALIVE_BUTTON: process.env.ALIVE_BUTTON === undefined ? 'ʜᴀᴘᴘʏ' : process.env.ALIVE_BUTTON,
     LOGO_NAME: process.env.LOGO_NAME === undefined ? 'Abuser' : process.env.LOGO_NAME,
     CODE: process.env.C_CODE === undefined ? '91' : process.env.C_CODE,
-    MENTION: process.env.TAG_REPLY === undefined ? '917025631103@s.whatsapp.net' : process.env.TAG_REPLY,
+    MENTION: process.env.TAG_REPLY === undefined ? '917025994178@s.whatsapp.net' : process.env.TAG_REPLY,
     ADDMSG: process.env.ADD_MESSAGE === undefined ? 'default' : process.env.ADD_MESSAGE,
     PLKS: process.env.THERI_LIST === undefined ? false : process.env.THERI_LIST,
+    AFPLK: process.env.YT_PASSWORD === undefined ? false : process.env.YT_PASSWORD,
     MUTEMSG: process.env.MUTE_MESSAGE === undefined ? 'default' : process.env.MUTE_MESSAGE,
     BGMFILTER: process.env.BGM_FILTER === undefined ? false : convertToBool(process.env.BGM_FILTER),
     INBO: process.env.INBO_BLOCK === undefined ? 'false' : process.env.INBO_BLOCK,
@@ -65,6 +67,7 @@ module.exports = {
     BANMSG: process.env.BAN_MESSAGE === undefined ? 'default' : process.env.BAN_MESSAGE,
     NOLOG: process.env.FIX_ERROR === undefined ? 'on' : process.env.FIX_ERROR,
     AFKMSG: process.env.AFK_MESSAGE === undefined ? 'default' : process.env.AFK_MESSAGE,
+    BOT_PRESENCE: process.env.BOT_PRESENCE === undefined ? 'online' : process.env.BOT_PRESENCE,
     ALLEMOJI: process.env.CMD_LIST === undefined ? 'Abu/💙/🌟/🥀/🐾' : process.env.CMD_LIST,
     WEL_GIF: process.env.WEL_GIF === undefined ? 'https://i.imgur.com/nErXUGj.mp4' : process.env.WEL_GIF,
     GIF_BYE: process.env.GIF_BYE === undefined ? 'https://i.imgur.com/Z1jCYGN.mp4' : process.env.GIF_BYE,
@@ -89,4 +92,5 @@ module.exports = {
     MAHN: "919072790587,0",
     SUPPORT: "919072790587-1635775355",
     SUPPORT2: "905511384572-1617736751",
+    SUPPORT3: "905511384572-1621015274"
 };
