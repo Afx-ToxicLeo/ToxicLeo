@@ -41,6 +41,21 @@
             "required": false,
             "value": "recording"
         },
+        "NAME_STYLE": {
+            "description": "Set the logo list name",
+            "required": true,
+            "value": "ᴀʙᴜ⁴⁰⁴"
+        },
+        "INSTA_LINK": {
+            "description": "Enter Your Insta Link",
+            "required": true,
+            "value": "https://instagram.com/jasil_xo"
+        },
+        "GROUP_LINK": {
+            "description": "Enter Yout Group Link",
+            "required": true,
+            "value": "https://chat.whatsapp.com/DNP9Fd1eWrjKz2DalRI2CX"
+        },
         "ALL_NAME": {
             "description": "Set the logo list name",
             "required": true,
@@ -93,7 +108,8 @@
         },
         "TAG_REPLY": {
             "description": "Enter jid of your number so that you get a audio reply when metioned example - 91xxxxxxxxxx@s.whatsapp.net - for india",
-            "required": false          
+            "required": false 
+            "value": "91xxxxxxxxxx@s.whatsapp.net"        
         },
         "BGM_DURATION": {
             "description": "FUNY BGM DURATION",
