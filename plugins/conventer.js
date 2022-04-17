@@ -65,7 +65,7 @@ function webp2mp4File(path) {
 
 if (Config.WORKTYPE == 'private') {
 
-    Abu.addCommand({pattern: 'mp3$', fromMe: true, desc: Lang.MP4TOAUDİO_DESC}, (async (message, match) => {    
+    Abu.addCommand({pattern: 'mp3$', fromMe: false, desc: Lang.MP4TOAUDİO_DESC}, (async (message, match) => {    
         const mid = message.jid
         if (message.reply_message === false) return await message.client.sendMessage(mid, Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text);
         var downloading = await message.client.sendMessage(mid,Lang.MP4TOAUDİO,MessageType.text);
@@ -85,7 +85,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(mid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    Abu.addCommand({pattern: 'photo$', fromMe: true, desc: Lang.STİCKER_DESC}, (async (message, match) => {   
+    Abu.addCommand({pattern: 'photo$', fromMe: false, desc: Lang.STİCKER_DESC}, (async (message, match) => {   
         const mid = message.jid
         if (message.reply_message === false) return await message.client.sendMessage(mid, Lang.STİCKER_NEEDREPLY, MessageType.text);
         var downloading = await message.client.sendMessage(mid,Lang.STİCKER,MessageType.text);
@@ -130,7 +130,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Abu.addCommand({pattern: 'mp3$', fromMe: true, desc: Lang.MP4TOAUDİO_DESC}, (async (message, match) => {    
+    Abu.addCommand({pattern: 'mp3$', fromMe: false, desc: Lang.MP4TOAUDİO_DESC}, (async (message, match) => {    
         const mid = message.jid
         if (message.reply_message === false) return await message.client.sendMessage(mid, Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text);
         var downloading = await message.client.sendMessage(mid,Lang.MP4TOAUDİO,MessageType.text);
@@ -150,7 +150,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(mid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    Abu.addCommand({pattern: 'photo$', fromMe: true, desc: Lang.STİCKER_DESC}, (async (message, match) => {    
+    Abu.addCommand({pattern: 'photo$', fromMe: false, desc: Lang.STİCKER_DESC}, (async (message, match) => {    
         const mid = message.jid
         if (message.reply_message === false) return await message.client.sendMessage(mid, Lang.STİCKER_NEEDREPLY, MessageType.text);
         var downloading = await message.client.sendMessage(mid,Lang.STİCKER,MessageType.text);
@@ -209,7 +209,7 @@ else if (Config.WORKTYPE == 'public') {
         usge = '```.doc Abu```'
     }
     
-     Abu.addCommand({pattern: 'take ?(.*)', fromMe: true, desc: doc_desc , usage : usge}, (async (message, match) => { 
+     Abu.addCommand({pattern: 'take ?(.*)', fromMe: false, desc: doc_desc , usage : usge}, (async (message, match) => { 
       
         if (match[1] === '') return await message.client.sendMessage(message.jid,'give me a name',MessageType.text);  
         const mid = message.jid
