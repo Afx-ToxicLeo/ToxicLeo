@@ -3,10 +3,10 @@
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-WhatsAbu - Yusuf Usta
+WhatsAsena - Yusuf Usta
 */
 
-const Abu = require('../events');
+const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const sql = require('./sql/greetings');
 const Config = require('../config');
@@ -14,7 +14,7 @@ const Config = require('../config');
 const Language = require('../language');
 const Lang = Language.getString('greetings');
 
-Abu.addCommand({pattern: 'welcome$', fromMe: true, desc: Lang.WELCOME_DESC}, (async (message, match) => {
+Asena.addCommand({pattern: 'welcome$', fromMe: true, desc: Lang.WELCOME_DESC}, (async (message, match) => {
     var hg = await sql.getMessage(message.jid);
     if (hg === false) {
         await message.client.sendMessage(message.jid,Lang.NOT_SET_WELCOME,MessageType.text);
@@ -23,7 +23,7 @@ Abu.addCommand({pattern: 'welcome$', fromMe: true, desc: Lang.WELCOME_DESC}, (as
     }
 }));
 
-Abu.addCommand({pattern: 'welcome (.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'welcome (.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
     if (match[1] === '') {
         return await message.client.sendMessage(message.jid,Lang.NEED_WELCOME_TEXT);
     } else {
@@ -33,7 +33,7 @@ Abu.addCommand({pattern: 'welcome (.*)', fromMe: true, dontAddCommandList: true}
     }
 }));
 
-Abu.addCommand({pattern: 'goodbye$', fromMe: true, desc: Lang.GOODBYE_DESC}, (async (message, match) => {
+Asena.addCommand({pattern: 'goodbye$', fromMe: true, desc: Lang.GOODBYE_DESC}, (async (message, match) => {
     var hg = await sql.getMessage(message.jid, 'goodbye');
     if (hg === false) {
         await message.client.sendMessage(message.jid,Lang.NOT_SET_GOODBYE,MessageType.text)
@@ -42,7 +42,7 @@ Abu.addCommand({pattern: 'goodbye$', fromMe: true, desc: Lang.GOODBYE_DESC}, (as
     }
 }));
 
-Abu.addCommand({pattern: 'goodbye (.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'goodbye (.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
     if (match[1] === '') {
         return await message.client.sendMessage(message.jid,Lang.NEED_GOODBYE_TEXT,MessageType.text);
     } else {
@@ -69,7 +69,7 @@ async function checkImAdmin(message, user = message.client.user.jid) {
     return sonuc.includes(true);
 }
     
-    Abu.addCommand({pattern: 'welcome$', fromMe: true, desc: Lang.WELCOME_DESC}, (async (message, match) => {
+    Asena.addCommand({pattern: 'welcome$', fromMe: false, desc: Lang.WELCOME_DESC}, (async (message, match) => {
     var us = await checkUsAdmin(message);
     if (!us) return await message.client.sendMessage(message.jid,Lang.PLKADMIN ,MessageType.text ,{quoted: message.data });
     var hg = await sql.getMessage(message.jid);
@@ -80,7 +80,7 @@ async function checkImAdmin(message, user = message.client.user.jid) {
     }
 }));
 
-Abu.addCommand({pattern: 'welcome (.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'welcome (.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
     var us = await checkUsAdmin(message);
     if (!us) return await message.client.sendMessage(message.jid,Lang.PLKADMIN,MessageType.text ,{quoted: message.data });
     if (match[1] === '') {
@@ -92,7 +92,7 @@ Abu.addCommand({pattern: 'welcome (.*)', fromMe: true, dontAddCommandList: true}
     }
 }));
 
-Abu.addCommand({pattern: 'goodbye$', fromMe: true, desc: Lang.GOODBYE_DESC}, (async (message, match) => {
+Asena.addCommand({pattern: 'goodbye$', fromMe: false, desc: Lang.GOODBYE_DESC}, (async (message, match) => {
     var us = await checkUsAdmin(message);
     if (!us) return await message.client.sendMessage(message.jid,Lang.PLKADMIN,MessageType.text ,{quoted: message.data });
     var hg = await sql.getMessage(message.jid, 'goodbye');
@@ -103,7 +103,7 @@ Abu.addCommand({pattern: 'goodbye$', fromMe: true, desc: Lang.GOODBYE_DESC}, (as
     }
 }));
 
-Abu.addCommand({pattern: 'goodbye (.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'goodbye (.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
     var us = await checkUsAdmin(message);
     if (!us) return await message.client.sendMessage(message.jid,Lang.PLKADMIN,MessageType.text ,{quoted: message.data });
     if (match[1] === '') {
