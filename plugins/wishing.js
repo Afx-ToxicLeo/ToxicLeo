@@ -10,7 +10,7 @@ const Config = require('../config');
 
 if (Config.WORKTYPE == 'private') {
 
-Asena.addCommand({pattern: 'gdmrng', fromMe: true, deleteCommand: true, desc: GM,}, (async (message, match) => {
+Asena.addCommand({pattern: 'gm', fromMe: true, deleteCommand: true, desc: GM,}, (async (message, match) => {
 
     var r_text = new Array ();
 
@@ -36,7 +36,7 @@ Asena.addCommand({pattern: 'gdmrng', fromMe: true, deleteCommand: true, desc: GM
 
     }));
 
-Asena.addCommand({pattern: 'gdni8', fromMe: true, deleteCommand: true, desc: GN,}, (async (message, match) => {
+Asena.addCommand({pattern: 'gn', fromMe: true, deleteCommand: true, desc: GN,}, (async (message, match) => {
 
         var r_text = new Array ();
 
@@ -62,7 +62,7 @@ Asena.addCommand({pattern: 'gdni8', fromMe: true, deleteCommand: true, desc: GN,
 
     if (Config.WORKTYPE == 'public') {
 
-        Asena.addCommand({pattern: 'gdmrng', fromMe: false, deleteCommand: true, desc: GM,}, (async (message, match) => {
+        Asena.addCommand({pattern: 'gm', fromMe: false, deleteCommand: true, desc: GM,}, (async (message, match) => {
 
             var r_text = new Array ();
 
@@ -88,7 +88,7 @@ Asena.addCommand({pattern: 'gdni8', fromMe: true, deleteCommand: true, desc: GN,
 
             }));
 
-        Asena.addCommand({pattern: 'gdni8', fromMe: false, deleteCommand: true, desc: GN,}, (async (message, match) => {
+        Asena.addCommand({pattern: 'gn', fromMe: false, deleteCommand: true, desc: GN,}, (async (message, match) => {
 
                 var r_text = new Array ();
 
