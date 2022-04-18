@@ -46,7 +46,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'sticker$', fromMe: true, deleteCommand: false, desc: Lang.STICKER_DESC}, (async (message, match) => {    
+    Asena.addCommand({pattern: 'sticker$', fromMe: false, deleteCommand: false, desc: Lang.STICKER_DESC}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.client.sendMessage(message.jid,Lang.NEED_REPLY, MessageType.text);
         var downloading = await message.client.sendMessage(message.jid,Lang.DOWNLOADING,MessageType.text);

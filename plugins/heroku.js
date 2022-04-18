@@ -1,11 +1,11 @@
 /* 
-Heroku plugin for WhatsAbu - W4RR10R
+Heroku plugin for WhatsAsena - W4RR10R
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-WhatsAbu - Yusuf Usta
+WhatsAsena - Yusuf Usta
 */
 
-const Abu = require('../events');
+const Asena = require('../events');
 const Config = require('../config');
 const Heroku = require('heroku-client');
 const {secondsToHms} = require('./afk');
@@ -24,7 +24,7 @@ const heroku = new Heroku({
 
 let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 
-Abu.addCommand({pattern: 'degis ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.DEGİS_DESC}, (async (message, match) => {
+Asena.addCommand({pattern: 'degis ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.DEGİS_DESC}, (async (message, match) => {
 
     if (match[1] == '') {
         return await message.client.sendMessage(message.jid, Lang.DEGİS_NONE, MessageType.text); 
@@ -32,7 +32,7 @@ Abu.addCommand({pattern: 'degis ?(.*)', fromMe: true, dontAddCommandList: true, 
     else if (!message.reply_message) {
         return await message.client.sendMessage(message.jid, Langr.NEED_REPLY, MessageType.text); 
     }
-    else if (match[1] == 'kick' && message.reply_message) {
+    else if (match[1] == 'ban' && message.reply_message) {
         await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
         await new Promise(r => setTimeout(r, 1200));
         await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
@@ -158,7 +158,7 @@ Abu.addCommand({pattern: 'degis ?(.*)', fromMe: true, dontAddCommandList: true, 
 }));
 
 
-Abu.addCommand({pattern: 'restart$', fromMe: true, dontAddCommandList: true, desc: Lang.RESTART_DESC}, (async (message, match) => {
+Asena.addCommand({pattern: 'restart$', fromMe: true, dontAddCommandList: true, desc: Lang.RESTART_DESC}, (async (message, match) => {
 
     await message.client.sendMessage(message.jid,Lang.RESTART_MSG, MessageType.text);
     console.log(baseURI);
@@ -167,7 +167,7 @@ Abu.addCommand({pattern: 'restart$', fromMe: true, dontAddCommandList: true, des
     });
 }));
 
-Abu.addCommand({pattern: 'shutdown$', fromMe: true, dontAddCommandList: true, desc: Lang.SHUTDOWN_DESC}, (async(message, match) => {
+Asena.addCommand({pattern: 'shutdown$', fromMe: true, dontAddCommandList: true, desc: Lang.SHUTDOWN_DESC}, (async(message, match) => {
 
     await heroku.get(baseURI + '/formation').then(async (formation) => {
         forID = formation[0].id;
@@ -185,7 +185,7 @@ Abu.addCommand({pattern: 'shutdown$', fromMe: true, dontAddCommandList: true, de
 
 if (Config.WORKTYPE == 'private') {
 
-    Abu.addCommand({pattern: 'dyno$', fromMe: true, dontAddCommandList: true, desc: Lang.DYNO_DESC}, (async (message, match) => {
+    Asena.addCommand({pattern: 'dyno$', fromMe: true, dontAddCommandList: true, desc: Lang.DYNO_DESC}, (async (message, match) => {
 
         heroku.get('/account').then(async (account) => {
             // have encountered some issues while calling this API via heroku-client
@@ -218,7 +218,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Abu.addCommand({pattern: 'dyno$', fromMe: true, dontAddCommandList: true, desc: Lang.DYNO_DESC}, (async (message, match) => {
+    Asena.addCommand({pattern: 'dyno$', fromMe: false, dontAddCommandList: true, desc: Lang.DYNO_DESC}, (async (message, match) => {
 
         heroku.get('/account').then(async (account) => {
             // have encountered some issues while calling this API via heroku-client
@@ -250,7 +250,7 @@ else if (Config.WORKTYPE == 'public') {
     }));
 }
 
-Abu.addCommand({pattern: 'setvar ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.SETVAR_DESC}, (async(message, match) => {
+Asena.addCommand({pattern: 'setvar ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.SETVAR_DESC}, (async(message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.KEY_VAL_MISSING, MessageType.text);
 
@@ -666,7 +666,7 @@ Abu.addCommand({pattern: 'setvar ?(.*)', fromMe: true, dontAddCommandList: true,
 }));
 
 
-Abu.addCommand({pattern: 'delvar ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.DELVAR_DESC}, (async (message, match) => {
+Asena.addCommand({pattern: 'delvar ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.DELVAR_DESC}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.KEY_VAL_MISSING, MessageType.text);
     await heroku.get(baseURI + '/config-vars').then(async (vars) => {
@@ -688,7 +688,7 @@ Abu.addCommand({pattern: 'delvar ?(.*)', fromMe: true, dontAddCommandList: true,
 
 }));
 
-Abu.addCommand({pattern: 'getvar ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.GETVAR_DESC}, (async (message, match) => {
+Asena.addCommand({pattern: 'getvar ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.GETVAR_DESC}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.KEY_VAL_MISSING, MessageType.text);
     await heroku.get(baseURI + '/config-vars').then(async (vars) => {

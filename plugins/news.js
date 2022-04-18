@@ -1,10 +1,10 @@
 /* Copyright (C) 2021 Vai838.
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-WhatsAbuDuplicated
+WhatsAsenaDuplicated
 */
 
-const Abu = require('../events');
+const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const got = require('got');
 const Config = require('../config');
@@ -12,7 +12,7 @@ const Config = require('../config');
 const Language = require('../language');
 const Lang = Language.getString('weather');
 
-Abu.addCommand({pattern: 'news ?(.*)', fromMe: false, desc: Lang.NEWS_DESC}, async (message, match) => {
+Asena.addCommand({pattern: 'news ?(.*)', fromMe: false, desc: Lang.NEWS_DESC}, async (message, match) => {
 	if (match[1] === '') return await message.reply(Lang.NEED_CATEGORY);
 	const url = `https://inshortsapi.vercel.app/news?category=${match[1]}`;
 	try {

@@ -1,10 +1,10 @@
 /* Copyright (C) 2021 Vai838.
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-WhatsAbuDuplicated
+WhatsAsenaDuplicated
 */
 
-const Abu = require('../events');
+const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const got = require('got');
 const fs = require('fs');
@@ -14,7 +14,7 @@ const Language = require('../language');
 const Lang = Language.getString('weather');
 const { errorMessage, infoMessage } = require('../helpers');
 
-Abu.addCommand({ pattern: 'joox ?(.*)', fromMe: true, dontAddCommandList: true}, async (message, match) => {
+Asena.addCommand({ pattern: 'joox ?(.*)', fromMe: false, dontAddCommandList: true}, async (message, match) => {
 
     const userName = match[1]
 
@@ -49,7 +49,7 @@ Abu.addCommand({ pattern: 'joox ?(.*)', fromMe: true, dontAddCommandList: true},
 
 
 
- Abu.addCommand({ pattern: 'rest ?(.*)', fromMe: true,  dontAddCommandList: true, desc: Lang.DESC }, (async (message, match) => {
+ Asena.addCommand({ pattern: 'rest ?(.*)', fromMe: true,  dontAddCommandList: true, desc: Lang.DESC }, (async (message, match) => {
         if (match[0].includes('install')) return;
         if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_WORD, MessageType.text, { quoted: message.data });
         if (!match[1].includes('www.instagram.com')) return await message.client.sendMessage(message.jid, Lang.NEED_WORD, MessageType.text, { quoted: message.data });
@@ -76,7 +76,7 @@ Abu.addCommand({ pattern: 'joox ?(.*)', fromMe: true, dontAddCommandList: true},
 
 
 
-Abu.addCommand({ pattern: 'twt ?(.*)', fromMe: true,  dontAddCommandList: true, desc: "download from twitter links" }, async (message, match) => {
+Asena.addCommand({ pattern: 'twt ?(.*)', fromMe: false,  dontAddCommandList: true, desc: "download from twitter links" }, async (message, match) => {
 
     const userName = match[1]
 
@@ -115,7 +115,7 @@ Abu.addCommand({ pattern: 'twt ?(.*)', fromMe: true,  dontAddCommandList: true, 
 
 
 
-Abu.addCommand({ pattern: 'show ?(.*)', fromMe: true , desc: "Get info related to tv series and shows"}, async (message, match) => {
+Asena.addCommand({ pattern: 'show ?(.*)', fromMe: false , desc: "Get info related to tv series and shows"}, async (message, match) => {
 
     const userName = match[1]
 
@@ -146,7 +146,7 @@ Abu.addCommand({ pattern: 'show ?(.*)', fromMe: true , desc: "Get info related t
   },
 )
 
-Abu.addCommand({ pattern: 'show ?(.*)', fromMe: true , dontAddCommandList: true}, async (message, match) => {
+Asena.addCommand({ pattern: 'show ?(.*)', fromMe: false , dontAddCommandList: true}, async (message, match) => {
 
  const userName = match[1]
     

@@ -2,7 +2,7 @@
 Credits to respective coders
 */
 
-const Abu = require('../events');
+const Skueletor = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const { errorMessage, infoMessage } = require('../helpers');
@@ -17,7 +17,7 @@ const NO_RESULT = "*no puedo encontrar nada :(...*"
 
 if (Config.WORKTYPE == 'private') {
 
-    Abu.addCommand({ pattern: 'mediafire ?(.*)', fromMe: true }, async (message, match) => {
+    Skueletor.addCommand({ pattern: 'mediafire ?(.*)', fromMe: true }, async (message, match) => {
 
         const link = match[1]
     
@@ -43,7 +43,7 @@ if (Config.WORKTYPE == 'private') {
 }
 
 else if (Config.WORKTYPE == 'public') {
-    Abu.addCommand({ pattern: 'mediafire ?(.*)', fromMe: true }, async (message, match) => {
+    Skueletor.addCommand({ pattern: 'mediafire ?(.*)', fromMe: false }, async (message, match) => {
 
         const link = match[1]
     

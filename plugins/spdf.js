@@ -1,4 +1,4 @@
-const Abu = require('../events');
+const Asena = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const fs = require('fs');
 const axios = require('axios');
@@ -12,7 +12,7 @@ const SPDF_LINK = "*Por favor, ingresa un enlace para convertirlo en PDF.*"
 
 if (cn.WORKTYPE == 'private') {
   
-  Abu.addCommand({pattern: 'spdf ?(.*)', fromMe: true, desc: SPDF_DESC }, (async (message, match) => {
+  Asena.addCommand({pattern: 'spdf ?(.*)', fromMe: true, desc: SPDF_DESC }, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(SPDF_LINK);
 
@@ -27,7 +27,7 @@ if (cn.WORKTYPE == 'private') {
 
 else if (cn.WORKTYPE == 'public') {
 
-  Abu.addCommand({pattern: 'spdf ?(.*)', fromMe: true, desc: SPDF_DESC }, (async (message, match) => {
+  Asena.addCommand({pattern: 'spdf ?(.*)', fromMe: false, desc: SPDF_DESC }, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(SPDF_LINK);
 

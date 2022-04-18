@@ -1,4 +1,7 @@
-const Abu = require('../events');
+
+//whitedevil  and saidali
+
+const Asena = require('../events');
 const config = require('../config');
 const Heroku = require('heroku-client');
 const heroku = new Heroku({
@@ -25,7 +28,7 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
      TO = '*FAKE BGM DURATION is OFF*'
     }
 
- Abu.addCommand({pattern: 'fbgm ?(.*)', fromMe: true,dontAddCommandList: true,desc: 'change fake bgm on/true/off. example - .fbgm off/on/true' }, (async (message, match) => {
+ Asena.addCommand({pattern: 'fbgm ?(.*)', fromMe: true,dontAddCommandList: true,desc: 'change fake bgm on/true/off. example - .fbgm off/on/true' }, (async (message, match) => {
         if (match[1] == 'on') {
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 

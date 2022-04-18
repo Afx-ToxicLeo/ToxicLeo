@@ -3,7 +3,7 @@ recodded by afnanplk
 new work type by afnanplk
 */
 
-const Abu = require('../events');
+const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const Config = require('../config');
 
@@ -21,7 +21,7 @@ async function checkImAdmin(message, user = message.client.user.jid) {
     return sonuc.includes(true);
 }
 
-Abu.addCommand({pattern: 'tagall ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
+Asena.addCommand({pattern: 'tagall ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
    
     if (!message.reply_message) {
         if (match[1] !== '') {
@@ -69,7 +69,7 @@ else if (Config.WORKTYPE == 'public') {
     
   
     
-    Abu.addCommand({pattern: 'tagall ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
+    Asena.addCommand({pattern: 'tagall ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
         
     if (!message.reply_message) {
         if (match[1] !== '') {
@@ -115,7 +115,7 @@ var stag_dsc = ''
 if (Config.LANG !== 'ML') stag_dsc = 'Sends the replied message to all members in the group.'
 if (Config.LANG == 'ML') stag_dsc = 'ഗ്രൂപ്പിലെ എല്ലാ അംഗങ്ങൾക്കും മറുപടി സന്ദേശം അയയ്ക്കുന്നു.'
 
-Abu.addCommand({pattern: 'bc$', fromMe: true, desc: stag_dsc }, (async (message, match) => {
+Asena.addCommand({pattern: 'bc$', fromMe: true, desc: stag_dsc }, (async (message, match) => {
     if (!message.reply_message) return await message.client.sendMessage(message.jid,SLang.NEED_REPLY, MessageType.text)
     grup = await message.client.groupMetadata(message.jid);
     var jids = [];
@@ -144,7 +144,7 @@ async function checkImAdmin(message, user = message.client.user.jid) {
     return sonuc.includes(true);
 }
     
-    Abu.addCommand({pattern: 'tagall ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
+    Asena.addCommand({pattern: 'tagall ?(.*)', fromMe: false, dontAddCommandList: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
          var us = await checkUsAdmin(message);
          if (!us) return await message.client.sendMessage(message.jid,Lang.PLKADMIN,MessageType.text ,{quoted: message.data });
 
@@ -190,7 +190,7 @@ async function checkImAdmin(message, user = message.client.user.jid) {
     }
 }));
     
-     Abu.addCommand({pattern: 'report ?(.*)', fromMe: true, desc: 'to report someone'}, (async (message, match) => {
+     Asena.addCommand({pattern: 'report ?(.*)', fromMe: false, desc: 'to report someone'}, (async (message, match) => {
         if (match[1] == '') {
             let grup = await message.client.groupMetadata(message.jid);
             var jids = [];

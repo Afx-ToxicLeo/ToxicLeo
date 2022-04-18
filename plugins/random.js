@@ -1,11 +1,11 @@
-const Abu = require('../events');
+const Asena = require('../events');
 const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
 const fs = require('fs');
 const axios = require('axios');
 const NEED_WORD = "*Must Enter some Words*"
 
 
-Abu.addCommand({ pattern: 'random ?(.*)', fromMe: true, desc: 'word image' }, (async (message, match) => {
+Asena.addCommand({ pattern: 'random ?(.*)', fromMe: false, desc: 'word image' }, (async (message, match) => {
 
     var r_text = new Array ();
 

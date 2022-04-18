@@ -3,7 +3,7 @@ Telegram: https://t.me/phaticusthiccy
 Instagram: https://instagram.com/kyrie.baran
 */
 
-const Abu = require('../events');
+const Asena = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const fs = require('fs');
 const ffmpeg = require('fluent-ffmpeg');
@@ -55,7 +55,7 @@ function webp2mp4File(path) {
                 const result = 'https:' + $('div#output > p.outfile > video > source').attr('src')
                 resolve({
                     status: true,
-                    message: "Made by WhatsAbu",
+                    message: "Made by WhatsAsena",
                     result: result
                 })
             }).catch(reject)
@@ -65,7 +65,7 @@ function webp2mp4File(path) {
 
 if (Config.WORKTYPE == 'private') {
 
-    Abu.addCommand({pattern: 'mp3$', fromMe: false, desc: Lang.MP4TOAUDİO_DESC}, (async (message, match) => {    
+    Asena.addCommand({pattern: 'mp3$', fromMe: true, desc: Lang.MP4TOAUDİO_DESC}, (async (message, match) => {    
         const mid = message.jid
         if (message.reply_message === false) return await message.client.sendMessage(mid, Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text);
         var downloading = await message.client.sendMessage(mid,Lang.MP4TOAUDİO,MessageType.text);
@@ -85,7 +85,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(mid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    Abu.addCommand({pattern: 'photo$', fromMe: false, desc: Lang.STİCKER_DESC}, (async (message, match) => {   
+    Asena.addCommand({pattern: 'photo$', fromMe: true, desc: Lang.STİCKER_DESC}, (async (message, match) => {   
         const mid = message.jid
         if (message.reply_message === false) return await message.client.sendMessage(mid, Lang.STİCKER_NEEDREPLY, MessageType.text);
         var downloading = await message.client.sendMessage(mid,Lang.STİCKER,MessageType.text);
@@ -105,7 +105,7 @@ if (Config.WORKTYPE == 'private') {
             });
         return await message.client.deleteMessage(mid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
-    Abu.addCommand({pattern: 'mp4$', desc: Lang.ANİM_STİCK, fromMe: true}, (async (message, match) => {
+    Asena.addCommand({pattern: 'mp4$', desc: Lang.ANİM_STİCK, fromMe: true}, (async (message, match) => {
         const mid = message.jid
         if (message.reply_message === false) return await message.sendMessage(Lang.STİCKER_NEEDREPLY);
         await message.client.sendMessage(mid, Lang.ANİMATE, MessageType.text)
@@ -118,11 +118,11 @@ if (Config.WORKTYPE == 'private') {
         });
         await webp2mp4File(savedFilename).then(async (rest) => {
             await Axios({ method: "GET", url: rest.result, responseType: "stream"}).then(({ data }) => {
-                const saving = data.pipe(fs.createWriteStream('/root/WhatsAbuDuplicated/stweb.mp4'))
+                const saving = data.pipe(fs.createWriteStream('/root/WhatsAsenaDuplicated/stweb.mp4'))
                 saving.on("finish", async () => {
-                    await message.client.sendMessage(mid, fs.readFileSync('/root/WhatsAbuDuplicated/stweb.mp4'), MessageType.video, { mimetype: Mimetype.mp4, caption: 'Made by Abu', quoted: message.data })
+                    await message.client.sendMessage(mid, fs.readFileSync('/root/WhatsAsenaDuplicated/stweb.mp4'), MessageType.video, { mimetype: Mimetype.mp4, caption: 'Made by PINKY', quoted: message.data })
                     if (fs.existsSync(savedFilename)) fs.unlinkSync(savedFilename)
-                    if (fs.existsSync('/root/WhatsAbuDuplicated/stweb.mp4')) fs.unlinkSync('/root/WhatsAbuDuplicated/stweb.mp4')
+                    if (fs.existsSync('/root/WhatsAsenaDuplicated/stweb.mp4')) fs.unlinkSync('/root/WhatsAsenaDuplicated/stweb.mp4')
                 })
             })
         })
@@ -130,7 +130,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Abu.addCommand({pattern: 'mp3$', fromMe: false, desc: Lang.MP4TOAUDİO_DESC}, (async (message, match) => {    
+    Asena.addCommand({pattern: 'mp3$', fromMe: false, desc: Lang.MP4TOAUDİO_DESC}, (async (message, match) => {    
         const mid = message.jid
         if (message.reply_message === false) return await message.client.sendMessage(mid, Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text);
         var downloading = await message.client.sendMessage(mid,Lang.MP4TOAUDİO,MessageType.text);
@@ -150,7 +150,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(mid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    Abu.addCommand({pattern: 'photo$', fromMe: false, desc: Lang.STİCKER_DESC}, (async (message, match) => {    
+    Asena.addCommand({pattern: 'photo$', fromMe: false, desc: Lang.STİCKER_DESC}, (async (message, match) => {    
         const mid = message.jid
         if (message.reply_message === false) return await message.client.sendMessage(mid, Lang.STİCKER_NEEDREPLY, MessageType.text);
         var downloading = await message.client.sendMessage(mid,Lang.STİCKER,MessageType.text);
@@ -170,7 +170,7 @@ else if (Config.WORKTYPE == 'public') {
             });
         return await message.client.deleteMessage(mid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
-   Abu.addCommand({pattern: 'mp4$', desc: Lang.ANİM_STİCK, fromMe: false}, (async (message, match) => {
+   Asena.addCommand({pattern: 'mp4$', desc: Lang.ANİM_STİCK, fromMe: false}, (async (message, match) => {
         const mid = message.jid
         if (message.reply_message === false) return await message.sendMessage(Lang.STİCKER_NEEDREPLY);
         await message.client.sendMessage(mid, Lang.ANİMATE, MessageType.text)
@@ -183,11 +183,11 @@ else if (Config.WORKTYPE == 'public') {
         });
         await webp2mp4File(savedFilename).then(async (rest) => {
             await Axios({ method: "GET", url: rest.result, responseType: "stream"}).then(({ data }) => {
-                const saving = data.pipe(fs.createWriteStream('/root/WhatsAbuDuplicated/stweb.mp4'))
+                const saving = data.pipe(fs.createWriteStream('/root/WhatsAsenaDuplicated/stweb.mp4'))
                 saving.on("finish", async () => {
-                    await message.client.sendMessage(mid, fs.readFileSync('/root/WhatsAbuDuplicated/stweb.mp4'), MessageType.video, { mimetype: Mimetype.mp4, caption: 'Made by Abu', quoted: message.data })
+                    await message.client.sendMessage(mid, fs.readFileSync('/root/WhatsAsenaDuplicated/stweb.mp4'), MessageType.video, { mimetype: Mimetype.mp4, caption: 'Made by Pinky', quoted: message.data })
                     if (fs.existsSync(savedFilename)) fs.unlinkSync(savedFilename)
-                    if (fs.existsSync('/root/WhatsAbuDuplicated/stweb.mp4')) fs.unlinkSync('/root/WhatsAbuDuplicated/stweb.mp4')
+                    if (fs.existsSync('/root/WhatsAsenaDuplicated/stweb.mp4')) fs.unlinkSync('/root/WhatsAsenaDuplicated/stweb.mp4')
                 })
             })
         })
@@ -197,19 +197,19 @@ else if (Config.WORKTYPE == 'public') {
     var afn = ''
     var usge = ''
      if (Config.LANG == 'EN') {
-        doc_desc = '𝚃𝙰𝙺𝙸𝙽𝙶 𝚂𝙾𝙽𝙶 𝙸𝙽 𝚈𝙾𝚄𝚁 𝙽𝙰𝙼𝙴'
-        plk = '```𝙽𝙰𝙼𝙴 𝙲𝙷𝙰𝙶𝙸𝙽𝙶```'
-        afn = '```𝙿𝙻𝙴𝙰𝚂𝙴 𝚁𝙴𝙿𝙻𝚈 𝚃𝙾 𝙰 𝙰𝚄𝙳𝙸𝙾```'
-        usge = '```.doc Abu *replace Abu with desired name*```'
+        doc_desc = 'CONVERT TO DOCUMENT AND ADD GIVEN NAME'
+        plk = '```NAMING AND DOCIFYING```'
+        afn = '```PLEASE REPLY TO A AUDIO```'
+        usge = '```.doc pinky *replace pinky with desired name*```'
     }
     if (Config.LANG == 'ML') {
         doc_desc = 'ഡോക്യുമെന്റിലേക്ക് പരിവർത്തനം ചെയ്യുകയും നൽകിയപേര് ചേർക്കുകയും ചെയ്യുക'
         afn = '```ഒരു ഓഡിയോയ്ക്ക് മറുപടി നൽകുക```'
         plk = '```ഡോക്യുമെന്റിലേക്ക് പരിവർത്തനം ചെയ്യുകയും പേര് നൽകുകയും ചെയ്യുന്നു```'
-        usge = '```.doc Abu```'
+        usge = '```.doc pinky```'
     }
     
-     Abu.addCommand({pattern: 'take ?(.*)', fromMe: false, desc: doc_desc , usage : usge}, (async (message, match) => { 
+     Asena.addCommand({pattern: 'doc ?(.*)', fromMe: false, desc: doc_desc , usage : usge}, (async (message, match) => { 
       
         if (match[1] === '') return await message.client.sendMessage(message.jid,'give me a name',MessageType.text);  
         const mid = message.jid

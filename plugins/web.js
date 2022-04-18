@@ -3,10 +3,10 @@
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-WhatsAbu - Yusuf Usta
+WhatsAsena - Yusuf Usta
 */
 
-const Abu = require('../events');
+const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const speedTest = require('@lh2020/speedtest-net');
 const TinyURL = require('tinyurl');
@@ -68,7 +68,7 @@ function similarity(comm, wr) {
   return (longerLength - editDistance(longer, shorter)) / parseFloat(longerLength);
 }
 
-Abu.addCommand({pattern: '?(.*)', fromMe: true, deleteCommand: true, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: '?(.*)', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
     var HANDLER = '';
     if (/\[(\W*)\]/.test(Config.HANDLERS)) {
         HANDLER = Config.HANDLERS.match(/\[(\W*)\]/)[1][0];
@@ -382,7 +382,7 @@ function speedText(speed) {
     return `${bits.toFixed(places[unit])} ${units[unit]}bps`;
 }
 
-Abu.addCommand({pattern: 'speedtest', fromMe: true, desc: Lang.SPEEDTEST_DESC}, (async (message, match) => {
+Asena.addCommand({pattern: 'speedtest', fromMe: true, desc: Lang.SPEEDTEST_DESC}, (async (message, match) => {
     var msg = await message.reply(Lang.SPEEDTESTING);
     var st = await speedTest({acceptLicense: true, acceptGdpr: true});
     
@@ -396,7 +396,7 @@ Abu.addCommand({pattern: 'speedtest', fromMe: true, desc: Lang.SPEEDTEST_DESC}, 
     await msg.delete();
 }));
 
-Abu.addCommand({pattern: 'ping$', fromMe: true, deleteCommand: true, desc: Lang.PING_DESC}, (async (message, match) => {
+Asena.addCommand({pattern: 'ping$', fromMe: true, deleteCommand: false, desc: Lang.PING_DESC}, (async (message, match) => {
   var start = new Date().getTime();
   await message.sendMessage('```Ping!```');
   var end = new Date().getTime();
@@ -407,7 +407,7 @@ Abu.addCommand({pattern: 'ping$', fromMe: true, deleteCommand: true, desc: Lang.
 
 if (Config.WORKTYPE == 'private') {
 
-    Abu.addCommand({pattern: 'short ?(.*)', fromMe: true, desc: Lang.URL}, (async (message, match) => {
+    Asena.addCommand({pattern: 'short ?(.*)', fromMe: true, desc: Lang.URL}, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, SLang.LİNK, MessageType.text);
 
@@ -418,7 +418,7 @@ if (Config.WORKTYPE == 'private') {
             await message.client.sendMessage(message.jid,`*Original Link:* ${match[1]}\n*Short Link:* ` + res, MessageType.text)
         });
     }));
-    Abu.addCommand({pattern: 'calc ?(.*)', fromMe: true, desc: Lang.CALC }, (async (message, match) => {
+    Asena.addCommand({pattern: 'calc ?(.*)', fromMe: true, desc: Lang.CALC }, (async (message, match) => {
         if (match[1].length < 4) { return await message.client.sendMessage(message.jid,Lang.VALİD, MessageType.text) }
         if (match[1].includes('+')) { var split = match[1].split('+'), sonsayi = split[1], ilksayi = split[0]
             var result = -(-ilksayi - sonsayi)
@@ -448,7 +448,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Abu.addCommand({pattern: 'short ?(.*)', fromMe: true, desc: Lang.URL}, (async (message, match) => {
+    Asena.addCommand({pattern: 'short ?(.*)', fromMe: false, desc: Lang.URL}, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, SLang.LİNK, MessageType.text);
 
@@ -459,7 +459,7 @@ else if (Config.WORKTYPE == 'public') {
             await message.client.sendMessage(message.jid,`*Original Link:* ${match[1]}\n*Short Link:* ` + res, MessageType.text)
         });
     }));
-    Abu.addCommand({pattern: 'calc ?(.*)', fromMe: true, desc: Lang.CALC }, (async (message, match) => {
+    Asena.addCommand({pattern: 'calc ?(.*)', fromMe: false, desc: Lang.CALC }, (async (message, match) => {
         if (match[1].length < 4) { return await message.client.sendMessage(message.jid,Lang.VALİD, MessageType.text) }
         if (match[1].includes('+')) { var split = match[1].split('+'), sonsayi = split[1], ilksayi = split[0]
             var result = -(-ilksayi - sonsayi)

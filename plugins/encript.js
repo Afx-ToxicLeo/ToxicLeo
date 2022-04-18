@@ -1,4 +1,11 @@
-const Abu = require('../events');
+/* Copyright © 2021 TERROR BOY.
+Licensed under the  GPL-3.0 License;
+you may not use this file except in compliance with the License.
+WHITE DEVIL ----»»» TERROR BOY
+*/
+
+
+const Ktb = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const translatte = require('translatte');
 const fs = require('fs');
@@ -14,7 +21,7 @@ const axios = require('axios')
 
 let TB = Config.WORKTYPE == 'public' ? false : true
 
-Abu.addCommand({ pattern: 'splay ?(.*)', fromMe: TB,  deleteCommand: false, desc: Lang.SONG_DESC}, (async (message, match) => {
+Ktb.addCommand({ pattern: 'splay ?(.*)', fromMe: TB,  deleteCommand: false, desc: Lang.SONG_DESC}, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_VIDEO,MessageType.text, {quoted: message.data});    
     if (match[1].includes('shorts')) return await message.client.sendMessage(message.jid,Lang.SHORTS,MessageType.text, {quoted: message.data});

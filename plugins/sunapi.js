@@ -1,4 +1,4 @@
-const Abu = require('../events');
+const Julie = require('../events');
 const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
 const fs = require('fs');
 const axios = require('axios');
@@ -9,7 +9,7 @@ const Ln = "Free Fire logo maker"
 
 if (Config.WORKTYPE == 'public') {
     
-      Abu.addCommand({pattern: 'ffpack', fromMe: true, desc: Ln,}, (async (message, match) => {
+      Julie.addCommand({pattern: 'ffpack', fromMe: false, desc: Ln,}, (async (message, match) => {
 
     await message.client.sendMessage(
   
@@ -17,7 +17,7 @@ if (Config.WORKTYPE == 'public') {
   
   }));
  
- Abu.addCommand({ pattern: 'ff02 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+ Julie.addCommand({ pattern: 'ff02 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -27,7 +27,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
- Abu.addCommand({ pattern: 'ff01 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+ Julie.addCommand({ pattern: 'ff01 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -37,7 +37,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff03 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff03 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -47,7 +47,7 @@ if (Config.WORKTYPE == 'public') {
     
     }));
  
- Abu.addCommand({ pattern: 'ff04 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+ Julie.addCommand({ pattern: 'ff04 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -57,7 +57,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff05 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff05 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -67,7 +67,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff06 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff06 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -77,7 +77,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff07 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff07 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -87,7 +87,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff08 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff08 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -97,7 +97,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff09 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff09 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -107,7 +107,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff10 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff10 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -117,7 +117,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff11 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff11 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -127,7 +127,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff12 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff12 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -137,7 +137,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff13 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff13 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -147,7 +147,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff14 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff14 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -157,7 +157,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff15 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff15 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -167,7 +167,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff16 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff16 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -177,7 +177,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff17 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff17 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -187,7 +187,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff18 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff18 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -197,7 +197,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff19 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff19 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -207,7 +207,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff20 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff20 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -217,7 +217,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff21 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff21 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -227,7 +227,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff22 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff22 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -237,7 +237,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff23 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff23 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -247,7 +247,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff24 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff24 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -257,7 +257,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff25 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff25 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -267,7 +267,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff26 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff26 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -277,7 +277,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff27 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff27 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -287,7 +287,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-   Abu.addCommand({ pattern: 'ff28 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff28 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -296,7 +296,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff29 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff29 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -305,7 +305,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff30 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff30 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -314,7 +314,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff31 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff31 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -323,7 +323,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff32 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff32 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -332,7 +332,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff33 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff33 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -341,7 +341,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff34 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff34 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -350,7 +350,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff35 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff35 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -359,7 +359,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff36 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff36 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -368,7 +368,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff37 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff37 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -377,7 +377,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff38 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff38 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -386,7 +386,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff39 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff39 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -395,7 +395,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff40 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff40 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -404,7 +404,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff41 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff41 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -413,7 +413,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff42 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff42 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -422,7 +422,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff43 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff43 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -431,7 +431,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff44 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff44 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -440,7 +440,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff45 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff45 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -449,7 +449,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff46 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff46 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -458,7 +458,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff47 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff47 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -467,7 +467,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff48 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff48 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -476,7 +476,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff49 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff49 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -485,7 +485,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff50 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff50 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -494,7 +494,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
- Abu.addCommand({pattern: 'ffpack', fromMe: true, desc: Ln,}, (async (message, match) => {
+ Julie.addCommand({pattern: 'ffpack', fromMe: true, desc: Ln,}, (async (message, match) => {
 
     await message.client.sendMessage(
   
@@ -502,7 +502,7 @@ if (Config.WORKTYPE == 'public') {
   
   }));
  
- Abu.addCommand({ pattern: 'ff2 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+ Julie.addCommand({ pattern: 'ff2 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -512,7 +512,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
- Abu.addCommand({ pattern: 'ff1 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+ Julie.addCommand({ pattern: 'ff1 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -522,7 +522,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff3 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff3 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -532,7 +532,7 @@ if (Config.WORKTYPE == 'public') {
     
     }));
  
- Abu.addCommand({ pattern: 'ff4 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+ Julie.addCommand({ pattern: 'ff4 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -542,7 +542,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff5 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff5 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -552,7 +552,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff6 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff6 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -562,7 +562,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff7 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff7 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -572,7 +572,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff8 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff8 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -582,7 +582,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff9 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff9 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -592,7 +592,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff10 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff10 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -602,7 +602,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff11 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff11 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -612,7 +612,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff12 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff12 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -622,7 +622,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff13 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff13 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -632,7 +632,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff14 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff14 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -642,7 +642,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff15 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff15 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -652,7 +652,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff16 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff16 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -662,7 +662,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff17 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff17 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -672,7 +672,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff18 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff18 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -682,7 +682,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff19 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff19 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -692,7 +692,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff20 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff20 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -702,7 +702,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff21 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff21 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -712,7 +712,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff22 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff22 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -722,7 +722,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff23 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff23 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -732,7 +732,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff24 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff24 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -742,7 +742,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff25 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff25 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -752,7 +752,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff26 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff26 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -762,7 +762,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-  Abu.addCommand({ pattern: 'ff27 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  Julie.addCommand({ pattern: 'ff27 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -772,7 +772,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
  
-   Abu.addCommand({ pattern: 'ff28 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff28 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -781,7 +781,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff29 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff29 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -790,7 +790,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff30 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff30 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -799,7 +799,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff31 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff31 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -808,7 +808,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff32 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff32 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -817,7 +817,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff33 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff33 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -826,7 +826,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff34 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff34 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -835,7 +835,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff35 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff35 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -844,7 +844,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff36 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff36 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -853,7 +853,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff37 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff37 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -862,7 +862,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff38 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff38 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -871,7 +871,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff39 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff39 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -880,7 +880,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff40 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff40 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -889,7 +889,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff41 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff41 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -898,7 +898,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff42 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff42 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -907,7 +907,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff43 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff43 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -916,7 +916,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff44 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff44 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -925,7 +925,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff45 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff45 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -934,7 +934,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff46 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff46 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -943,7 +943,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff47 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff47 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -952,7 +952,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff48 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff48 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -961,7 +961,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff49 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff49 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 
@@ -970,7 +970,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:Config.ALL})
 
     }));
-   Abu.addCommand({ pattern: 'ff50 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+   Julie.addCommand({ pattern: 'ff50 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '' ) return await message.sendMessage(ll);
 

@@ -1,7 +1,8 @@
-/* Copyright (C) 2021 Afx-Abu
+/* Copyright (C) 2021 farhan-dqz
+coded for Abuser
 */
 
-const Abu = require('../events');
+const Julie = require('../events');
 const config = require('../config');
 const Heroku = require('heroku-client');
 const heroku = new Heroku({
@@ -33,7 +34,7 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
         STICKER_off = 'STICKER option turned off'
         
     }
-    Abu.addCommand({pattern: 'bgm ?(.*)', fromMe: true, desc: l_dsc, usage: '.bgm on / off' }, (async (message, match) => {
+    Julie.addCommand({pattern: 'bgm ?(.*)', fromMe: true, desc: l_dsc, usage: '.bgm on / off' }, (async (message, match) => {
         if (match[1] == 'off') {
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
@@ -51,7 +52,7 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
         }
     }));
 
-    Abu.addCommand({pattern: 'autosticker ?(.*)', fromMe: true, desc: Y_dsc, usage: '.sticker on / off' }, (async (message, match) => {
+    Julie.addCommand({pattern: 'autosticker ?(.*)', fromMe: true, desc: Y_dsc, usage: '.sticker on / off' }, (async (message, match) => {
         if (match[1] == 'off') {
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
@@ -69,53 +70,97 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
         }
     }));
 
-    Abu.addCommand({ pattern: 'sudo ?(.*)', fromMe: true, desc: 'changes sudo numbers', usage: '.sudo *your number*' }, (async (message, match) => {
+    Julie.addCommand({ pattern: 'sudo ?(.*)', fromMe: true, desc: 'changes sudo numbers', usage: '.sudo *your number*' }, (async (message, match) => {
         if (match[1] == '') return await message.sendMessage('NEED A NUMBER')
         await heroku.patch(baseURI + '/config-vars', {
             body: {
                 ['SUDO']: match[1]
             }
         });
-        await message.sendMessage("ɴᴇᴡ sᴜᴅᴏ ᴜᴘᴅᴀᴛᴇᴅ")
+        await message.sendMessage("NEW SUDO UPDATED")
     }));
 
-    Abu.addCommand({ pattern: 'caption ?(.*)', fromMe: true, desc: 'changes all captions', usage: '.caption *ᴍᴀᴅᴇ ʙʏ ᴘʀɪɴᴄᴇ ʀᴜᴅʜ*' }, (async (message, match) => {
+Julie.addCommand({ pattern: 'button ?(.*)', fromMe: true, desc: 'changes sudo numbers', usage: '.button *Sed/Happy*' }, (async (message, match) => {
+        if (match[1] == '') return await message.sendMessage('Sed/Happy')
+        await heroku.patch(baseURI + '/config-vars', {
+            body: {
+                ['ALIVE_BUTTON']: match[1]
+            }
+        });
+        await message.sendMessage("NEW BUTTON UPDATED")
+    }));
+
+Julie.addCommand({ pattern: 'emoji ?(.*)', fromMe: true, desc: 'changes list command and emojies', usage: '.emoji *list/💌/🍃/🍒/🍿*' }, (async (message, match) => {
+        if (match[1] == '') return await message.sendMessage('list/💙/🌟/🥀/🐾')
+        await heroku.patch(baseURI + '/config-vars', {
+            body: {
+                ['CMD_LIST']: match[1]
+            }
+        });
+        await message.sendMessage("NEW LIST AND EMOJIES UPDATED")
+    }));
+
+    Julie.addCommand({ pattern: 'caption ?(.*)', fromMe: true, desc: 'changes all captions', usage: '.caption *Made by Abuserl*' }, (async (message, match) => {
         if (match[1] == '') return await message.sendMessage('NEED cA CAPTION')
         await heroku.patch(baseURI + '/config-vars', {
             body: {
                 ['ALL_CAPTION']: match[1]
             }
         });
-        await message.sendMessage("ɴᴇᴡ ᴄᴀᴘᴛɪᴏɴ ᴜᴘᴅᴀᴛᴇᴅ")
+        await message.sendMessage("NEW CAPTION UPDATED")
     }));
 
-    Abu.addCommand({ pattern: 'handlers ?(.*)', fromMe: true, desc: 'changes handlers', usage: '.handler ^[.!] ' }, (async (message, match) => {
+    Julie.addCommand({ pattern: 'number ?(.*)', fromMe: true, desc: 'change user number', usage: '.number *Made by Abuser*' }, (async (message, match) => {
+        if (match[1] == '') return await message.sendMessage('NEED A NUMBER 919895xxxx')
+        await heroku.patch(baseURI + '/config-vars', {
+            body: {
+                ['NUMBER']: match[1]
+            }
+        });
+        await message.sendMessage("NEW USER NUMBER UPDATED")
+    }));
+
+    Julie.addCommand({ pattern: 'deployer ?(.*)', fromMe: true, desc: 'change user name', usage: '.deployer *Made by Abuser*' }, (async (message, match) => {
+        if (match[1] == '') return await message.sendMessage('NEED A NAME')
+        await heroku.patch(baseURI + '/config-vars', {
+            body: {
+                ['DEPLOYER']: match[1]
+            }
+        });
+        await message.sendMessage("NEW USERNAME UPDATED")
+    }));
+
+    Julie.addCommand({ pattern: 'handlers ?(.*)', fromMe: true, desc: 'changes handlers', usage: '.handler ^[.!] ' }, (async (message, match) => {
         if (match[1] == '') return await message.sendMessage('NEED A CAPTION')
         await heroku.patch(baseURI + '/config-vars', {
             body: {
                 ['ALL_CAPTION']: match[1]
             }
         });
-        await message.sendMessage("ɴᴇᴡ ʜᴀɴᴅʟᴇʀ ᴜᴘᴅᴀᴛᴇᴅ")
+        await message.sendMessage("NEW HANDLER UPDATED")
     }));
 
 
-    Abu.addCommand({ pattern: 'botname ?(.*)', fromMe: true, desc: 'change your bot name', usage: '.botname *name* ' }, (async (message, match) => {
+    Julie.addCommand({ pattern: 'botname ?(.*)', fromMe: true, desc: 'change your bot name', usage: '.botname *name* ' }, (async (message, match) => {
         if (match[1] == '') return await message.sendMessage('TYPE YOUR NEW BOT NAME')
         await heroku.patch(baseURI + '/config-vars', {
             body: {
                 ['BOT_NAME']: match[1]
             }
         });
-        await message.sendMessage("ɴᴇᴡ ʙᴏᴛ ɴᴀᴍᴇ ᴜᴘᴅᴀᴛᴇᴅ")
+        await message.sendMessage("NEW BOT NAME UPDATED")
     }));
 
-Abu.addCommand({ pattern: 'theri  ?(.*)', fromMe: true, desc: 'change your theri commands', usage: '.theri command,command' }, (async (message, match) => {
-        if (match[1] == '') return await message.sendMessage('ᴛʏᴘᴇ ʏᴏᴜʀ ɴᴇᴡ ʙᴏᴛ ɴᴀᴍᴇ')
+Julie.addCommand({ pattern: 'theri  ?(.*)', fromMe: true, desc: 'change your theri commands', usage: '.theri command,command' }, (async (message, match) => {
+        if (match[1] == '') return await message.sendMessage('TYPE YOUR NEW BOT NAME')
         await heroku.patch(baseURI + '/config-vars', {
             body: {
                 ['THERI_LIST']: match[1]
             }
         });
-        await message.sendMessage("ᴛʜᴇʀɪ ʟɪsᴛ ᴜᴘᴅᴀᴛᴇᴅ")
+        await message.sendMessage("THERI LIST UPDATED")
     }));
+
+
+
+
