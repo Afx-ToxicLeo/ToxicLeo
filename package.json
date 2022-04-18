@@ -1,7 +1,7 @@
 {
   "name": "Abu_ser",
   "version": "7.3.6",
-  "description": "Abu is a Modified Version of WhatsAsena,.",
+  "description": "Abu is the Modified Version of WhatsAsena, Made By @Afx-Abu with Baileys.",
   "main": "./Abu_ser/bot.js",
   "scripts": {
     "start": "supervisor -s bot.js"
@@ -15,10 +15,10 @@
     "bot",
     "ai",
     "asena",
-    "Abu"
+    "WhatsAsena"
   ],
   "author": "Afx-Abu",
-  "developer": "@ Afx-Abu",
+  "developer": "@Afx-Abu ",
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/Afx-Abu/Abu_ser/issues"
@@ -61,7 +61,7 @@
     "node-tesseract-ocr": "^2.0.0",
     "pg": "^8.5.1",
     "sequelize": "^6.5.1",
-    "simple-git": "^3.5.0",
+    "simple-git": "^2.37.0",
     "sozlukjs": "^1.1.0",
     "spotify-web-api-node": "^5.0.0",
     "sqlite3": "5.0.0",

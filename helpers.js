@@ -17,13 +17,13 @@
 */
 
 function successfullMessage(msg) {
-    return "✅ *ī.ᴀᴍ/ᴀʙᴜ sᴇʀ⁴⁰⁴*:  ```" + msg + "```"
+    return "✅ *Abu_ser*:  ```" + msg + "```"
 }
 function errorMessage(msg) {
-    return "🛑 *ī.ᴀᴍ/ᴀʙᴜ sᴇʀ⁴⁰⁴*:  ```" + msg + "```"
+    return "🛑 *Abu_ser*:  ```" + msg + "```"
 }
 function infoMessage(msg) {
-    return "⏺️ *ī.ᴀᴍ/ᴀʙᴜ sᴇʀ⁴⁰⁴*:  ```" + msg + "```"
+    return "⏺️ *Abu_ser*:  ```" + msg + "```"
 }
 
 
