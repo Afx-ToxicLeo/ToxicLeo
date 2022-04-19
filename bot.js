@@ -6,7 +6,7 @@ WhatsAsena - Yusuf Usta
 
 const fs = require("fs");
 const path = require("path");
-const BgmDB = require('./plugins/sql/bgms');
+const events = require("./events");
 const raganork = require("./raganork");
 const { FakeDB, takeMessage } = require("./plugins/sql/fake");
 const chalk = require('chalk');
