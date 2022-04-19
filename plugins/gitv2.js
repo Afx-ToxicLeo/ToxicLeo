@@ -11,7 +11,7 @@ Abu.addCommand({ pattern: 'git ?(.*)', fromMe: false, desc: 'owner number' }, (a
 //coded by Afx-Abu
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
-            + 'FN:' + Config.OA_NAME + '\n' //created Afx-Abu, please copy this with credit..
+            + 'FN:' + Config.OWNER + '\n' //created Afx-Abu, please copy this with credit..
             + 'ORG:ᴀʙᴜ sᴇʀ;\n' 
             + 'TEL;type=CELL;type=VOICE;waid=' + Config.PHONE + ':' + Config.PHONE + ' \n'
             + 'END:VCARD'
