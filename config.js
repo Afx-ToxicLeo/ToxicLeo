@@ -67,7 +67,7 @@ module.exports = {
     OWNERSHIP: process.env.OWNER_SHIP === undefined ? 'ABU SER' : process.env.OWNER_SHIP,
     MWOL: process.env.BGM_DURATION === undefined ? '7280542' : process.env.BGM_DURATION,
     BOT: process.env.BOT_NAME === undefined ? 'ꪶ͢ɪͥᴛͭsᷤ ͢ᴍͫᴇͤᡃ⃝ᴀʙᴜ sᴇʀ࿐' : process.env.BOT_NAME,
-    LIZA_AI: process.env.LIZA_AI === undefined ? 'false' : process.env.LIZA_AI,
+    ABU_AI: process.env.ABU_AI === undefined ? 'false' : process.env.ABU_AI,
     ALIVEBUTTON: process.env.ALIVEBUTTON === undefined ? 'ʜᴇʟʟᴏ ʙʀᴏ' : process.env.ALIVEBUTTON,
     ALIVE_BUTTON: process.env.ALIVE_BUTTON === undefined ? 'ʜɪ ᴅᴜᴅᴇ' : process.env.ALIVE_BUTTON,
     LG_LOGO: process.env.ALL_IMG === undefined ? 'https://i.imgur.com/OseHc3b.jpg' : process.env.ALL_IMG,
