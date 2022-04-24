@@ -62,6 +62,7 @@ module.exports = {
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
     INSTA: process.env.INSTA_LINK === undefined ? 'https://instagram.com/jasil_xo' : process.env.INSTA_LINK,
     GROUP: process.env.GROUP_LINK === undefined ? 'https://chat.whatsapp.com/Bq0eHs3UpGJ2BKIHOmy7mk' : process.env.GROUP_LINK,
+    LOGO: process.env.ALL_IMG === undefined ? 'https://telegra.ph/file/8c5bc9987927f02d18a42.jpg' : process.env.ALL_IMG,
     YAK: process.env.YAK === undefined ? '917025994178,0' : process.env.YAK,
     OA_NAME: process.env.DEPLOYER === undefined ? 'Afx-Abu' : process.env.DEPLOYER,
     OWNERSHIP: process.env.OWNER_SHIP === undefined ? 'ABU SER' : process.env.OWNER_SHIP,
