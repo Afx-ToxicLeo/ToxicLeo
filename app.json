@@ -31,9 +31,14 @@
             "value": "https://instagram.com/jasil_xo"
         },
         "GROUP_LINK": {
-            "description": "Enter Yout Group Link",
+            "description": "Enter Your Group Link",
             "required": true,
             "value": "https://chat.whatsapp.com/DNP9Fd1eWrjKz2DalRI2CX"
+        },
+        "ALL_IMG": {
+            "description": "Enter Your img url",
+            "required": true,
+            "value": "https://telegra.ph/file/8c5bc9987927f02d18a42.jpg"
         },
         "BGM_FILTER": {
             "description": "If you likes bgm you can write 'true'. Otherwise false",
