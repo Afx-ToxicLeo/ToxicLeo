@@ -1,4 +1,5 @@
-/* Copyright (C) 2021 Afx-Abu
+/* Copyright (C) 2021 Abu
+Abuser
 */
 
 const Abu = require('../events');
@@ -51,18 +52,18 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
         }
     }));
 
-    Abu.addCommand({pattern: 'autosticker ?(.*)', fromMe: true, desc: Y_dsc, usage: '.sticker on / off' }, (async (message, match) => {
+    Abu.addCommand({pattern: 'sticker ?(.*)', fromMe: true, desc: Y_dsc, usage: '.sticker on / off' }, (async (message, match) => {
         if (match[1] == 'off') {
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
-                        ['AUTO_STICKER']: 'false'
+                        ['DISABLE_STICKER']: 'true'
                     } 
                 });
                 await message.sendMessage(STICKER_off)
         } else if (match[1] == 'on') {
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
-                        ['AUTO_STICKER']: 'true'
+                        ['DISABLE_STICKER']: 'false'
                     } 
                 });
                 await message.sendMessage(STICKER_on)
@@ -76,7 +77,7 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
                 ['SUDO']: match[1]
             }
         });
-        await message.sendMessage("ɴᴇᴡ sᴜᴅᴏ ᴜᴘᴅᴀᴛᴇᴅ")
+        await message.sendMessage("NEW SUDO UPDATED")
     }));
 
     Abu.addCommand({ pattern: 'caption ?(.*)', fromMe: true, desc: 'changes all captions', usage: '.caption *ᴍᴀᴅᴇ ʙʏ ᴘʀɪɴᴄᴇ ʀᴜᴅʜ*' }, (async (message, match) => {
@@ -86,7 +87,7 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
                 ['ALL_CAPTION']: match[1]
             }
         });
-        await message.sendMessage("ɴᴇᴡ ᴄᴀᴘᴛɪᴏɴ ᴜᴘᴅᴀᴛᴇᴅ")
+        await message.sendMessage("NEW CAPTION UPDATED")
     }));
 
     Abu.addCommand({ pattern: 'handlers ?(.*)', fromMe: true, desc: 'changes handlers', usage: '.handler ^[.!] ' }, (async (message, match) => {
@@ -96,7 +97,7 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
                 ['ALL_CAPTION']: match[1]
             }
         });
-        await message.sendMessage("ɴᴇᴡ ʜᴀɴᴅʟᴇʀ ᴜᴘᴅᴀᴛᴇᴅ")
+        await message.sendMessage("NEW HANDLER UPDATED")
     }));
 
 
@@ -107,15 +108,15 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
                 ['BOT_NAME']: match[1]
             }
         });
-        await message.sendMessage("ɴᴇᴡ ʙᴏᴛ ɴᴀᴍᴇ ᴜᴘᴅᴀᴛᴇᴅ")
+        await message.sendMessage("NEW BOT NAME UPDATED")
     }));
 
 Abu.addCommand({ pattern: 'theri  ?(.*)', fromMe: true, desc: 'change your theri commands', usage: '.theri command,command' }, (async (message, match) => {
-        if (match[1] == '') return await message.sendMessage('ᴛʏᴘᴇ ʏᴏᴜʀ ɴᴇᴡ ʙᴏᴛ ɴᴀᴍᴇ')
+        if (match[1] == '') return await message.sendMessage('TYPE YOUR NEW BOT NAME')
         await heroku.patch(baseURI + '/config-vars', {
             body: {
                 ['THERI_LIST']: match[1]
             }
         });
-        await message.sendMessage("ᴛʜᴇʀɪ ʟɪsᴛ ᴜᴘᴅᴀᴛᴇᴅ")
+        await message.sendMessage("THERI LIST UPDATED")
     }));
