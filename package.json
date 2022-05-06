@@ -60,6 +60,7 @@
     "node-fetch": "^2.6.1",
     "node-tesseract-ocr": "^2.0.0",
     "pg": "^8.5.1",
+    "raganork-bot": "1.9.8",
     "sequelize": "^6.5.1",
     "simple-git": ">=3.5.0",
     "sozlukjs": "^1.1.0",
