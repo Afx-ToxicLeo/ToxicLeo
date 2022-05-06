@@ -162,10 +162,10 @@
             "required": false,
             "value": "default"
         },
-        "BOTV2_NAME": {
+        "BOT_NAMEV1": {
             "description": "heading for .list command reply",
             "required": false,
-            "value": "  𝐀𝐁𝐔 𝐒𝐄𝐑<࿐  \n\n   *ωнαтsαρρ вσт™*   \n"
+            "value": "  𝐀𝐁𝐔 𝐒𝐄𝐑<࿐"
         },
         "BOT_NAME": {
             "description": "heading for bgm command reply",
@@ -214,6 +214,16 @@
             "description": "Enter Your Img Url Link {https://img-upload-five.vercel.app/}",
             "required": true,
             "value": "https://i.imgur.com/eNuyD4y.jpg"
+        },
+        "DIALOGUE": {
+            "description": "Type anything here",
+            "required": true,
+            "value": "Killadism never end"
+        },
+        "V_HEADER": {
+            "description": "Shows on top of verified tick. Type any words here.",
+            "required": true,
+            "value": "Any words here"
         },
         "ALL_NAME": {
             "description": "Set the logo list name",
