@@ -1,7 +1,7 @@
 let e = require('../events');
 let c = require('../config');
 let v = c.SESSION
-let {Fancy} = require('abu-bot');
+let {Fancy} = require('@Afx-Abu/abu-bot');
 let {MessageType} = require('@adiwajshing/baileys');
 let Language = require('../language');
 let fm = c.WORKTYPE == 'public' ? false : true
