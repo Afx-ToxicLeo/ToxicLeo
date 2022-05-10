@@ -5,14 +5,14 @@ const ffmpeg = require('fluent-ffmpeg');
 const {execFile} = require('child_process');
 const cwebp = require('cwebp-bin');
 const Config = require('../config');
-const {skbuffer} = require('../buffer');
+const {abubuffer} = require('../buffer');
 
 const Language = require('../language');
 const Lang = Language.getString('sticker');
 
 if (Config.WORKTYPE == 'private') {
     Alexa.addCommand({pattern: 'sticker$', fromMe: true, deleteCommand: true, desc: Lang.STICKER_DESC}, (async (message, match) => {    
-    var img = await skbuffer(Config.LOGOSK)
+    var img = await abubuffer(Config.LG_LOGO)
         if (message.reply_message === false) return await message.client.sendMessage(message.jid,Lang.NEED_REPLY, MessageType.text, {contextInfo: { forwardingScore: 49, isForwarded: true }, quoted: { key: { participant : '0@s.whatsapp.net'},message: {orderMessage: {itemCount : 990,status: 1,surface : 1,message: config.BOT,orderTitle: `THIS IS NEW?`,thumbnail: img, sellerJid: Config.JID }}}});
         var downloading = await message.client.sendMessage(message.jid,Lang.DOWNLOADING,MessageType.text, {contextInfo: { forwardingScore: 49, isForwarded: true }, quoted: { key: { participant : '0@s.whatsapp.net'},message: {orderMessage: {itemCount : 990,status: 1,surface : 1,message: config.BOT,orderTitle: `THIS IS NEW?`,thumbnail: img, sellerJid: Config.JID }}}});
         var location = await message.client.downloadAndSaveMediaMessage({
@@ -48,7 +48,7 @@ if (Config.WORKTYPE == 'private') {
 else if (Config.WORKTYPE == 'public') {
 
     Alexa.addCommand({pattern: 'sticker$', fromMe: false, deleteCommand: false, desc: Lang.STICKER_DESC}, (async (message, match) => {    
-    var img = await skbuffer(Config.LOGOSK)
+    var img = await abubuffer(Config.LG_LOGO)
         if (message.reply_message === false) return await message.client.sendMessage(message.jid,Lang.NEED_REPLY, MessageType.text, {contextInfo: { forwardingScore: 49, isForwarded: true }, quoted: { key: { participant : '0@s.whatsapp.net'},message: {orderMessage: {itemCount : 990,status: 1,surface : 1,message: config.BOT,orderTitle: `THIS IS NEW?`,thumbnail: img, sellerJid: Config.JID }}}});
         var downloading = await message.client.sendMessage(message.jid,Lang.DOWNLOADING,MessageType.text, {contextInfo: { forwardingScore: 49, isForwarded: true }, quoted: { key: { participant : '0@s.whatsapp.net'},message: {orderMessage: {itemCount : 990,status: 1,surface : 1,message: config.BOT,orderTitle: `THIS IS NEW?`,thumbnail: img, sellerJid: Config.JID }}}});
         var location = await message.client.downloadAndSaveMediaMessage({
