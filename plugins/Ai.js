@@ -66,11 +66,11 @@ const convertToWav = file => {
 Abu.addCommand({on: 'text', fromMe: wk, dontAddCommandList: true, deleteCommand: false}, (async (message, match) => {
     if (message.message.startsWith('Abu') && conf.ABU_AI !== 'true') {        
         var unique_ident = message.client.user.jid.split('@')[0]      
-        let acc = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0] == 'Asena' ? '7d57838203msh0c5cf65c90a7231p13b461jsn77c8cfa55871' : '7d57838203msh0c582jak19865261js1229n77c8cfa55871'
+        let acc = os.userInfo().homedir.split('Abu')[1].split('ser/')[0] == 'Abu' ? '7d57838203msh0c5cf65c90a7231p13b461jsn77c8cfa55871' : '7d57838203msh0c582jak19865261js1229n77c8cfa55871'
         let aitalk_mode = message.message.includes('{normal}') ? 'raw' : 'waifu'
         var finm = message.message.replace('Abu', '').replace(' ', '')   
-        var ainame = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0]
-        if (ainame !== 'Asena') return;
+        var ainame = os.userInfo().homedir.split('Abu')[1].split('ser/')[0]
+        if (ainame !== 'Abu') return;
         var ldet = lngDetector.detect(finm)
         var trmsg = ''
         if (ldet[0][0] !== 'english') {
@@ -99,10 +99,10 @@ Abu.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (messag
                 message.mention.map(async (jid) => {
                     if (message.client.user.jid.split('@')[0] === jid.split('@')[0]) {
                         var unique_ident = message.client.user.jid.split('@')[0]      
-                        let acc = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0] == 'Asena' ? '7d57838203msh0c5cf65c90a7231p13b461jsn77c8cfa55871' : '7d57838203msh0c582jak19865261js1229n77c8cfa55871'
+                        let acc = os.userInfo().homedir.split('Abu')[1].split('ser/')[0] == 'Abu' ? '7d57838203msh0c5cf65c90a7231p13b461jsn77c8cfa55871' : '7d57838203msh0c582jak19865261js1229n77c8cfa55871'
                         let aitalk_mode = message.message.includes('{normal}') ? 'raw' : 'waifu'                       
-                        var ainame = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0]
-                        if (ainame !== 'Asena') return;
+                        var ainame = os.userInfo().homedir.split('Abu')[1].split('ser/')[0]
+                        if (ainame !== 'Abu') return;
                         var finm = message.message
                         var ldet = lngDetector.detect(finm)
                         var trmsg = ''
@@ -128,9 +128,9 @@ Abu.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (messag
             } else if (message.jid.includes('-') && message.reply_message !== false) {
                 if (message.reply_message.jid.split('@')[0] === message.client.user.jid.split('@')[0]) {
                     var unique_ident = message.client.user.jid.split('@')[0]      
-                    let acc = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0] == 'Asena' ? '7d57838203msh0c5cf65c90a7231p13b461jsn77c8cfa55871' : '7d57838203msh0c582jak19865261js1229n77c8cfa55871'
-                    var ainame = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0]
-                    if (ainame !== 'Asena') return;
+                    let acc = os.userInfo().homedir.split('Abu')[1].split('ser/')[0] == 'Abu' ? '7d57838203msh0c5cf65c90a7231p13b461jsn77c8cfa55871' : '7d57838203msh0c582jak19865261js1229n77c8cfa55871'
+                    var ainame = os.userInfo().homedir.split('Abu')[1].split('ser/')[0]
+                    if (ainame !== 'Abu') return;
                     var finm = message.message
                     var ldet = lngDetector.detect(finm)
                     var trmsg = ''
@@ -154,9 +154,9 @@ Abu.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (messag
                 }
             } else {
                 var unique_ident = message.client.user.jid.split('@')[0]      
-                let acc = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0] == 'Asena' ? '7d57838203msh0c5cf65c90a7231p13b461jsn77c8cfa55871' : '7d57838203msh0c582jak19865261js1229n77c8cfa55871'
-                var ainame = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0]
-                if (ainame !== 'Asena') return;
+                let acc = os.userInfo().homedir.split('Abu')[1].split('ser/')[0] == 'Abu' ? '7d57838203msh0c5cf65c90a7231p13b461jsn77c8cfa55871' : '7d57838203msh0c582jak19865261js1229n77c8cfa55871'
+                var ainame = os.userInfo().homedir.split('Abu')[1].split('ser/')[0]
+                if (ainame !== 'Abu') return;
                 var finm = message.message
                 var ldet = lngDetector.detect(finm)
                 var trmsg = ''
@@ -202,9 +202,9 @@ Abu.addCommand({ pattern: 'vtalk$', desc: vtalk_dsc,dontAddCommandList: true, fr
                     ssc = ceviri.text
                 }
                 var unique_ident = message.client.user.jid.split('@')[0]
-                let acc = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0] == 'Asena' ? '7d57838203msh0c5cf65c90a7231p13b461jsn77c8cfa55871' : '7d57838203msh0c582jak19865261js1229n77c8cfa55871'       
-                var ainame = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0]
-                if (ainame !== 'Asena') return;
+                let acc = os.userInfo().homedir.split('Abu')[1].split('ser/')[0] == 'Abu' ? '7d57838203msh0c5cf65c90a7231p13b461jsn77c8cfa55871' : '7d57838203msh0c582jak19865261js1229n77c8cfa55871'       
+                var ainame = os.userInfo().homedir.split('Abu')[1].split('ser/')[0]
+                if (ainame !== 'Abu') return;
         
                 var son = encodeURI(ssc)
                 await axios.get('http://api.brainshop.ai/get?bid=161300&key=vqC466JudPGklGEB&uid=' + unique_ident + '&msg=' + son).then(async (response) => {
@@ -236,18 +236,18 @@ var already_off = ''
 var succ_on = ''
 var succ_off = ''
 if (conf.LANG == 'TR') {
-    fulleva_dsc = 'Tam fonksiyonel pinky özelliklerini aktif eder. Hesabınızı bir chatbota dönüştürün!'
-    already_on = 'pinky yapay zekası halihazırda tüm fonksiyonları etkin.'
-    already_off = 'pinky yapay zekası halihazırda yarı fonksiyonel çalışıyor.'
-    succ_on = 'pinky, Tam Fonksiyonel Olarak Açıldı! Lütfen Biraz Bekleyin! ✅'
-    succ_off = 'pinky, Yarı Fonksiyonel Olarak Ayarlandı! Lütfen Biraz Bekleyin! ☑️'
+    fulleva_dsc = 'Tam fonksiyonel Abu özelliklerini aktif eder. Hesabınızı bir chatbota dönüştürün!'
+    already_on = 'Abu yapay zekası halihazırda tüm fonksiyonları etkin.'
+    already_off = 'Abu yapay zekası halihazırda yarı fonksiyonel çalışıyor.'
+    succ_on = 'Abu, Tam Fonksiyonel Olarak Açıldı! Lütfen Biraz Bekleyin! ✅'
+    succ_off = 'Abu, Yarı Fonksiyonel Olarak Ayarlandı! Lütfen Biraz Bekleyin! ☑️'
 }
 if (conf.LANG == 'EN') {
     fulleva_dsc = 'Activates full functional Abufeatures. Turn your account into a ai chatbot!'
     already_on = 'Abu artificial intelligence is already fully functional.'
     already_off = 'Abu artificial intelligence is currently running semi-functional.'
-    succ_on = 'Abu Opened Fully Functionally! Please wait a bit! ✅'
-    succ_off = 'Abu Set to Semi-Functional! Please wait a bit! ☑️'
+    succ_on = 'ᴄʜᴀᴛʙᴏᴛ ᴏɴ〽️'
+    succ_off = 'ᴄʜᴀᴛʙᴏᴛ ᴏғғ〽️️'
 }
 if (conf.LANG == 'ML') {
     fulleva_dsc = 'പൂർണ്ണമായും പ്രവർത്തനക്ഷമമായ Zara സവിശേഷതകൾ സജീവമാക്കുന്നു. നിങ്ങളുടെ അക്കൗണ്ട് ഒരു ചാറ്റ്ബോട്ടാക്കി മാറ്റുക!'
@@ -258,9 +258,9 @@ if (conf.LANG == 'ML') {
 }
 
 Abu.addCommand({ pattern: 'chatbot ?(.*)', desc: fulleva_dsc, fromMe: true,dontAddCommandList: true, usage: '.chatbot on / off' }, (async (message, match) => {
-    var pinky_status = `${conf.ABU_AI}`
+    var Abu_status = `${conf.ABU_AI}`
     if (match[1] == 'on') {
-        if (pinky_status == 'true') {
+        if (Abu_status == 'true') {
             return await message.client.sendMessage(message.jid, '*' + already_on + '*', MessageType.text)
         }
         else {
@@ -273,7 +273,7 @@ Abu.addCommand({ pattern: 'chatbot ?(.*)', desc: fulleva_dsc, fromMe: true,dontA
         }
     }
     else if (match[1] == 'off') {
-        if (pinky_status !== 'true') {
+        if (Abu_status !== 'true') {
             return await message.client.sendMessage(message.jid, '*' + already_off + '*', MessageType.text)
         }
         else {
