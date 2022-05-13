@@ -200,20 +200,15 @@
             "required": false,
             "value": "\n ```I Am Alive !!!```\n\n```Type``` *.help* ```for commands ```"
         },
-        "ALIVEBUTTON": {
-            "description": "Set the alive message two name",
-            "required": true,
-            "value": "ʜᴇʟʟᴏ ʙʀᴏ"
-        },
-        "ALIVE_BUTTON": {
-            "description": "Set the Alive message first name",
-            "required": true,
-            "value": "ʜɪ ᴅᴜᴅᴇ"
-        },
         "ALL_IMG": {
             "description": "Enter Your Img Url Link {https://img-upload-five.vercel.app/}",
             "required": true,
             "value": "https://i.imgur.com/eNuyD4y.jpg"
+        },
+        "ALL_NAME": {
+            "description": "Enter Your Img Url Link {https://img-upload-five.vercel.app/}",
+            "required": true,
+            "value": "ᡃ⃝ī.ᴀᴍ/ᴀʙᴜ sᴇʀ⁴⁰⁴࿐"
         },
         "DIALOGUE": {
             "description": "Type anything here",
@@ -222,11 +217,6 @@
         },
         "V_HEADER": {
             "description": "Shows on top of verified tick. Type any words here.",
-            "required": true,
-            "value": "Any words here"
-        },
-        "ALL_NAME": {
-            "description": "Set the logo list name",
             "required": true,
             "value": "ᡃ⃝ī.ᴀᴍ/ᴀʙᴜ sᴇʀ⁴⁰⁴࿐"
         },
