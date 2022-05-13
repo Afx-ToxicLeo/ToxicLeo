@@ -50,6 +50,11 @@
             "required": true,
             "value": "ᴀʙᴜ⁴⁰⁴"
         },
+        "CMD_LIST": {
+            "description": "You can change Command list emojis like: help/❤️/😅/🍃/💌.)",
+            "required": true,
+            "value": "ᴀʙᴜ/🎗️/💝/✨/📝"
+        },
         "AUTO_STICKER": {
             "description": "If you likes bgm you can write 'true'. Otherwise false",
             "required": false,
@@ -68,6 +73,11 @@
         "DEPLOYER": {
             "description": "enter your name here",
             "required": false
+        },
+        "VERIFIED": {
+            "description": "Give with number jid",
+            "required": true,
+            "value": "917025994178@s.whatsapp.net"
         },
         "BYE_GIF": {
             "description": "Fill here any gif link if you selected gif as WEELCOME",
