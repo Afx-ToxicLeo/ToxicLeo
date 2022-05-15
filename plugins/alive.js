@@ -12,11 +12,8 @@ var img = await abubuffer(Config.LOGO)
 
     await message.sendMessage(Buffer(respoimage.data), MessageType.image, {quoted: message.data , thumbnail: img, mimetype: Mimetype.png,
     
-    
-    *▢  '+Config.ALIVEMSG+' ▢* 
-    
 ╭────────────────╮
-       '+Config.BOT+'
+   '+Config.BOT+'
 ╰────────────────╯
 
 ╭────────────────
