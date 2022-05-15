@@ -62,7 +62,7 @@ https://heroku.com/deploy?template=https://github.com/Afx-Abu/Abu_ser
    BOT ERROR UNDEL ONNU EE NUMBER SCREEN SHOT SEND
 
 
-https://wa.me/9037024889?text=Bot+Error+und+muthe
+https://wa.me/919037024889?text=Bot+Error+und+muthe
 
 
 
