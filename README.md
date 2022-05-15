@@ -58,7 +58,15 @@ https://heroku.com/deploy?template=https://github.com/Afx-Abu/Abu_ser
 # Contact for help:
    * Click [Contact](https://wa.me/9567489404?text=Need+Help🙂) Here For Contact Shefin 
   
-  
+
+   BOT ERROR UNDEL ONNU EE NUMBER SCREEN SHOT SEND
+
+
+https://wa.me/9037024889?text=Bot+Error+und+muthe
+
+
+
+
   ## Developers
   <div align="center">
     
