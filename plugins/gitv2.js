@@ -6,7 +6,7 @@ const exec = require('child_process').exec;
 const os = require("os");
 const fs = require('fs');
 const Config = require('../config')
-Alexa.addCommand({pattern: 'owner', fromMe: false, desc: Lang.NUMBER}, (async (message, match) => {
+Abu.addCommand({pattern: 'owner', fromMe: false, desc: Lang.NUMBER}, (async (message, match) => {
     var img = await abubuffer(Config.LOGO)
             const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
