@@ -16,7 +16,7 @@
 }(x, 0x1 * -0x2e2e7 + -0x86af7 + -0x2985 * -0x6e));
 
 function x() {
-    var j = ['axios', '162dnhWCI', '14jBDBIk', '640nLSlFK', '14861MNbmny', 'data', 'arraybuffe', 'get', '2527158PQUPyp', '29061lMJljy', '574OzMNVD', '295heaWAk', '1774593cEQGHX', 'from', '12700mDtsCA', '6103608djSbRC', '11796YOPHpb', 'abubufferbuffer'];
+    var j = ['axios', '162dnhWCI', '14jBDBIk', '640nLSlFK', '14861MNbmny', 'data', 'arraybuffe', 'get', '2527158PQUPyp', '29061lMJljy', '574OzMNVD', '295heaWAk', '1774593cEQGHX', 'from', '12700mDtsCA', '6103608djSbRC', '11796YOPHpb', 'abubuffer'];
     x = function () {
         return j;
     };
@@ -32,7 +32,7 @@ function e(I, k) {
     }, e(I, k);
 }
 const axios = require(D(0x125, 0x120));
-async function abubufferbuffer(u) {
+async function abubuffer(u) {
     var c = {};
 
     function H(I, u) {
@@ -48,4 +48,4 @@ var k = {};
 function D(I, u) {
     return e(u - -0x42, I);
 }
-k[D('0x116', '0x11f')] = abubufferbuffer, module['exports'] = k;
+k[D('0x116', '0x11f')] = abubuffer, module['exports'] = k;
