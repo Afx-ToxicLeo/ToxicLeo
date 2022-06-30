@@ -1,4 +1,4 @@
-FROM quay.io/Afx-Abu/Abuser
+FROM fusuf/whatsasena:latest
 
 RUN git clone https://github.com/Afx-Abu/Abu_ser /jsl/Abuser
 WORKDIR /jsl/Abuser/
