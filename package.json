@@ -1,14 +1,14 @@
 {
-  "name": "Abu_ser",
+  "name": "Abu-Md",
   "version": "7.3.6",
   "description": "Mew Multi Wa Bot Abu",
-  "main": "./Abu_ser/index.js",
+  "main": "./Abu-Md/index.js",
   "scripts": {
     "start": "supervisor -s index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Afx-Abu/Abu_ser.git"
+    "url": "git+https://github.com/Afx-Abu/Abu-Md.git"
   },
   "keywords": [
     "whatsapp",
@@ -21,9 +21,9 @@
   "developer": "@Afx-Abu ",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/Afx-Abu/Abu_ser/issues"
+    "url": "https://github.com/Afx-Abu/Abu-Md/issues"
   },
-  "homepage": "https://github.com/Afx-Abu/Abu_ser#readme",
+  "homepage": "https://github.com/Afx-Abu/Abu-Md#readme",
   "dependencies": {
     "@adiwajshing/baileys": "^4.0.1",
     "@adiwajshing/keyed-db": "^0.2.4",
