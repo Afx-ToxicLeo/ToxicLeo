@@ -67,10 +67,3 @@ https://wa.me/919037024889?text=Bot+Error+und+muthe
 
 
 
-  ## Developers
-  <div align="center">
-    
-  [![Afx-Abu](https://github.com/Afx-Abu.png?size=100)](https://github.com/Afx-Abu)
-
-[Afx-Abu](https://github.com/Afx-Abu)        
-Developer, Base, Bug Fixes, Modules
