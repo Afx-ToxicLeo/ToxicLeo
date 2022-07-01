@@ -60,6 +60,7 @@
     "mongodb": "^3.6.3",
     "node-fetch": "^2.6.1",
     "node-tesseract-ocr": "^2.0.0",
+    "pastebin-js": "^1.0.6",
     "pg": "^8.5.1",
     "sequelize": "^6.5.1",
     "simple-git": ">=3.5.0",
