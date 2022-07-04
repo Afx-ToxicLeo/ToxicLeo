@@ -39,11 +39,11 @@
 <a href="https://github.com/Afx-Abu/Abu_ser/fork"><img align="center" src="https://i.imgur.com/vUIRd80.png" alt="Fork and deploy" height="112" width="300" /></a>
 <br>
 <div>
-<a href="https://replit.com/@Afx-Abu/Abu-Ser-Qr?v=1"><img align="center" src="https://i.imgur.com/SYoMXG2.png" alt="Scan QR" height="112" width="300" /></a>
+<a href="https://replit.com/@Afx-Abu/ABU-MD-QR?output%20only=1&lite=1#index.js"><img align="center" src="https://i.imgur.com/SYoMXG2.png" alt="Scan QR" height="112" width="300" /></a>
 <br>
 
 
-1. Click [SCAN](https://replit.com/@Afx-Abu/ABU-SER-QR?v=1) and scan QR through Whatsapp Linked Devices Option in Your whatsapp App.
+1. Click [SCAN](https://replit.com/@Afx-Abu/ABU-MD-QR?output%20only=1&lite=1#index.js) and scan QR through Whatsapp Linked Devices Option in Your whatsapp App.
 2. You will get a long text that needs after 4th step (ABU_QR_CODE).
 3. If You don't have a account in [Heroku](https://signup.heroku.com/), Create a account.
 4. Click [FORK](https://github.com/Afx-Abu/Abu_ser/fork)
