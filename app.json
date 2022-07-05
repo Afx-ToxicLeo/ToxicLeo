@@ -104,5 +104,8 @@
     }],
     "buildpacks": [{
       "url": "heroku-community/apt"
+      },
+      {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
       }]
   }
