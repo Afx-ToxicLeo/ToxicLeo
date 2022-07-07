@@ -41,7 +41,8 @@
 <div>
 <a href="https://replit.com/@Afx-Abu/Abu-Ser-Qr?v=1"><img align="center" src="https://i.imgur.com/SYoMXG2.png" alt="Scan QR" height="112" width="300" /></a>
 <br>
-
+<a href="https://replit.com/@Afx-Abu/Abu-Ser-Qr?v=1"><img align="center" src="https://i.imgur.com/gtK4XLX.png" alt="Scan QR" height="112" width="300" /></a>
+<br>
 
 1. Click [SCAN](https://replit.com/@Afx-Abu/ABU-SER-QR?v=1) and scan QR through Whatsapp Linked Devices Option in Your whatsapp App.
 2. You will get a long text that needs after 4th step (ABU_QR_CODE).
