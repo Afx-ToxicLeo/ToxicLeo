@@ -44,34 +44,3 @@
 <a href="abu-jid.vercel.app"><img align="center" src="https://i.imgur.com/gtK4XLX.png" alt="Scan QR" height="112" width="300" /></a>
 <br>
 
-1. Click [SCAN](https://replit.com/@Afx-Abu/ABU-SER-QR?v=1) and scan QR through Whatsapp Linked Devices Option in Your whatsapp App.
-2. You will get a long text that needs after 4th step (ABU_QR_CODE).
-3. If You don't have a account in [Heroku](https://signup.heroku.com/), Create a account.
-4. Click [FORK](https://github.com/Afx-Abu/Abu_ser/fork)
-5. Click the url showing below to copy deploy template
-```
-https://heroku.com/deploy?template=https://github.com/Afx-Abu/Abu_ser
-``` 
-6. Now change Afx-Abu with your github username and click ENJOY<br>
-   <br>
-# Contact for help:
-   * Click [Contact](https://wa.me/7025994178?text=Need+Help🙂) Here For Contact Afx-Abu
-# Contact for help:
-   * Click [Contact](https://wa.me/9567489404?text=Need+Help🙂) Here For Contact Shefin 
-  
-
-   BOT ERROR UNDEL ONNU EE NUMBER SCREEN SHOT SEND
-
-
-https://wa.me/919037024889?text=Bot+Error+und+muthe
-
-
-
-
-  ## Developers
-  <div align="center">
-    
-  [![Afx-Abu](https://github.com/Afx-Abu.png?size=100)](https://github.com/Afx-Abu)
-
-[Afx-Abu](https://github.com/Afx-Abu)        
-Developer, Base, Bug Fixes, Modules
