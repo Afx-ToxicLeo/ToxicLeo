@@ -3,7 +3,7 @@ const {
  } = require('../main')
  const {
      Fancy
- } = require('alexa-bot')
+ } = require('abu-bot')
  const {
      MODE
  } = require('../config');
