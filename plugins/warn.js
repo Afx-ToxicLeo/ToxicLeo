@@ -1,10 +1,10 @@
 let {Module} = require('../main');
 let {WARN,ANTILINK_WARN} = require('../config');
 let {getString} = require('./misc/lang');
-const {Fancy} = require('alexa-bot')
+const {Fancy} = require('abu-bot')
 let {isAdmin} = require('./misc/misc');
 let Lang = getString('group');
-let {setWarn,resetWarn,mentionjid} = require('./misc/misc');
+let {setWarn,resetWarn,mentionjid} = require('abu-bot')
 Module({pattern: 'warn ?(.*)', fromMe: true,use: 'group', desc:Lang.WARN_DESC}, (async (m, mat) => { 
 if (mat[1] === "reset") return await m.sendReply("*Wrong command! Use _.reset warn_*")
 if (m.message.includes(Lang.REMAINING)) return;
