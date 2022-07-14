@@ -1,4 +1,4 @@
-const {find} = require('alexa-bot')
+const {find} = require('abu-bot')
 const {Module} = require('../main');
 const s = require('../config');
 const wk = s.MODE == 'public' ? false : true
