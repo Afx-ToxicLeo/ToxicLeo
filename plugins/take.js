@@ -21,7 +21,7 @@ let {
     getBuffer,
     stickercrop,
     webp2mp4
-} = require('alexa-bot');
+} = require('abu-bot');
 let a = MODE == 'public' ? false : true;
 let ffmpeg = require('fluent-ffmpeg');
 let fs = require('fs');
