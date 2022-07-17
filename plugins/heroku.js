@@ -9,7 +9,7 @@ const {
 } = require('./misc/misc');
 const {
     getBuffer
-} = require('alexa-bot');
+} = require('abu-bot');
 const {
     chatBot
 } = require('./misc/misc');
