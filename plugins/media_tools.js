@@ -6,12 +6,12 @@ const {
   const {
       saveMessage
   } = require('./misc/saveMessage');
-  const {getBuffer} = require('alexa-bot');
+  const {getBuffer} = require('abu-bot');
   const {
       trim,
       AVmix,
       trimVideo
-  } = require('alexa-bot');
+  } = require('abu-bot');
   const {
       MODE
   } = require('../config');
