@@ -1,8 +1,8 @@
 const {
-    Jsl
+    Module
 } = require('../main');
 const FilterDb = require('./sql/filters');
-Jsl({
+Module({
     pattern: 'filter ?(.*)',
     fromMe: true,
     desc: "Adds filter in chat",
@@ -41,7 +41,7 @@ Jsl({
         });
     }
 }));
-Jsl({
+Module({
     pattern: 'stop ?(.*)',
     fromMe: true,
     use: 'utility',
@@ -67,7 +67,7 @@ Jsl({
         })
     }
 }));
-Jsl({
+Module({
     on: 'text',
     fromMe: false
 }, (async (message, match) => {
@@ -87,7 +87,7 @@ Jsl({
         }
     );
 }));
-Jsl({
+Module({
     on: 'button',
     fromMe: false
 }, (async (message, match) => {
