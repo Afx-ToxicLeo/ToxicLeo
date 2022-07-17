@@ -1,11 +1,11 @@
 const {
-    Module
+    Jsl
 } = require('../main');
 const sql = require('./sql/greeting');
 const Language = require('./misc/lang');
 const Lang = Language.getString('greetings');
 
-Module({
+Jsl({
     pattern: 'welcome$',
     use: 'group',
     fromMe: true,
@@ -18,7 +18,7 @@ Module({
         await message.sendReply(Lang.WELCOME_ALREADY_SETTED + hg.message);
     }
 }));
-Module({
+Jsl({
     pattern: 'welcome (.*)',
     fromMe: true,
     use: 'group',
@@ -31,7 +31,7 @@ Module({
     await sql.setMessage(message.jid, 'welcome', match[1].replace(/&/g, '\n'));
     return await message.sendReply(Lang.WELCOME_SETTED)
 }));
-Module({
+Jsl({
     pattern: 'goodbye$',
     fromMe: true,
     desc: Lang.GOODBYE_DESC,
@@ -44,7 +44,7 @@ Module({
         await message.sendMessage(Lang.GOODBYE_ALREADY_SETTED + hg.message);
     }
 }));
-Module({
+Jsl({
     pattern: 'goodbye (.*)',
     fromMe: true,
     dontAddCommandList: true,
