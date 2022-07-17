@@ -1,7 +1,7 @@
 const {Module} = require('../main')
 const {aadhar,blur} = require('./misc/misc')
 const {MODE} = require('../config')
-const {getBuffer} = require('alexa-bot');
+const {getBuffer} = require('abu-bot');
 var x = MODE == 'public'?false:true
 var list = '```'+`Logo Maker List
 Usage: .logo 14 Text
