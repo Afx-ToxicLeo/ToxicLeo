@@ -23,7 +23,7 @@ const {
     getVideo,
     ytdlServer,
     getBuffer
-} = require('alexa-bot');
+} = require('abu-bot');
 const LanguageDetect = require('languagedetect');
 const { downloadYT } = require('./misc/yt');
 const lngDetector = new LanguageDetect();
