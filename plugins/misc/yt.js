@@ -1,1 +1,93 @@
-const _0x2468f1=_0x3cd0;(function(_0x7c049,_0x27648a){const _0x374a0d=_0x3cd0,_0x2f2834=_0x7c049();while(!![]){try{const _0x3119ec=parseInt(_0x374a0d(0x1da))/0x1+parseInt(_0x374a0d(0x1bf))/0x2+-parseInt(_0x374a0d(0x1c5))/0x3+parseInt(_0x374a0d(0x1c0))/0x4+-parseInt(_0x374a0d(0x1ce))/0x5*(parseInt(_0x374a0d(0x1cc))/0x6)+parseInt(_0x374a0d(0x1cd))/0x7+-parseInt(_0x374a0d(0x1bc))/0x8;if(_0x3119ec===_0x27648a)break;else _0x2f2834['push'](_0x2f2834['shift']());}catch(_0x4916a0){_0x2f2834['push'](_0x2f2834['shift']());}}}(_0x7f10,0xec64e));function _0x7f10(){const _0x436470=['en-US,en;q=0.9','0\x20Byte','table','parentElement','en136','/analyze/ajax','exec','test','innerHTML','video','https://youtu.be/','14105304DVqzAf','src','round','1574986JuBuax','4981192VNJDnE','exports','audio','fromEntries','POST','4461300FlPnnF','id4','en61','360p','nextSibling','log','128kbps','24900MxlbOl','13370420kxVREJ','530EqYsLm','json','application/x-www-form-urlencoded;\x20charset=UTF-8','pow','entries','jsdom','replace','kbps','mp4','*/*','img','match','715582XyxfyB','td\x20>\x20a[href=\x22#\x22]','querySelector','en154','floor','trim','node-fetch','en60','result','filter','body','youtube','endsWith','mp3','http://app.y2mate.com/download'];_0x7f10=function(){return _0x436470;};return _0x7f10();}function _0x3cd0(_0x2f243e,_0x524c6c){const _0x7f1072=_0x7f10();return _0x3cd0=function(_0x3cd0ce,_0x424e41){_0x3cd0ce=_0x3cd0ce-0x1bb;let _0x1b5c13=_0x7f1072[_0x3cd0ce];return _0x1b5c13;},_0x3cd0(_0x2f243e,_0x524c6c);}let fetch=require(_0x2468f1(0x1e0)),{JSDOM}=require(_0x2468f1(0x1d3));function post(_0x3883a4,_0x4880a9){const _0x409dfc=_0x2468f1;return fetch(_0x3883a4,{'method':_0x409dfc(0x1c4),'headers':{'accept':_0x409dfc(0x1d7),'accept-language':_0x409dfc(0x1e9),'content-type':_0x409dfc(0x1d0)},'body':new URLSearchParams(Object[_0x409dfc(0x1d2)](_0x4880a9))});}const ytIdRegex=/(?:youtube\.com\/\S*(?:(?:\/e(?:mbed))?\/|watch\?(?:\S*?&?v\=))|youtu\.be\/)([a-zA-Z0-9_-]{6,11})/;async function yt(_0x2df8ca,_0x3865a1,_0xd440da,_0x1efd17,_0x24775e='en68'){const _0x420749=_0x2468f1;let _0x5ebc27=ytIdRegex[_0x420749(0x1ef)](_0x2df8ca);_0x2df8ca=_0x420749(0x1bb)+_0x5ebc27[0x1];let _0x23da39=await post('https://www.y2mate.com/mates/'+_0x24775e+_0x420749(0x1ee),{'url':_0x2df8ca,'q_auto':0x0,'ajax':0x1});function _0x3c47e8(_0x20b6eb){const _0xda95c1=_0x420749;var _0x47bc58=['Bytes','KB','MB','GB','TB'];if(_0x20b6eb==0x0)return _0xda95c1(0x1ea);var _0x3610a3=parseInt(Math[_0xda95c1(0x1de)](Math[_0xda95c1(0x1ca)](_0x20b6eb)/Math['log'](0x400)));return Math[_0xda95c1(0x1be)](_0x20b6eb/Math[_0xda95c1(0x1d1)](0x400,_0x3610a3),0x2)+'\x20'+_0x47bc58[_0x3610a3];}let _0x4f930f=await _0x23da39['json'](),{document:_0x45be36}=new JSDOM(_0x4f930f['result'])['window'],_0x199ed0=_0x45be36['querySelectorAll'](_0x420749(0x1eb)),_0x3936b2=_0x199ed0[{'mp4':0x0,'mp3':0x1}[_0xd440da]||0x0],_0x124c78;switch(_0xd440da){case _0x420749(0x1d6):_0x124c78=Object[_0x420749(0x1c3)]([..._0x3936b2['querySelectorAll'](_0x420749(0x1db))][_0x420749(0x1e3)](_0x19211e=>!/\.3gp/[_0x420749(0x1f0)](_0x19211e[_0x420749(0x1f1)]))['map'](_0x557f3d=>[_0x557f3d[_0x420749(0x1f1)][_0x420749(0x1d9)](/.*?(?=\()/)[0x0][_0x420749(0x1df)](),_0x557f3d[_0x420749(0x1ec)]['nextSibling'][_0x420749(0x1c9)][_0x420749(0x1f1)]]));break;case _0x420749(0x1e7):_0x124c78={'128kbps':_0x3936b2[_0x420749(0x1dc)]('td\x20>\x20a[href=\x22#\x22]')[_0x420749(0x1ec)][_0x420749(0x1c9)][_0x420749(0x1c9)][_0x420749(0x1f1)]};break;default:_0x124c78={};}let _0x5b42c5=_0x124c78[_0x3865a1],_0xff383f=/var k__id = "(.*?)"/[_0x420749(0x1ef)](_0x45be36[_0x420749(0x1e4)]['innerHTML'])||['',''],_0x149b29=_0x45be36['querySelector'](_0x420749(0x1d8))[_0x420749(0x1bd)],_0xd96520=_0x45be36['querySelector']('b')[_0x420749(0x1f1)],_0x20f7b3=await post('https://www.y2mate.com/mates/'+_0x24775e+'/convert',{'type':_0x420749(0x1e5),'_id':_0xff383f[0x1],'v_id':_0x5ebc27[0x1],'ajax':'1','token':'','ftype':_0xd440da,'fquality':_0x1efd17}),_0x3307d7=await _0x20f7b3[_0x420749(0x1cf)](),_0x4aaa8e=/<a.+?href="(.+?)"/['exec'](_0x3307d7[_0x420749(0x1e2)])[0x1];return{'dl_link':_0x4aaa8e[_0x420749(0x1d4)](/https/g,'http'),'thumb':_0x149b29,'title':_0xd96520,'size':_0x5b42c5,'available':_0x124c78};}async function downloadYT(_0x525d58,_0x3ec754=_0x2468f1(0x1f2),_0x1359fc=_0x2468f1(0x1c8)){return new Promise(async(_0x4774f6,_0x23203b)=>{const _0x3e0f1a=_0x3cd0;var _0x3d1668=[_0x3e0f1a(0x1dd),'en136',_0x3e0f1a(0x1c6),_0x3e0f1a(0x1e1),_0x3e0f1a(0x1c7),'en68'],_0x288637=_0x3ec754===_0x3e0f1a(0x1f2)?_0x3e0f1a(0x1d6):_0x3e0f1a(0x1e7),_0x3cf925=_0x3ec754===_0x3e0f1a(0x1c2)?_0x3e0f1a(0x1cb):_0x1359fc,_0x9b53d0=_0x3cf925[_0x3e0f1a(0x1e6)]('p')?'p':_0x3e0f1a(0x1d5);for(let _0xa673bc of _0x3d1668){var {dl_link:_0x226e7e,thumb:_0x45c6c6,title:_0x3a9374,size:_0x19f591,available:_0x142eed}=await yt(_0x3e0f1a(0x1bb)+_0x525d58,_0x3cf925,_0x288637,_0x3cf925['replace'](_0x9b53d0,''),_0xa673bc);if(_0x226e7e!==_0x3e0f1a(0x1e8))return _0x4774f6({'url':_0x226e7e,'title':_0x3a9374,'thumbnail':_0x45c6c6,'size':_0x19f591,'available':_0x142eed});}});}module[_0x2468f1(0x1c1)]={'yt':yt,'ytIdRegex':ytIdRegex,'downloadYT':downloadYT,'servers':[_0x2468f1(0x1dd),_0x2468f1(0x1ed),'id4',_0x2468f1(0x1e1),_0x2468f1(0x1c7),'en68']};
+let fetch = require('node-fetch')
+let { JSDOM } = require('jsdom')
+
+function post(url, formdata) {
+  return fetch(url, {
+    method: 'POST',
+    headers: {
+      accept: "*/*",
+      'accept-language': "en-US,en;q=0.9",
+      'content-type': "application/x-www-form-urlencoded; charset=UTF-8"
+    },
+    body: new URLSearchParams(Object.entries(formdata))
+  })
+}
+const ytIdRegex = /(?:youtube\.com\/\S*(?:(?:\/e(?:mbed))?\/|watch\?(?:\S*?&?v\=))|youtu\.be\/)([a-zA-Z0-9_-]{6,11})/
+async function yt(url, quality, type, bitrate, server = 'en68') {
+  let ytId = ytIdRegex.exec(url)
+  url = 'https://youtu.be/' + ytId[1]
+  let res = await post(`https://www.y2mate.com/mates/${server}/analyze/ajax`, {
+    url,
+    q_auto: 0,
+    ajax: 1
+  })
+  function bytesToSize(bytes) {
+    var sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
+    if (bytes == 0) return '0 Byte';
+    var i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)));
+    return Math.round(bytes / Math.pow(1024, i), 2) + ' ' + sizes[i];
+  }
+  let json = await res.json()
+  let { document } = (new JSDOM(json.result)).window
+  let tables = document.querySelectorAll('table')
+  let table = tables[{ mp4: 0, mp3: 1 }[type] || 0]
+  let list
+  switch (type) {
+    case 'mp4':
+      list = Object.fromEntries([...table.querySelectorAll('td > a[href="#"]')].filter(v => !/\.3gp/.test(v.innerHTML)).map(v => [v.innerHTML.match(/.*?(?=\()/)[0].trim(), v.parentElement.nextSibling.nextSibling.innerHTML]))
+      break
+    case 'mp3':
+      list = {
+        '128kbps': table.querySelector('td > a[href="#"]').parentElement.nextSibling.nextSibling.innerHTML
+      }
+      break
+    default:
+      list = {}
+  }
+  let filesize = list[quality]
+  let id = /var k__id = "(.*?)"/.exec(document.body.innerHTML) || ['', '']
+  let thumb = document.querySelector('img').src
+  let title = document.querySelector('b').innerHTML
+  let res2 = await post(`https://www.y2mate.com/mates/${server}/convert`, {
+    type: 'youtube',
+    _id: id[1],
+    v_id: ytId[1],
+    ajax: '1',
+    token: '',
+    ftype: type,
+    fquality: bitrate
+  })
+  let json2 = await res2.json()
+  let resUrl = /<a.+?href="(.+?)"/.exec(json2.result)[1]
+  return {
+    dl_link: resUrl.replace(/https/g, 'http'),
+    thumb,
+    title,
+    size: filesize,
+    available:list
+  }
+}
+async function downloadYT(vid,type = 'video',quality = '360p'){
+    return new Promise(async (resolve,reject)=>{
+var servers = ['en154','en136', 'id4', 'en60', 'en61', 'en68']
+var format = type === 'video' ? 'mp4' : 'mp3';
+var resolution = type === 'audio' ? '128kbps' : quality;
+var end = resolution.endsWith("p") ? "p" : "kbps";
+for (let server of servers){
+    var {dl_link,thumb,title,size,available} = await yt('https://youtu.be/'+vid,resolution,format,resolution.replace(end,""),server)
+    if (dl_link !== "http://app.y2mate.com/download") return resolve({
+        url:dl_link,
+        title:title,
+        thumbnail:thumb,
+        size:size,
+        available:available
+        })    
+}
+    });
+}
+module.exports = {
+  yt,
+  ytIdRegex,
+  downloadYT,
+  servers: ['en154','en136', 'id4', 'en60', 'en61', 'en68']
+};
