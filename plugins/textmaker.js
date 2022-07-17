@@ -1,5 +1,5 @@
 const {Module} = require('../main')
-const {getBuffer} = require('alexa-bot');
+const {getBuffer} = require('abu-bot');
 const axios = require('axios');
 const {MODE} = require('../config');
 let auto = MODE == 'public' ? false : true
