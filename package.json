@@ -33,7 +33,7 @@
     "node-webpmux": "^3.1.0",
     "node-cron": "3.0.1",
     "async-g-i-s": "1.0.0",
-    "Abu-MD-bot": "2.0.7",
+    "raganork-bot": "2.0.7",
     "sequelize": "^6.13.0",
     "sqlite3": "^5.0.0",
     "supervisor": "^0.12.0"
