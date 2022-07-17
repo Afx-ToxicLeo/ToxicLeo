@@ -54,11 +54,6 @@
             "required": true,
             "value":"ʏᴏᴜʀ ʙᴏᴛ ɴᴀᴍᴇ"
         },
-        "OWNER_NUMBER": {
-            "description": "Owner number",
-            "required": true,
-            "value":"917025994178"
-        },
         "AUDIO_DATA": {
             "description": "Name of audio (take) name;name;image(url)",
             "required": true,
