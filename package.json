@@ -1,40 +1,39 @@
 {
-  "name": "abu-md",
+  "name": "Abu-MD", 
   "version": "2.0.1",
   "description": "Abu whatsapp bot- Multi device version.",
-  "main": "./abu-md/index.js",
+  "main": "./Abu-MD/index.js",
   "scripts": {
     "start": "supervisor -s index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Afx-Abu/abu-md-md.git"
+    "url": "git+https://github.com/Afx-Abu/Abu-MD.git"
   },
   "keywords": [
     "whatsapp",
-    "bot",
+    "Abu",
     "multi-device"
   ],
   "author": "Jsl",
   "developer": "@Afx-Abu",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/Afx-Abu/abu-md/issues"
+    "url": "https://github.com/Afx-Abu/Abu-MD/issues"
   },
-  "homepage": "https://github.com/Afx-Abu/abu-md#readme",
+  "homepage": "https://github.com/Afx-Abu/Abu-MD#readme",
   "dependencies": {
     "@adiwajshing/baileys": "4.1.0",
     "@adiwajshing/keyed-db":"0.2.4",
-    "acrcloud":"1.4.0",
-    "alexa-bot": "2.3.0",
     "abu-bot": "2.3.4",
+    "acrcloud":"1.4.0",
     "string-crypto": "2.0.2",
     "link-preview-js":"2.1.15",
     "mongodb": "^4.3.1",
     "node-webpmux": "^3.1.0",
     "node-cron": "3.0.1",
     "async-g-i-s": "1.0.0",
-    "raganork-bot": "2.0.7",
+    "Abu-MD-bot": "2.0.7",
     "sequelize": "^6.13.0",
     "sqlite3": "^5.0.0",
     "supervisor": "^0.12.0"

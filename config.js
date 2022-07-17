@@ -1,1 +1,45 @@
-function _0xdb86(_0x7f7474,_0x575d28){const _0x89f926=_0x89f9();return _0xdb86=function(_0xdb86fc,_0x431b25){_0xdb86fc=_0xdb86fc-0x9b;let _0x474fa8=_0x89f926[_0xdb86fc];return _0x474fa8;},_0xdb86(_0x7f7474,_0x575d28);}const _0x21d189=_0xdb86;function _0x89f9(){const _0x536978=['18LvtiHw','./config.env','HEROKU','READ_MESSAGES','18TbySca','91,94,212','ALWAYS_ONLINE','./bot.db','config.env','https://i.imgur.com/OseHc3b.jpg\x20Hey\x20{sender},\x20I\x27m\x20alive\x20\x0a\x20Uptime:\x20{uptime}','32556ESIeTS','MODE','78c84c62b32a88e86daf87dd509a657a','true','english','1390124SnZWCM','3XEAgSS','917025994178','4881994TxjqbM','PMB','CHATBOT','656614LLpprF','ytu3AdkCu7fkRVuENhXxs9jsOW4YJtDXimAWMpJp','DEBUG','HANDLERS','ALLOWED','ᴀʙᴜ-ᴍᴅ','DATABASE_URL','BOT_NAME','existsSync','deb80cd12ababea1c9b9a8ad6ce3fab2','27335TSUkFa','ᴀʙᴜ-ᴍᴅ;ᴊsʟ;917025994178;https://i.imgur.com/OseHc3b.jpg;https://chat.whatsapp.com/KDt0eEkGCho7tLbfcmMltB','config','910ecXMJu','17433bMmxry','READ_COMMAND','exports','WARN','STICKER_DATA','BOT_INFO','HEROKU_API_KEY','SESSION','8nAyhpY','USERNAME','env','ᴀʙᴜ-sᴇʀ;ᴊsʟ-ᴀʙᴜ;https://i.imgur.com/OseHc3b.jpg','LANGUAGE','PASSWORD','ANTILINK_WARN','AUDIO_DATA','919074309534-1632403322@g.us','V\x202.0.1','622945qXtelz','private','1364ZqAuYy'];_0x89f9=function(){return _0x536978;};return _0x89f9();}(function(_0x42c37c,_0x1d6e31){const _0x17be59=_0xdb86,_0x498821=_0x42c37c();while(!![]){try{const _0x1d95e9=parseInt(_0x17be59(0xb1))/0x1*(-parseInt(_0x17be59(0xca))/0x2)+parseInt(_0x17be59(0xa2))/0x3*(parseInt(_0x17be59(0xa1))/0x4)+-parseInt(_0x17be59(0xc7))/0x5*(-parseInt(_0x17be59(0xce))/0x6)+-parseInt(_0x17be59(0xa7))/0x7*(parseInt(_0x17be59(0xbd))/0x8)+-parseInt(_0x17be59(0xb5))/0x9*(parseInt(_0x17be59(0xb4))/0xa)+-parseInt(_0x17be59(0xc9))/0xb*(parseInt(_0x17be59(0x9c))/0xc)+parseInt(_0x17be59(0xa4))/0xd;if(_0x1d95e9===_0x1d6e31)break;else _0x498821['push'](_0x498821['shift']());}catch(_0x27faf3){_0x498821['push'](_0x498821['shift']());}}}(_0x89f9,0x3ba74));const fs=require('fs'),{Sequelize}=require('sequelize');if(fs[_0x21d189(0xaf)](_0x21d189(0xd2)))require('dotenv')[_0x21d189(0xb3)]({'path':_0x21d189(0xcb)});function convertToBool(_0x4833bd,_0x38362e=_0x21d189(0x9f)){return _0x4833bd===_0x38362e?!![]:![];}DATABASE_URL=process[_0x21d189(0xbf)]['DATABASE_URL']===undefined?_0x21d189(0xd1):process['env'][_0x21d189(0xad)],DEBUG=process[_0x21d189(0xbf)]['DEBUG']===undefined?![]:convertToBool(process['env'][_0x21d189(0xa9)]),module[_0x21d189(0xb7)]={'VERSION':_0x21d189(0xc6),'ALIVE':process[_0x21d189(0xbf)]['ALIVE']||_0x21d189(0x9b),'BLOCK_CHAT':process['env']['BLOCK_CHAT']||'','ALWAYS_ONLINE':convertToBool(process['env'][_0x21d189(0xd0)])||!![],'READ_MESSAGES':convertToBool(process[_0x21d189(0xbf)][_0x21d189(0xcd)])||![],'PMB_VAR':convertToBool(process[_0x21d189(0xbf)]['PMB_VAR'])||![],'PMB':process[_0x21d189(0xbf)][_0x21d189(0xa5)]||'*\x20ᴘᴍ\x20ᴍᴇssᴀɢᴇ\x20ɴᴏᴛ\x20ᴀʟʟᴏᴡ\x20.ɪᴀᴍ\x20ʙʟᴏᴄᴋɪɴɢ\x20ʙʀᴏ\x20sᴏʀʀʏ!*','READ_COMMAND':convertToBool(process[_0x21d189(0xbf)][_0x21d189(0xb6)])||!![],'USERNAME':process[_0x21d189(0xbf)][_0x21d189(0xbe)]||'','SESSION':process['env'][_0x21d189(0xbc)]||'','IMGBB_KEY':['76a050f031972d9f27e329d767dd988f',_0x21d189(0xb0),_0x21d189(0x9e)],'RG':process[_0x21d189(0xbf)]['RG']||_0x21d189(0xc5),'PASSWORD':process[_0x21d189(0xbf)][_0x21d189(0xc2)]||'','BOT_INFO':process['env'][_0x21d189(0xba)]||_0x21d189(0xb2),'RBG_KEY':process['env']['RBG_KEY']||'','ALLOWED':process[_0x21d189(0xbf)][_0x21d189(0xab)]||_0x21d189(0xcf),'CHATBOT':process[_0x21d189(0xbf)][_0x21d189(0xa6)]||'off','HANDLERS':process[_0x21d189(0xbf)][_0x21d189(0xaa)]||'.,','STICKER_DATA':process[_0x21d189(0xbf)][_0x21d189(0xb9)],'BOT_NAME':process['env'][_0x21d189(0xae)]||_0x21d189(0xac),'AUDIO_DATA':process[_0x21d189(0xbf)]['AUDIO_DATA']===undefined||process['env'][_0x21d189(0xc4)]===_0x21d189(0xc8)?_0x21d189(0xc0):process[_0x21d189(0xbf)]['AUDIO_DATA'],'TAKE_KEY':process[_0x21d189(0xbf)]['TAKE_KEY']||'','MODE':process['env'][_0x21d189(0x9d)]||_0x21d189(0xc8),'WARN':process[_0x21d189(0xbf)][_0x21d189(0xb8)]||'4','ANTILINK_WARN':process[_0x21d189(0xbf)][_0x21d189(0xc3)]||'','HEROKU':{'HEROKU':process[_0x21d189(0xbf)]['HEROKU']===undefined?![]:convertToBool(process[_0x21d189(0xbf)][_0x21d189(0xcc)]),'API_KEY':process[_0x21d189(0xbf)][_0x21d189(0xbb)]||'','APP_NAME':process[_0x21d189(0xbf)]['HEROKU_APP_NAME']||''},'DATABASE_URL':DATABASE_URL,'DATABASE':DATABASE_URL===_0x21d189(0xd1)?new Sequelize({'dialect':'sqlite','storage':DATABASE_URL,'logging':DEBUG}):new Sequelize(DATABASE_URL,{'dialectOptions':{'ssl':{'require':!![],'rejectUnauthorized':![]}},'logging':DEBUG}),'SUDO':process[_0x21d189(0xbf)]['SUDO']||_0x21d189(0xa3),'LANGUAGE':process[_0x21d189(0xbf)][_0x21d189(0xc1)]||_0x21d189(0xa0),'DEBUG':DEBUG,'ACR_A':'ff489a0160188cf5f0750eaf486eee74','ACR_S':_0x21d189(0xa8)};
+const fs = require('fs');
+const { Sequelize } = require('sequelize');
+if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
+function convertToBool(text, fault = 'true') {
+    return text === fault ? true : false;
+}
+DATABASE_URL = process.env.DATABASE_URL === undefined ? './bot.db' : process.env.DATABASE_URL;
+DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
+module.exports = {
+    VERSION: 'V 2.0.1',
+    ALIVE: process.env.ALIVE || "https://i.imgur.com/OseHc3b.jpg Hey {sender}, I'm alive \n Uptime: {uptime}",
+    BLOCK_CHAT: process.env.BLOCK_CHAT || '',
+    ALWAYS_ONLINE: convertToBool(process.env.ALWAYS_ONLINE) || true,
+    READ_MESSAGES: convertToBool(process.env.READ_MESSAGES) || false,
+    PMB_VAR: convertToBool(process.env.PMB_VAR) || false,
+    PMB: process.env.PMB || '*ᴘᴍ ᴍᴇssᴀɢᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ʙʀᴏ .ɪᴀᴍ ʙʟᴏᴄᴋɪɴɢ sᴏʀʀʏ!*',
+    READ_COMMAND: convertToBool(process.env.READ_COMMAND) || true,
+    SESSION: process.env.SESSION || '',
+    IMGBB_KEY: ["76a050f031972d9f27e329d767dd988f","deb80cd12ababea1c9b9a8ad6ce3fab2","78c84c62b32a88e86daf87dd509a657a"],
+    RG: process.env.RG || '7025994178-1632403322@g.us',
+    RBG_KEY: process.env.RBG_KEY || '',
+    ALLOWED: process.env.ALLOWED || '91,94,212',
+    CHATBOT: process.env.CHATBOT || 'off',
+    HANDLERS: process.env.HANDLERS || '.,',
+    STICKER_DATA: process.env.STICKER_DATA,
+    BOT_NAME: process.env.BOT_NAME || 'ᴀʙᴜ ᴍᴅ',
+    OWNER_NUMBER: process.env.OWNER_NUMBER || '917025994178',
+    AUDIO_DATA: process.env.AUDIO_DATA === undefined || process.env.AUDIO_DATA === "private" ? '𝙰𝙱𝚄-𝙹𝚂𝙻;𝙰𝙱𝚄 𝙼𝙳 𝙱𝙾𝚃;https://i.imgur.com/OseHc3b.jpg' : process.env.AUDIO_DATA,
+    TAKE_KEY: process.env.TAKE_KEY || '',
+    MODE: process.env.MODE || 'public',
+    WARN: process.env.WARN || '4',
+    ANTILINK_WARN: process.env.ANTILINK_WARN || '',
+    HEROKU: {
+        HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),
+        API_KEY: process.env.HEROKU_API_KEY || '',
+        APP_NAME: process.env.HEROKU_APP_NAME || ''
+    },
+    DATABASE_URL: DATABASE_URL,
+    DATABASE: DATABASE_URL === './bot.db' ? new Sequelize({ dialect: "sqlite", storage: DATABASE_URL, logging: DEBUG }) : new Sequelize(DATABASE_URL, { dialectOptions: { ssl: { require: true, rejectUnauthorized: false } }, logging: DEBUG }),
+    SUDO: process.env.SUDO || '917025994178',
+    LANGUAGE: process.env.LANGUAGE || 'en',
+    DEBUG: DEBUG,
+    ACR_A: "4b64f4e5401d1380e50b30d526def287",
+    ACR_S: "uSVrKResE7wF4d6A1dtqvPWTTy3rBp3YjldsJSCh"
+    };
