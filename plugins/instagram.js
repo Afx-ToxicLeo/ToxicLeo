@@ -13,7 +13,7 @@ const {
     getStalk,
     getStory,
     getBuffer
-} = require('alexa-bot');
+} = require('abu-bot');
 const {
     downloadGram,
     pin,
@@ -28,10 +28,10 @@ var downloading = "_*Downloading*_";
 var need_acc = "*_Need an instagram username!_*";
 var fail = "*_Download failed! Check your link and try again_*";
 var need_acc_s = "_Need an instagram username or link!_";
-let sourav = setting.MODE == 'public' ? false : true
+let 7asil = setting.MODE == 'public' ? false : true
 Module({
     pattern: 'insta ?(.*)',
-    fromMe: sourav,
+    fromMe: 7asil,
     desc: 'Instagram post downloader',
     usage: 'insta link or reply to a link',
     use: 'download'
@@ -57,7 +57,7 @@ Module({
 }));
 Module({
     pattern: 'fb ?(.*)',
-    fromMe: sourav,
+    fromMe: 7asil,
     desc: 'Facebook video downloader',
     usage: 'fb link or reply to a link',
     use: 'download'
@@ -72,7 +72,7 @@ Module({
         }));
 Module({
     pattern: 'ig ?(.*)',
-    fromMe: sourav,
+    fromMe: 7asil,
     desc: 'Gets account info from instagram',
     usage: 'ig username',
     use: 'search'
@@ -99,7 +99,7 @@ Module({
 }));
 Module({
     pattern: 'story ?(.*)',
-    fromMe: sourav,
+    fromMe: 7asil,
     desc: 'Instagram stories downloader',
     usage: '.story username or link',
     use: 'download'
@@ -134,7 +134,7 @@ Module({
 }));
 Module({
     pattern: 'pin ?(.*)',
-    fromMe: sourav,
+    fromMe: 7asil,
     desc: 'Pinterest downloader',
     usage: '.pin reply or link',
     use: 'download'
@@ -152,7 +152,7 @@ Module({
 }));
 Module({
     pattern: 'tiktok ?(.*)',
-    fromMe: sourav,
+    fromMe: 7asil,
     desc: 'tiktok downloader',
     usage: '.tiktok reply or link',
     use: 'download'
@@ -176,7 +176,7 @@ Module({
     }));
     Module({
         on: 'button',
-        fromMe: sourav
+        fromMe: 7asil
     }, (async (msg) => {
         if (msg.list && msg.list.startsWith("igs") && msg.list.split(" ").includes(msg.myjid)){
             var username = msg.list.split(" ")[2];
