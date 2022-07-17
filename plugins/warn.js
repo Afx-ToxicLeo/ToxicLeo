@@ -1,11 +1,11 @@
-let {Jsl} = require('../main');
+let {Module} = require('../main');
 let {WARN,ANTILINK_WARN} = require('../config');
 let {getString} = require('./misc/lang');
 const {Fancy} = require('abu-bot')
 let {isAdmin} = require('./misc/misc');
 let Lang = getString('group');
-let {setWarn,resetWarn,mentionjid} = require('./misc/misc');
-Jsl({pattern: 'warn ?(.*)', fromMe: true,use: 'group', desc:Lang.WARN_DESC}, (async (m, mat) => { 
+let {setWarn,resetWarn,mentionjid} = require('abu-bot')
+Module({pattern: 'warn ?(.*)', fromMe: true,use: 'group', desc:Lang.WARN_DESC}, (async (m, mat) => { 
 if (mat[1] === "reset") return await m.sendReply("*Wrong command! Use _.reset warn_*")
 if (m.message.includes(Lang.REMAINING)) return;
 var user = m.mention[0] || m.reply_message.jid
@@ -31,14 +31,14 @@ if (warn !== 0) {
     await m.client.groupParticipantsUpdate(m.jid, [user], "remove")
  }
 }));
-Jsl({pattern: 'reset warn',use: 'group',fromMe: true, desc:'Resets the warn count of the user'}, (async (m, mat) => { 
+Module({pattern: 'reset warn',use: 'group',fromMe: true, desc:'Resets the warn count of the user'}, (async (m, mat) => { 
 var user = m.mention[0] || m.reply_message.jid
 if (!user) return await m.sendReply(Lang.NEED_USER)
 if (!m.jid.endsWith('@g.us')) return await m.sendReply(Lang.GROUP_COMMAND)
 try { await resetWarn(m.jid,user) } catch { return await m.sendReply("error")}
 return await m.client.sendMessage(m.jid,{text:Lang.WARN_RESET.format(mentionjid(user)), mentions: [user] })
 }));
-Jsl({on: 'text', fromMe: false}, (async (m, mat) => { 
+Module({on: 'text', fromMe: false}, (async (m, mat) => { 
     if (!ANTILINK_WARN.split(",").includes(m.jid)) return;
     var matches = m.message.match(/\bhttps?:\/\/\S+/gi);
     if (matches && matches[0].includes(".")) {

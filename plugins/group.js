@@ -11,9 +11,9 @@ const {
     mentionjid
 } = require('./misc/misc');
 const {
-    Jsl
+    Module
 } = require('../main')
-Jsl({
+Module({
     pattern: 'kick ?(.*)',
     fromMe: true,
     desc: Lang.KICK_DESC,
@@ -59,7 +59,7 @@ Jsl({
     })
     await message.client.groupParticipantsUpdate(message.jid, [user], "remove")
 }))
-Jsl({
+Module({
     pattern: 'add ?(.*)',
     fromMe: true,
     desc: Lang.ADD_DESC,
@@ -74,7 +74,7 @@ Jsl({
     var user = initt.replace(/\+/g, '').replace(' ', '').replace(' ', '').replace(' ', '').replace(' ', '').replace(/\(/g, '').replace(/\)/g, '').replace(/-/g, '')
     await message.client.groupAdd(user,message)
 }))
-Jsl({
+Module({
     pattern: 'promote ?(.*)',
     fromMe: true,
     use: 'group',
@@ -91,7 +91,7 @@ Jsl({
     })
     await message.client.groupParticipantsUpdate(message.jid, [user], "promote")
 }))
-Jsl({
+Module({
     pattern: 'leave',
     fromMe: true,
     desc: Lang.LEAVE_DESC
@@ -99,7 +99,7 @@ Jsl({
     
     return await message.client.groupLeave(message.jid);
 }))
-Jsl({
+Module({
     pattern: 'demote ?(.*)',
     fromMe: true,
     use: 'group',
@@ -116,7 +116,7 @@ Jsl({
     })
     await message.client.groupParticipantsUpdate(message.jid, [message.reply_message.jid], "demote")
 }))
-Jsl({
+Module({
     pattern: 'mute',
     use: 'group',
     fromMe: true,
@@ -128,7 +128,7 @@ Jsl({
     await message.client.groupSettingUpdate(message.jid, 'announcement')
     await message.sendMessage(Lang.MUTED)
 }))
-Jsl({
+Module({
     pattern: 'unmute',
     use: 'group',
     fromMe: true,
@@ -140,7 +140,7 @@ Jsl({
     await message.client.groupSettingUpdate(message.jid, 'not_announcement')
     await message.sendMessage(Lang.UNMUTED)
 }))
-Jsl({
+Module({
     pattern: 'jid',
     use: 'group',
     fromMe: true,
@@ -149,7 +149,7 @@ Jsl({
     var jid = message.reply_message.jid || message.jid
     await message.sendReply(jid)
 }))
-Jsl({
+Module({
     pattern: 'invite',
     fromMe: true,
     use: 'group',
@@ -163,7 +163,7 @@ Jsl({
         text: "https://chat.whatsapp.com/" + code,detectLinks: true
     },{detectLinks: true})
 }))
-Jsl({
+Module({
     pattern: 'revoke',
     fromMe: true,
     use: 'group',
@@ -175,7 +175,7 @@ Jsl({
     await message.client.groupRevokeInvite(message.jid)
     await message.sendMessage(Lang.REVOKED)
 }))
-Jsl({
+Module({
     pattern: 'common ?(.*)',
     fromMe: true,
     use: 'group',
@@ -218,7 +218,7 @@ await message.client.sendMessage(message.jid, {
         mentions: jids
     })
 }));
-Jsl({
+Module({
     pattern: 'diff ?(.*)',
     fromMe: true,
     use: 'utility',
@@ -235,7 +235,7 @@ msg += "```"+s.id.split("@")[0]+"``` \n"
 })    
 return await message.sendReply(msg)
 }));
-Jsl({
+Module({
     pattern: 'tagall',
     fromMe: true,
     desc: Lang.TAGALL_DESC,
@@ -255,7 +255,7 @@ Jsl({
         mentions: jids
     })
 }))
-Jsl({
+Module({
     pattern: 'tagadmin',
     fromMe: true,
     desc: Lang.TAGALL_DESC,
@@ -278,7 +278,7 @@ Jsl({
         mentions: jids
     })
 }))
-Jsl({
+Module({
     pattern: 'block ?(.*)',
     fromMe: true,
     use: 'owner'
@@ -288,7 +288,7 @@ Jsl({
     if (isGroup) user = message.mention[0] || message.reply_message.jid
     await message.client.updateBlockStatus(user, "block");
 }));
-Jsl({
+Module({
     pattern: 'join ?(.*)',
     fromMe: true,
     use: 'owner'
@@ -297,7 +297,7 @@ Jsl({
     if (!match[1] || !rgx.test(match[1])) return await message.sendReply("*Need group link*");
     await message.client.groupAcceptInvite(match[1].split("/")[3])
 }));
-Jsl({
+Module({
     pattern: 'unblock ?(.*)',
     fromMe: true,
     use: 'owner'
@@ -307,11 +307,11 @@ Jsl({
     var user = message.mention[0] || message.reply_message.jid
     await message.client.updateBlockStatus(user, "unblock");
 }));
-Jsl({
+Module({
     pattern: 'pp ?(.*)',
     fromMe: true,
     use: 'owner',
-    desc: "*Change/Get profile picture (full screen supported) with replied message*"
+    desc: "Change/Get profile picture (full screen supported) with replied message"
 }, (async (message, match) => {
     if (message.reply_message && message.reply_message.image) {
     var image = await message.reply_message.download()
@@ -323,11 +323,11 @@ if (message.reply_message && !message.reply_message.image) {
    return await message.sendReply({url:image},"image")
 }
 }));
-Jsl({
+Module({
     pattern: 'gpp ?(.*)',
     fromMe: true,
     use: 'owner',
-    desc: "*Change/Get group icon (full screen supported) with replied message*"
+    desc: "Change/Get group icon (full screen supported) with replied message"
 }, (async (message, match) => {
     if (message.reply_message && message.reply_message.image) {
     var image = await message.reply_message.download()

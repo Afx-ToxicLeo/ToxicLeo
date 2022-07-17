@@ -1,7 +1,7 @@
 const {
-    Jsl
+    Module
 } = require('../main');
-Jsl({
+Module({
     pattern: 'react ?(.*)',
     fromMe: true,
     use: 'utility'

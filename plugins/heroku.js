@@ -1,5 +1,5 @@
 const {
-    Jsl
+    Module
 } = require('../main');
 const {
     isAdmin,
@@ -9,7 +9,7 @@ const {
 } = require('./misc/misc');
 const {
     getBuffer
-} = require('abu-bot');
+} = require('alexa-bot');
 const {
     chatBot
 } = require('./misc/misc');
@@ -39,7 +39,7 @@ function secondsToDhms(seconds) {
     }
 let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 
-Jsl({
+Module({
     pattern: 'restart$',
     fromMe: true,
     dontAddCommandList: true,
@@ -52,7 +52,7 @@ Jsl({
     });
 }));
 
-Jsl({
+Module({
     pattern: 'shutdown$',
     fromMe: true,
     dontAddCommandList: true,
@@ -72,7 +72,7 @@ Jsl({
     });
 }));
 
-Jsl({
+Module({
     pattern: 'dyno$',
     fromMe: true,
     dontAddCommandList: true,
@@ -106,7 +106,7 @@ Jsl({
     });
 }));
 
-Jsl({
+Module({
     pattern: 'setvar ?(.*)',
     fromMe: true,
     desc: Lang.SETVAR_DESC,
@@ -129,7 +129,7 @@ Jsl({
 }));
 
 
-Jsl({
+Module({
     pattern: 'delvar ?(.*)',
     fromMe: true,
     desc: Lang.DELVAR_DESC,
@@ -155,7 +155,7 @@ Jsl({
     });
 
 }));
-Jsl({
+Module({
     pattern: 'getvar ?(.*)',
     fromMe: true,
     desc: Lang.GETVAR_DESC,
@@ -172,7 +172,7 @@ Jsl({
         await await message.sendMessage(error.message)
     });
 }));
-Jsl({
+Module({
         pattern: "allvar",
         fromMe: true,
         desc: Lang.ALLVAR_DESC,
@@ -193,7 +193,7 @@ Jsl({
             })
     }
 );
-Jsl({
+Module({
     pattern: 'mode',
     fromMe: true,
     desc: "Switches mode",
@@ -201,24 +201,24 @@ Jsl({
 }, (async (message, match) => {
     var buttons = [{
         urlButton: {
-            displayText: 'ᴘʟᴜɢɪɴs',
-            url: 'https://github.com/Afx-Abu/abu-plugin-list'
+            displayText: 'WIKI',
+            url: 'https://github.com/Afx-Abu/Abu-MD/wiki'
         }
     },
     {
         quickReplyButton: {
-            displayText: '𝐏𝐔𝐁𝐋𝐈𝐂',
+            displayText: 'PUBLIC',
             id: 'public '+message.myjid
         }
     }, {
         quickReplyButton: {
-            displayText: '𝐏𝐑𝐈𝐕𝐀𝐓𝐄',
+            displayText: 'PRIVATE',
             id: 'private '+message.myjid
         }  
     }]
     await message.sendImageTemplate(await getBuffer("https://mma.prnewswire.com/media/701943/Mode_Logo.jpg"),"Working mode configuration","Current mode: "+Config.MODE,buttons);
     }));
-Jsl({
+Module({
     pattern: 'chatbot',
     fromMe: true,
     desc: "Activates chatbot",
@@ -226,24 +226,24 @@ Jsl({
 }, (async (message, match) => {
     var buttons = [{
         urlButton: {
-            displayText: 'ᴘʟᴜɢɪɴs',
-            url: 'https://github.com/Afx-Abu/abu-plugin-list'
+            displayText: 'WIKI',
+            url: 'https://github.com/Afx-Abu/Abu-MD/wiki'
         }
     },
     {
         quickReplyButton: {
-            displayText: 'ᴇɴᴀʙʟᴇ',
+            displayText: 'ENABLE',
             id: 'cbe '+message.myjid
         }
     }, {
         quickReplyButton: {
-            displayText: 'ᴅɪsᴀʙʟᴇ',
+            displayText: 'DISABLE',
             id: 'cbd '+message.myjid
         }  
     }]
     await message.sendImageTemplate(await getBuffer("https://kriyatec.com/wp-content/uploads/2020/05/chatbot2.jpeg"),"🤖 Chatbot configuration","Current status: "+Config.CHATBOT,buttons);
     }));
-Jsl({
+Module({
     pattern: 'antilink',
     fromMe: true,
     desc: "Activates antilink",
@@ -257,28 +257,28 @@ Jsl({
     });
     var buttons = [{
         urlButton: {
-            displayText: 'ᴘʟᴜɢɪɴs',
-            url: 'https://github.com/Afx-Abu/abu-plugin-list'
+            displayText: 'WIKI',
+            url: 'https://github.com/Afx-Abu/Abu-MD/wiki'
         }
     },
     {
         quickReplyButton: {
-            displayText: '𝙴𝙽𝙰𝙱𝙻𝙴',
+            displayText: 'ENABLE',
             id: 'ante '+message.myjid
         }
     }, {
         quickReplyButton: {
-            displayText: '𝙳𝙸𝚂𝙰𝙱𝙻𝙴',
+            displayText: 'DISABLE',
             id: 'antd '+message.myjid
         }  
     }]
     var status = jids.includes(message.jid) ? 'on' : 'off';
     await message.sendImageTemplate(await getBuffer("https://thumbs.dreamstime.com/b/settings-gears-icon-crystal-blue-banner-background-isolated-172063768.jpg"),"🔗 Antilink configuration of "+(await message.client.groupMetadata(message.jid)).subject,"Current status: "+status,buttons);
     }));
-Jsl({
+Module({
     on: 'button',
     fromMe: true
-}, (async (message) => {
+}, (async (message, match) => {
     if (message.button && message.button.startsWith("restart") && message.button.includes(message.myjid)) {
         await message.sendReply("_Restarting_")
         await heroku.delete(baseURI + '/dynos').catch(async (error) => {
@@ -328,13 +328,18 @@ Jsl({
         return await message.sendReply("*Antilink has been disabled in this group ❗*")
     }
 }));
-Jsl({
+Module({
     on: 'text',
     fromMe: false
 }, (async (message, match) => {
     if (Config.CHATBOT === 'on') {
         await chatBot(message, Config.BOT_NAME)
     }
+}));
+Module({
+    on: 'text',
+    fromMe: false
+}, (async (message, match) => {
     if (/\bhttps?:\/\/\S+/gi.test(message.message)){
     var db = await getAntilink();
     const jids = []
@@ -347,9 +352,8 @@ Jsl({
     allowed.split(",").map(e=> checker.push(message.message.includes(e)))
     if (!checker.includes(true)){
     if (!(await isAdmin(message,message.sender))) {
-    var usr = message.sender.includes(":") ? message.sender.split(":")[0]+"@s.whatsapp.net" : message.sender
     await message.sendReply("*Links aren't allowed!*");
-    await message.client.groupParticipantsUpdate(message.jid, [usr], "remove")
+    await message.client.groupParticipantsUpdate(message.jid, [message.sender], "remove")
     }
     }
     }

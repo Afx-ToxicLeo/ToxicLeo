@@ -1,5 +1,5 @@
 const {
-    Jsl
+    Module
 } = require('../main');
 const {
     Mimetype
@@ -13,7 +13,7 @@ const {
     getStalk,
     getStory,
     getBuffer
-} = require('abu-bot');
+} = require('alexa-bot');
 const {
     downloadGram,
     pin,
@@ -28,10 +28,10 @@ var downloading = "_*Downloading*_";
 var need_acc = "*_Need an instagram username!_*";
 var fail = "*_Download failed! Check your link and try again_*";
 var need_acc_s = "_Need an instagram username or link!_";
-let jsl = setting.MODE == 'public' ? false : true
-Jsl({
+let sourav = setting.MODE == 'public' ? false : true
+Module({
     pattern: 'insta ?(.*)',
-    fromMe: jsl,
+    fromMe: sourav,
     desc: 'Instagram post downloader',
     usage: 'insta link or reply to a link',
     use: 'download'
@@ -50,15 +50,14 @@ Jsl({
     if (url != null) {
         var res = await downloadGram(url[0])
         if (res == false) return await msg.sendReply("*Download failed*");
-        var quoted = msg.reply_message ? msg.quoted : msg.data
         for (var i in res) {
-        await msg.client.sendMessage(msg.jid,{[res[i].includes("jpg")?'image':'video']:{url:res[i]}},{quoted})
+        await msg.sendReply({url:res[i]}, res[i].includes("jpg")?'image':'video')
         };
     }
 }));
-Jsl({
+Module({
     pattern: 'fb ?(.*)',
-    fromMe: jsl,
+    fromMe: sourav,
     desc: 'Facebook video downloader',
     usage: 'fb link or reply to a link',
     use: 'download'
@@ -71,9 +70,9 @@ Jsl({
      await msg.sendVideoTemplate(video,"*Facebook Downloader*","Click here to download HD video",
      [{urlButton: {displayText: 'HD Video',url: res.link_normal}}])
         }));
-Jsl({
+Module({
     pattern: 'ig ?(.*)',
-    fromMe: jsl,
+    fromMe: sourav,
     desc: 'Gets account info from instagram',
     usage: 'ig username',
     use: 'search'
@@ -98,9 +97,9 @@ Jsl({
         quoted: msg.data
     });
 }));
-Jsl({
+Module({
     pattern: 'story ?(.*)',
-    fromMe: jsl,
+    fromMe: sourav,
     desc: 'Instagram stories downloader',
     usage: '.story username or link',
     use: 'download'
@@ -133,9 +132,9 @@ Jsl({
   }
   await msg.client.sendMessage(msg.jid, listMessage)
 }));
-Jsl({
+Module({
     pattern: 'pin ?(.*)',
-    fromMe: jsl,
+    fromMe: sourav,
     desc: 'Pinterest downloader',
     usage: '.pin reply or link',
     use: 'download'
@@ -146,15 +145,14 @@ Jsl({
     if (/\bhttps?:\/\/\S+/gi.test(user)) user = user.match(/\bhttps?:\/\/\S+/gi)[0]
     try { var res = await pin(user) } catch {return await msg.sendReply("*Server error*")}
     await msg.sendMessage('_Downloading ' + res.data.length + ' medias_');
-    var quoted = msg.reply_message ? msg.quoted : msg.data
-    for (var i of res.data){
-        var type = i.url.includes("mp4") ? "video" : "image"
-        await msg.client.sendMessage(msg.jid,{[type]:{url:i.url }},{quoted})
+    for (var i in res){
+        var type = res.data[i].url.includes("mp4") ? "video" : "image"
+        await msg.sendReply({url:res.data[i].url },type)
     }
 }));
-Jsl({
+Module({
     pattern: 'tiktok ?(.*)',
-    fromMe: jsl,
+    fromMe: sourav,
     desc: 'tiktok downloader',
     usage: '.tiktok reply or link',
     use: 'download'
@@ -176,9 +174,9 @@ Jsl({
     }]
     await msg.sendImageTemplate(await getBuffer("https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2018/10/tiktok.jpeg"),"*TikTok video downloader*","Choose your format:",buttons);
     }));
-    Jsl({
+    Module({
         on: 'button',
-        fromMe: jsl
+        fromMe: sourav
     }, (async (msg) => {
         if (msg.list && msg.list.startsWith("igs") && msg.list.split(" ").includes(msg.myjid)){
             var username = msg.list.split(" ")[2];

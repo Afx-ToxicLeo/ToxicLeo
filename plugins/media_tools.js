@@ -1,17 +1,17 @@
 const {
-      Jsl
+      Module
   } = require('../main');
   const fs = require('fs');
   const ffmpeg = require('fluent-ffmpeg');
   const {
       saveMessage
   } = require('./misc/saveMessage');
-  const {getBuffer} = require('abu-bot');
+  const {getBuffer} = require('alexa-bot');
   const {
       trim,
       AVmix,
       trimVideo
-  } = require('abu-bot');
+  } = require('alexa-bot');
   const {
       MODE
   } = require('../config');
@@ -26,7 +26,7 @@ const {
   } = require('./misc/misc');
   const Lang = getString('media');
   const fromMe = MODE == 'public' ? false : true
-  Jsl({
+  Module({
       pattern: 'trim ?(.*)',
       fromMe: fromMe,
       desc: Lang.TRIM_DESC,
@@ -55,7 +55,7 @@ const {
           });
       }
   });
-  Jsl({
+  Module({
     pattern: "black",
     fromMe: fromMe,
     desc: "Audio to black video",
@@ -79,7 +79,7 @@ const {
         return;
     });
 });
-  Jsl({
+  Module({
       pattern: "avmix",
       fromMe: fromMe,
       desc: Lang.AVMIX_DESC,
@@ -108,7 +108,7 @@ const {
           return;
       });
   });
-  Jsl({
+  Module({
     pattern: "vmix ?(.*)",
     fromMe: fromMe,
     desc: "Merges/Joins two videos",
@@ -157,7 +157,7 @@ const {
         return;  
      }
 });
-  Jsl({
+  Module({
       pattern: "slowmo",
       fromMe: fromMe,
       desc: "Video to smooth slow motion",
@@ -176,7 +176,7 @@ const {
               return await message.sendMessage(fs.readFileSync('./temp/slowmo.mp4'), 'video')
           });
   });
- Jsl({
+ Module({
       pattern: "circle",
       fromMe: fromMe,
       desc: "Sticker/photo to circle crop",
@@ -184,7 +184,7 @@ const {
   }, async (message, match) => {
       await circle(message);
   });
-  Jsl({
+  Module({
       pattern: "gif",
       fromMe: fromMe,
       desc: "Video to gif with audio"
@@ -203,7 +203,7 @@ const {
               });
           });
   });
-  Jsl({
+  Module({
       pattern: "interp ?(.*)",
       fromMe: fromMe,
       desc: "Increases video's frame rate (FPS)",
@@ -222,7 +222,7 @@ const {
               return await message.sendMessage(fs.readFileSync('./temp/interp.mp4'), 'video')
           });
   });
-Jsl({
+Module({
       pattern: "find ?(.*)",
       fromMe: fromMe,
       desc: "Finds music name. Like Shazam",
@@ -261,7 +261,7 @@ const templateMessage = {
 }
 await message.client.sendMessage(message.jid, templateMessage)
   });
-  Jsl({pattern: "rotate ?(.*)",fromMe: fromMe}, async (message, match) => {
+  Module({pattern: "rotate ?(.*)",fromMe: fromMe}, async (message, match) => {
     if (!match[1] || !message.reply_message || !message.reply_message.video) return await message.sendReply("*Reply to a video*\n*.rotate left|right|flip*");        
     var file = await message.reply_message.download();
     var angle = "1"
