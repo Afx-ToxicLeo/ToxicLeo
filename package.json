@@ -25,7 +25,7 @@
   "dependencies": {
     "@adiwajshing/baileys": "4.1.0",
     "@adiwajshing/keyed-db":"0.2.4",
-    "abu-bot": "2.3.9",    
+    "abu-bot": "2.4.0",    
     "acrcloud":"1.4.0",
     "string-crypto": "2.0.2",
     "link-preview-js":"2.1.15",
