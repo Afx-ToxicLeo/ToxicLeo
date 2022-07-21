@@ -17,9 +17,6 @@ module.exports = {
     READ_COMMAND: convertToBool(process.env.READ_COMMAND) || true,
     USERNAME: process.env.USERNAME || '',
     SESSION: process.env.SESSION || '',
-    BGMFILTER: convertToBool(process.env.BGM_FILTER) || false,
-    DISBGM: process.env.DISABLE_JID_BGM_FILTER || false,
-    GEAR: process.env.CHANGE_BGM_TO || 'one'
     IMGBB_KEY: ["76a050f031972d9f27e329d767dd988f","deb80cd12ababea1c9b9a8ad6ce3fab2","78c84c62b32a88e86daf87dd509a657a"],
     RG: process.env.RG || '919074309534-1632403322@g.us',
     PASSWORD: process.env.PASSWORD || '',
