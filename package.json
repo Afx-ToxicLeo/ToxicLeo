@@ -28,6 +28,7 @@
     "abu-bot": "2.4.0",    
     "acrcloud":"1.4.0",
     "string-crypto": "2.0.2",
+    "pino": "8.3.0 ",
     "link-preview-js":"2.1.15",
     "mongodb": "^4.3.1",
     "node-webpmux": "^3.1.0",
@@ -37,6 +38,5 @@
     "sequelize": "^6.13.0",
     "sqlite3": "^5.0.0",
     "supervisor": "^0.12.0"
-    "pino": "^8.1.0",
      }
 }
