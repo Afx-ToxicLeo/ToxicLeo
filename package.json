@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/Afx-Abu/Abu-MD#readme",
   "dependencies": {
-    "@adiwajshing/baileys": "4.1.0",
+    "@adiwajshing/baileys": "git+https://github.com/Afx-Abu/Baileys.git",
     "@adiwajshing/keyed-db":"0.2.4",
     "abu-bot": "2.4.0",    
     "acrcloud":"1.4.0",
