@@ -1,4 +1,4 @@
-FROM fusuf/whatsasena:latest
+FROM quay.io/afx-abu/multi-beta
 
 RUN git clone https://github.com/Afx-Abu/Abu-MD /Jsl/Abu
 WORKDIR /Jsl/Abu
