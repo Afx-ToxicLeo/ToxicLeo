@@ -13,22 +13,7 @@
             "description": "Prefix of commands. Can be also false",
             "required": true,
             "value":".,"
-        },
-        "ANTILINK_WARN": {
-            "description": "Groups for antilink (JIDS)",
-            "required": false,
-            "value":"jid,jid"
-        },
-        "READ_MESSAGES": {
-            "description": "Bot will read all messages. Can be also false",
-            "required": true,
-            "value":"false"
-        },
-        "READ_COMMAND": {
-            "description": "Bot will read all commands (blue tick). Can be also false",
-            "required": true,
-            "value":"true"
-        },
+        },        
        "HEROKU_API_KEY": {
             "description": "For updating bot and setting vars remotely",
             "required": true,
@@ -39,25 +24,10 @@
             "required": true,
             "value":""
         },
-        "STICKER_DATA": {
-            "description": "Name of stickers created using bot. Can also split using ;",
-            "required": true,
-            "value":"ᴀʙᴜ ᴍᴅ ᴡᴀ ʙᴏᴛ"
-        },
-        "CHATBOT": {
-            "description": "chat bot ! auto replay",
-            "required": true,
-            "value":"off"
-        },
         "BOT_NAME": {
             "description": "Name of Your Bot",
             "required": true,
             "value":"ʏᴏᴜʀ ʙᴏᴛ ɴᴀᴍᴇ"
-        },
-        "AUDIO_DATA": {
-            "description": "Name of audio (take) name;name;image(url)",
-            "required": true,
-            "value":"ᴀʙᴜ;ᴊsʟ-4ʙᴜ;https://i.imgur.com/OseHc3b.jpg"
         },
         "MODE": {
             "description": "Work Type Private or public",
@@ -68,11 +38,6 @@
             "description": "These numbers can control your bot. seperate with commas",
             "required": false,
             "value":"917025994178"
-        },
-        "ALIVE": {
-            "description": "Alive message {image/link}, {sender} can also be used",
-            "required": false,
-            "value":"{pp} Active since {uptime}\n User:{sender}"
         },
        "SESSION": {
             "description": "Your MD Qr Code",
