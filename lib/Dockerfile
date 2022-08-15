@@ -1,4 +1,4 @@
-FROM quay.io/afx-abu/md-beta
+FROM quay.io/afx-abu/multi-beta
 
 RUN git clone https://github.com/Afx-Abu/Abu-MD /Jsl/Abu
 WORKDIR /Jsl/Abu
