@@ -1,6 +1,6 @@
 const {
      Module
- } = require('../main')
+ } = require('../events')
  const {
      Fancy
  } = require('abu-bot')
