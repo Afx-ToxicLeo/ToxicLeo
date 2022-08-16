@@ -1,5 +1,5 @@
 const { FancyRandom, getListFromCommand, getBuffer } = require("abu-bot");
-const { Module, commands } = require('../main')
+const { Module, commands } = require('../events.js')
 const { MODE } = require('../config');
 const config = require('../config');
 let w = MODE == 'public' ? false : true
