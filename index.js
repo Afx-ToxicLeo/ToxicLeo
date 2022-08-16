@@ -41,7 +41,6 @@ const simpleGit = require('simple-git');
 const git = simpleGit();
 const axios = require('axios');
 const got = require('got');
-const { version } = await fetchLatestBaileysVersion()
 const abu = makeWASocket({ logger, version, printQRInTerminal: false, auth: state })
 
 const AlexaDB = Shefin.DATABASE.define('Alexa', {
@@ -87,7 +86,7 @@ Array.prototype.remove = function() {
 
 async function startAlexa () {
     await Shefin.DATABASE.sync();
-    const alexa = AlexaConnect({
+    const abu = AlexaConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
         browser: ['Alexa Md','Safari','1.0.0'],
@@ -158,7 +157,7 @@ async function startAlexa () {
             chalk.green.bold('Plugins Installed!')
         );
         const id = '918089632591@s.whatsapp.net'
-        await alexa.sendMessage(id, { text: '_Alexa Started!_' })
+        await abu.sendMessage(id, { text: '_Alexa Started!_' })
     
     alexa.ev.on('chat.update', async m => {
         
@@ -237,6 +236,6 @@ async function startAlexa () {
     })
            }
     });
-    return alexa
+    return abu
   }
 startAlexa();
