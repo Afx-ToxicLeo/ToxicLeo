@@ -9,15 +9,15 @@ Module({
   fromMe: w,
   use: 'utility',
   desc: 'Measures ping'
-}, (async (message, match) => {
+}, (async (abu, match) => {
   const start = new Date().getTime()
-  await message.client.sendMessage(message.jid, {
+  await abu.client.sendabu(abu.jid, {
       text: '*❮ ᴛᴇsᴛɪɴɢ ᴘɪɴɢ ❯*'
   })
   const end = new Date().getTime()
-  await message.client.sendMessage(message.jid, {
+  await abu.client.sendabu(abu.jid, {
       text: '*ʀᴇsᴘᴏɴsᴇ ɪɴ ' + (end - start) + ' _ᴍs_*'
   }, {
-      quoted: message.data
+      quoted: abu.data
   })
 }));
