@@ -7,8 +7,8 @@ const fs = require('fs');
 const Db = require('./plugins/sql/plugin');
 
 const Language = require('../lib/language');
-const Lang = Language.getString('_plugin');
-const Lang = Language.getString('updater');
+const Lang = Language.getString('_plugin,updater');
+
 
 let msg = Config.LANG == 'TR' || Config.LANG == 'AZ' ? '*Bu Plugin Resmi Olarak Onaylanmıştır!* ✅' : '*This Plugin is Officially Approved!* ✅'
 let unmsg = Config.LANG == 'TR' || Config.LANG == 'AZ' ? '*Bu Plugin Resmi Değildir!* ❌' : '*This Plugin isn\'t Officially Approved!* ❌'
