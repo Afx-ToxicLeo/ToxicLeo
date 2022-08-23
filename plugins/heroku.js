@@ -6,7 +6,7 @@ const got = require('got');
 const fs = require('fs');
 const Db = require('./plugins/sql/plugin');
 
-const Language = require('../language');
+const Language = require('../lib/language');
 const Lang = Language.getString('_plugin');
 const Lang = Language.getString('updater');
 
