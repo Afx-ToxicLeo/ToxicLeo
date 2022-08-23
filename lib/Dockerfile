@@ -1,9 +1,10 @@
-FROM quay.io/afx-abu/multi-beta
+FROM fusuf/whatsasena:latest
 
-RUN git clone https://github.com/Afx-Abu/Abu-MD /Jsl/Abu
-WORKDIR /Jsl/Abu
+RUN git clone https://github.com/Afx-Abu/Abu_ser /jsl/Abuser
+WORKDIR /jsl/Abuser/
 ENV TZ=Asia/Kolkata
 RUN npm install supervisor -g
-RUN yarn install --ignore-engines
+RUN yarn install --no-audit
+RUN git clone https://github.com/Afx-Abu/bgms
 
-CMD ["node", "index.js"]
+CMD ["node", "bot.js"]
