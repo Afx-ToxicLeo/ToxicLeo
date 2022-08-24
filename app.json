@@ -39,6 +39,21 @@
             "required": false,
             "value":"917025994178"
         },
+        "NO_LOG": {
+            "description": " Set true if you don't want to see error log.",
+            "required": true,
+            "value": "false"
+        },
+        "SEND_READ": {
+            "description": "Write true if you want to throw seen.",
+            "required": true,
+            "value": "true"
+        },
+        "NO_ONLINE": {
+            "description": "Çevrimiçi görünmek istemiyorsanız true yazın. Type true if you don't want to appear online.",
+            "required": true,
+            "value": "true"
+        },
        "SESSION": {
             "description": "Your MD Qr Code",
             "required": true
