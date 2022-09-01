@@ -1,72 +1,24 @@
 {
-	"name": "Abu-MD",
-	"description": "Whatsapp Multi Version Abu Bot.",
-	"logo": "https://i.imgur.com/OseHc3b.jpg",
-	"keywords": [
-		"whatsapp",
-		"bot"
-	],
-	"repository": "https://github.com/Afx-Abu/Abu-MD",
-	"stack": "container",
-    "env": { 
-        "HANDLERS": {
-            "description": "Prefix of commands. Can be also false",
-            "required": true,
-            "value":".,"
-        },        
-       "HEROKU_API_KEY": {
-            "description": "For updating bot and setting vars remotely",
-            "required": true,
-            "value":""
-        },
-        "HEROKU_APP_NAME": {
-            "description": "Exact name which you gave at the top",
-            "required": true,
-            "value":""
-        },
-        "BOT_NAME": {
-            "description": "Name of Your Bot",
-            "required": true,
-            "value":"ʏᴏᴜʀ ʙᴏᴛ ɴᴀᴍᴇ"
-        },
-        "MODE": {
-            "description": "Work Type Private or public",
-            "required": true,
-            "value":"public"
-        },
-        "SUDO": {
-            "description": "These numbers can control your bot. seperate with commas",
-            "required": false,
-            "value":"917025994178"
-        },
-        "NO_LOG": {
-            "description": " Set true if you don't want to see error log.",
-            "required": true,
-            "value": "false"
-        },
-        "SEND_READ": {
-            "description": "Write true if you want to throw seen.",
-            "required": true,
-            "value": "true"
-        },
-        "NO_ONLINE": {
-            "description": "Çevrimiçi görünmek istemiyorsanız true yazın. Type true if you don't want to appear online.",
-            "required": true,
-            "value": "true"
-        },
-       "SESSION": {
-            "description": "Your MD Qr Code",
-            "required": true
-             
-        }
+  "name": "Abu-MD",
+  "description": "Abu Multidivice Whatsapp Bot",
+  "repository": "https://github.com/Afx-Abu/Abu-MD.git",
+  "keywords": [ "Abu-MD", "bot", "whatsapp bot", "whatsapp automation", "multi device"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
     },
-    "addons": [{
-      "plan": "heroku-postgresql"
-    }],
-    "buildpacks": [{
-      "url": "heroku-community/apt"
-      },
-      {
-      "url": "https://github.com/Afx-Abu/https-abu-heroku-buildpack-webp-binaries.git"
-      }]
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
   }
+}
