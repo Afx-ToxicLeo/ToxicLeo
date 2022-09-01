@@ -2,7 +2,10 @@
   "name": "Abu-MD",
   "version": "2.0.0",
   "description": "Multidivice Whatsapp Bot Abu MD",
-  "main": "index.js",
+  "main": "./Abu-MD/index.js",
+  "scripts": {
+    "start": "supervisor -s index.js"
+  },
   "type": "commonjs",
   "dependencies": {
     "Wa-Web": "github:adiwajshing/Baileys",
@@ -55,10 +58,6 @@
     "link-preview-js": "^2.1.19",
     "pino": "^7.6.5",
     "qrcode-terminal": "^0.12.0"
-  },
-  "scripts": {
-    "start": "supervisor -w lib,index.js,plugins index.js",
-    "test": "node index.js"
   },
   "repository": {
     "type": "git",
