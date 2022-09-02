@@ -1,24 +1,41 @@
 {
-  "name": "Abu-MD",
-  "version": "2.0.0",
-  "description": "Multidivice Whatsapp Bot Abu MD",
-  "main": "index.js",
-  "type": "commonjs",
-  "dependencies": {
+	"name": "Abu-MD",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+        "type": "commonjs",
+        "scripts": {
+        "start": "supervisor -s index.js"
+        },
+        "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Afx-Abu/Abu-MD.git"
+        },
+	"author": "",
+	"license": "GPL-3.0-or-later",
+        "bugs": {
+        "url": "https://github.com/Afx-Abu/Abu-MD/issues"
+	},
+        "homepage": "https://github.com/Afx-Abu/Abu-MD#readme",
+        "dependencies": {
     "@adiwajshing/baileys": "4.3.0",
     "@adiwajshing/keyed-db": "^0.2.4",
     "awesome-phonenumber": "^2.64.0",
-    "abu-bot": "2.4.0",
     "axios": "^0.27.2",
+    "Wa-Web": "github:adiwajshing/Baileys",
     "chalk": "^4.1.2",
     "cheerio": "^1.0.0-rc.10",
     "child_process": "^1.0.2",
     "crypto": "^1.0.1",
+    "pg": "^8.7.3",
     "file-type": "^16.5.3",
     "fluent-ffmpeg": "^2.1.2",
     "form-data": "^4.0.0",
+    "string-crypto": "2.0.2",
+    "pastebin-js" : "1.0.6",
     "fs": "^0.0.1-security",
     "g-i-s": "^2.1.6",
+    "dotenv": "^8.2.0",
     "google-it": "^1.6.2",
     "google-tts-api": "^2.0.2",
     "got": "^11.8.3",
@@ -48,6 +65,9 @@
     "util": "^0.12.4",
     "xfarr-api": "^1.0.2",
     "yargs": "^17.4.0",
+    "sequelize": "^6.19.0",
+    "sqlite3": "^5.0.8",
+    "youtubei.js": "^1.4.2-d.5",
     "yt-search": "^2.10.2"
   },
   "devDependencies": {
@@ -56,22 +76,5 @@
     "link-preview-js": "^2.1.19",
     "pino": "^7.6.5",
     "qrcode-terminal": "^0.12.0"
-  },
-  "scripts": {
-    "start": "supervisor -s index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Afx-Abu/Abu-MD.git"
-  },
-  "keywords": [
-    "multi-devices",
-    "whatsapp-bot"
-  ],
-  "author": "Afx-Abu",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Afx-Abu/Abu-MD/issues"
-  },
-  "homepage": "https://github.com/Afx-Abu/Abu-MD"
+      }     
 }
