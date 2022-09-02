@@ -21,6 +21,7 @@
     "@adiwajshing/baileys": "4.3.0",
     "@adiwajshing/keyed-db": "^0.2.4",
     "awesome-phonenumber": "^2.64.0",
+    "abu-bot": "2.4.0",
     "axios": "^0.27.2",
     "Wa-Web": "github:adiwajshing/Baileys",
     "chalk": "^4.1.2",
