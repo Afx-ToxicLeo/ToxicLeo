@@ -1,17 +1,7 @@
-FROM node:lts-buster
+FROM quay.io/afx-abu/multi-beta
 
-RUN apt-get update && \
-  apt-get install -y \
-  ffmpeg \
-  imagemagick \
-  webp && \
-  apt-get upgrade -y && \
-  rm -rf /var/lib/apt/lists/*
-
-COPY package.json .
-
-RUN npm install
-
-COPY . .
-
-CMD ["node", "."]
+RUN git clone https://github.com/Afx-Abu/Abu-MD /Jsl/Abu
+WORKDIR /Jsl/Abu
+ENV TZ=Asia/Kolkata
+RUN yarn install --ignore-engines
+CMD ["node", "index.js"]
