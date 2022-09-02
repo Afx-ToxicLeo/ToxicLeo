@@ -1,4 +1,4 @@
-FROM quay.io/afx-abu/md-beta
+FROM quay.io/afx-abu/md-latest
 RUN git clone https://github.com/Afx-Abu/Abu-MD /Jsl/Abu/
 WORKDIR /Jsl/Abu/
 ENV TZ=Asia/Kolkata
