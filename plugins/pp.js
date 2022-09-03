@@ -1,6 +1,6 @@
 const bots = require("../utils");
 const axios = require("axios");
-const conf = require("../lib/config");
+const conf = require("../lib/datas");
 const lang = bots.getString("wallpaper");
 
 bots.bot(
