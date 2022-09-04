@@ -45,8 +45,3 @@
 <a href="https://abu-jid.vercel.app"><img align="center" src="https://i.imgur.com/gtK4XLX.png" alt="Scan QR" height="112" width="300" /></a>
 <br>
 
-<p align="center">
-<a href="#"><img title="AbuSer" src="https://img.shields.io/badge/BOT WORKING-YES-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
-</p>
-</div>
-
