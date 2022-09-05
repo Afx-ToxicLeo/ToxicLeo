@@ -1,11 +1,11 @@
-const bots = require("../utils");
+const Jsl = require("../utils");
 const axios = require("axios");
-const conf = require("../lib/datas");
-const lang = bots.getString("wallpaper");
+const conf = require("../lib/Scheduler");
+const lang = Jsl.getString("wallpaper");
 
-bots.bot(
+Jsl.addCommand(
   {
-    pattern: ["pp"],
+    pattern: ["wr"],
     desc: lang.WP,
     sucReact: "🌇",
     category: ["all", "create"],
@@ -1259,12 +1259,9 @@ bots.bot(
       "https://images.wallpaperscraft.com/image/single/smiley_emotions_minimalism_134124_1350x2400.jpg";
 
     var i = Math.floor(r_text.length * Math.random());
-    // const buttons = [{buttonId: ".wallpaper",buttonText: { displayText: "ɴᴇxᴛ" },type: 1,},];
-    const Message = {
+      const Message = {
       image: { url: r_text[i] },
-      caption: bots.config.exif.cap,
-      // footer: bots.config.exif.footer,
-      // buttons,
+      caption: Jsl.config.exif.cap,
     };
     await client.sendMessage(message.from, Message, { quoted: message });
     global.catchError = false;
