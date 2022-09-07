@@ -4,7 +4,7 @@ Jsl.addCommand(
 	   {
 		pattern: ['ping'],
 		desc: 'To check ping',
-                sucReact: "🥱",
+                sucReact: "🥵💯",
                 category: ["system", "all"],
 	   },
 	async (message, client) => {
