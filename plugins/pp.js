@@ -5,7 +5,7 @@ const lang = Jsl.getString("wallpaper");
 
 Jsl.addCommand(
   {
-    pattern: ["wr"],
+    pattern: ["wallpaper"],
     desc: lang.WP,
     sucReact: "🌇",
     category: ["all", "create"],
