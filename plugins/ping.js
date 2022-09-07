@@ -10,9 +10,9 @@ Jsl.addCommand(
 	async (message, client) => {
              try {
 		const start = new Date().getTime()
-		await client.sendMessage( message.from, { text: 'Ping!' }, { quoted: message })
+		await client.sendMessage( message.from, { text: '*❮ ᴛᴇsᴛɪɴɢ ᴘɪɴɢ ❯*' }, { quoted: message })
 		const end = new Date().getTime()
-		await client.sendMessage( message.from, { text: 'Pong!\n' + (end - start) + 'ms' }, { quoted: message })
+		await client.sendMessage( message.from, { text: '*ʀᴇsᴘᴏɴsᴇ ɪɴ ' + (end - start) + ' _ᴍs_*' }, { quoted: message })
 		global.catchError = false;
                 } catch (error) {
       global.catchError = true;
