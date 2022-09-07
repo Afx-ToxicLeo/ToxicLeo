@@ -1,5 +1,4 @@
-const Jsl = require('../utils')
-const { FancyRandom } = require("abu-bot");
+const  Jsl = require('../utils')
 
 Jsl.addCommand(
 	   {
@@ -11,9 +10,9 @@ Jsl.addCommand(
 	async (message, client) => {
              try {
 		const start = new Date().getTime()
-		await client.sendMessage( message.from, { text: FancyRandom 'Ping!' }, { quoted: message })
+		await client.sendMessage( message.from, { text: 'Ping!' }, { quoted: message })
 		const end = new Date().getTime()
-		await client.sendMessage( message.from, { text: FancyRandom 'Pong!\n' + (end - start) + 'ms' }, { quoted: message })
+		await client.sendMessage( message.from, { text: 'Pong!\n' + (end - start) + 'ms' }, { quoted: message })
 		global.catchError = false;
                 } catch (error) {
       global.catchError = true;
