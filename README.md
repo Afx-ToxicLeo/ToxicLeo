@@ -25,7 +25,7 @@
 </p>
 
   <p align="center">
-<a href="#"><img title="AbuSer" src="https://img.shields.io/badge/BOT-ABU_SER-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+<a href="#"><img title="Abu" src="https://img.shields.io/badge/BOT-ABU_SER-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 </div>
 <p align="center">
