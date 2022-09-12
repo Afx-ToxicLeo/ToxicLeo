@@ -1,7 +1,7 @@
 {
   "name": "Abu MD",
   "description": "Abu MD - Simple WhatsApp Multi Device Bot",
-  "keywords": ["whatsapp-bot", "multi-device", "Jsl", "Abu"],
+  "keywords": ["whatsapp-bot", "multi-device"],
   "repository": "https://github.com/Afx-Abu/Abu-MD",
   "stack": "container",
   "env": {
@@ -41,7 +41,7 @@
     "STICKER_PACKNAME": {
       "description": "sticker pack info",
       "required": true,
-      "value": "Abu;Jsl"
+      "value": "Jsl;Abu"
     }
   },
   "addons": [
