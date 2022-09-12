@@ -1,0 +1,52 @@
+{
+  "name": "Abu MD",
+  "description": "Abu MD - Simple WhatsApp Multi Device Bot",
+  "keywords": ["whatsapp-bot", "multi-device", "Jsl", "Abu"],
+  "repository": "https://github.com/Afx-Abu/Abu-MD",
+  "stack": "container",
+  "env": {
+    "SESSION_ID": {
+      "description": "session id",
+      "required": false,
+      "value": ""
+    },
+    "SUDO": {
+      "description": "admin",
+      "required": true,
+      "value": "null"
+    },
+    "MODE": {
+      "description": "mode",
+      "required": true,
+      "value": "private"
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Heroku app name, same as above entered",
+      "required": true
+    },
+    "HEROKU_API_KEY": {
+      "description": "Heroku account api key, https://dashboard.heroku.com/account",
+      "required": true
+    },
+    "LOG_MSG": {
+      "description": "Show whatsapp msgs in log",
+      "required": false,
+      "value": "false"
+    },
+    "PREFIX": {
+      "description": "prefix for bot. all so can be null or false multi prefix",
+      "required": true,
+      "value": "."
+    },
+    "STICKER_PACKNAME": {
+      "description": "sticker pack info",
+      "required": true,
+      "value": "Abu;Jsl"
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql"
+    }
+  ]
+}
