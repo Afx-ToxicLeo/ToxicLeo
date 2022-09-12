@@ -24,10 +24,10 @@
   "dependencies": {
     "@adiwajshing/baileys": "git+https://github.com/adiwajshing/Baileys.git",
     "@adiwajshing/keyed-db": "^0.2.4",  
-    "abu-bot": "^2.4.0",
     "file-type": "^16.5.3",
     "jimp": "^0.16.1",
     "node-webpmux": "^3.1.0",
+    "abu-bot": "2.4.0",
     "pino": "^8.1.0",
     "qrcode-reader": "^1.0.4",
     "sharp": "^0.30.7",
