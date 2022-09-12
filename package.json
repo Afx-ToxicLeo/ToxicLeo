@@ -6,24 +6,14 @@
   "scripts": {
     "start": "supervisor -s ./index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Afx-Abu/Abu-MD.git"
-  },
-  "keywords": [
-    "whatsapp",
-    "bot",
-  ],
   "author": "Jsl",
+  "license": "ISC",
   "developer": "Afx-Abu",
-  "license": "GPL-3.0-or-later",
-  "bugs": {
-    "url": "https://github.com/Afx-Abu/Abu-MD/issues"
-  },
-  "homepage": "https://github.com/Afx-Abu/Abu-MD#readme",
-  "dependencies": {
+    "dependencies": {
+    "@adiwajshing/baileys": "4.4.0",
     "@adiwajshing/baileys": "git+https://github.com/adiwajshing/Baileys.git",
     "@adiwajshing/keyed-db": "^0.2.4",  
+    "abu-bot": "^2.4.0",
     "file-type": "^16.5.3",
     "jimp": "^0.16.1",
     "node-webpmux": "^3.1.0",
