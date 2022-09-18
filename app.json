@@ -3,9 +3,9 @@
   "description": "Abu MD - Simple WhatsApp Multi Device Bot",
   "keywords": ["whatsapp-bot", "multi-device"],
   "repository": "https://github.com/Afx-Abu/Abu-MD",
-  "stack": "container",
+  "keywords": ["bot","whatsapp","whatsapp-bot"],
   "env": {
-    "SESSION_ID": {
+   "SESSION_ID": {
       "description": "session id",
       "required": false,
       "value": ""
@@ -44,22 +44,27 @@
       "description": "Heroku account api key, https://dashboard.heroku.com/account",
       "required": true
     }
-  }
-}"buildpacks": [
-    {
+
+},
+"buildpacks": [
+
+  {
+
       "url": "heroku/nodejs"
-    },
-    {
+
+  },
+
+  {
+
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-    },
-    {
+
+  },
+
+  {
+
       "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
-    }
-  ],
-   "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "free"
-        }
-    }
+
+  }
+
+]
 }
