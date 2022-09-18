@@ -42,7 +42,7 @@ Jsl(
     desc: "Check new updates.",
     type: "heroku",
   },
-  }, (async (message, match) => {
+  async (message, match) => {
      await git.fetch();
     var commits = await git.log(['main' + '..origin/' + 'main']);
     var mss = '';
