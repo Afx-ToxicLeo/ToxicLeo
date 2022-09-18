@@ -9,7 +9,7 @@
 
 
 
-<a href="https://abu-md-deployer-mu.vercel.app/"><img align="center" src="https://i.imgur.com/gtK4XLX.png" alt="Scan QR" height="112" width="300" /></a>
+<a href="https://abu-md-deployer.vercel.app/"><img align="center" src="https://i.imgur.com/gtK4XLX.png" alt="Scan QR" height="112" width="300" /></a>
 <br>
 
 
