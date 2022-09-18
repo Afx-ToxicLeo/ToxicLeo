@@ -23,7 +23,7 @@ Jsl(
   }
 );
 
-command(
+Jsl(
   {
     pattern: "shutdown",
     fromMe: true,
