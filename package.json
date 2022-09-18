@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "start": "node xeon.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
