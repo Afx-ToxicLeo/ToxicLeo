@@ -3,9 +3,8 @@
   "version": "2.1.0",
   "description": "Multidivice WhatsApp Bot.",
   "main": "index.js",
-  "type": "commonjs",
   "scripts": {
-    "start": "node index.js"
+    "start": "supervisor -s index.js"
   },
   "repository": {
     "type": "git",
