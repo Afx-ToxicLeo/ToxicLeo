@@ -35,25 +35,6 @@ Jsl(
   }
 );
 
-Jsl(
-  {
-    pattern: "update$",
-    fromMe: true,
-    desc: "Check new updates.",
-    type: "heroku",
-  },
-  async (message, match) => {
-    await git.fetch();
-    var commits = await git.log(['main' + '..origin/' + 'main']);
-    if (commits.total === 0) {
-        mss = "*Bot up to date!*"
-        return await message.reply(mss);
-    } else {
-        var changelog = "_Pending updates:_\n\n";
-        for (var i in commits.all){
-        changelog += `${(parseInt(i)+1)}• *${commits.all[i].message}*\n`
-    }
-);
 
 Jsl(
   {
