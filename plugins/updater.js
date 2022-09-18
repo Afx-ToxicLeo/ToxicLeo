@@ -43,9 +43,8 @@ Jsl(
     type: "heroku",
   },
   async (message, match) => {
-     await git.fetch();
+    await git.fetch();
     var commits = await git.log(['main' + '..origin/' + 'main']);
-    var mss = '';
     if (commits.total === 0) {
         mss = "*Bot up to date!*"
         return await message.reply(mss);
