@@ -8,7 +8,16 @@ Jsl(
     desc: "Show All commands",
   },
   async (message, match) => {
-    let menu = `╭╼╾╼╾╼╾╼╾╼╾╼╾╼╾╼╾╼╾╼╾╼╾╼╾╼\n╽`
+    let menu = `╭────────────────╮
+						ᴀʙᴜ-ᴍᴅ
+╰────────────────╯
+╭────────────────
+│ ʜᴀɴʟᴇʀ : .
+│ ᴜsᴇʀ : ᴊsʟ
+│ ᴠᴇʀsɪᴏɴ : 2.1.0
+│ ᴘʟᴜɢɪɴs : 13
+╰────────────────
+╭────────────────`
     let cmnd = [];
     events.commands.map((command, num) => {
       let cmd;
@@ -24,9 +33,9 @@ Jsl(
     });
     cmnd.sort();
     cmnd.forEach((cmd, num) => {
-      menu += `\n┠${(num += 1)} \`\`\`${cmd}\`\`\` \n╿`;
+      menu += `\n│{(num += 1)} \`\`\`${cmd}\`\`\` \n`;
     });
-    menu += `\n╰╾╼╾╼╾╼╾╼╾╼╾╼╾╼╾╼╾╼╾╼╾╼╾╼╾╼╾╼`
+    menu += `\n╰────────────────`
     message.sendMessage(readFileSync("./temp/abu.png"), {caption:menu},'image');
   }
 );
