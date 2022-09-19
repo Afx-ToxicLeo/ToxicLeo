@@ -29,7 +29,7 @@ Jsl({
      if (q && (q.startsWith('l') || q.includes('youtu'))) return;
     if (!q) return await message.reply("*Need instagram link*")
     if (q.includes("stories")) return await message.reply("*Use .story command!*")
-    if (q && !q.includes('instagram.com')) return await msg.client.sendMessage(msg.jid, {
+    if (q && !q.includes('instagram.com')) return await message.sendMessage(msg.jid, {
         text: need
     }, {
         quoted: msg.data
@@ -41,7 +41,7 @@ Jsl({
         if (res == false) return await message.reply("*Download failed*");
         var quoted = msg.reply_message ? msg.quoted : msg.data
         for (var i in res) {
-        await msg.client.sendMessage(msg.jid,{[res[i].includes("mp4")?'video':'image']:{url:res[i]}},{quoted})
+        await message.sendMessage(msg.jid,{[res[i].includes("mp4")?'video':'image']:{url:res[i]}},{quoted})
         };
     }
 }));
