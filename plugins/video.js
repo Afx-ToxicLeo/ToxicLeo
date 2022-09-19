@@ -14,7 +14,7 @@ const { downloadYT } = require('../lib/yt');
 
 Jsl({
     pattern: 'video ?(.*)',
-    fromMe: w,
+    fromMe: true,
     desc: Lang.VIDEO_DESC,
     use: 'downlod'
 }, async (message, match,m) => {
