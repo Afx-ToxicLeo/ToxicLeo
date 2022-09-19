@@ -18,4 +18,4 @@ var initt = go.split(" ").join("")
 var number = initt.replace('+','')
 var res = await find(number,'',msg.client.user.id)
 if (res == 'error') return await message.sendMessage("_Truecaller limit over! (50/50) Contact owner_")
-await message.sendMessage(res);});
+await msg.reply_message(res);});
