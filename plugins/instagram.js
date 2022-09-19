@@ -1,6 +1,6 @@
 const {
     Jsl
-} = require('../lib/');
+} = require('../lib');
 const {
     Mimetype
 } = require('@adiwajshing/baileys');
@@ -12,7 +12,7 @@ const {
     getStalk,
     getStory,
     jslbuffer
-} = require('../lib/misc');
+} = require('..lib/misc');
 var need = "*_Need instagram link!_*";
 var downloading = "_*Downloading*_";
 var need_acc = "*_Need an instagram username!_*";
@@ -27,8 +27,8 @@ Jsl({
 }, (async (msg, query) => {
      var q = query[1] || msg.reply_message?.text
      if (q && (q.startsWith('l') || q.includes('youtu'))) return;
-    if (!q) return await msg.sendReply("*Need instagram link*")
-    if (q.includes("stories")) return await msg.sendReply("*Use .story command!*")
+    if (!q) return await message.reply("*Need instagram link*")
+    if (q.includes("stories")) return await message.reply("*Use .story command!*")
     if (q && !q.includes('instagram.com')) return await msg.client.sendMessage(msg.jid, {
         text: need
     }, {
@@ -37,8 +37,8 @@ Jsl({
     var getid = /(?:https?:\/\/)?(?:www\.)?(?:instagram\.com(?:\/.+?)?\/(p|reel|tv)\/)([\w-]+)(?:\/)?(\?.*)?$/
     var url = getid.exec(q)
     if (url != null) {
-        try { var res = await downloadGram(url[0]) } catch { return await msg.sendReply("_Broken link! Try another one._") }
-        if (res == false) return await msg.sendReply("*Download failed*");
+        try { var res = await downloadGram(url[0]) } catch { return await message.reply("_Broken link! Try another one._") }
+        if (res == false) return await message.reply("*Download failed*");
         var quoted = msg.reply_message ? msg.quoted : msg.data
         for (var i in res) {
         await msg.client.sendMessage(msg.jid,{[res[i].includes("mp4")?'video':'image']:{url:res[i]}},{quoted})
