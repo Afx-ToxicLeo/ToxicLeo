@@ -175,7 +175,7 @@ Jsl(
     type: "heroku",
   },
   async (message) => {
-    let msg = "```&Here your all Heroku vars_\n\n\n";
+    let msg = "```ʏᴏᴜʀ ʜᴇʀᴏᴋᴜ ᴀʟʟ ᴠᴀʀs\n\n\n";
     heroku
       .get(baseURI + "/config-vars")
       .then(async (keys) => {
@@ -185,7 +185,7 @@ Jsl(
         return await message.sendMessage(msg + "```");
       })
       .catch(async (error) => {
-        await message.sendMessage(`HEROKU : ${error.body.message}`);
+        await message.sendMessage(`ʜᴇʀᴏᴋᴜ : ${error.body.message}`);
       });
   }
 );
