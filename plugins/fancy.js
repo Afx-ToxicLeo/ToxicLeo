@@ -4,17 +4,18 @@ const {
  const {
      Fancy
  } = require('../lib/misc')
+ 
  Jsl({
      pattern: 'fancy ?(.*)',
      fromMe: true,
      use: 'misc',
      desc: 'Creates fancy text fonts'
- }, (async (message, match) => {
-     if (!match[1] || !message.reply_message.message) return await message.sendMessage("Reply to any message with .fancy number\n" + Fancy("example", "32"))
+ }, (async (message, match,m) => {
+     if (!match[1] || !message.reply_message.message) return await message.reply("Reply to any message with .fancy number\n" + Fancy("example", "32"))
      try {
          var result = Fancy(message.reply_message.message, match[1])
      } catch (e) {
-         return await msg.reply_message(e.message)
+         return await message.reply(e.message)
      }
-     await msg.reply_message(result)
+     await message.reply(result)
  }))
