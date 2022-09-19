@@ -1,6 +1,6 @@
 const {
     Jsl
-} = require('../lib');
+} = require('../lib/');
 const {
     Mimetype
 } = require('@adiwajshing/baileys');
@@ -12,7 +12,7 @@ const {
     getStalk,
     getStory,
     jslbuffer
-} = require('..lib/misc');
+} = require('../lib/misc');
 var need = "*_Need instagram link!_*";
 var downloading = "_*Downloading*_";
 var need_acc = "*_Need an instagram username!_*";
