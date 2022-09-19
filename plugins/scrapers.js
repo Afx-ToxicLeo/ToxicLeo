@@ -1,40 +1,5 @@
-const { Function, Jsl, webp2mp4, isUrl } = require("../lib/");
+const { Jsl, webp2mp4, isUrl } = require("../lib/");
 
-Function(
-  {
-    pattern: "img ?(.*)",
-    fromMe: true,
-    desc: "Google Image search",
-    type: "download",
-  },
-  async (message, match) => {
-    if (!match) return await message.sendMessage("Enter Search Term,number");
-    let [query, amount] = match.split(",");
-    let result = await gimage(query, amount);
-    await message.sendMessage(
-      `_Downloading ${amount || 5} images for ${query}_`
-    );
-    for (let i of result) {
-      await message.sendFromUrl(i);
-    }
-  }
-);
-let gis = require("g-i-s");
-async function gimage(query, amount = 5) {
-  let list = [];
-  return new Promise((resolve, reject) => {
-    gis(query, async (error, result) => {
-      for (
-        var i = 0;
-        i < (result.length < amount ? result.length : amount);
-        i++
-      ) {
-        list.push(result[i].url);
-        resolve(list);
-      }
-    });
-  });
-}
 
 Jsl(
   {
