@@ -11,7 +11,7 @@ const {
     getPost,
     getStalk,
     getStory,
-    skbuffer
+    jslbuffer
 } = require('..lib/misc');
 var need = "*_Need instagram link!_*";
 var downloading = "_*Downloading*_";
