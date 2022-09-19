@@ -9,8 +9,8 @@ const {
     getVideo,
     ytdlServer,
     getBuffer
-} = require('..lib/misc');
-const { downloadYT } = require('./lib/yt');
+} = require('../lib/misc');
+const { downloadYT } = require('../lib/yt');
 
 Jsl({
     pattern: 'video ?(.*)',
