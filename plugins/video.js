@@ -1,6 +1,6 @@
 const {
     getString
-} = require('./lib/lang/lang');
+} = require('../lib/lang/lang');
 const Lang = getString('scrapers');
 const {
     Jsl
