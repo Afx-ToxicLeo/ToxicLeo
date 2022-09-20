@@ -19,6 +19,7 @@
     "file-type": "^16.5.3",
     "jimp": "^0.16.1",
     "node-webpmux": "^3.1.0",
+    "node-fetch": "^2.6.6",
     "pino": "^8.1.0",
     "qrcode": "^1.5.1",
     "qrcode-reader": "^1.0.4",
