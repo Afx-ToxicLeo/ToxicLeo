@@ -53,24 +53,4 @@ Jsl({pattern: 'assist ?(.*)', fromMe: true, dontAddCommandList: true}, (async (m
                 }
             );
             var msg_cmd = FancyRandom(CMD_HELP,Config.SESSION)
-           await message.sendMessage(CMD_HELP, {
-      quoted: {
-        key: {
-          participant: "0@s.whatsapp.net",
-          remoteJid: "status@broadcast",
-        },
-        message: {
-          orderMessage: {
-            itemCount: 123,
-            itemCoun: 404,
-            surface: 404,
-            message: `© ᴀʙᴜ-ᴍᴅ`,
-            orderTitle: "B",
-            thumbnail: img,
-            sellerJid: "0@s.whatsapp.net",
-          },
-        },
-      },
-    });
-  }
-);
+           
