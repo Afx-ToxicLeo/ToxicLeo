@@ -3,7 +3,7 @@ const { Jsl } = require("../lib");
 const { readFileSync } = require("fs");
 Jsl(
   {
-    pattern: "menu ?(.*)",
+    pattern: "assit ?(.*)",
     fromMe: true,
     desc: "Show All commands",
   },
