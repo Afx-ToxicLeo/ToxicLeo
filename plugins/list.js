@@ -8,6 +8,7 @@ Jsl(
     desc: "Show All commands",
   },
   async (message, match) => {
+  var img = await (await fetch('https://telegra.ph/file/e6c498c568fd8d35f9395.jpg')).buffer(),    
     let menu = `╭╼╾╼╾╼╾╼╾╼╾╼╾╼╾╼╾╼╾╼╾╼╾╼╾╼\n╽`
     let cmnd = [];
     events.commands.map((command, num) => {
@@ -27,6 +28,6 @@ Jsl(
       menu += `\n┠${(num += 1)} \`\`\`${cmd}\`\`\` \n╿➪`;
     });
     menu += `\n╰╾╼╾╼╾╼╾╼╾╼╾╼╾╼╾╼╾╼╾╼╾╼╾╼╾╼╾╼`
-    message.sendMessage(readFileSync("./media/abu.png"), {caption:menu},'image');
+    message.sendMessage(readFileSync(img), {caption:menu},'image');
   }
 );
