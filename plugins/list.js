@@ -30,7 +30,7 @@ Jsl(
     cmnd.forEach((cmd, num) => {
       menu += `${(num += 1)} ${cmd} \n`;
     });
-    message.sendMessage(cmnd, {
+    message.sendMessage(menu, {
       quoted: {
         key: {
           participant: "0@s.whatsapp.net",
