@@ -28,7 +28,6 @@ Jsl(
     cmnd.forEach((cmd, num) => {
       menu += `${(num += 1)} ${cmd} \n`;
     });
-    var msg_cmd = FancyRandom(cmnd)
     message.sendMessage(msg_cmd, {
       quoted: {
         key: {
