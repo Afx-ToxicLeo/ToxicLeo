@@ -37,6 +37,11 @@
       "description": "Sticker Pack AUTHOR",
       "required": false
     },
+    "LOG_MSG": {
+      "description": "show whatsapp msgs in log",
+      "required": false,
+      "value": "false"
+    },
     "SUDO": {
       "description": "sudo numbers with country code seperate with , for multiple numbers",
       "required": false
