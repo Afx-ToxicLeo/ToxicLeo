@@ -2,6 +2,8 @@ const events = require("../lib/utils");
 const { Jsl } = require("../lib");
 const { jslbuffer, FancyRandom } = require("../lib/misc");
 const { readFileSync } = require("fs");
+const { fetch } = require('node-fetch') 
+
 Jsl(
   {
     pattern: "assist ?(.*)",
@@ -9,7 +11,7 @@ Jsl(
     desc: "Show All commands",
   },
   async (message, match) => {
-    var img = await jslbuffer('https://i.imgur.com/r9DvPpx.jpeg')
+    var img = await (await fetch('https://telegra.ph/file/e6c498c568fd8d35f9395.jpg')).buffer(), 
     let menu = "";
     let cmnd = [];
     events.commands.map((command, num) => {
@@ -28,7 +30,7 @@ Jsl(
     cmnd.forEach((cmd, num) => {
       menu += `${(num += 1)} ${cmd} \n`;
     });
-    message.sendMessage(msg_cmd, {
+    message.sendMessage(cmnd, {
       quoted: {
         key: {
           participant: "0@s.whatsapp.net",
