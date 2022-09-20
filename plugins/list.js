@@ -1,17 +1,16 @@
 const events = require("../lib/utils");
-const { Jsl } = require("../lib");
-const { jslbuffer, FancyRandom } = require("../lib/misc");
+const { Jsl, getBuffer } = require("../lib");
 const { readFileSync } = require("fs");
-const { fetch } = require('node-fetch') 
+const { fetch } = require('node-fetch') 
 
 Jsl(
   {
-    pattern: "assist ?(.*)",
+    pattern: "list ?(.*)",
     fromMe: true,
     desc: "Show All commands",
   },
   async (message, match) => {
-    var img = await (await fetch('https://telegra.ph/file/e6c498c568fd8d35f9395.jpg')).buffer(), 
+  var img = await (await fetch('https://telegra.ph/file/e6c498c568fd8d35f9395.jpg')).buffer(), 
     let menu = "";
     let cmnd = [];
     events.commands.map((command, num) => {
@@ -38,10 +37,10 @@ Jsl(
         },
         message: {
           orderMessage: {
-            itemCount: 123,
+            itemCount: 9999999,
             itemCoun: 404,
             surface: 404,
-            message: `© ᴀʙᴜ-ᴍᴅ`,
+            message: `© 𝗔𝗕𝗨-𝗠𝗗`,
             orderTitle: "B",
             thumbnail: img,
             sellerJid: "0@s.whatsapp.net",
