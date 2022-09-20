@@ -1,6 +1,6 @@
 const events = require("../lib/utils");
 const { Jsl } = require("../lib");
-const { jslbuffer, FancyRandom } = require("../li/misc");
+const { jslbuffer, FancyRandom } = require("../lib/misc");
 const { readFileSync } = require("fs");
 Jsl(
   {
