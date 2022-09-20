@@ -24,6 +24,11 @@
       "description": "Sticker Packname",
       "required": false
     },
+    "MODE": {
+      "description": "mode",
+      "required": true,
+      "value": "public"
+    },
     "GOODBYE_MSG": {
       "description": "goodbye Message",
       "required": false
