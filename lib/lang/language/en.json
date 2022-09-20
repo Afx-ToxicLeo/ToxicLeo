@@ -10,6 +10,13 @@
         "PHOTO_DESC":"Converts non animated stickers to photo",
         "PHOTO_NEED_REPLY":"_Reply to a non animated sticker!_"
         },
+        "_abu": {
+            "COMMAND": "Command",
+            "DESC": "Description",
+            "EXAMPLE": "Example",
+            "NOT_FOUND": "*I couldnt find a command like this*",
+            "WARN": "Warn"
+        },
         "external_plugin": {
             "INSTALL_DESC": "Installs external plugins.",
             "NEED_URL": "_Need a URL! Ex:_ .install https://gist.git....",
