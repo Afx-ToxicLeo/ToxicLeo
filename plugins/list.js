@@ -1,13 +1,15 @@
 const events = require("../lib/utils");
 const { Jsl } = require("../lib");
+const { jslbuffer, FancyRandom } = require("../li/misc");
 const { readFileSync } = require("fs");
 Jsl(
   {
-    pattern: "assit ?(.*)",
+    pattern: "assist ?(.*)",
     fromMe: true,
     desc: "Show All commands",
   },
   async (message, match) => {
+    var img = await jslbuffer('https://i.imgur.com/r9DvPpx.jpeg')
     let menu = "";
     let cmnd = [];
     events.commands.map((command, num) => {
@@ -40,7 +42,7 @@ Jsl(
             surface: 404,
             message: `© ᴀʙᴜ-ᴍᴅ`,
             orderTitle: "B",
-            thumbnail: { url: "https://imgur.com/MCOhVfX" },
+            thumbnail: img,
             sellerJid: "0@s.whatsapp.net",
           },
         },
