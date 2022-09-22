@@ -1,4 +1,32 @@
 const { Jsl } = require("../lib/");
+const config = require('../config');
+const { ALIVE_INFO } = require('../config');
+
+
+Jsl(
+  {
+    pattern: "alive ?(.*)",
+    fromMe: true,
+    desc: "Send Bot Alive",
+    type: "misc",
+  },
+  async (message, match) => {
+    const buttons = [
+      {buttonId: ',menu', buttonText: {displayText: '𝙼𝙴𝙽𝚄'}},
+      {buttonId: ',ping', buttonText: {displayText: '𝙿𝙸𝙽𝙶'}}
+    ]
+    
+    const buttonMessage = {
+        text: '      \n╔══╗╔╗─╔══╗╔╗─╔╗╔═╗        \n║╔╗║║║─╚║║╝║╚╦╝║║╦╝        \n║╠╣║║╚╗╔║║╗╚╗║╔╝║╩╗        \n╚╝╚╝╚═╝╚══╝─╚═╝─╚═╝ \n\n *╔✘ 𝐈𝐀𝐌 𝐒𝐓𝐈𝐋𝐋 𝐀𝐋𝐈𝐕𝐄 𝐁𝐑𝐎*»\n*║✘Bᴏᴛ ɴᴀᴍᴇ :'${ALIVE_INFO.split(";")[0]}'\n*║✘ Oᴡɴᴇʀ : '${ALIVE_INFO.split(";")[1]}'*\n*║✘Wᴏʀᴋ ᴛʏᴘᴇ : *ᴘᴜʙʟɪᴄ\n*║✘ Pʀᴇғɪx : ' + Config.HANDLERS + '*    \n *╚✘*\n           *'${ALIVE_INFO.split(";")[2]}'*         \n\n*╭◪ ᴄᴏᴅᴅᴇᴅ ʙʏ '${ALIVE_INFO.split(";")[1]}'*\n*╰─────────────────❋ཻུ۪۪⸙*\n',          
+        footer: `${ALIVE_INFO.split(";")[0]}`,
+        buttons: buttons,
+        headerType: 1
+    }
+    
+    await message.client.sendMessage(message.jid, buttonMessage)
+  }
+);
+
 
 Jsl(
   {
@@ -25,3 +53,5 @@ Jsl(
     await message.client.sendMessage(message.jid, buttonMessage)
   }
 );
+
+
