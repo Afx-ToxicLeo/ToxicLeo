@@ -1,5 +1,5 @@
 const { Jsl } = require("../lib/");
-const config = require('../config');
+const Config = require('../config');
 const { ALIVE_INFO } = require('../config');
 
 
@@ -11,9 +11,7 @@ Jsl(
     type: "misc",
   },
   async (message, match) => {
-  const start = new Date().getTime();
-   await message.sendMessage("*❮ ᴛᴇsᴛɪɴɢ ᴘɪɴɢ ❯*");
-    const buttons = [
+   const buttons = [
       {buttonId: ',menu', buttonText: {displayText: '𝙼𝙴𝙽𝚄'}},
       {buttonId: ',ping', buttonText: {displayText: '𝙿𝙸𝙽𝙶'}}
     ]
