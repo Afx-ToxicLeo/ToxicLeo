@@ -1,5 +1,6 @@
-const { command } = require("../lib/");
-command(
+const { Jsl } = require("../lib/");
+
+Jsl(
   {
     pattern: "ping ?(.*)",
     fromMe: true,
