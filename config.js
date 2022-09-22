@@ -1,25 +1,22 @@
-const { Sequelize } = require("sequelize");
-const fs = require("fs");
-if (fs.existsSync("config.env"))
-  require("dotenv").config({ path: "./config.env" });
-
-const toBool = (x) => x == "true";
-
-DATABASE_URL = process.env.DATABASE_URL || "./lib/database.db";
-
+const toBool = (x) => x == 'true'
+const { Sequelize } = require('sequelize')
+const { existsSync } = require('fs')
+if (existsSync('config.env')) require('dotenv').config({ path: './config.env' })
+const DATABASE_URL = process.env.DATABASE_URL === undefined ? './database.db' : process.env.DATABASE_URL
 module.exports = {
-  VERSION: 'v2.0.0',
-  ANTILINK: toBool(process.env.ANTI_LINK) || false,
-  ANTILINK_ACTION: "kick",
-  HANDLERS: process.env.HANDLERS || "^[.!;]",
-  BRANCH: "master",
-  PACKNAME: process.env.PACKNAME || "Abu-MD",
-  WELCOME_MSG: process.env.WELCOME_MSG ||  "{pp}Hi @user Welcome to @gname\nYou're our @count/513 Members ",
-  BOT_INFO: process.env.BOT_INFO || 'Abu-MD;Jsl;Abu-MD;',
-  GOODBYE_MSG: process.env.GOODBYE_MSG || "Hi @user It was Nice Seeing you",
-  LOG_MSG: toBool(process.env.LOG_MSG) || false
-  DATABASE_URL: DATABASE_URL, DATABASE: DATABASE_URL === "./lib/database.db" ? new Sequelize({ dialect: "sqlite", storage: DATABASE_URL, logging: false, }) : new Sequelize(DATABASE_URL, { dialectOptions: { ssl: { require: true, rejectUnauthorized: false } }, logging: false, }),
-  SUDO: process.env.SUDO || "917025994178,0",
-  HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || " ",
-  HEROKU_API_KEY: process.env.HEROKU_API_KEY || " ",
+    VERSION: 'v1.0.0',
+    SESSION_ID: (process.env.SESSION_ID || '').trim(),
+    MODE: process.env.MODE || 'private',
+    DATABASE: DATABASE_URL === './database.db' ? new Sequelize({ dialect: 'sqlite', storage: DATABASE_URL, logging: false }) : new Sequelize(DATABASE_URL, {dialect: 'postgres', ssl: true, protocol: 'postgres', dialectOptions: { native: true, ssl: { require: true, rejectUnauthorized: false },}, logging: false }),
+    HANDLERS: (process.env.PREFIX || '^[.,!]').trim(),
+    SUDO: process.env.SUDO || '917025994178',
+    HEROKU_APP_NAME: process.env.HEROKU_APP_NAME,
+    HEROKU_API_KEY: process.env.HEROKU_API_KEY,
+    BOT_INFO: process.env.BOT_INFO || 'Abu;Jsl;917025994178;https://i.imgur.com/PMa01tz.jpeg',
+    STICKER_PACKNAME: process.env.STICKER_PACKNAME || 'Abu;Jsl',
+    READ_MSG: process.env.READ_MSG || 'true', 
+    LOG_MSG: toBool(process.env.LOG_MSG) || false,
+    LANG: (process.env.LANGUAGE || 'english').toLowerCase(),
+    WARN_LIMIT: process.env.WARN_LIMIT || '3',
+    DIS_BOT: process.env.DISABLE_BOT || 'null',
 };
