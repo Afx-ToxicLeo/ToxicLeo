@@ -13,6 +13,7 @@ module.exports = {
     HEROKU_APP_NAME: process.env.HEROKU_APP_NAME,
     HEROKU_API_KEY: process.env.HEROKU_API_KEY,
     BOT_INFO: process.env.BOT_INFO || 'Abu;Jsl;917025994178;https://i.imgur.com/PMa01tz.jpeg',
+    ALIVE_INFO: process.env.BOT_INFO || 'Abu;Jsl;𝐀𝐁𝐔 𝐖𝐀 𝐁𝐎𝐓',
     STICKER_PACKNAME: process.env.STICKER_PACKNAME || 'Abu;Jsl',
     READ_MSG: process.env.READ_MSG || 'true', 
     LOG_MSG: toBool(process.env.LOG_MSG) || false,
