@@ -12,6 +12,7 @@ Jsl(
   },
   async (message, match) => {
    const buttons = [
+      {urlButton: {displayText: 'GITHUB', url: 'IAM NOT CHECK'}}, 
       {buttonId: ',menu', buttonText: {displayText: '𝙼𝙴𝙽𝚄'}},
       {buttonId: ',ping', buttonText: {displayText: '𝙿𝙸𝙽𝙶'}}
     ]
