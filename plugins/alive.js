@@ -3,8 +3,8 @@ command(
   {
     pattern: "ping ?(.*)",
     fromMe: true,
-    desc: "description",
-    type: "type",
+    desc: "Send Bot Ping",
+    type: "misc",
   },
   async (message, match) => {
   const start = new Date().getTime();
