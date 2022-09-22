@@ -11,8 +11,8 @@ Jsl(
   const start = new Date().getTime();
    await message.sendMessage("*❮ ᴛᴇsᴛɪɴɢ ᴘɪɴɢ ❯*");
     const buttons = [
-      {buttonId: ',menu', buttonText: {displayText: 'menu'}},
-      {buttonId: ',ping', buttonText: {displayText: 'ping'}}
+      {buttonId: ',menu', buttonText: {displayText: 'ᴍᴇɴᴜ'}},
+      {buttonId: ',ping', buttonText: {displayText: 'ᴘɪɴɢ'}}
     ]
     
     const buttonMessage = {
