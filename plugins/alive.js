@@ -10,6 +10,7 @@ Jsl(
   async (message, match) => {
   const start = new Date().getTime();
    await message.sendMessage("*❮ ᴛᴇsᴛɪɴɢ ᴘɪɴɢ ❯*");
+    const end = new Date().getTime();
     const buttons = [
       {buttonId: ',menu', buttonText: {displayText: 'ᴍᴇɴᴜ'}},
       {buttonId: ',ping', buttonText: {displayText: 'ᴘɪɴɢ'}}
