@@ -9,16 +9,15 @@ Jsl(
   },
   async (message, match) => {
   const start = new Date().getTime();
-   await message.sendMessage("*❮ ᴛᴇsᴛɪɴɢ ᴘɪɴɢ ❯*");
     const end = new Date().getTime();
     const buttons = [
-      {buttonId: ',menu', buttonText: {displayText: 'ᴍᴇɴᴜ'}},
-      {buttonId: ',ping', buttonText: {displayText: 'ᴘɪɴɢ'}}
+      {buttonId: ',menu', buttonText: {displayText: '𝙈𝙀𝙉𝙐'}},
+      {buttonId: ',ping', buttonText: {displayText: '𝙋𝙄𝙉𝙂'}}
     ]
     
     const buttonMessage = {
-        text: '*ʀᴇsᴘᴏɴsᴇ ɪɴ ' + (end - start) + ' _ᴍs_*',
-        footer: 'ᴘɪɴɢ ᴛᴇsᴛɪɴɢ',
+        text: '𝐑𝐄𝐒𝐏𝐎𝐍𝐒𝐄 𝐈𝐍 ' + (end - start) + ' _𝐌𝐒_',
+        footer: '𝐁𝐎𝐓 𝐏𝐈𝐍𝐆',
         buttons: buttons,
         headerType: 1
     }
