@@ -1,4 +1,4 @@
-const { JslAbu } = require("./lib/")
+const { JslAbu } = require("./lib/client")
 const start = async () => {
    try {
         await JslAbu()
