@@ -314,7 +314,7 @@ Jsl(
   }
 );
 
-command(
+Jsl(
   {
     pattern: "mp3reverse",
     fromMe: true,
