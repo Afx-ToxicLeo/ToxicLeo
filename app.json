@@ -1,9 +1,9 @@
 {
   "name": "Abu MD",
   "description": "Abu MD - Simple WhatsApp Multi Device Bot",
-  "keywords": ["whatsapp-bot", "multi-device"],
+  "keywords": ["abu-bot", "multi-device"],
   "repository": "https://github.com/Afx-Abu/Abu-MD",
-  "keywords": ["Cat","Bot","cat-bot"],
+  "keywords": ["Abu","Bot","Abu-MD"],
   "env": {
    "SESSION_ID": {
       "description": "session id",
@@ -16,13 +16,14 @@
       "value": ""
     },
     "HANDLERS": {
-      "description": "prefix for commands",
+      "description": "prefix for commands/ using false command work without . ",
       "required": false,
-      "value": ""
+      "value": "."
     },
     "PACKNAME": {
       "description": "Sticker Packname",
       "required": false
+      "value": "ABU-MD"
     },
     "GOODBYE_MSG": {
       "description": "goodbye Message",
@@ -31,10 +32,17 @@
     "AUTHOR": {
       "description": "Sticker Pack AUTHOR",
       "required": false
+      "value": "JSL"
     },
     "SUDO": {
       "description": "sudo numbers with country code seperate with , for multiple numbers",
       "required": false
+      "value": "917025995178"
+    },
+    "MODE": {
+      "description": "Bot Running Private Or Public",
+      "required": true
+      "value": "public"
     },
     "HEROKU_APP_NAME": {
       "description": "Heroku app name, same as above entered",
