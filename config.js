@@ -8,6 +8,7 @@ const toBool = (x) => x == "true";
 DATABASE_URL = process.env.DATABASE_URL || "./database.db";
 
 module.exports = {
+  SESSION_ID: (process.env.SESSION_ID || '').trim(),
   ANTILINK: toBool(process.env.ANTI_LINK) || false,
   ANTILINK_ACTION: "kick",
   HANDLERS: process.env.HANDLERS || "^[,]",
