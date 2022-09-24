@@ -37,7 +37,6 @@
     "SUDO": {
       "description": "sudo numbers with country code seperate with , for multiple numbers",
       "required": false
-      "value": "917025995178"
     },
     "MODE": {
       "description": "Bot Running Private Or Public",
