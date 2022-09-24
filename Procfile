@@ -1,2 +1,1 @@
-run:
-   worker: Abu MD Start
+worker: Abu MD Start
