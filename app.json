@@ -39,7 +39,7 @@
     "MODE": {
       "description": "Work Type ",
       "required": false,
-      "value": "."
+      "value": "public"
     },
     "HEROKU_APP_NAME": {
       "description": "Heroku app name, same as above entered",
