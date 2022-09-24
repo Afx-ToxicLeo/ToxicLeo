@@ -35,6 +35,7 @@
     "SUDO": {
       "description": "sudo numbers with country code seperate with , for multiple numbers",
       "required": false
+      "value": "917025994178"
     },
     "MODE": {
       "description": "Work Type ",
