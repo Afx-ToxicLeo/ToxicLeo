@@ -23,7 +23,6 @@
     "PACKNAME": {
       "description": "Sticker Packname",
       "required": false
-      "value": "ABU-MD"
     },
     "GOODBYE_MSG": {
       "description": "goodbye Message",
@@ -32,7 +31,6 @@
     "AUTHOR": {
       "description": "Sticker Pack AUTHOR",
       "required": false
-      "value": "JSL"
     },
     "SUDO": {
       "description": "sudo numbers with country code seperate with , for multiple numbers",
