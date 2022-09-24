@@ -10,6 +10,10 @@
       "required": false,
       "value": ""
     },
+    "SUDO": {
+      "description": "sudo numbers with country code seperate with , for multiple numbers",
+      "required": false
+    },
     "ANTI_LINK": {
       "description": "true/false",
       "required": false,
