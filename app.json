@@ -37,9 +37,9 @@
       "required": false
     },
     "MODE": {
-      "description": "Bot Running Private Or Public",
-      "required": true
-      "value": "public"
+      "description": "Work Type ",
+      "required": false,
+      "value": "."
     },
     "HEROKU_APP_NAME": {
       "description": "Heroku app name, same as above entered",
