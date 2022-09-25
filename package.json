@@ -15,6 +15,7 @@
   "license": "GPL-3.0-or-later",
   "dependencies": {
     "@adiwajshing/baileys": "4.4.0",
+    "@adiwajshing/keyed-db": "^0.2.4",
     "abu-bot": "^2.4.0",
     "aes256":"1.1.0",
     "crypto": "^1.0.1",
