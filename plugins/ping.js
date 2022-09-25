@@ -16,7 +16,7 @@ Jsl(
     ]
     
     const buttonMessage = {
-        text: '𝐑𝐄𝐒𝐏𝐎𝐍𝐒𝐄 𝐈𝐍 " + (end - start) + " _𝐌𝐒_',
+        text: '𝐑𝐄𝐒𝐏𝐎𝐍𝐒𝐄 𝐈𝐍 *' + (end - start) + '* _𝐌𝐒_',
         footer: '𝐁𝐎𝐓 𝐏𝐈𝐍𝐆',
         buttons: buttons,
         headerType: 1
