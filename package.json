@@ -16,6 +16,7 @@
   "dependencies": {
     "@adiwajshing/baileys": "4.4.0",
     "abu-bot": "^2.4.0",
+    "aes256":"1.1.0",
     "crypto": "^1.0.1",
     "file-type": "^16.5.3",
     "jimp": "^0.16.1",
