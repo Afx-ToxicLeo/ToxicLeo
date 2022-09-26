@@ -1,1 +1,147 @@
-const Jsl_0x192657=Jsl_0x2ad6;function Jsl_0x2ad6(_0x4ca9c7,_0x32e0f8){const _0x5bcb20=Jsl_0x5bcb();return Jsl_0x2ad6=function(_0x2ad601,_0x1e144e){_0x2ad601=_0x2ad601-0x11a;let _0x1dd3d4=_0x5bcb20[_0x2ad601];return _0x1dd3d4;},Jsl_0x2ad6(_0x4ca9c7,_0x32e0f8);}(function(_0x352844,_0x3e7a52){const _0x101b8b=Jsl_0x2ad6,_0x42a6dc=_0x352844();while(!![]){try{const _0x27491e=-parseInt(_0x101b8b(0x120))/0x1*(parseInt(_0x101b8b(0x132))/0x2)+parseInt(_0x101b8b(0x11a))/0x3*(-parseInt(_0x101b8b(0x126))/0x4)+parseInt(_0x101b8b(0x135))/0x5*(parseInt(_0x101b8b(0x131))/0x6)+-parseInt(_0x101b8b(0x133))/0x7*(-parseInt(_0x101b8b(0x125))/0x8)+-parseInt(_0x101b8b(0x121))/0x9*(parseInt(_0x101b8b(0x123))/0xa)+parseInt(_0x101b8b(0x11c))/0xb*(-parseInt(_0x101b8b(0x11f))/0xc)+parseInt(_0x101b8b(0x12e))/0xd;if(_0x27491e===_0x3e7a52)break;else _0x42a6dc['push'](_0x42a6dc['shift']());}catch(_0x411509){_0x42a6dc['push'](_0x42a6dc['shift']());}}}(Jsl_0x5bcb,0xaeb47));function Jsl_0x5bcb(){const _0x475590=['1272782SegxDs','Disabled','2810870FFmbep','Enabled','9SBmiSW','reply','13028356yMbwpc',',welcome\x20off','../lib/sql/greetings','12SreiRu','1UOSwUM','423tVnpEQ','_Welcome\x20Enabled\x20for\x20this\x20group_','302070HKdiax','jid','56WuKRfb','1506348YXxENp','𝙂𝙀𝙏\x20𝙒𝙀𝙇𝘾𝙊𝙈𝙀','welcome\x20','Sets\x20Welcome\x20Message','user','sendMessage','welcome\x20status\x20:',',welcome\x20on','30355650TjSLdD','𝙊𝙉','message','12GQxYvM','565406RNBHKR'];Jsl_0x5bcb=function(){return _0x475590;};return Jsl_0x5bcb();}const {Jsl}=require('../lib/'),{setWelcome,getWelcome,enableWelcome,getWelcomeStatus,disableWelcome}=require(Jsl_0x192657(0x11e));Jsl({'pattern':Jsl_0x192657(0x128),'fromMe':!![],'desc':Jsl_0x192657(0x129),'type':Jsl_0x192657(0x12a)},async(_0x47983d,_0x203f5b)=>{const _0x705b9a=Jsl_0x192657;if(!_0x203f5b){let _0x3d41c1=await getWelcomeStatus(_0x47983d[_0x705b9a(0x124)]);return _0x3d41c1=!![]?_0x705b9a(0x134):_0x705b9a(0x136),await _0x47983d['client'][_0x705b9a(0x12b)](_0x47983d[_0x705b9a(0x124)],{'text':'_Welcome\x20Manager_','footer':_0x705b9a(0x12c)+_0x3d41c1,'buttons':[{'buttonId':',welcome\x20get','buttonText':{'displayText':_0x705b9a(0x127)}},{'buttonId':_0x705b9a(0x12d),'buttonText':{'displayText':_0x705b9a(0x12f)}},{'buttonId':_0x705b9a(0x11d),'buttonText':{'displayText':'𝙊𝙁𝙁'}}]});}if(_0x203f5b==='get'){let _0x14ba6f=await getWelcome(_0x47983d[_0x705b9a(0x124)]);return await _0x47983d[_0x705b9a(0x11b)](_0x14ba6f[_0x705b9a(0x130)]);}else{if(_0x203f5b==='on')return await enableWelcome(_0x47983d[_0x705b9a(0x124)]),await _0x47983d[_0x705b9a(0x11b)](_0x705b9a(0x122));else{if(_0x203f5b==='off')return await disableWelcome(_0x47983d[_0x705b9a(0x124)]),await _0x47983d[_0x705b9a(0x11b)]('_Welcome\x20Disabled\x20for\x20this\x20group_');else await setWelcome(_0x47983d['jid'],_0x203f5b);}}});
+const { Function, Jsl, webp2mp4, isUrl } = require("../lib/");
+const { yta, ytIdRegex, ytv } = require("../lib/yotube");
+const { search } = require("yt-search");
+const { toAudio } = require("../lib/media");
+let gis = require("g-i-s");
+
+Jsl(
+  {
+    pattern: "vv ",
+    fromMe: true,
+    desc: "Forwards The View once messsage",
+    type: "tool",
+  },
+  async (message, match, m) => {
+    if (message.reply_message.type !== "view_once")
+      return await message.reply("_Not a View Once_");
+    let buff = await m.quoted.download();
+    return await message.sendFile(buff);
+  }
+);
+
+Jsl(
+  {
+    pattern: "photo ",
+    fromMe: true,
+    desc: "Changes sticker to Photo",
+    type: "converter",
+  },
+  async (message, match, m) => {
+    if (message.reply_message.mtype !== "stickerMessage")
+      return await message.reply("_Not a sticker_");
+    let buff = await m.quoted.download();
+    return await message.sendMessage(buff, {}, "image");
+  }
+);
+
+Jsl(
+  {
+    pattern: "mp4 ",
+    fromMe: true,
+    desc: "Changes sticker to Video",
+    type: "converter",
+  },
+  async (message, match, m) => {
+    if (message.reply_message.mtype !== "stickerMessage")
+      return await message.reply("_Not a sticker_");
+    let buff = await m.quoted.download();
+    let buffer = await webp2mp4(buff);
+    return await message.sendMessage(buffer, {}, "video");
+  }
+);
+
+Jsl(
+  {
+    pattern: "song ",
+    fromMe: true,
+    desc: "Downloads Song",
+    type: "downloader",
+  },
+  async (message, match) => {
+    match = match || message.reply_message.text;
+    if (ytIdRegex.test(match)) {
+      yta(match.trim()).then(({ dl_link, title }) => {
+        message.sendFromUrl(dl_link, { filename: title });
+      });
+    }
+    search(match + "song").then(async ({ all }) => {
+      await message.reply(`_Downloading ${all[0].title}_`);
+      yta(all[0].url).then(({ dl_link, title }) => {
+        message.sendFromUrl(dl_link, { filename: title, quoted: message });
+      });
+    });
+  }
+);
+
+Jsl(
+  {
+    pattern: "video ",
+    fromMe: true,
+    desc: "Downloads video",
+    type: "downloader",
+  },
+  async (message, match) => {
+    match = match || message.reply_message.text;
+    if (ytIdRegex.test(match)) {
+      ytv(match.trim()).then(({ dl_link, title }) => {
+        message.sendFromUrl(dl_link, { filename: title });
+      });
+    }
+    search(match + "song").then(async ({ all }) => {
+      await message.reply(`_Downloading ${all[0].title}_`);
+      ytv(all[0].url).then(({ dl_link, title }) => {
+        message.sendFromUrl(dl_link, { filename: title, quoted: message });
+      });
+    });
+  }
+);
+
+Jsl(
+  {
+    pattern: "mp3 ",
+    fromMe: true,
+    desc: "converts video/voice to mp3",
+    type: "downloader",
+  },
+  async (message, match, m) => {
+    let buff = await m.quoted.download();
+    buff = await toAudio(buff, "mp3");
+    return await message.sendMessage(buff, { mimetype: "audio/mpeg" }, "audio");
+  }
+);
+
+Jsl(
+  {
+    pattern: "yts ",
+    fromMe: true,
+    desc: "Search Youtube",
+    type: "Search",
+  },
+  async (message, match) => {
+    if(!match) return await message.reply('_Enter a search term_')
+    let rows = [];
+    search(match).then(async ({ videos }) => {
+      videos.forEach((result) => {
+        rows.push({
+          title: result.title,
+          description: `\nDuration : ${result.duration.toString()}\nAuthor : ${
+            result.author
+          }\nPublished : ${result.ago}\nDescription : ${
+            result.description
+          }\nURL : ${result.url}`,
+          rowId: ` `,
+        });
+      });
+      await message.client.sendMessage(message.jid, {
+        text: "Youtube Search for " + match,
+        buttonText: "View Results",
+        sections: [
+          {
+            title: "Youtube Search",
+            rows: rows,
+          },
+        ],
+      });
+    });
+  }
+);
