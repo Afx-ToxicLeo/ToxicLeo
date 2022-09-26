@@ -13,6 +13,7 @@ module.exports = {
   ANTILINK_ACTION: "kick",
   HANDLERS: process.env.HANDLERS || "^[,]",
   PACKNAME: process.env.PACKNAME || "ᴀʙᴜ-ᴍᴅ",
+  BOT_INFO: process.env.BOT_INFO || 'Abu;Jsl;917025994178;https://i.imgur.com/PMa01tz.jpeg',
   WELCOME_MSG:
     process.env.WELCOME_MSG ||
     "{pp}ʜɪ @user ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ @gname\nYou're our @count/513 ᴍᴇᴍʙᴇʀs ",
