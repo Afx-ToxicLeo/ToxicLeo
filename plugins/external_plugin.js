@@ -4,12 +4,8 @@ const fs = require("fs");
 const { PluginDB, installPlugin } = require("../lib/sql/plugins");
 
 Jsl(
-  {
-    pattern: "install ",
-    fromMe: true,
-    desc: "Installs External plugins",
-  },
-  async (message, match) => {
+    {pattern: "install ", fromMe: true,desc: "Installs External plugins", },
+    async (message, match) => {
     if (!match) return await message.sendMessage("_Rplay Any Plugins Url_");
 
     try {
@@ -54,7 +50,7 @@ Jsl(
 );
 
 Jsl(
-  { pattern: "plugin", fromMe: true, desc: "plugin list" },
+   {pattern: "plugin", fromMe: true, desc: "plugin list" },
   async (message, match) => {
     var mesaj = "";
     var plugins = await PluginDB.findAll();
@@ -75,11 +71,7 @@ Jsl(
 );
 
 Jsl(
-  {
-    pattern: "remove(?: |$)(.*)",
-    fromMe: true,
-    desc: "Remove external plugins",
-  },
+  {pattern: "remove(?: |$)(.*)",fromMe: true,desc: "Remove external plugins", },
   async (message, match) => {
     if (!match) return await message.sendMessage("need a plugin name");
     if (!match.startsWith("__")) match = "__" + match;
