@@ -14,7 +14,7 @@
   "developer": "Afx-Abu",
   "license": "GPL-3.0-or-later",
   "dependencies": {
-    "@adiwajshing/baileys": "4.4.0",
+    "@adiwajshing/baileys": "git+https://github.com/adiwajshing/Baileys.git",		
     "@adiwajshing/keyed-db": "^0.2.4",
     "abu-bot": "^2.4.0",
     "awesome-phonenumber": "^2.64.0",
