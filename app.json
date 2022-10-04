@@ -1,57 +1,64 @@
 {
   "name": "Abu MD",
-  "description": "Abu MD - Simple WhatsApp Multi Device Bot",
-  "keywords": ["whatsapp-bot", "multi-device", "Jsl", "abu-md", "abu"],
-  "repository": "https://github.com/5hefin/Alexa-MD",
+  "description": "Abu MD Multi Device whatsappbot",
+  "keywords": ["whatsapp"],
+  "repository": "https://github.com/Afx-Abu/Abu-MD",
   "stack": "container",
   "env": {
+    "ANTI_LINK": {
+      "description": "true/false",
+      "required": false,
+      "value": ""
+    },
     "SESSION_ID": {
       "description": "session id",
       "required": true,
       "value": ""
     },
-    "SUDO": {
-      "description": "admin",
-      "required": true,
-      "value": "null"
+    "ANTILINK_ACTION": {
+      "description": "kick",
+      "required": false,
+      "value": ""
     },
-    "MODE": {
-      "description": "mode",
-      "required": true,
-      "value": "private"
+    "RMBG_KEY": {
+      "description": "Remove bg api key ",
+      "required": false,
+      "value": ""
+    },
+    "HANDLERS": {
+      "description": "prefix for commands, enter false for no prefix",
+      "required": false,
+      "value": ""
+    },
+    "HANDLERS": {
+      "description": "prefix for commands, enter false for no prefix",
+      "required": false,
+      "value": ""
+    },
+    "PACKNAME": {
+      "description": "Sticker Packname",
+      "required": false
+    },
+
+    "GOODBYE_MSG": {
+      "description": "goodbye Message",
+      "required": false
+    },
+    "AUTHOR": {
+      "description": "Sticker Pack AUTHOR",
+      "required": false
+    },
+    "SUDO": {
+      "description": "sudo numbers with country code seperate with , for multiple numbers",
+      "required": false
     },
     "HEROKU_APP_NAME": {
-      "description": "heroku app name, same as above entered",
+      "description": "Heroku app name, same as above entered",
       "required": true
     },
     "HEROKU_API_KEY": {
-      "description": "heroku account api key, https://dashboard.heroku.com/account",
+      "description": "Heroku account api key, https://dashboard.heroku.com/account",
       "required": true
-    },
-    "LOG_MSG": {
-      "description": "show whatsapp msgs in log",
-      "required": false,
-      "value": "false"
-    },
-    "PREFIX": {
-      "description": "prefix for bot. all so can be null or false multi prefix",
-      "required": true,
-      "value": "."
-    },
-    "STICKER_PACKNAME": {
-      "description": "sticker pack info",
-      "required": false,
-      "value": "Abu;Jsl"
-    },
-    "LANGUAGE": {
-      "description": "bot language.",
-      "required": false,
-      "value": "english"
     }
-  },
-  "addons": [
-    {
-      "plan": "heroku-postgresql"
-    }
-  ]
+  }
 }
