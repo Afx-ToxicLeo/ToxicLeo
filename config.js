@@ -1,9 +1,7 @@
-const { Sequelize } = require('sequelize');
-const fs = require('fs');
-if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
-function convertToBool(text, fault = 'true') {
-    return text === fault ? true : false;
-}
+const toBool = (x) => x == 'true'
+const { Sequelize } = require('sequelize')
+const { existsSync } = require('fs')
+if (existsSync('config.env')) require('dotenv').config({ path: './config.env' })
 const DATABASE_URL = process.env.DATABASE_URL === undefined ? './database.db' : process.env.DATABASE_URL
 module.exports = {
     VERSION: 'v1.0.0',
