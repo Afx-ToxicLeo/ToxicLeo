@@ -1,75 +1,57 @@
 {
   "name": "Abu MD",
   "description": "Abu MD - Simple WhatsApp Multi Device Bot",
-  "keywords": ["abu-bot", "multi-device"],
-  "repository": "https://github.com/Afx-Abu/Abu-MD",
-  "keywords": ["Abu","Bot","Abu-MD"],
+  "keywords": ["whatsapp-bot", "multi-device", "Jsl", "abu-md", "abu"],
+  "repository": "https://github.com/5hefin/Alexa-MD",
+  "stack": "container",
   "env": {
-   "SESSION_ID": {
+    "SESSION_ID": {
       "description": "session id",
-      "required": false,
+      "required": true,
       "value": ""
     },
     "SUDO": {
-      "description": "sudo numbers with country code seperate with , for multiple numbers",
-      "required": false
-    },
-    "ANTI_LINK": {
-      "description": "true/false",
-      "required": false,
-      "value": ""
-    },
-    "HANDLERS": {
-      "description": "prefix for commands/ using false command work without . ",
-      "required": false,
-      "value": "."
-    },
-    "PACKNAME": {
-      "description": "Sticker Packname",
-      "required": false
-    },
-    "GOODBYE_MSG": {
-      "description": "goodbye Message",
-      "required": false
-    },
-    "AUTHOR": {
-      "description": "Sticker Pack AUTHOR",
-      "required": false
+      "description": "admin",
+      "required": true,
+      "value": "null"
     },
     "MODE": {
-      "description": "Work Type ",
-      "required": false,
+      "description": "mode",
+      "required": true,
       "value": "private"
     },
     "HEROKU_APP_NAME": {
-      "description": "Heroku app name, same as above entered",
+      "description": "heroku app name, same as above entered",
       "required": true
     },
     "HEROKU_API_KEY": {
-      "description": "Heroku account api key, https://dashboard.heroku.com/account",
+      "description": "heroku account api key, https://dashboard.heroku.com/account",
       "required": true
+    },
+    "LOG_MSG": {
+      "description": "show whatsapp msgs in log",
+      "required": false,
+      "value": "false"
+    },
+    "PREFIX": {
+      "description": "prefix for bot. all so can be null or false multi prefix",
+      "required": true,
+      "value": "."
+    },
+    "STICKER_PACKNAME": {
+      "description": "sticker pack info",
+      "required": false,
+      "value": "Abu;Jsl"
+    },
+    "LANGUAGE": {
+      "description": "bot language.",
+      "required": false,
+      "value": "english"
     }
-
-},
-"buildpacks": [
-
-  {
-
-      "url": "heroku/nodejs"
-
   },
-
-  {
-
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-
-  },
-
-  {
-
-      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
-
-  }
-
-]
+  "addons": [
+    {
+      "plan": "heroku-postgresql"
+    }
+  ]
 }
