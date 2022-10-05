@@ -9,6 +9,7 @@ DATABASE_URL = process.env.DATABASE_URL || "./database.db";
 let HANDLER = "false";
 module.exports = {
   VERSION: 'v1.0.0',
+  Session_Id: process.env.SESSION_ID || "a1Y0THZpWDg=",
   ANTILINK: toBool(process.env.ANTI_LINK) || false,
   ANTILINK_ACTION: process.env.ANTI_LINK || "kick",
   LANG: process.env.LANG || "EN",
@@ -16,9 +17,7 @@ module.exports = {
     process.env.HANDLER === "false" || process.env.HANDLER === "null"
       ? "^"
       : "^[,]",
-  SESSION_ID: (process.env.SESSION_ID || '').trim(),
   RMBG_KEY: process.env.RMBG_KEY || false,
-  BRANCH: "master",
   PACKNAME: process.env.PACKNAME || "Abu",
   WELCOME_MSG:
     process.env.WELCOME_MSG ||
