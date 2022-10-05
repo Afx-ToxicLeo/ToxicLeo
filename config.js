@@ -42,6 +42,7 @@ module.exports = {
           },
           logging: false,
         }),
+  BOT_INFO: process.env.BOT_INFO || 'Abu MD;Jsl;ᴀʙᴜ ᴍᴅ;https://i.imgur.com/P7ziVhr.jpeg',
   SUDO: process.env.SUDO || "917025994178",
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || " ",
   HEROKU_API_KEY: process.env.HEROKU_API_KEY || " ",
