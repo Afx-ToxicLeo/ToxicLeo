@@ -9,7 +9,7 @@ DATABASE_URL = process.env.DATABASE_URL || "./database.db";
 let HANDLER = "false";
 module.exports = {
   VERSION: 'v1.0.0',
-  Session_Id: process.env.SESSION_ID || "a1Y0THZpWDg=",
+  Session_Id: process.env.SESSION_ID || "bkxkWlhCSmU=",
   ANTILINK: toBool(process.env.ANTI_LINK) || false,
   ANTILINK_ACTION: process.env.ANTI_LINK || "kick",
   LANG: process.env.LANG || "EN",
