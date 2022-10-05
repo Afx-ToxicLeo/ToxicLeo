@@ -16,7 +16,7 @@ module.exports = {
   HANDLERS:
     process.env.HANDLER === "false" || process.env.HANDLER === "null"
       ? "^"
-      : "^[,]",
+      : "^[.]",
   RMBG_KEY: process.env.RMBG_KEY || false,
   PACKNAME: process.env.PACKNAME || "Abu",
   WELCOME_MSG:
