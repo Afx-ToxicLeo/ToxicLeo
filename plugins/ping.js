@@ -1,5 +1,5 @@
 
-const { bot ,isPublic} = require("../lib/");
+const { bot, isPublic } = require("../lib/");
 
 bot({
     pattern: "ping ?(.*)",
