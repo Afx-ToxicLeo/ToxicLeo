@@ -1,45 +1,33 @@
 {
   "name": "Abu MD",
-  "description": "Abu MD Multi Device whatsappbot",
-  "keywords": ["whatsapp"],
+  "description": "Abu MD - Simple WhatsApp Multi Device Bot",
+  "keywords": ["abu-bot", "multi-device"],
   "repository": "https://github.com/Afx-Abu/Abu-MD",
-  "stack": "container",
+  "keywords": ["Abu","Bot","Abu-MD"],
   "env": {
+   "SESSION_ID": {
+      "description": "session id",
+      "required": false,
+      "value": ""
+    },
+    "SUDO": {
+      "description": "sudo numbers with country code seperate with , for multiple numbers",
+      "required": false
+    },
     "ANTI_LINK": {
       "description": "true/false",
       "required": false,
       "value": ""
     },
-    "SESSION_ID": {
-      "description": "session id",
-      "required": true,
-      "value": ""
-    },
-    "ANTILINK_ACTION": {
-      "description": "kick",
-      "required": false,
-      "value": ""
-    },
-    "RMBG_KEY": {
-      "description": "Remove bg api key ",
-      "required": false,
-      "value": ""
-    },
     "HANDLERS": {
-      "description": "prefix for commands, enter false for no prefix",
+      "description": "prefix for commands/ using false command work without . ",
       "required": false,
-      "value": ""
-    },
-    "HANDLERS": {
-      "description": "prefix for commands, enter false for no prefix",
-      "required": false,
-      "value": ""
+      "value": "."
     },
     "PACKNAME": {
       "description": "Sticker Packname",
       "required": false
     },
-
     "GOODBYE_MSG": {
       "description": "goodbye Message",
       "required": false
@@ -48,9 +36,10 @@
       "description": "Sticker Pack AUTHOR",
       "required": false
     },
-    "SUDO": {
-      "description": "sudo numbers with country code seperate with , for multiple numbers",
-      "required": false
+    "MODE": {
+      "description": "Work Type ",
+      "required": false,
+      "value": "private"
     },
     "HEROKU_APP_NAME": {
       "description": "Heroku app name, same as above entered",
@@ -63,20 +52,24 @@
 
 },
 "buildpacks": [
-    {
+
+  {
+
       "url": "heroku/nodejs"
-    },
-    {
+
+  },
+
+  {
+
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-    },
-    {
+
+  },
+
+  {
+
       "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
-    }
-  ],
-   "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "free"
-        }
-    }
+
+  }
+
+]
 }
