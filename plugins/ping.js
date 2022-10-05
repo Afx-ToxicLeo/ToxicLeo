@@ -1,4 +1,3 @@
-
 const { bot, isPublic } = require("../lib/");
 
 bot({
