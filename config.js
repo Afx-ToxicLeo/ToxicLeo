@@ -48,7 +48,7 @@ module.exports = {
   SUDO: process.env.SUDO || "917025994178",
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || " ",
   HEROKU_API_KEY: process.env.HEROKU_API_KEY || " ",
-  OWNER_NAME: process.env.OWNER_NAME || "Abu",
+  IMAGE_URL: process.env.IMAGE_URL || "https://telegra.ph/file/47842cf7d85784cb4e441.jpg",
   BOT_NAME: process.env.BOT_NAME || "Abu-MD",
   MODE: process.env.MODE || "public",
 };
