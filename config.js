@@ -42,6 +42,8 @@ module.exports = {
           },
           logging: false,
         }),
+   
+  IMG_INFO: process.env.IMAG_INFO || "https://telegra.ph/file/47842cf7d85784cb4e441.jpg"
   BOT_INFO: process.env.BOT_INFO || 'Abu MD,Jsl,Abu SER,Abu MD,https://telegra.ph/file/47842cf7d85784cb4e441.jpg',
   SUDO: process.env.SUDO || "917025994178",
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || " ",
