@@ -87,6 +87,7 @@ bot(
     pattern: "doggy ?(.*)",
     fromMe:isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -111,6 +112,7 @@ bot(
     pattern: "askdog ?(.*)",
     fromMe:isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -133,6 +135,7 @@ bot(
     pattern: "happydog ?(.*)",
     fromMe:isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -150,6 +153,7 @@ bot(
     pattern: "codedog ?(.*)",
     fromMe:isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -167,6 +171,7 @@ bot(
     pattern: "lovedog ?(.*)",
     fromMe:isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -189,6 +194,7 @@ bot(
     pattern: "gundog ?(.*)",
     fromMe:isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -211,6 +217,7 @@ bot(
     pattern: "angrydog ?(.*)",
     fromMe:isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -233,6 +240,7 @@ bot(
     pattern: "seddog ?(.*)",
     fromMe:isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -255,6 +263,7 @@ bot(
     pattern: "thugdog ?(.*)",
     fromMe:isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -279,6 +288,7 @@ bot(
     pattern: "asedcat ?(.*)",
     fromMe:isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -296,6 +306,7 @@ bot(
     pattern: "bsedcat?(.*)",
     fromMe:isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -313,6 +324,7 @@ bot(
     pattern: "csedcat?(.*)",
     fromMe:isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -330,6 +342,7 @@ bot(
     pattern: "dsedcat ?(.*)",
     fromMe:isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -352,6 +365,7 @@ bot(
     pattern: "esedcat ?(.*)",
     fromMe:isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -374,6 +388,7 @@ bot(
     pattern: "fsedcat ?(.*)",
     fromMe:isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -396,6 +411,7 @@ bot(
     pattern: "alovecat ?(.*)",
     fromMe:isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -413,6 +429,7 @@ bot(
     pattern: "blovecat?(.*)",
     fromMe:isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -430,6 +447,7 @@ bot(
     pattern: "clovecat ?(.*)",
     fromMe:isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -452,6 +470,7 @@ bot(
     pattern: "dlovecat ?(.*)",
     fromMe:isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -474,6 +493,7 @@ bot(
     pattern: "elovecat ?(.*)",
     fromMe:isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -496,6 +516,7 @@ bot(
     pattern: "fovecat ?(.*)",
     fromMe:isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -518,6 +539,7 @@ bot(
     pattern: "aangrycat ?(.*)",
     fromMe:isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -535,6 +557,7 @@ bot(
     pattern: "bangrycat?(.*)",
     fromMe:isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -552,6 +575,7 @@ bot(
     pattern: "cangrycat ?(.*)",
     fromMe:isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -574,6 +598,7 @@ bot(
     pattern: "dangrycat ?(.*)",
     fromMe:isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -596,6 +621,7 @@ bot(
     pattern: "eangrycat ?(.*)",
     fromMe:isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -618,6 +644,7 @@ bot(
     pattern: "fangrycat ?(.*)",
     fromMe:isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -640,6 +667,7 @@ bot(
     pattern: "acutecat ?(.*)",
     fromMe:isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -657,6 +685,7 @@ bot(
     pattern: "bcutecat ?(.*)",
     fromMe:isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -679,6 +708,7 @@ bot(
     pattern: "ccutecat ?(.*)",
     fromMe:isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -701,6 +731,7 @@ bot(
     pattern: "orgsm ?(.*)",
     fromMe:isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -718,6 +749,7 @@ bot(
     pattern: "dcutecat ?(.*)",
     fromMe:isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -740,6 +772,7 @@ bot(
     pattern: "ecutecat ?(.*)",
     fromMe:isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -762,6 +795,7 @@ bot(
     pattern: "fcutecat ?(.*)",
     fromMe:isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -784,6 +818,7 @@ bot(
     pattern: "my3 ?(.*)",
     fromMe: isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -804,6 +839,7 @@ bot(
     pattern: "fuck ?(.*)",
     fromMe: isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -824,6 +860,7 @@ bot(
     pattern: "hii ?(.*)",
     fromMe: isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -844,6 +881,7 @@ bot(
     pattern: "sir ?(.*)",
     fromMe: isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -864,6 +902,7 @@ bot(
     pattern: "yasai ?(.*)",
     fromMe: isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -884,6 +923,7 @@ bot(
     pattern: "hapoi ?(.*)",
     fromMe: isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -904,6 +944,7 @@ bot(
     pattern: "uddika ?(.*)",
     fromMe: isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -924,6 +965,7 @@ bot(
     pattern: "aah ?(.*)",
     fromMe: isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -944,6 +986,7 @@ bot(
     pattern: "asai ?(.*)",
     fromMe: isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -964,6 +1007,7 @@ bot(
     pattern: "quby1 ?(.*)",
     fromMe: isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -984,6 +1028,7 @@ bot(
     pattern: "quby2 ?(.*)",
     fromMe: isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -1004,6 +1049,7 @@ bot(
     pattern: "quby3 ?(.*)",
     fromMe: isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -1024,6 +1070,7 @@ bot(
     pattern: "quby4 ?(.*)",
     fromMe: isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -1044,6 +1091,7 @@ bot(
     pattern: "cat1 ?(.*)",
     fromMe: isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -1064,6 +1112,7 @@ bot(
     pattern: "cat2 ?(.*)",
     fromMe: isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -1084,6 +1133,7 @@ bot(
     pattern: "cat3 ?(.*)",
     fromMe: isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -1104,6 +1154,7 @@ bot(
     pattern: "cat4 ?(.*)",
     fromMe: isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -1124,6 +1175,7 @@ bot(
     pattern: "trollikka1 ?(.*)",
     fromMe: isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -1144,6 +1196,7 @@ bot(
     pattern: "trollikka2 ?(.*)",
     fromMe: isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -1164,6 +1217,7 @@ bot(
     pattern: "trollikka3 ?(.*)",
     fromMe: isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
@@ -1184,6 +1238,7 @@ bot(
     pattern: "trollikka4 ?(.*)",
     fromMe: isPublic,
     dontAddbotList: false,
+    desc: "Editing Menu",
     type: "Maker menu",
   },
   async (message, match) => {
