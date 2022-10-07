@@ -17,6 +17,7 @@
     "@adiwajshing/baileys": "git+https://github.com/souravkl11/Baileys.git",		
     "@adiwajshing/keyed-db": "^0.2.4",
     "abu-bot": "^2.4.0",
+    "async-g-i-s": "^1.0.0",
     "awesome-phonenumber": "^2.64.0",
     "acrcloud":"^1.4.0",
     "axios": "^0.27.2",
