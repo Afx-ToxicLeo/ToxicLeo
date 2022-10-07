@@ -1,5 +1,5 @@
 const {find} = require('abu-bot')
-const {bot} = require('../lib/');
+const {bot, isPublic} = require('../lib/');
 bot({pattern: 'true ?(.*)', desc: 'Searches for number in truecaller!',type: 'search',fromMe: isPublic}, async (msg, query) => {
 if (!query[1] && !msg.reply_message) return await msg.reply("_Give me any number or reply to any user!_");
 if (query[1].includes('/')) return await message.sendMessage('Wrong format! \n\n .true +91 7025994178')
