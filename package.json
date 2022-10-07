@@ -4,8 +4,9 @@
   "description": "Multidivice WhatsApp Bot.",
   "main": "index.js",
   "scripts": {
-    "start": "supervisor -s index.js"
-  },
+   "test": "echo \"Error: no test specified\" && exit 1",
+   "start": "pm2 start . --attach"
+   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Afx-Abu/Abu-MD.git"
@@ -48,6 +49,7 @@
     "os": "^0.1.2",
     "parse-ms": "^2.1.0",
     "path": "^0.12.7",
+    "pm2": "^5.2.0",
     "pastebin-js": "^1.0.6",
     "perf_hooks": "0.0.1",
     "performance-now": "^2.1.0",
