@@ -10,14 +10,14 @@ const {
   } = require('abu-bot');
   const {
       getString
-  } = require('./lib/misc/lang');
+  } = require('./misc/lang');
   const {
     avMix,  
     bass,
     circle,
     rotate,
     findMusic 
-  } = require('./lib/misc/utils');
+  } = require('./misc/utils');
   const Lang = getString('media');
   bot({
       pattern: 'trim ?(.*)',
