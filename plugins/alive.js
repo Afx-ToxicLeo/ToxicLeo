@@ -8,7 +8,7 @@ const {
 const config = require('../config');
 const {
   parseAlive
-} = require('../lib/misc/misc');
+} = require('../lib/misc/utils');
 Module({
   pattern: 'alive',
   fromMe: isPublic,
