@@ -3,9 +3,8 @@
   "version": "2.1.0",
   "description": "Multidivice WhatsApp Bot.",
   "main": "index.js",
-  "scripts": {
-   "test": "echo \"Error: no test specified\" && exit 1",
-   "start": "pm2 start . --attach"
+   "scripts": {
+      "start": "pm2 start . --attach --name ⛦"
    },
   "repository": {
     "type": "git",
