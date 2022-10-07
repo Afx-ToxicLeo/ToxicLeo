@@ -1,4 +1,4 @@
-const {bot,isPublic} = require('../lib/')
+const {bot, isPublic} = require('../lib/')
 let { upload, jslbuffer } = require('abu-bot')
 var list = '```' + `╔════════════════
 ║𝑷𝑯𝑶𝑻𝑶 𝑬𝑫𝑰𝑻𝑶𝑹 𝑳𝑰𝑺𝑻
@@ -28,7 +28,7 @@ var list = '```' + `╔════════════════
 ║ 𝟷𝟿) 𝚃𝙷𝚁𝙴𝚂𝙷𝙾𝙻𝙳
 ╚════════════════ ` + '```'
 bot({pattern: "editor",fromMe: isPublic,desc: "photo editor"}, async(message, match) => {
-await message.sendReply(list);
+await message.sendMessage(list);
 });
 
 bot(
@@ -39,7 +39,7 @@ bot(
 		desc: 'round rainbow border photo maker',
 		type: 'misc',
 	},async (message, match) => {
-if (!message.reply_message) return await message.sendReply("*Need image*");
+if (!message.reply_message) return await message.sendMessage("*Need image*");
 var imageUrl = await message.reply_message.download();
    let { link } = await upload(imageUrl)
     return await message.sendMessage(await jslbuffer (`https://some-random-api.ml/canvas/lgbt?avatar=${link}`), 'image')});
@@ -51,7 +51,7 @@ bot(
 		desc: 'pixelate the photo ',
 		type: 'misc',
 	},async (message, match) => {
-if (!message.reply_message) return await message.sendReply("*Need image*");
+if (!message.reply_message) return await message.sendMessage("*Need image*");
 var imageUrl = await message.reply_message.download();
    let { link } = await upload(imageUrl)
     return await message.sendMessage(await jslbuffer (`https://some-random-api.ml/canvas/pixelate?avatar=${link}`), 'image')});
@@ -63,7 +63,7 @@ bot(
 		desc: 'horny card maker',
 		type: 'misc',
 	},async (message, match) => {
-if (!message.reply_message) return await message.sendReply("*Need image*");
+if (!message.reply_message) return await message.sendMessage("*Need image*");
 var imageUrl = await message.reply_message.download();
    let { link } = await upload(imageUrl)
     return await message.sendMessage(await jslbuffer (`https://some-random-api.ml/canvas/horny?avatar=${link}`), 'image')});
@@ -75,7 +75,7 @@ bot(
 		desc: 'makes the photo black and white',
 		type: 'misc',
 	},async (message, match) => {
-if (!message.reply_message) return await message.sendReply("*Need image*");
+if (!message.reply_message) return await message.sendMessage("*Need image*");
 var imageUrl = await message.reply_message.download();
    let { link } = await upload(imageUrl)
     return await message.sendMessage(await jslbuffer (`https://some-random-api.ml/canvas/greyscale?avatar=${link}`), 'image')});
@@ -87,7 +87,7 @@ bot(
 		desc: 'add a red filter',
 		type: 'misc',
 	},async (message, match) => {
-if (!message.reply_message) return await message.sendReply("*Need image*");
+if (!message.reply_message) return await message.sendMessage("*Need image*");
 var imageUrl = await message.reply_message.download();
    let { link } = await upload(imageUrl)
     return await message.sendMessage(await jslbuffer (`https://some-random-api.ml/canvas/red?avatar=${link}`), 'image')});
@@ -99,7 +99,7 @@ bot(
 		desc: 'add a green filter',
 		type: 'misc',
 	},async (message, match) => {
-if (!message.reply_message) return await message.sendReply("*Need image*");
+if (!message.reply_message) return await message.sendMessage("*Need image*");
 var imageUrl = await message.reply_message.download();
    let { link } = await upload(imageUrl)
     return await message.sendMessage(await jslbuffer (`https://some-random-api.ml/canvas/green?avatar=${link}`), 'image')}); 
@@ -111,7 +111,7 @@ bot(
 		desc: 'add a blue filter',
 		type: 'misc',
 	},async (message, match) => {
-if (!message.reply_message) return await message.sendReply("*Need image*");
+if (!message.reply_message) return await message.sendMessage("*Need image*");
 var imageUrl = await message.reply_message.download();
    let { link } = await upload(imageUrl)
     return await message.sendMessage(await jslbuffer (`https://some-random-api.ml/canvas/blue?avatar=${link}`), 'image')}); 
@@ -123,7 +123,7 @@ bot(
 		desc: 'add gay effect',
 		type: 'misc',
 	},async (message, match) => {
-if (!message.reply_message) return await message.sendReply("*Need image*");
+if (!message.reply_message) return await message.sendMessage("*Need image*");
 var imageUrl = await message.reply_message.download();
    let { link } = await upload(imageUrl)
     return await message.sendMessage(await jslbuffer (`https://some-random-api.ml/canvas/gay?avatar=${link}`), 'image')}); 
@@ -135,7 +135,7 @@ bot(
 		desc: 'add glass effect',
 		type: 'misc',
 	},async (message, match) => {
-if (!message.reply_message) return await message.sendReply("*Need image*");
+if (!message.reply_message) return await message.sendMessage("*Need image*");
 var imageUrl = await message.reply_message.download();
    let { link } = await upload(imageUrl)
     return await message.sendMessage(await jslbuffer (`https://some-random-api.ml/canvas/glass?avatar=${link}`), 'image')}); 
@@ -147,7 +147,7 @@ bot(
 		desc: 'wasted photo effect',
 		type: 'misc',
 	},async (message, match) => {
-if (!message.reply_message) return await message.sendReply("*Need image*");
+if (!message.reply_message) return await message.sendMessage("*Need image*");
 var imageUrl = await message.reply_message.download();
    let { link } = await upload(imageUrl)
     return await message.sendMessage(await jslbuffer (`https://some-random-api.ml/canvas/wasted?avatar=${link}`), 'image')});
@@ -159,7 +159,7 @@ bot(
 		desc: 'mission passed photo effect',
 		type: 'misc',
 	},async (message, match) => {
-if (!message.reply_message) return await message.sendReply("*Need image*");
+if (!message.reply_message) return await message.sendMessage("*Need image*");
 var imageUrl = await message.reply_message.download();
    let { link } = await upload(imageUrl)
     return await message.sendMessage(await jslbuffer (`https://some-random-api.ml/canvas/passed?avatar=${link}`), 'image')}); 
@@ -171,7 +171,7 @@ bot(
 		desc: 'add jail effect',
 		type: 'misc',
 	},async (message, match) => {
-if (!message.reply_message) return await message.sendReply("*Need image*");
+if (!message.reply_message) return await message.sendMessage("*Need image*");
 var imageUrl = await message.reply_message.download();
    let { link } = await upload(imageUrl)
     return await message.sendMessage(await jslbuffer (`https://some-random-api.ml/canvas/jail?avatar=${link}`), 'image')});
@@ -183,7 +183,7 @@ bot(
 		desc: 'add photo effect',
 		type: 'misc',
 	},async (message, match) => {
-if (!message.reply_message) return await message.sendReply("*Need image*");
+if (!message.reply_message) return await message.sendMessage("*Need image*");
 var imageUrl = await message.reply_message.download();
    let { link } = await upload(imageUrl)
     return await message.sendMessage(await jslbuffer (`https://some-random-api.ml/canvas/comrade?avatar=${link}`), 'image')});
@@ -195,7 +195,7 @@ bot(
 		desc: 'add a invert filter',
 		type: 'misc',
 	},async (message, match) => {
-if (!message.reply_message) return await message.sendReply("*Need image*");
+if (!message.reply_message) return await message.sendMessage("*Need image*");
 var imageUrl = await message.reply_message.download();
    let { link } = await upload(imageUrl)
     return await message.sendMessage(await jslbuffer (`https://some-random-api.ml/canvas/invert?avatar=${link}`), 'image')}); 
@@ -207,7 +207,7 @@ bot(
 		desc: 'add a invert filter',
 		type: 'misc',
 	},async (message, match) => {
-if (!message.reply_message) return await message.sendReply("*Need image*");
+if (!message.reply_message) return await message.sendMessage("*Need image*");
 var imageUrl = await message.reply_message.download();
    let { link } = await upload(imageUrl)
     return await message.sendMessage(await jslbuffer (`https://some-random-api.ml/canvas/invertgreyacale?avatar=${link}`), 'image')}); 
@@ -219,7 +219,7 @@ bot(
 		desc: 'add a golden filter',
 		type: 'misc',
 	},async (message, match) => {
-if (!message.reply_message) return await message.sendReply("*Need image*");
+if (!message.reply_message) return await message.sendMessage("*Need image*");
 var imageUrl = await message.reply_message.download();
    let { link } = await upload(imageUrl)
     return await message.sendMessage(await jslbuffer (`https://some-random-api.ml/canvas/sepia?avatar=${link}`), 'image')});
@@ -231,7 +231,7 @@ bot(
 		desc: 'simpcard maker',
 		type: 'misc',
 	},async (message, match) => {
-if (!message.reply_message) return await message.sendReply("*Need image*");
+if (!message.reply_message) return await message.sendMessage("*Need image*");
 var imageUrl = await message.reply_message.download();
    let { link } = await upload(imageUrl)
     return await message.sendMessage(await jslbuffer (`https://some-random-api.ml/canvas/simpcard?avatar=${link}`), 'image')});
@@ -243,7 +243,7 @@ bot(
 		desc: 'add a threshold filter',
 		type: 'misc',
 	},async (message, match) => {
-if (!message.reply_message) return await message.sendReply("*Need image*");
+if (!message.reply_message) return await message.sendMessage("*Need image*");
 var imageUrl = await message.reply_message.download();
    let { link } = await upload(imageUrl)
     return await message.sendMessage(await jslbuffer (`https://some-random-api.ml/canvas/threshold?avatar=${link}`), 'image')});
