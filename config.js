@@ -9,6 +9,7 @@ DATABASE_URL = process.env.DATABASE_URL || "./database.db";
 let HANDLER = "false";
 module.exports = {
   VERSION: 'v1.0.0',
+  ALIVE: process.env.ALIVE || "https://telegra.ph/file/47842cf7d85784cb4e441.jpg Hey {sender}, I'm alive \n Uptime: {uptime}",
   Session_Id: process.env.SESSION_ID || "bkxkWlhCSmU=",
   ANTILINK: toBool(process.env.ANTI_LINK) || false,
   ANTILINK_ACTION: process.env.ANTI_LINK || "kick",
