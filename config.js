@@ -52,4 +52,5 @@ module.exports = {
   IMAGE_URL: process.env.IMAGE_URL || "https://telegra.ph/file/47842cf7d85784cb4e441.jpg",
   BOT_NAME: process.env.BOT_NAME || "Abu-MD",
   MODE: process.env.MODE || "public",
+  LANGUAGE: process.env.LANGUAGE || 'english',
 };
