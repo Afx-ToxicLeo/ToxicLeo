@@ -1,4 +1,4 @@
-const {bot} = require('../lib/')
+const {bot,isPublic} = require('../lib/')
 let { upload, jslbuffer } = require('abu-bot')
 var list = '```' + `╔════════════════
 ║𝑷𝑯𝑶𝑻𝑶 𝑬𝑫𝑰𝑻𝑶𝑹 𝑳𝑰𝑺𝑻
