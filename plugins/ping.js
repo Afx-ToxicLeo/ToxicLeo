@@ -1,4 +1,4 @@
-const { Module ,isPublic} = require("../lib/");
+const { Module,isPublic} = require("../lib/");
 
 Module(
   {
