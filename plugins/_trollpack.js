@@ -1,4 +1,4 @@
-const { isPublic, command, getBuffer } = require("../lib");
+const { isPublic, Module, getBuffer } = require("../lib");
 const ll = "*Type something*";
 
 
