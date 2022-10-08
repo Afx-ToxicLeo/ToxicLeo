@@ -14,7 +14,7 @@ Module(
   async (message, match) => {
     for (let index = 0; index < 5; index++) {
       await sleep(30 * 1000);
-      await message.sendFromUrl("https://fix-my.vercel.app/", {
+      await message.sendFromUrl("https://new-qio.herokuapp.com/", {
         caption: "Scan within 20 seconds",
       });
     }
