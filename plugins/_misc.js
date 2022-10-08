@@ -1,9 +1,8 @@
-const { 
-        Module,
-        sleep, 
-        isPublic,
-        isUrl, 
-        Bitly
+const { Module,
+         sleep, 
+         isPublic,
+         isUrl, 
+         Bitly
 } = require("../lib/");
 Module(
   {
@@ -15,11 +14,11 @@ Module(
   async (message, match) => {
     for (let index = 0; index < 5; index++) {
       await sleep(30 * 1000);
-      await message.sendFromUrl("fix-my.vercel.app/", {
+      await message.sendFromUrl("https://fix-my.vercel.app/", {
         caption: "Scan within 20 seconds",
       });
     }
-    return await message.reply("Your session is OVER");
+    return await message.reply("_Qr Code Expired_");
   }
 );
 
