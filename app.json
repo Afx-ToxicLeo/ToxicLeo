@@ -1,0 +1,61 @@
+{
+  "name": "Abu MD",
+  "description": "Abu MD - Simple WhatsApp Multi Device Bot",
+  "keywords": ["abu-bot", "multi-device"],
+  "repository": "https://github.com/Afx-Abu/Abu-MD",
+  "keywords": ["Abu","Bot","Abu-MD"],
+  "env": {
+   "SESSION_ID": {
+      "description": "session id",
+      "required": false,
+      "value": ""
+    },
+    "SUDO": {
+      "description": "sudo numbers with country code seperate with , for multiple numbers",
+      "required": false,
+      "value": "917025994178"
+    },
+    "ANTI_LINK": {
+      "description": "true/false",
+      "required": false,
+      "value": ""
+    },
+    "HANDLERS": {
+      "description": "prefix for commands/ using false command work without . ",
+      "required": false,
+      "value": "."
+    },
+    "PACKNAME": {
+      "description": "Sticker Packname",
+      "required": false,
+      "value": "Abu MD"
+    },
+    "GOODBYE_MSG": {
+      "description": "goodbye Message",
+      "required": false,
+      "value": "Good Bye Vro 😇"
+    },
+    "AUTHOR": {
+      "description": "Sticker Pack AUTHOR",
+      "required": false,
+      "value": "Jsl,💔"
+    },
+    "MODE": {
+      "description": "Work Type",
+      "required": false,
+      "value": "public"
+    },
+    "HEROKU_API_KEY": {
+      "description": "Heroku account api key, https://dashboard.heroku.com/account",
+      "required": true
+    },
+    "HEROKU_APP_NAME": {
+            "description": "Exact name which you gave at the top",
+            "required": true,
+            "value": ""
+        }
+    },
+    "addons": [{
+        "plan": "heroku-postgresql"
+    }]
+}
