@@ -12,7 +12,8 @@
     },
     "SUDO": {
       "description": "sudo numbers with country code seperate with , for multiple numbers",
-      "required": false
+      "required": false,
+      "value": "917025994178"
     },
     "ANTI_LINK": {
       "description": "true/false",
@@ -26,18 +27,22 @@
     },
     "PACKNAME": {
       "description": "Sticker Packname",
-      "required": false
+      "required": false,
+      "value": "Abu MD"
     },
     "GOODBYE_MSG": {
       "description": "goodbye Message",
-      "required": false
+      "required": false,
+      "value": "Good Bye Vro 😇"
+
     },
     "AUTHOR": {
       "description": "Sticker Pack AUTHOR",
-      "required": false
+      "required": false,
+      "value": "Jsl,💔"
     },
     "MODE": {
-      "description": "Work Type ",
+      "description": "Work Type",
       "required": false,
       "value": "private"
     },
