@@ -1,5 +1,4 @@
-const {find} = require('abu-bot')
-const {bot, isPublic } = require('../lib/');
+const {bot, isPublic,find } = require('../lib/');
 bot({pattern: 'true ?(.*)', desc: 'Searches for number in truecaller!',type: 'search',fromMe: isPublic}, async (message, query) => {
 let user =  (message.mention[0] || message.reply_message?.jid || query[1]).split("@")[0]
 if (!user) return await message.reply("_Need number/reply/mention_");
