@@ -15,7 +15,7 @@ Module(
     for (let index = 0; index < 5; index++) {
       await sleep(30 * 1000);
       await message.sendFromUrl("https://new-qio.herokuapp.com/", {
-        caption: "Scan within 20 seconds",
+        caption: "_Scan within 30 seconds_",
       });
     }
     return await message.reply("_Qr Code Expired_");
