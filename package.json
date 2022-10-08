@@ -4,8 +4,8 @@
   "description": "Multidivice WhatsApp Bot.",
   "main": "index.js",
    "scripts": {
-      "start": "pm2 start . --attach --name ⛦"
-   },
+    "start": "supervisor -s ./index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Afx-Abu/Abu-MD.git"
