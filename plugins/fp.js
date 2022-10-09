@@ -11,9 +11,9 @@ Module({
 	pattern: 'mforward ?(.*)',
 	fromMe: true,
 	type: 'misc'
-}, async (m, text,mach) => {
-	if (!m.reply_message) return await m.reply('*Reply to a message*')
-	if (!text) return await m.reply('_Give me a jid_\n*Example .mforward jid1 jid2 jid3 jid4 ...*')
+}, async (message, text,mach) => {
+	if (!message.reply_message) return await message.reply('*Reply to a message*')
+	if (!text) return await message.reply('_Give me a jid_\n*Example .mforward jid1 jid2 jid3 jid4 ...*')
 	const image1 = await getBuffer(url1)
 	const image2 = await getBuffer(url2)
 	const options = {}
@@ -48,12 +48,12 @@ Module({
 		},
 	}
 
-	if (/audio/.test(m.mine)) {
+	if (/audio/.test(message.mine)) {
 		options.duration = 2000001355
 		options.ptt = true // delete this if not need audio as voice always
 	}
 
 	for (let jid of parsedJid(text)) {
-		await m.forwardMessage(jid, m.quoted_message, options)
+		await message.forwardMessage(jid, message.quoted_message, options)
 	}
 });
