@@ -6,7 +6,9 @@ if (fs.existsSync("config.env"))
 const toBool = (x) => x == "true";
 
 DATABASE: DATABASE_URL === './database.db' ? new Sequelize({ dialect: 'sqlite', storage: DATABASE_URL, logging: false }) : new Sequelize(DATABASE_URL, {dialect: 'postgres', ssl: true, protocol: 'postgres', dialectOptions: { native: true, ssl: { require: true, rejectUnauthorized: false },}, logging: false }),
+
 let HANDLER = "false";
+
 module.exports = {
   VERSION: 'v1.0.0',
   BRANCH: "main",
@@ -18,9 +20,7 @@ module.exports = {
   LANG: process.env.LANG || "EN",
   AUDIO_DATA: process.env.AUDIO_DATA === undefined || process.env.AUDIO_DATA === "private" ? '𝐴𝑏𝑢¹¹ꫂ;Abu MD bot;https://i.imgur.com/cO6Ddfh.jpeg' : process.env.AUDIO_DATA,
   HANDLERS:
-    process.env.HANDLER === "false" || process.env.HANDLER === "null"
-      ? "^"
-      : "^[.]",
+    process.env.HANDLER === "false",
   RMBG_KEY: process.env.RMBG_KEY || false,
   PACKNAME: process.env.PACKNAME || "Abu",
   WELCOME_MSG:
