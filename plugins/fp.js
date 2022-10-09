@@ -4,16 +4,16 @@ const {
 	getBuffer
 } = require("../lib/");
 
-const url1 = 'https://i.imgur.com/8ywakAD.jpeg'
-const url2 = 'https://i.imgur.com/MYx2KqP.jpeg'
+const url1 = 'https://i.imgur.com/0I0KONy.jpeg'
+const url2 = 'https://i.imgur.com/kxwRM1c.jpg'
 
 Module({
-	pattern: 'fp ?(.*)',
+	pattern: 'mforward ?(.*)',
 	fromMe: true,
 	type: 'misc'
-}, async (m, text, client) => {
+}, async (m, text,mach) => {
 	if (!m.reply_message) return await m.reply('*Reply to a message*')
-	if (!text) return await m.reply('*Give me a jid*\nExample .fd jid1 jid2 jid3 jid4 ...')
+	if (!text) return await m.reply('_Give me a jid_\n*Example .mforward jid1 jid2 jid3 jid4 ...*')
 	const image1 = await getBuffer(url1)
 	const image2 = await getBuffer(url2)
 	const options = {}
@@ -23,41 +23,37 @@ Module({
 	}
 
 	options.linkPreview = {
-		title: ' 𝞛𝞓𝙎𝞙 𝙎𝞝𝗥💖 ',
-		body: 'Made by mask 𝐰𝐢𝐭𝐡 ❤️💫',
+		title: 'ᴀʙᴜ sᴇʀ',
+		body: 'ᴍᴀᴅᴇ ʙʏ ᴀʙᴜ 💜',
 		mediaType: 2,
 		thumbnail: image2,
-		mediaUrl: 'https://www.instagram.com/p/heehe', // insta link for video 
-		sourceUrl: 'https://wa.me/919544951258?text=_*៚ʜᴇʟʟᴏ+ᴍᴀsᴋ+sᴇʀ+ʙɪɢ ғᴀɴ+ᴠʀᴏ+🪄*_',
+		mediaUrl: '', // insta link for video 
+		sourceUrl: 'https://github.com/Afx-Abu',
 		showAdAttribution: true
 	}
 
-	options.filesize = 99999999999;
+        options.filesize = 9999999999999;
 
 	options.quoted = {
 		key: {
 			fromMe: false,
-			participant: `0@s.whatsapp.net`,
-			...(m.jid ? {
-				remoteJid: `status@broadcast`
-			} : {})
+			participant: '0@s.whatsapp.net',
+			remoteJid: 'status@broadcast',
 		},
 		message: {
-			'contactMessage': {
-				'displayName': '𝐎𝐍𝐄 𝐀𝐍𝐃 𝐎𝐍𝐋𝐘 𝐊𝐈𝐍𝐆 𝐌𝐀𝐒𝐊 𝐒𝐄𝐑😻',
-				'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;'𝐎𝐍𝐄 𝐀𝐍𝐃 𝐎𝐍𝐋𝐘 𝐊𝐈𝐍𝐆 𝐌𝐀𝐒𝐊 𝐒𝐄𝐑😻',;;;\nFN:'𝐎𝐍𝐄 𝐀𝐍𝐃 𝐎𝐍𝐋𝐘 𝐊𝐈𝐍𝐆 𝐌𝐀𝐒𝐊 𝐒𝐄𝐑😻',\nitem1.TEL;waid=${m.pushName.split('@')[0]}:${m.pushName.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`,
-				'jpegThumbnail': image1
-			}
-		}
+			imageMessage: {
+				jpegThumbnail: image2,
+				caption: '𝘔𝘈𝘋𝘌 𝘉𝘠 𝘈𝘉𝘜 💜',
+			},
+		},
 	}
 
 	if (/audio/.test(m.mine)) {
 		options.duration = 2000001355
-		options.ptt = true
+		options.ptt = true // delete this if not need audio as voice always
 	}
-options.audiowave = [99,0,99,0,99]
 
 	for (let jid of parsedJid(text)) {
-		await client.forwardMessage(jid, m.quoted_message, options)
+		await m.forwardMessage(jid, m.quoted_message, options)
 	}
 });
