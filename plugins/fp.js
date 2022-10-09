@@ -1,1 +1,64 @@
-const Jsl_0x1be644=Jsl_0x1445;(function(_0x3ae915,_0x52376a){const _0x20b7e4=Jsl_0x1445,_0x218879=_0x3ae915();while(!![]){try{const _0x1066ec=-parseInt(_0x20b7e4(0x134))/0x1*(parseInt(_0x20b7e4(0x13d))/0x2)+parseInt(_0x20b7e4(0x130))/0x3*(-parseInt(_0x20b7e4(0x131))/0x4)+parseInt(_0x20b7e4(0x13e))/0x5*(-parseInt(_0x20b7e4(0x122))/0x6)+parseInt(_0x20b7e4(0x12c))/0x7*(-parseInt(_0x20b7e4(0x137))/0x8)+-parseInt(_0x20b7e4(0x143))/0x9*(-parseInt(_0x20b7e4(0x145))/0xa)+-parseInt(_0x20b7e4(0x13a))/0xb*(parseInt(_0x20b7e4(0x12e))/0xc)+parseInt(_0x20b7e4(0x128))/0xd;if(_0x1066ec===_0x52376a)break;else _0x218879['push'](_0x218879['shift']());}catch(_0x527e50){_0x218879['push'](_0x218879['shift']());}}}(Jsl_0x2585,0xeb00a));function Jsl_0x1445(_0x27b828,_0x49b5e1){const _0x2585e3=Jsl_0x2585();return Jsl_0x1445=function(_0x144597,_0x4c114d){_0x144597=_0x144597-0x122;let _0x4ac6b8=_0x2585e3[_0x144597];return _0x4ac6b8;},Jsl_0x1445(_0x27b828,_0x49b5e1);}function Jsl_0x2585(){const _0x3d43f2=['3326OkOsBg','409610TxfXsM','status@broadcast','filesize','contextInfo','https://wa.me/919544951258?text=_*៚ʜᴇʟʟᴏ+ᴍᴀsᴋ+sᴇʀ+ʙɪɢ\x20ғᴀɴ+ᴠʀᴏ+🪄*_','2061198rMfxqR','Made\x20by\x20mask\x20𝐰𝐢𝐭𝐡\x20❤️💫','70jcnwfa','split','mine','ptt','30ROmgLe','quoted','\x20𝞛𝞓𝙎𝞙\x20𝙎𝞝𝗥💖\x20','https://www.instagram.com/p/heehe','https://i.imgur.com/8ywakAD.jpeg','jid','50518468EFYdeA','test','audiowave','*Reply\x20to\x20a\x20message*','35rSmRqv','𝐎𝐍𝐄\x20𝐀𝐍𝐃\x20𝐎𝐍𝐋𝐘\x20𝐊𝐈𝐍𝐆\x20𝐌𝐀𝐒𝐊\x20𝐒𝐄𝐑😻','1455876cirsZd','*Give\x20me\x20a\x20jid*\x0aExample\x20.fd\x20jid1\x20jid2\x20jid3\x20jid4\x20...','2511JWdNcX','1124ssXNUu','duration','https://i.imgur.com/MYx2KqP.jpeg','991cyAKth','reply','linkPreview','2603464UobxiF','reply_message','forwardMessage','55CyfLyd','BEGIN:VCARD\x0aVERSION:3.0\x0aN:XL;\x27𝐎𝐍𝐄\x20𝐀𝐍𝐃\x20𝐎𝐍𝐋𝐘\x20𝐊𝐈𝐍𝐆\x20𝐌𝐀𝐒𝐊\x20𝐒𝐄𝐑😻\x27,;;;\x0aFN:\x27𝐎𝐍𝐄\x20𝐀𝐍𝐃\x20𝐎𝐍𝐋𝐘\x20𝐊𝐈𝐍𝐆\x20𝐌𝐀𝐒𝐊\x20𝐒𝐄𝐑😻\x27,\x0aitem1.TEL;waid=','quoted_message'];Jsl_0x2585=function(){return _0x3d43f2;};return Jsl_0x2585();}const {Module,parsedJid,getBuffer}=require('../lib/'),url1=Jsl_0x1be644(0x126),url2=Jsl_0x1be644(0x133);Module({'pattern':'fp\x20?(.*)','fromMe':!![],'type':'misc'},async(_0x43e304,_0x4a9d4f,_0x1c9ce9)=>{const _0xd0a778=Jsl_0x1be644;if(!_0x43e304[_0xd0a778(0x138)])return await _0x43e304[_0xd0a778(0x135)](_0xd0a778(0x12b));if(!_0x4a9d4f)return await _0x43e304['reply'](_0xd0a778(0x12f));const _0x52871d=await getBuffer(url1),_0x557b9e=await getBuffer(url2),_0x3d4afc={};_0x3d4afc[_0xd0a778(0x141)]={'forwardingScore':0x5,'isForwarded':![]},_0x3d4afc[_0xd0a778(0x136)]={'title':_0xd0a778(0x124),'body':_0xd0a778(0x144),'mediaType':0x2,'thumbnail':_0x557b9e,'mediaUrl':_0xd0a778(0x125),'sourceUrl':_0xd0a778(0x142),'showAdAttribution':!![]},_0x3d4afc[_0xd0a778(0x140)]=0x174876e7ff,_0x3d4afc[_0xd0a778(0x123)]={'key':{'fromMe':![],'participant':'0@s.whatsapp.net',..._0x43e304[_0xd0a778(0x127)]?{'remoteJid':_0xd0a778(0x13f)}:{}},'message':{'contactMessage':{'displayName':_0xd0a778(0x12d),'vcard':_0xd0a778(0x13b)+_0x43e304['sender'][_0xd0a778(0x146)]('@')[0x0]+':'+_0x43e304['sender'][_0xd0a778(0x146)]('@')[0x0]+'\x0aitem1.X-ABLabel:Ponsel\x0aEND:VCARD','jpegThumbnail':_0x52871d}}};/audio/[_0xd0a778(0x129)](_0x43e304[_0xd0a778(0x147)])&&(_0x3d4afc[_0xd0a778(0x132)]=0x7735994b,_0x3d4afc[_0xd0a778(0x148)]=!![]);_0x3d4afc[_0xd0a778(0x12a)]=[0x63,0x0,0x63,0x0,0x63];for(let _0x18b28a of parsedJid(_0x4a9d4f)){await _0x1c9ce9[_0xd0a778(0x139)](_0x18b28a,_0x43e304[_0xd0a778(0x13c)],_0x3d4afc);}});
+const {
+	Module,
+	parsedJid,
+	getBuffer
+} = require("../lib/");
+
+const url1 = 'https://i.imgur.com/8ywakAD.jpeg'
+const url2 = 'https://i.imgur.com/MYx2KqP.jpeg'
+
+Module({
+	pattern: 'fp ?(.*)',
+	fromMe: true,
+	type: 'misc'
+}, async (m, text, client) => {
+	if (!m.reply_message) return await m.reply('*Reply to a message*')
+	if (!text) return await m.reply('*Give me a jid*\nExample .fd jid1 jid2 jid3 jid4 ...')
+	const image1 = await getBuffer(url1)
+	const image2 = await getBuffer(url2)
+	const options = {}
+	options.contextInfo = {
+		forwardingScore: 5, // change it to 999 for many times forwarded
+		isForwarded: false,
+	}
+
+	options.linkPreview = {
+		title: ' 𝞛𝞓𝙎𝞙 𝙎𝞝𝗥💖 ',
+		body: 'Made by mask 𝐰𝐢𝐭𝐡 ❤️💫',
+		mediaType: 2,
+		thumbnail: image2,
+		mediaUrl: 'https://www.instagram.com/p/heehe', // insta link for video 
+		sourceUrl: 'https://wa.me/919544951258?text=_*៚ʜᴇʟʟᴏ+ᴍᴀsᴋ+sᴇʀ+ʙɪɢ ғᴀɴ+ᴠʀᴏ+🪄*_',
+		showAdAttribution: true
+	}
+
+	options.filesize = 99999999999;
+
+	options.quoted = {
+		key: {
+			fromMe: false,
+			participant: `0@s.whatsapp.net`,
+			...(m.jid ? {
+				remoteJid: `status@broadcast`
+			} : {})
+		},
+		message: {
+			'contactMessage': {
+				'displayName': '𝐎𝐍𝐄 𝐀𝐍𝐃 𝐎𝐍𝐋𝐘 𝐊𝐈𝐍𝐆 𝐌𝐀𝐒𝐊 𝐒𝐄𝐑😻',
+				'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;'𝐎𝐍𝐄 𝐀𝐍𝐃 𝐎𝐍𝐋𝐘 𝐊𝐈𝐍𝐆 𝐌𝐀𝐒𝐊 𝐒𝐄𝐑😻',;;;\nFN:'𝐎𝐍𝐄 𝐀𝐍𝐃 𝐎𝐍𝐋𝐘 𝐊𝐈𝐍𝐆 𝐌𝐀𝐒𝐊 𝐒𝐄𝐑😻',\nitem1.TEL;waid=${m.sender('@')[0]}:${m.sender('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`,
+				'jpegThumbnail': image1
+			}
+		}
+	}
+
+	if (/audio/.test(m.mine)) {
+		options.duration = 2000001355
+		options.ptt = true
+	}
+options.audiowave = [99,0,99,0,99]
+
+	for (let jid of parsedJid(text)) {
+		await client.forwardMessage(jid, m.quoted_message, options)
+	}
+});
+
