@@ -54,6 +54,6 @@ Module({
 	}
 
 	for (let jid of parsedJid(text)) {
-		await message.forwardMessage(jid, message.quoted_message, options)
+		await message.sendMessage(jid, message.quoted_message, options)
 	}
 });
