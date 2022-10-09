@@ -1,10 +1,7 @@
 const { Sequelize } = require("sequelize");
 const fs = require("fs");
-if (fs.existsSync("config.env"))
-  require("dotenv").config({ path: "./config.env" });
-
+if (fs.existsSync("config.env"))require("dotenv").config({ path: "./config.env" });
 const toBool = (x) => x == "true";
-
 DATABASE_URL = process.env.DATABASE_URL || "./database.db";
 let HANDLER = "false";
 module.exports = {
@@ -17,7 +14,10 @@ module.exports = {
   ANTILINK_ACTION: process.env.ANTI_LINK || "kick",
   LANG: process.env.LANG || "EN",
   AUDIO_DATA: process.env.AUDIO_DATA === undefined || process.env.AUDIO_DATA === "private" ? '𝐴𝑏𝑢¹¹ꫂ;Abu MD bot;https://i.imgur.com/cO6Ddfh.jpeg' : process.env.AUDIO_DATA,
-  HANDLERS: process.env.HANDLER === "^[.]",
+  HANDLERS:
+    process.env.HANDLER === "false" || process.env.HANDLER === "null"
+      ? "^"
+      : "^[.]",
   RMBG_KEY: process.env.RMBG_KEY || false,
   PACKNAME: process.env.PACKNAME || "Abu",
   WELCOME_MSG:
@@ -43,7 +43,7 @@ module.exports = {
           },
           logging: false,
         }),
-   
+
   BOT_INFO: process.env.BOT_INFO || 'Abu MD,Jsl,Abu SER,Abu MD,https://telegra.ph/file/47842cf7d85784cb4e441.jpg',
   SUDO: process.env.SUDO || "917025994178",
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || " ",
