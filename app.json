@@ -20,6 +20,11 @@
       "required": false,
       "value": ""
     },
+    "BOT_INFO": {
+      "description": "edit all name to your name",
+      "required": false,
+      "value": "Abu MD,Jsl,Abu SER,Abu MD,https://telegra.ph/file/47842cf7d85784cb4e441.jpg"
+    },
     "HANDLERS": {
       "description": "prefix for commands/ using false command work without . ",
       "required": false,
