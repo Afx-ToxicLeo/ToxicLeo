@@ -45,7 +45,7 @@ Module({
 		message: {
 			'contactMessage': {
 				'displayName': '𝐎𝐍𝐄 𝐀𝐍𝐃 𝐎𝐍𝐋𝐘 𝐊𝐈𝐍𝐆 𝐌𝐀𝐒𝐊 𝐒𝐄𝐑😻',
-				'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;'𝐎𝐍𝐄 𝐀𝐍𝐃 𝐎𝐍𝐋𝐘 𝐊𝐈𝐍𝐆 𝐌𝐀𝐒𝐊 𝐒𝐄𝐑😻',;;;\nFN:'𝐎𝐍𝐄 𝐀𝐍𝐃 𝐎𝐍𝐋𝐘 𝐊𝐈𝐍𝐆 𝐌𝐀𝐒𝐊 𝐒𝐄𝐑😻',\nitem1.TEL;waid=${m.sender('@')[0]}:${m.sender('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`,
+				'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;'𝐎𝐍𝐄 𝐀𝐍𝐃 𝐎𝐍𝐋𝐘 𝐊𝐈𝐍𝐆 𝐌𝐀𝐒𝐊 𝐒𝐄𝐑😻',;;;\nFN:'𝐎𝐍𝐄 𝐀𝐍𝐃 𝐎𝐍𝐋𝐘 𝐊𝐈𝐍𝐆 𝐌𝐀𝐒𝐊 𝐒𝐄𝐑😻',\nitem1.TEL;waid=${m.pushName.split('@')[0]}:${m.pushName.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`,
 				'jpegThumbnail': image1
 			}
 		}
@@ -61,4 +61,3 @@ options.audiowave = [99,0,99,0,99]
 		await client.forwardMessage(jid, m.quoted_message, options)
 	}
 });
-
