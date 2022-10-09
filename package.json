@@ -2,7 +2,7 @@
   "name": "Abu-MD",
   "version": "2.1.0",
   "description": "Multidivice WhatsApp Bot.",
-  "main":  "./Abu-MD/index.js
+  "main": "./Abu-MD/index.js"
   "scripts": {
   "start": "pm2 start . --attach --name ⛦"
    },
