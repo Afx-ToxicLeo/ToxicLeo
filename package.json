@@ -1,18 +1,28 @@
 {
-  "name": "Abu-MD",
-  "version": "2.1.0",
-  "description": "Multidivice WhatsApp Bot.",
-  "main": "index.js"
-  "scripts": {
-  "start": "pm2 start . --attach --name ⛦"
+  "name": "Abu MD",
+  "version": "2.0.0",
+  "description": "Abu Multidivice Whatsapp bot ",
+  "main": "index.js",
+   "scripts": {
+      "start": "pm2 start . --attach --name ⛦"
    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Afx-Abu/Abu-MD.git"
   },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "ai",
+    "abu",
+  ],
   "author": "Jsl",
   "developer": "Afx-Abu",
   "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Afx-Abu/Abu-MD/issues"
+  },
+  "homepage": "https://github.com/Afx-Abu/Abu-MD#readme",
   "dependencies": {
     "@adiwajshing/baileys": "git+https://github.com/souravkl11/Baileys.git",		
     "@adiwajshing/keyed-db": "^0.2.4",
