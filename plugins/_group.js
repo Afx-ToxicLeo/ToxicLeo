@@ -53,7 +53,7 @@ Module(
   {
     pattern: "promote ",
     fromMe: isPublic,
-    desc: "promote a member",
+    desc: "promote a  member",
     type: "group",
   },
   async (message, match) => {
