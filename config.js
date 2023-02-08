@@ -1,55 +1,48 @@
-const { Sequelize } = require("sequelize");
-const fs = require("fs");
-if (fs.existsSync("config.env"))require("dotenv").config({ path: "./config.env" });
-const toBool = (x) => x == "true";
-DATABASE_URL = process.env.DATABASE_URL || "./database.db";
-let HANDLER = "false";
-module.exports = {
-  VERSION: 'v1.0.0',
-  BRANCH: "main",
-  IMGBB_KEY: ["76a050f031972d9f27e329d767dd988f","deb80cd12ababea1c9b9a8ad6ce3fab2","78c84c62b32a88e86daf87dd509a657a"],
-  ALIVE: process.env.ALIVE || "https://telegra.ph/file/47842cf7d85784cb4e441.jpg Hey {sender}, I'm alive \n Uptime: {uptime}",
-  Session_Id: process.env.SESSION_ID || "bkxkWlhCSmU=",
-  ANTILINK: toBool(process.env.ANTI_LINK) || false,
-  ANTILINK_ACTION: process.env.ANTI_LINK || "kick",
-  LANG: process.env.LANG || "EN",
-  AUDIO_DATA: process.env.AUDIO_DATA === undefined || process.env.AUDIO_DATA === "private" ? '𝐴𝑏𝑢¹¹ꫂ;Abu MD bot;https://i.imgur.com/cO6Ddfh.jpeg' : process.env.AUDIO_DATA,
-  HANDLERS:
-    process.env.HANDLER === "false" || process.env.HANDLER === "null"
-      ? "^"
-      : "^[.]",
-  RMBG_KEY: process.env.RMBG_KEY || false,
-  PACKNAME: process.env.PACKNAME || "Abu",
-  WELCOME_MSG:
-    process.env.WELCOME_MSG ||
-    "{pp}Hi @user Welcome to @gname\nYou're our @count/513 Members ",
-  GOODBYE_MSG: process.env.GOODBYE_MSG || "Hi @user It was Nice Seeing you",
-  AUTHOR: process.env.AUTHOR || "Jsl",
-  DATABASE_URL: DATABASE_URL,
-  DATABASE:
-    DATABASE_URL === "./database.db"
-      ? new Sequelize({
-          dialect: "sqlite",
-          storage: DATABASE_URL,
-          logging: false,
-        })
-      : new Sequelize(DATABASE_URL, {
-          dialect: "postgres",
-          ssl: true,
-          protocol: "postgres",
-          dialectOptions: {
-            native: true,
-            ssl: { require: true, rejectUnauthorized: false },
-          },
-          logging: false,
-        }),
+const fs = require('fs-extra')
+if (fs.existsSync('config.env')) require('dotenv').config({ path: __dirname+'/config.env' })
 
-  BOT_INFO: process.env.BOT_INFO || 'Abu MD,Jsl,Abu SER,Abu MD,https://telegra.ph/file/47842cf7d85784cb4e441.jpg',
-  SUDO: process.env.SUDO || "917025994178",
-  HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || " ",
-  HEROKU_API_KEY: process.env.HEROKU_API_KEY || " ",
-  IMAGE_URL: process.env.IMAGE_URL || "https://telegra.ph/file/47842cf7d85784cb4e441.jpg",
-  BOT_NAME: process.env.BOT_NAME || "Abu-MD",
-  MODE: process.env.MODE || "public",
-  LANGUAGE: process.env.LANGUAGE || 'english',
+global.owner = process.env.OWNER_NUMBER.split(",")
+global.mongodb = process.env.MONGODB_URI || "Enter-MongoURI-HERE"
+global.port= process.env.PORT || 5000
+global.email = '@gmail.com'
+global.github = 'https://github.com/Afx-Abu/Abu-MD'
+global.location = 'Kerala IN'
+global.gurl = 'https://instagram.com/' 
+global.sudo = process.env.SUDO || '917025994178'
+global.devs = '917025994178';
+global.website = 'https://github.com/Afx-Abu/Abu-MD' 
+global.THUMB_IMAGE = process.env.THUMB_IMAGE || 'https://i.imgur.com/blZJmdo.jpeg'
+module.exports = {
+  botname: process.env.BOT_NAME || 'Abu-MD',
+  ownername:process.env.OWNER_NAME || 'Jsl',
+  sessionName: process.env.SESSION_ID || 'fifofjjc',
+  author: process.env.PACK_INFO.split(";")[0] || 'author', 
+  auto_read_status : process.env.AUTO_READ_STATUS || 'false',
+  packname: process.env.PACK_INFO.split(";")[1] || 'Name',
+  autoreaction: process.env.AUTO_REACTION || 'off',
+  antibadword : process.env.ANTI_BAD_WORD || 'nobadwordokey',
+  alwaysonline: process.env.ALWAYS_ONLINE || 'false',
+  antifake : process.env.FAKE_COUNTRY_CODE || '',
+  readmessage: process.env.READ_MESSAGE || false,
+  HANDLERS: process.env.PREFIX || ['.'],
+  warncount : process.env.WARN_COUNT || 3,
+  disablepm: process.env.DISABLE_PM || "flase",
+  levelupmessage: process.env.LEVEL_UP_MESSAGE || 'false',
+  antilink: process.env.ANTILINK_VALUES || 'chat.whatsapp.com',
+  antilinkaction: process.env.ANTILINK_ACTION || 'remove',
+  BRANCH: 'main',
+  ALIVE_MESSAGE: process.env.ALIVE_MESSAGE || '',
+  OPENAI_API_KEY: process.env.OPENAI_API_KEY || 'put-key-here',
+  VERSION: process.env.VERSION === undefined ? 'v.0.0.3' : process.env.VERSION,
+  LANG: process.env.LANGUAGE || 'en',
+  WORKTYPE: process.env.WORKTYPE === undefined ? 'public' : process.env.WORKTYPE
 };
+
+
+let file = require.resolve(__filename)
+fs.watchFile(file, () => {
+	fs.unwatchFile(file)
+	console.log(`Update'${__filename}'`)
+    delete require.cache[file]
+	require(file)
+})
