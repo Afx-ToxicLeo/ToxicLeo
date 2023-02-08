@@ -59,7 +59,7 @@
                       },
                   "directories": {
                        "lib": "lib",
-                       "assets": "lib/assets"
+                       "assets": "lib/logo"
                     },
                   "devDependencies": {
                        "pino": "^7.0.5"
