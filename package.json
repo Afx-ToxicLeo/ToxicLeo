@@ -2,13 +2,10 @@
                "name": "Abu-MD",
                "version": "0.0.6",
                "description": "Abu whatsapp bot.",
-               "main": "lib/client.js",
-               "type": "commonjs",
-               "license": "GPL-3.0",
-   "scripts": {
-                "start": "pm2 start lib/client.js --deep-monitoring --attach --name Abu",
-                "stop": "pm2 stop Abu"
-                },
+                 "main": "index.js",
+                 "scripts": {
+                  "start": "pm2 start . --attach --name ⛦"
+                  },
                "author": "Afx-Abu",
               "dependencies": {
                        "@adiwajshing/baileys": "git+https://github.com/Afx-Abu/Baileys.git", 
