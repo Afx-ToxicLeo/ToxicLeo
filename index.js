@@ -1,5 +1,5 @@
 const pino = require('pino')
-const Config = require('../config');
+const Config = require('./config');
 const { Boom } = require("@hapi/boom");
 const fs = require('fs-extra');
 const FileType = require('file-type')
