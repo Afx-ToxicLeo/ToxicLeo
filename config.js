@@ -1,7 +1,6 @@
 const fs = require('fs-extra')
 if (fs.existsSync('config.env')) require('dotenv').config({ path: __dirname+'/config.env' })
 
-global.owner = process.env.OWNER_NUMBER.split(",")
 global.mongodb = process.env.MONGODB_URI || "Enter-MongoURI-HERE"
 global.port= process.env.PORT || 5000
 global.email = '@gmail.com'
@@ -16,9 +15,7 @@ module.exports = {
   botname: process.env.BOT_NAME || 'Abu-MD',
   ownername:process.env.OWNER_NAME || 'Jsl',
   sessionName: process.env.SESSION_ID || 'fifofjjc',
-  author: process.env.PACK_INFO.split(";")[0] || 'author', 
   auto_read_status : process.env.AUTO_READ_STATUS || 'false',
-  packname: process.env.PACK_INFO.split(";")[1] || 'Name',
   autoreaction: process.env.AUTO_REACTION || 'off',
   antibadword : process.env.ANTI_BAD_WORD || 'nobadwordokey',
   alwaysonline: process.env.ALWAYS_ONLINE || 'false',
