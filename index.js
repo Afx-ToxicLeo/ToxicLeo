@@ -21,14 +21,14 @@ try {
 } catch {
    process.exit(0)
 }
-const { sck1, RandomXP, sck, plugindb, card } = require("../lib/");
+const { sck1, RandomXP, sck, plugindb, card } = require("./lib/");
 const chalk = require("chalk");
 const fetch = require("node-fetch");
 const axios = require("axios");
 const moment = require("moment-timezone");
-let { isUrl, sleep, getBuffer, format, parseMention, getRandom, fancy, randomfancy, botpic, tlang } = require("../lib/");
-const { smsg } = require('../lib/myfuncn')
-const { formatp, formatDate, getTime, clockString, runtime, fetchJson, jsonformat, GIFBufferToVideoBuffer, getSizeMedia, generateMessageTag, fancytext } = require('../lib/')
+let { isUrl, sleep, getBuffer, format, parseMention, getRandom, fancy, randomfancy, botpic, tlang } = require("./lib/");
+const { smsg } = require('./lib/myfuncn')
+const { formatp, formatDate, getTime, clockString, runtime, fetchJson, jsonformat, GIFBufferToVideoBuffer, getSizeMedia, generateMessageTag, fancytext } = require('./lib/')
 const speedofbot = require("performance-now");
 global.db = JSON.parse(fs.readFileSync(__dirname + "/database.json"));
 var CryptoJS = require("crypto-js");
@@ -242,7 +242,7 @@ link senders.
                 } catch (err) {
                     console.log(err)
                 }
-                const { chatbot } = require('../lib/')
+                const { chatbot } = require('./lib/')
                 let checkbot = await chatbot.findOne({ id: 'chatbot' }) || await new chatbot({ id: 'chatbot'}).save();
                 let checkon = checkbot.worktype
                 if (checkon === 'true' && !icmd) {
