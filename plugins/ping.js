@@ -1,4 +1,4 @@
-const { Module } = require('../lib')
+const { Module } = require('../lib/')
 Module({
         pattern: "ping",
         desc: "To check ping",
