@@ -30,7 +30,7 @@ let { isUrl, sleep, getBuffer, format, parseMention, getRandom, fancy, randomfan
 const { smsg } = require('./lib/myfuncn')
 const { formatp, formatDate, getTime, clockString, runtime, fetchJson, jsonformat, GIFBufferToVideoBuffer, getSizeMedia, generateMessageTag, fancytext } = require('./lib/')
 const speedofbot = require("performance-now");
-global.db = JSON.parse(fs.readFileSync(__dirname + "/database.json"));
+global.db = JSON.parse(fs.readFileSync(__dirname + "/lib/database.json"));
 var CryptoJS = require("crypto-js");
 var prefixRegex = Config.prefix === "false" || Config.prefix === "null" ? "^" : new RegExp('^[' + Config.HANDLERS + ']');
 const store = makeInMemoryStore({
@@ -182,7 +182,7 @@ setInterval(() => {
                 }
                 setInterval(() => {
 
-                    fs.writeFileSync(__dirname + "/database.json", JSON.stringify(global.db, null, 2));
+                    fs.writeFileSync(__dirname + "/lib/database.json", JSON.stringify(global.db, null, 2));
 
                 }, 10000);
                 try {
@@ -885,7 +885,7 @@ Jsl.sendVideoAsSticker = async (jid, buff, options = {}) => {
                     pathFile = filename
                 if (options.asDocument) type = 'document'
                 if (options.asSticker || /webp/.test(mime)) {
-                    let { writeExif } = require('./exif')
+                    let { writeExif } = require('./lib/exif')
                     let media = { mimetype: mime, data }
                     pathFile = await writeExif(media, { packname: options.packname ? options.packname : Config.packname, author: options.author ? options.author : Config.author, categories: options.categories ? options.categories : [] })
                     await fs.promises.unlink(filename)
@@ -1067,7 +1067,7 @@ Jsl.sendVideoAsSticker = async (jid, buff, options = {}) => {
                     pathFile = filename
                 if (options.asDocument) type = 'document'
                 if (options.asSticker || /webp/.test(mime)) {
-                    let { writeExif } = require('./exif.js')
+                    let { writeExif } = require('./lib/exif.js')
                     let media = { mimetype: mime, data }
                     pathFile = await writeExif(media, { packname: Config.packname, author: Config.packname, categories: options.categories ? options.categories : [] })
                     await fs.promises.unlink(filename)
