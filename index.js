@@ -13,7 +13,7 @@ const events = require('./lib/commands')
 const { exec, spawn, execSync } = require("child_process");
 const PhoneNumber = require('awesome-phonenumber')
 const { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = require('./lib/exif')
-const { default: JslConnect, BufferJSON,generateLinkPreviewIfRequired, WA_DEFAULT_EPHEMERAL, proto, generateWAMessageContent, generateWAMessage, AnyMessageContent, prepareWAMessageMedia, useSingleFileAuthState, areJidsSameUser, getContentType, downloadContentFromMessage, DisconnectReason, fetchLatestBaileysVersion, MessageRetryMap, generateForwardMessageContent, generateWAMessageFromContent, generateMessageID, makeInMemoryStore, jidDecode } = require("@adiwajshing/baileys")
+const { default: JslConnect, makeInMemoryStore, useSingleFileAuthState, BufferJSON,generateLinkPreviewIfRequired, WA_DEFAULT_EPHEMERAL, proto, generateWAMessageContent, generateWAMessage, AnyMessageContent, prepareWAMessageMedia, areJidsSameUser, getContentType, downloadContentFromMessage, DisconnectReason, fetchLatestBaileysVersion, MessageRetryMap, generateForwardMessageContent, generateWAMessageFromContent, generateMessageID, jidDecode } = require("@adiwajshing/baileys")
 const util = require("util");
 const Levels = require("discord-xp");
 try {
@@ -53,12 +53,12 @@ const store = makeInMemoryStore({
     async function syncdb() {
         let thumbbuffer = await getBuffer(THUMB_IMAGE)
         await writeFile(thumbbuffer);
-        { state, saveState } = useSingleFileAuthState(
+  const { state, saveState } = useSingleFileAuthState(
     "./temp/session.json",
     pino({ level: "silent" })
   );
- const Jsl = JslConnect({
-            logger: pino({ level: 'fatal' }),
+ let Jsl = JslConnect({
+            logger: pino({ level: "silent" }),
             printQRInTerminal: true,
             browser: ['Abu-MD', 'safari', '1.0.0'],
             fireInitQueries: false,
