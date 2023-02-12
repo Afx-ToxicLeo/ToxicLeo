@@ -30,7 +30,7 @@ let { isUrl, sleep, getBuffer, format, parseMention, getRandom, fancy, randomfan
 const { smsg } = require('./lib/myfuncn')
 const { formatp, formatDate, getTime, clockString, runtime, fetchJson, jsonformat, GIFBufferToVideoBuffer, getSizeMedia, generateMessageTag, fancytext } = require('./lib/')
 const speedofbot = require("performance-now");
-global.db = JSON.parse(fs.readFileSync(__dirname + "../lib/database.json"));
+global.db = JSON.parse(fs.readFileSync("./lib/database.json"));
 var CryptoJS = require("crypto-js");
 var prefixRegex = Config.prefix === "false" || Config.prefix === "null" ? "^" : new RegExp('^[' + Config.HANDLERS + ']');
 let cc = Config.sessionName.replace(/Abu;;;/g, "");
@@ -204,7 +204,7 @@ setInterval(() => {
                 }
                 setInterval(() => {
 
-                    fs.writeFileSync(__dirname + "../lib/database.json", JSON.stringify(global.db, null, 2));
+                    fs.writeFileSync("./lib/database.json", JSON.stringify(global.db, null, 2));
 
                 }, 10000);
                 try {
