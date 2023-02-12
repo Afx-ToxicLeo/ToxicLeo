@@ -54,7 +54,7 @@ const store = makeInMemoryStore({
         let thumbbuffer = await getBuffer(THUMB_IMAGE)
         const ChangePic = __dirname + "./lib/IMG-20230131-WA0054.jpg"
         await writeFile(ChangePic, thumbbuffer);
-        global.log0 = fs.readFileSync(__dirname + "./lib/IMG-20230131-WA0054.jpg); //ur logo pi
+        global.log0 = fs.readFileSync(__dirname + "./lib/IMG-20230131-WA0054.jpg"); //ur logo pi
   const { state, saveState } = useSingleFileAuthState(
     "./temp/session.json",
     pino({ level: "silent" })
