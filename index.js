@@ -16,6 +16,9 @@ const { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = require('./lib/
 const { default: JslConnect, BufferJSON,generateLinkPreviewIfRequired, WA_DEFAULT_EPHEMERAL, proto, generateWAMessageContent, generateWAMessage, AnyMessageContent, prepareWAMessageMedia, areJidsSameUser, getContentType, downloadContentFromMessage, DisconnectReason, useSingleFileAuthState, fetchLatestBaileysVersion, MessageRetryMap, generateForwardMessageContent, generateWAMessageFromContent, generateMessageID, makeInMemoryStore, jidDecode } = require("@adiwajshing/baileys")
 const util = require("util");
 const Levels = require("discord-xp");
+const {
+     VERSION
+} = require('./config');
 try {
     Levels.setURL(mongodb);
 } catch {
@@ -715,7 +718,7 @@ async function fooz(){
         Jsl.ev.on('connection.update', async(update) => {
                 const { connection, lastDisconnect } = update
                 if (connection === "connecting") {
-                   console.log("ℹ️ Connecting to WhatsApp... Please Wait.");
+                   console.log("Abu MD "+VERSION);
                 }
                 if (connection === 'open') {
                     console.log("Session Restored ✅");
