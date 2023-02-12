@@ -14,7 +14,7 @@ global.THUMB_IMAGE = process.env.THUMB_IMAGE || 'https://i.imgur.com/blZJmdo.jpe
 module.exports = {
   botname: process.env.BOT_NAME || 'Abu-MD',
   ownername:process.env.OWNER_NAME || 'Jsl',
-  sessionName: process.env.SESSION_ID || 'fifofjjc',
+  sessionName: process.env.SESSION_ID || 'M1dORm12UFM=',
   auto_read_status : process.env.AUTO_READ_STATUS || 'false',
   autoreaction: process.env.AUTO_REACTION || 'off',
   antibadword : process.env.ANTI_BAD_WORD || 'nobadwordokey',
