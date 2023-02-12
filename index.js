@@ -13,13 +13,13 @@ const events = require('./lib/commands')
 const { exec, spawn, execSync } = require("child_process");
 const PhoneNumber = require('awesome-phonenumber')
 const { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = require('./lib/exif')
-const { default: JslConnect, makeInMemoryStore, useSingleFileAuthState, BufferJSON,generateLinkPreviewIfRequired, WA_DEFAULT_EPHEMERAL, proto, generateWAMessageContent, generateWAMessage, AnyMessageContent, prepareWAMessageMedia, areJidsSameUser, getContentType, downloadContentFromMessage, DisconnectReason, fetchLatestBaileysVersion, MessageRetryMap, generateForwardMessageContent, generateWAMessageFromContent, generateMessageID, jidDecode } = require("@adiwajshing/baileys")
+const { default: JslConnect, BufferJSON,generateLinkPreviewIfRequired, WA_DEFAULT_EPHEMERAL, proto, generateWAMessageContent, generateWAMessage, AnyMessageContent, prepareWAMessageMedia, areJidsSameUser, getContentType, downloadContentFromMessage, DisconnectReason, useMultiFileAuthState, fetchLatestBaileysVersion, MessageRetryMap, generateForwardMessageContent, generateWAMessageFromContent, generateMessageID, makeInMemoryStore, jidDecode } = require("@adiwajshing/baileys")
 const util = require("util");
 const Levels = require("discord-xp");
 try {
     Levels.setURL(mongodb);
 } catch {
-   process.exit(0)
+    process.exit(0)
 }
 const { sck1, RandomXP, sck, plugindb, card } = require("./lib/");
 const chalk = require("chalk");
@@ -30,13 +30,40 @@ let { isUrl, sleep, getBuffer, format, parseMention, getRandom, fancy, randomfan
 const { smsg } = require('./lib/myfuncn')
 const { formatp, formatDate, getTime, clockString, runtime, fetchJson, jsonformat, GIFBufferToVideoBuffer, getSizeMedia, generateMessageTag, fancytext } = require('./lib/')
 const speedofbot = require("performance-now");
-global.db = JSON.parse(fs.readFileSync(__dirname + "/lib/database.json"));
+global.db = JSON.parse(fs.readFileSync(__dirname + "./lib/database.json"));
 var CryptoJS = require("crypto-js");
 var prefixRegex = Config.prefix === "false" || Config.prefix === "null" ? "^" : new RegExp('^[' + Config.HANDLERS + ']');
-const store = makeInMemoryStore({
-  logger: pino().child({ level: "silent", stream: "store" }),
-});
-
+let cc = Config.sessionName.replace(/Abu;;;/g, "");
+async function MakeSession(){
+if (!fs.existsSync(__dirname + './lib/auth_info_baileys/creds.json')) {
+    if(cc.length<30){
+    const axios = require('axios');
+    let { data } = await axios.get('https://paste.c-net.org/'+cc)
+    await fs.writeFileSync(__dirname + '/auth_info_baileys/creds.json', atob(data), "utf8")    
+    } else {
+	 var c = atob(cc)
+         await fs.writeFileSync(__dirname + './lib/auth_info_baileys/creds.json', c, "utf8")    
+    }
+}
+}
+MakeSession()
+setTimeout(() => {
+    const moment = require('moment-timezone')
+    async function main() {
+	if (!fs.existsSync(__dirname + './lib/auth_info_baileys/creds.json')) {
+	    
+         }
+	try{
+        await mongoose.connect(mongodb);
+	} catch {
+		console.log('Could not connect with Mongodb')
+	}
+    }
+    main()
+    //========================================================================================================================================
+    const store = makeInMemoryStore({
+        logger: pino().child({ level: "silent", stream: "store" }),
+    });
     require("events").EventEmitter.defaultMaxListeners = 600;
     const getVersionWaweb = () => {
         let version
@@ -53,12 +80,9 @@ const store = makeInMemoryStore({
     async function syncdb() {
         let thumbbuffer = await getBuffer(THUMB_IMAGE)
         await writeFile(thumbbuffer);
-  const { state, saveState } = useSingleFileAuthState(
-    "./temp/session.json",
-    pino({ level: "silent" })
-  );
- let Jsl = JslConnect({
-            logger: pino({ level: "silent" }),
+        const { state, saveCreds } = await useMultiFileAuthState(__dirname + './lib/auth_info_baileys/')
+        const Jsl = JslConnect({
+            logger: pino({ level: 'fatal' }),
             printQRInTerminal: true,
             browser: ['Abu-MD', 'safari', '1.0.0'],
             fireInitQueries: false,
@@ -67,7 +91,7 @@ const store = makeInMemoryStore({
             syncFullHistory: false,
             generateHighQualityLinkPreview: true,
             auth: state,
-            version: getVersionWaweb() || [2, 2242, 6],
+            version: getVersionWaweb() || [2, 224,2, 6],
             getMessage: async key => {
                 if (store) {
                     const msg = await store.loadMessage(key.remoteJid, key.id, undefined)
@@ -80,7 +104,7 @@ const store = makeInMemoryStore({
         })
         store.bind(Jsl.ev)
 setInterval(() => {
-    store.writeToFile(__dirname+"/store.json");
+    store.writeToFile(__dirname+"./lib/store.json");
   }, 30 * 1000);
         Jsl.ev.on('messages.upsert', async chatUpdate => {
             const mek = chatUpdate.messages[0]
@@ -180,7 +204,7 @@ setInterval(() => {
                 }
                 setInterval(() => {
 
-                    fs.writeFileSync(__dirname + "/lib/database.json", JSON.stringify(global.db, null, 2));
+                    fs.writeFileSync(__dirname + "./lib/database.json", JSON.stringify(global.db, null, 2));
 
                 }, 10000);
                 try {
@@ -687,7 +711,7 @@ async function fooz(){
                 for (let i of kon) {
                     list.push({
                         displayName: await Jsl.getName(i + '@s.whatsapp.net'),
-                        vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await Jsl.getName(i + '@s.whatsapp.net')}\nFN:${global.OwnerName}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Click here to chat\nitem2.EMAIL;type=INTERNET:${global.email}\nitem2.X-ABLabel:GitHub\nitem3.URL:https://github.com/${global.github}/Abu-MD\nitem3.X-ABLabel:GitHub\nitem4.ADR:;;${global.location};;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
+                        vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await Jsl.getName(i + '@s.whatsapp.net')}\nFN:${global.OwnerName}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Click here to chat\nitem2.EMAIL;type=INTERNET:${global.email}\nitem2.X-ABLabel:GitHub\nitem3.URL:https://github.com/${global.github}/Abu-Md\nitem3.X-ABLabel:GitHub\nitem4.ADR:;;${global.location};;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
                     })
                 }
                 Jsl.sendMessage(jid, { contacts: { displayName: `${list.length} Contact`, contacts: list }, ...opts }, { quoted })
@@ -712,10 +736,13 @@ async function fooz(){
         Jsl.serializeM = (abu) => smsg(Jsl, abu, store)
             //========================================================================================================================================
         Jsl.ev.on('connection.update', async(update) => {
-                const { connection, lastDisconnect } = update           
+                const { connection, lastDisconnect } = update
+                if (connection === "connecting") {
+                   console.log("ℹ️ Connecting to WhatsApp... Please Wait.");
+                }
                 if (connection === 'open') {
-                    console.log("Session' restored ✅");
-                    console.log("⬇️  Installing External Plugins...");
+                    console.log("Session Restored ✅");
+                    console.log("installing Plugins...✅");
                     let axios = require('axios')
                     let check = await plugindb.find({})
                     for (let i = 0; i < check.length; i++) {
@@ -723,14 +750,14 @@ async function fooz(){
                         let data = AxiosData.data
                         await fs.writeFileSync(__dirname + '/../plugins/' + check[i].id + '.js', data, "utf8")
                     }
-                    console.log("✅ Plugins Installed!");
+                    console.log("Plugin Installed ✅");
                     fs.readdirSync(__dirname + "/../plugins").forEach((plugin) => {
                         if (path.extname(plugin).toLowerCase() == ".js") {
                             require(__dirname + "/../plugins/" + plugin);
                         }
                     });
                     for (let i of owner) {
-                        Jsl.sendMessage(i + "@s.whatsapp.net", { text: `_Abu has been integrated._\n_Total Plugins : ${events.commands.length}_\n_Mode: ${Config.WORKTYPE}_\n_Version:- 0.0.5_\n_Theme: ${Config.LANG}_\n_Owner:- ${process.env.OWNER_NAME}_\n` })
+                        Jsl.sendMessage(i + "@s.whatsapp.net", { text: `_Abu has been integrated._\n_Total Plugins : ${events.commands.length}_\n_Mode: ${Config.WORKTYPE}_\n_Version:- 0.0.5_\n_Branch:- ${Config.BRANCH}_\n_Langage : ${Config.LANG}_\n_Owner:- ${process.env.OWNER_NAME}_\n` })
                     }
                 }
                if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401 ) {
@@ -1092,4 +1119,64 @@ Jsl.sendVideoAsSticker = async (jid, buff, options = {}) => {
     }
 
     syncdb().catch(err => console.log(err))
- 
+const html = `
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Secktor-Md</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script>
+      setTimeout(() => {
+        confetti({
+          particleCount: 100,
+          spread: 70,
+          origin: { y: 0.6 },
+          disableForReducedMotion: true
+        });
+      }, 500);
+    </script>
+    <style>
+      @import url("https://p.typekit.net/p.css?s=1&k=vnd5zic&ht=tk&f=39475.39476.39477.39478.39479.39480.39481.39482&a=18673890&app=typekit&e=css");
+      @font-face {
+        font-family: "neo-sans";
+        src: url("https://use.typekit.net/af/00ac0a/00000000000000003b9b2033/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/00ac0a/00000000000000003b9b2033/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/00ac0a/00000000000000003b9b2033/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+        font-style: normal;
+        font-weight: 700;
+      }
+      html {
+        font-family: neo-sans;
+        font-weight: 700;
+        font-size: calc(62rem / 16);
+      }
+      body {
+        background: white;
+      }
+      section {
+        border-radius: 1em;
+        padding: 1em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      Hello from Afx-Abu!
+    </section>
+  </body>
+</html>
+`
+app.get("/", (req, res) => res.type('html').send(html));
+app.listen(port, () => console.log(`Abu Server listening on port http://localhost:${port}!`));
+    //=============================[to get message of New Update of this file.]===================================================
+    let file = require.resolve(__filename)
+    fs.watchFile(file, () => {
+        fs.unwatchFile(file)
+        console.log(`Update ${__filename}`)
+        delete require.cache[file]
+        require(file)
+    })
+}, 3000)
