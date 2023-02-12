@@ -13,7 +13,7 @@ const events = require('./lib/commands')
 const { exec, spawn, execSync } = require("child_process");
 const PhoneNumber = require('awesome-phonenumber')
 const { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = require('./lib/exif')
-const { default: JslConnect, BufferJSON,generateLinkPreviewIfRequired, WA_DEFAULT_EPHEMERAL, proto, generateWAMessageContent, generateWAMessage, AnyMessageContent, prepareWAMessageMedia, areJidsSameUser, getContentType, downloadContentFromMessage, DisconnectReason, useMultiFileAuthState, fetchLatestBaileysVersion, MessageRetryMap, generateForwardMessageContent, generateWAMessageFromContent, generateMessageID, makeInMemoryStore, jidDecode } = require("@adiwajshing/baileys")
+const { default: JslConnect, BufferJSON,generateLinkPreviewIfRequired, WA_DEFAULT_EPHEMERAL, proto, generateWAMessageContent, generateWAMessage, AnyMessageContent, prepareWAMessageMedia, areJidsSameUser, getContentType, downloadContentFromMessage, DisconnectReason, useSingleFileAuthState, fetchLatestBaileysVersion, MessageRetryMap, generateForwardMessageContent, generateWAMessageFromContent, generateMessageID, makeInMemoryStore, jidDecode } = require("@adiwajshing/baileys")
 const util = require("util");
 const Levels = require("discord-xp");
 try {
@@ -34,36 +34,10 @@ global.db = JSON.parse(fs.readFileSync("./lib/database.json"));
 var CryptoJS = require("crypto-js");
 var prefixRegex = Config.prefix === "false" || Config.prefix === "null" ? "^" : new RegExp('^[' + Config.HANDLERS + ']');
 let cc = Config.sessionName.replace(/Abu;;;/g, "");
-async function MakeSession(){
-if (!fs.existsSync(__dirname + './lib/auth_info_baileys/creds.json')) {
-    if(cc.length<30){
-    const axios = require('axios');
-    let { data } = await axios.get('https://paste.c-net.org/'+cc)
-    await fs.writeFileSync(__dirname + '/auth_info_baileys/creds.json', atob(data), "utf8")    
-    } else {
-	 var c = atob(cc)
-         await fs.writeFileSync(__dirname + './lib/auth_info_baileys/creds.json', c, "utf8")    
-    }
-}
-}
-MakeSession()
-setTimeout(() => {
-    const moment = require('moment-timezone')
-    async function main() {
-	if (!fs.existsSync(__dirname + './lib/auth_info_baileys/creds.json')) {
-	    
-         }
-	try{
-        await mongoose.connect(mongodb);
-	} catch {
-		console.log('Could not connect with Mongodb')
-	}
-    }
-    main()
     //========================================================================================================================================
     const store = makeInMemoryStore({
-        logger: pino().child({ level: "silent", stream: "store" }),
-    });
+  logger: pino().child({ level: "silent", stream: "store" }),
+});
     require("events").EventEmitter.defaultMaxListeners = 600;
     const getVersionWaweb = () => {
         let version
@@ -80,9 +54,12 @@ setTimeout(() => {
     async function syncdb() {
         let thumbbuffer = await getBuffer(THUMB_IMAGE)
         await writeFile(thumbbuffer);
-        const { state, saveCreds } = await useMultiFileAuthState(__dirname + './lib/auth_info_baileys/')
-        const Jsl = JslConnect({
-            logger: pino({ level: 'fatal' }),
+        const { state, saveState } = useSingleFileAuthState(
+    "./temp/session.json",
+    pino({ level: "silent" })
+  );     
+     const Jsl = JslConnect({
+            logger: pino({ level: 'silent' }),
             printQRInTerminal: true,
             browser: ['Abu-MD', 'safari', '1.0.0'],
             fireInitQueries: false,
@@ -1179,4 +1156,4 @@ app.listen(port, () => console.log(`Abu Server listening on port http://localhos
         delete require.cache[file]
         require(file)
     })
-}, 3000)
+    
