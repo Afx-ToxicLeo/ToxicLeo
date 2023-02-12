@@ -1094,3 +1094,4 @@ Jsl.sendVideoAsSticker = async (jid, buff, options = {}) => {
     }
 
     syncdb().catch(err => console.log(err))
+ 
