@@ -2,10 +2,10 @@
                "name": "Abu-MD",
                "version": "0.0.6",
                "description": "Abu whatsapp bot.",
-                 "main": "index.js",
-                 "scripts": {
-                  "start": "pm2 start . --attach --name ⛦"
-                  },
+               "main": "./Jsl-MD/index.js",
+               "scripts": {
+               "start": "supervisor -s index.js"
+               },
                "author": "Afx-Abu",
               "dependencies": {
                        "@adiwajshing/baileys": "git+https://github.com/Afx-Abu/Baileys.git", 
@@ -48,7 +48,8 @@
                        "simple-git": "^3.15.1",
                        "@shineiichijo/marika": "^2.0.3",           
                        "translatte": "^3.0.1",
-                       "util": "^0.12.4",           
+                       "util": "^0.12.4",          
+                       "supervisor": "0.12.0", 
                        "secktor-pack": "latest",
                        "ytdl-secktor": "latest",
                        "pastebin-js": "latest",
