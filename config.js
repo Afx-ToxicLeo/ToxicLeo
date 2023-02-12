@@ -12,6 +12,7 @@ global.devs = '917025994178';
 global.website = 'https://github.com/Afx-Abu/Abu-MD' 
 global.THUMB_IMAGE = process.env.THUMB_IMAGE || 'https://i.imgur.com/blZJmdo.jpeg'
 module.exports = {
+  VERSION: 'v1.0.0',
   botname: process.env.BOT_NAME || 'Abu-MD',
   ownername:process.env.OWNER_NAME || 'Jsl',
   sessionName: process.env.SESSION_ID || 'M1dORm12UFM=',
