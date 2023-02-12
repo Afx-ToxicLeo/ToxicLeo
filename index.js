@@ -52,7 +52,7 @@ const store = makeInMemoryStore({
     const msgRetryCounterMap = MessageRetryMap || {}
     async function syncdb() {
         let thumbbuffer = await getBuffer(THUMB_IMAGE)
-        const ChangePic = __dirname + "./lib/IMG-20230131-WA0054.jpg"
+        const ChangePic = __dirname + "/../lib/IMG-20230131-WA0054.jpg"
         await writeFile(ChangePic, thumbbuffer);
         global.log0 = fs.readFileSync(__dirname + "/../lib/IMG-20230131-WA0054.jpg"); //ur logo pi
   const { state, saveState } = useSingleFileAuthState(
