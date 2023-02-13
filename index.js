@@ -699,11 +699,11 @@ async function startcron(time,chat,type){
                     for (let i = 0; i < check.length; i++) {
                         let AxiosData = await axios.get(check[i].url)
                         let data = AxiosData.data
-                        await fs.writeFileSync('/../plugins/' + check[i].id + '.js', data, "utf8")
+                        await fs.writeFileSync('./plugins' + check[i].id + '.js', data, "utf8")
                     }                   
-                    fs.readdirSync("/../plugins").forEach((plugin) => {
+                    fs.readdirSync("./plugins").forEach((plugin) => {
                         if (path.extname(plugin).toLowerCase() == ".js") {
-                            require("/../plugins/" + plugin);
+                            require("./plugins" + plugin);
                         }
                     });
                     console.log("Plugin Installed ✅");
