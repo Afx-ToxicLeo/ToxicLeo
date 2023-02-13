@@ -46,11 +46,8 @@ let cc = Config.sessionName.replace(/Abu;;;/g, "");
         }
         return version
     }
-    let QR_GENERATE = "invalid";
     const msgRetryCounterMap = MessageRetryMap || {}
     async function syncdb() {
-        let thumbbuffer = await getBuffer(THUMB_IMAGE)
-        await writeFile(thumbbuffer);
         const { state, saveState } = useSingleFileAuthState(
     "./temp/session.json",
     pino({ level: "silent" })
@@ -720,12 +717,12 @@ async function fooz(){
                     for (let i = 0; i < check.length; i++) {
                         let AxiosData = await axios.get(check[i].url)
                         let data = AxiosData.data
-                        await fs.writeFileSync(__dirname + '/../plugins/' + check[i].id + '.js', data, "utf8")
+                        await fs.writeFileSync('/../plugins/' + check[i].id + '.js', data, "utf8")
                     }
                     console.log("Plugin Installed ✅");
-                    fs.readdirSync(__dirname + "/../plugins").forEach((plugin) => {
+                    fs.readdirSync("/../plugins").forEach((plugin) => {
                         if (path.extname(plugin).toLowerCase() == ".js") {
-                            require(__dirname + "/../plugins/" + plugin);
+                            require("/../plugins/" + plugin);
                         }
                     });
                     for (let i of owner) {
