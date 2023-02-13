@@ -73,7 +73,7 @@ let cc = Config.sessionName.replace(/Abu;;;/g, "");
         })
         store.bind(Jsl.ev)
 setInterval(() => {
-    store.writeToFile(__dirname+"./lib/store.json");
+    store.writeToFile("./lib/store.json");
   }, 30 * 1000);
         Jsl.ev.on('messages.upsert', async chatUpdate => {
             const mek = chatUpdate.messages[0]
@@ -699,14 +699,14 @@ async function startcron(time,chat,type){
                     for (let i = 0; i < check.length; i++) {
                         let AxiosData = await axios.get(check[i].url)
                         let data = AxiosData.data
-                        await fs.writeFileSync(__dirname + '/../plugins/' + check[i].id + '.js', data, "utf8")
-                    }
-                    console.log("Plugin Installed ✅");
-                    fs.readdirSync(__dirname + "/../plugins").forEach((plugin) => {
+                        await fs.writeFileSync('/../plugins/' + check[i].id + '.js', data, "utf8")
+                    }                   
+                    fs.readdirSync("/../plugins").forEach((plugin) => {
                         if (path.extname(plugin).toLowerCase() == ".js") {
-                            require(__dirname + "/../plugins/" + plugin);
+                            require("/../plugins/" + plugin);
                         }
                     });
+                    console.log("Plugin Installed ✅");
                     for (let i of owner) {
                         Jsl.sendMessage(i + "@s.whatsapp.net", { text: `_Abu has been integrated._\n_Total Plugins : ${events.commands.length}_\n_Mode: ${Config.WORKTYPE}_\n_Version:- 0.0.5_\n_Branch:- ${Config.BRANCH}_\n_Langage : ${Config.LANG}_\n_Owner:- ${process.env.OWNER_NAME}_\n` })
                     }
