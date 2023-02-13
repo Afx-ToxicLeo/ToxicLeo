@@ -461,24 +461,6 @@ async function startcron(time,chat,type){
                 timezone: "Asia/Kolkata"
             })
     }
-async function foo(){	
-    let bar = await sck.find({})
-    for(let i = 0; i < bar.length; i++) {
-    if(bar[i].mute==="false") continue
-    if(bar[i].mute===undefined) continue
-    await startcron(bar[i].mute,bar[i].id,'mute')
-    }
- }
-async function fooz(){	
-        let barz = await sck.find({})
-        for (let i = 0; i < barz.length; i++) {
-        if(barz[i].unmute==="false") continue
-	if(barz[i].unmute===undefined) continue
-        await startcron(barz[i].unmute,barz[i].id,'unmute')
-        }
-  }
-    foo()
-    fooz()
 	    
 	
  Jsl.ev.on('group-participants.update', async(anu) => {
