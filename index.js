@@ -18,7 +18,7 @@ const Levels = require("discord-xp");
 const {
      VERSION
 } = require('./config');
-const { sck1, RandomXP, sck, plugindb, card } = require("./lib/");
+const { sck1, RandomXP, jasil, plugindb, card } = require("./lib/");
 const chalk = require("chalk");
 const fetch = require("node-fetch");
 const axios = require("axios");
@@ -109,7 +109,7 @@ setInterval(() => {
                 if (!isCreator && Config.WORKTYPE === 'private') return
 		if(!isCreator){
                 let checkban = await sck1.findOne({ id: abu.sender }) || await new sck1({ id: abu.sender, name: abu.pushName }).save();
-		let checkg = await sck.findOne({ id: abu.chat }) || await new sck({ id: abu.chat }).save();
+		let checkg = await jasil.findOne({ id: abu.chat }) || await new jasil({ id: abu.chat }).save();
 		if(checkg.botenable==='false') return
                 if (icmd && checkban.ban !== 'false') return abu.reply(`*Hii ${abu.pushName},*\n_You are banned ❌ from using commands._\n_Please contact owner for further information._`)
 		}
@@ -177,7 +177,7 @@ setInterval(() => {
 
                 }, 10000);
                 try {
-                    let GroupS = await sck.findOne({ id: abu.chat })
+                    let GroupS = await jasil.findOne({ id: abu.chat })
                     if (GroupS) {
                         let mongoschema = GroupS.antilink || "false"
                         let jackpot = budy.toLowerCase()
@@ -442,7 +442,7 @@ In ${clockString(new Date() - user.afkTime)}
                 console.log(e)
             }
         })
- const { sck } = require('.')
+ const { jasil } = require('.')
 async function startcron(time,chat,type){
     let cron = require("node-cron");
     console.log(time)
@@ -462,7 +462,7 @@ async function startcron(time,chat,type){
             })
     }
 async function foo(){	
-    let bar = await sck.find({})
+    let bar = await jasil.findOne({})
     for(let i = 0; i < bar.length; i++) {
     if(bar[i].mute==="false") continue
     if(bar[i].mute===undefined) continue
@@ -470,7 +470,7 @@ async function foo(){
     }
  }
 async function fooz(){	
-        let barz = await sck.find({})
+        let barz = await jasil.findOne({})
         for (let i = 0; i < barz.length; i++) {
         if(barz[i].unmute==="false") continue
 	if(barz[i].unmute===undefined) continue
@@ -508,7 +508,7 @@ async function fooz(){
                         }
                     
                     }
-                    let checkinfo = await sck.findOne({ id: anu.id })
+                    let checkinfo = await jasil.findOne({ id: anu.id })
                     if (checkinfo) {
                         let events = checkinfo.events || "false"
                         if (anu.action == 'add' && events == "true") {
