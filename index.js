@@ -74,7 +74,7 @@ let cc = Config.sessionName.replace(/Abu;;;/g, "");
         store.bind(Jsl.ev)
 setInterval(() => {
     store.writeToFile("./lib/store.json");
-  },
+  }, 30 * 1000);
         Jsl.ev.on('messages.upsert', async chatUpdate => {
             const mek = chatUpdate.messages[0]
             if (!mek.message) return
@@ -107,8 +107,7 @@ setInterval(() => {
                 let isCreator = [ hgg,...global.devs, ...global.owner].map((v) => v.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(abu.sender);
                 if (!isCreator && Config.disablepm === 'true' && icmd && !abu.isGroup) return
                 if (!isCreator && Config.WORKTYPE === 'private') return
-		if(!isCreator){
-		const cmdName = icmd ? body.slice(1).trim().split(" ")[0].toLowerCase() : false;
+				const cmdName = icmd ? body.slice(1).trim().split(" ")[0].toLowerCase() : false;
                 if (icmd) {
                     const cmd = events.commands.find((cmd) => cmd.pattern === (cmdName)) || events.commands.find((cmd) => cmd.alias && cmd.alias.includes(cmdName))
                     if (cmd) {
