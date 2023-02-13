@@ -108,11 +108,6 @@ setInterval(() => {
                 if (!isCreator && Config.disablepm === 'true' && icmd && !abu.isGroup) return
                 if (!isCreator && Config.WORKTYPE === 'private') return
 		if(!isCreator){
-                let checkban = await sck1.findOne({ id: abu.sender }) || await new sck1({ id: abu.sender, name: abu.pushName }).save();
-		let checkg = await sck.findOne({ id: abu.chat }) || await new sck({ id: abu.chat }).save();
-		if(checkg.botenable==='false') return
-                if (icmd && checkban.ban !== 'false') return abu.reply(`*Hii ${abu.pushName},*\n_You are banned ❌ from using commands._\n_Please contact owner for further information._`)
-		}
 		const cmdName = icmd ? body.slice(1).trim().split(" ")[0].toLowerCase() : false;
                 if (icmd) {
                     const cmd = events.commands.find((cmd) => cmd.pattern === (cmdName)) || events.commands.find((cmd) => cmd.alias && cmd.alias.includes(cmdName))
@@ -609,55 +604,7 @@ async function startcron(time,chat,type){
                 contactsUpsert(contacts);
             })
             //========================================================================================================================================
-        Jsl.ev.on('contacts.update', async update => {
-                for (let contact of update) {
-                    let id = Jsl.decodeJid(contact.id)
-                    sck1.findOne({ id: id }).then((usr) => {
-                        if (!usr) {
-                            new sck1({ id: id, name: contact.notify }).save()
-                        } else {
-                            sck1.updateOne({ id: id }, { name: contact.notify })
-                        }
-                    })
-                    if (store && store.contacts) store.contacts[id] = { id, name: contact.notify }
-                }
-            })
-            //========================================================================================================================================
-        Jsl.getName = (jid, withoutContact = false) => {
-
-                id = Jsl.decodeJid(jid)
-
-                withoutContact = Jsl.withoutContact || withoutContact
-
-                let v
-
-                if (id.endsWith("@g.us")) return new Promise(async(resolve) => {
-
-                    v = store.contacts[id] || {}
-
-                    if (!(v.name.notify || v.subject)) v = Jsl.groupMetadata(id) || {}
-
-                    resolve(v.name || v.subject || PhoneNumber('+' + id.replace('@s.whatsapp.net', '')).getNumber('international'))
-
-                })
-
-                else v = id === '0@s.whatsapp.net' ? {
-
-                        id,
-
-                        name: 'WhatsApp'
-
-                    } : id === Jsl.decodeJid(Jsl.user.id) ?
-
-                    Jsl.user :
-
-                    (store.contacts[id] || {})
-
-                return (withoutContact ? '' : v.name) || v.subject || v.verifiedName || PhoneNumber('+' + jid.replace('@s.whatsapp.net', '')).getNumber('international')
-
-            }
-            //========================================================================================================================================
-        Jsl.sendContact = async(jid, kon, quoted = '', opts = {}) => {
+          Jsl.sendContact = async(jid, kon, quoted = '', opts = {}) => {
                 let list = []
                 for (let i of kon) {
                     list.push({
