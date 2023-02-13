@@ -12,7 +12,7 @@ const events = require('./lib/commands')
 const { exec, spawn, execSync } = require("child_process");
 const PhoneNumber = require('awesome-phonenumber')
 const { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = require('./lib/exif')
-const { default: JslConnect, BufferJSON,generateLinkPreviewIfRequired, WA_DEFAULT_EPHEMERAL, proto, generateWAMessageContent, generateWAMessage, AnyMessageContent, prepareWAMessageMedia, areJidsSameUser, getContentType, downloadContentFromMessage, DisconnectReason, useSingleFileAuthState, fetchLatestBaileysVersion, MessageRetryMap, generateForwardMessageContent, generateWAMessageFromContent, generateMessageID, makeInMemoryStore, jidDecode } = require("@adiwajshing/baileys")
+const { default: makeWASocket, Browsers, BufferJSON,generateLinkPreviewIfRequired, WA_DEFAULT_EPHEMERAL, proto, generateWAMessageContent, generateWAMessage, AnyMessageContent, prepareWAMessageMedia, areJidsSameUser, getContentType, downloadContentFromMessage, DisconnectReason, useSingleFileAuthState, fetchLatestBaileysVersion, MessageRetryMap, generateForwardMessageContent, generateWAMessageFromContent, generateMessageID, makeInMemoryStore, jidDecode } = require("@adiwajshing/baileys")
 const util = require("util");
 const Levels = require("discord-xp");
 const {
@@ -55,16 +55,14 @@ let cc = Config.sessionName.replace(/Abu;;;/g, "");
     "./temp/session.json",
     pino({ level: "silent" })
   );     
-     const Jsl = JslConnect({
-            logger: pino({ level: 'silent' }),
-            printQRInTerminal: true,
-            browser: ['Abu-MD', 'safari', '1.0.0'],
-            fireInitQueries: false,
-            shouldSyncHistoryMessage: false,
-            downloadHistory: false,
-            syncFullHistory: false,
-            generateHighQualityLinkPreview: true,
-            auth: state,
+     const Jsl = makeWASocket({
+            logger: pino({ level: "silent" }),
+    auth: state,
+    printQRInTerminal: false,
+
+    browser: Browsers.macOS("Desktop"),
+    downloadHistory: false,
+    syncFullHistory: false,
             version: getVersionWaweb() || [2, 224,2, 6],
             getMessage: async key => {
                 if (store) {
