@@ -74,7 +74,7 @@ let cc = Config.sessionName.replace(/Abu;;;/g, "");
         store.bind(Jsl.ev)
 setInterval(() => {
     store.writeToFile("./lib/store.json");
-  }, 30 * 1000);
+  },
         Jsl.ev.on('messages.upsert', async chatUpdate => {
             const mek = chatUpdate.messages[0]
             if (!mek.message) return
