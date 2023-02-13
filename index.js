@@ -738,7 +738,8 @@ async function fooz(){
                     syncdb().catch(err => console.log(err));
                 } 
             })
-        Jsl.ev.on('creds.update', saveCreds)
+        Jsl.ev.on('creds.update', saveState)
+       
             //================================================[Some Params]===============================================================================
             /** Send Button 5 Image
              *
