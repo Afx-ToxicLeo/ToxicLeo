@@ -1,0 +1,72 @@
+{
+  "name": "ToxicLeo-MD",
+  "description": "Toxic Leo Multi Device whatsappbot",
+  "logo": "https://i.postimg.cc/pXZW2gSv/null-20220918-WA0002.jpg",
+  "keywords": ["whatsapp"],
+  "repository": "https://github.com/Afx-ToxicLeo/ToxicLeo",
+  "website": "https://github.com/Afx-ToxicLeo/ToxicLeo",
+  "success_url": "https://github.com/Afx-ToxicLeo/ToxicLeo",
+  "stack": "container",
+  "env": {
+    "ANTI_LINK": {
+      "description": "true/false",
+      "required": false
+    },
+    "ANTILINK_ACTION": {
+      "description": "kick",
+      "required": false
+    },
+    "RMBG_KEY": {
+      "description": "Remove bg api key ",
+      "required": false
+    },
+    "SESSION_ID": {
+      "description": "Your Session ID",
+      "required": true
+    }, 
+     "WORK_TYPE": {
+      "description": "mode",
+      "required": true,
+      "value": "private"
+    }, 
+      "BOT_INFO": {
+      "description": "botname;ownername;image url",
+      "required": true,
+      "value": "ToxicLeo,ᴛᴏxɪᴄʟᴇᴏ,https://i.imgur.com/bk3EKWZ.jpeg,https://i.imgur.com/bk3EKWZ.jpeg"
+    },
+    "HANDLERS": {
+      "description": "prefix for commands, enter false for no prefix",
+      "required": true,
+      "value": "."
+    },
+    "LOGS": {
+      "description": "need to show message logs ?",
+      "required": false
+    },
+    "PACKNAME": {
+      "description": "Sticker Packname",
+      "required": false
+    },
+
+    "GOODBYE_MSG": {
+      "description": "goodbye Message",
+      "required": false
+    },
+    "AUTHOR": {
+      "description": "Sticker Pack AUTHOR",
+      "required": false
+    },
+    "SUDO": {
+      "description": "sudo numbers with country code seperate with , for multiple numbers",
+      "required": false
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Heroku app name, same as above entered",
+      "required": true
+    },
+    "HEROKU_API_KEY": {
+      "description": "Heroku account api key, https://dashboard.heroku.com/account",
+      "required": true
+    }
+  }
+}
