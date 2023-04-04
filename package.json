@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/Afx-ToxicLeo/ToxicLeo#readme",
   "dependencies": {
-    "@adiwajshing/baileys": "git+https://github.com/Afx-Abu/Baileys.js.git",
+    "@adiwajshing/baileys": "github:DarkWinzo/Baileys",
     "@adiwajshing/keyed-db": "0.2.4",
     "@bochilteam/scraper": "3.0.0",
     "@neeraj-x0/textpro": "^1.0.3",
