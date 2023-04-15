@@ -10,10 +10,10 @@ command(
   },
   async (message, match) => {
     const start = new Date().getTime();
-    await message.sendMessage(" *Testing Speed!* ");
+    await message.sendMessage(" *_ᴛᴇsᴛɪɴɢ sᴘᴇᴇᴅ!_* ");
     const end = new Date().getTime();
     return await message.sendMessage(
-      " *Response in !* " + (end - start) + " ms"
+      " *_ʀᴇsᴘᴏɴsᴇ ɪɴ !_* " + (end - start) + " ms"
     );
   }
 );
