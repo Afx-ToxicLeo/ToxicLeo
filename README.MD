@@ -11,7 +11,7 @@
 
 > <b><s1> 3. ɴᴏᴡ ᴅᴇᴘʟᴏʏ</b></s1>
     <br>
-<a href='https://app.koyeb.com/apps/deploy?type=docker&image=quay.io/afx_toxicleo/toxicleo-md:latest&env[SESSION_ID]&env[WORK_TYPE]=public&env[BOT_INFO]=ToxicLeo,ᴛᴏxɪᴄʟᴇᴏ,https://i.imgur.com/bk3EKWZ.jpeg,https://i.imgur.com/bk3EKWZ.jpeg&env[ANTI_LINK]&env[KOYEB_NAME]=Toxic LeoMD&env[PREFIX]=.&env[RMBG_KEY]&env[PACKNAME]=Toxic Leo&env[SUDO]=919497206865&env[BOT_NAME]=𝚃𝚘𝚡𝚒𝚡𝙻𝚎𝚘-𝙼𝙳&env[OWNER_NAME]=ToxicLeo' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=koyeb&logoColor=white'/></a>  
+<a href='https://app.koyeb.com/apps/deploy?type=docker&image=quay.io/afx_toxicleo/leo-md:latest&env[SESSION_ID]&env[WORK_TYPE]=public&env[BOT_INFO]=ToxicLeo,ᴛᴏxɪᴄʟᴇᴏ,https://i.imgur.com/bk3EKWZ.jpeg,https://i.imgur.com/bk3EKWZ.jpeg&env[ANTI_LINK]&env[KOYEB_NAME]=Toxic LeoMD&env[PREFIX]=.&env[RMBG_KEY]&env[PACKNAME]=Toxic Leo&env[SUDO]=919497206865&env[BOT_NAME]=𝚃𝚘𝚡𝚒𝚡𝙻𝚎𝚘-𝙼𝙳&env[OWNER_NAME]=ToxicLeo' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=koyeb&logoColor=white'/></a>  
 ***
 
 > <b><s1>.ᴅᴇᴘʟᴏʏ ᴏɴ ʀᴀɪʟᴡᴀʏ</b></s1> 
