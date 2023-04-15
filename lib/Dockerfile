@@ -1,4 +1,4 @@
-FROM quay.io/afx_toxicleo/toxicleo-md
+FROM quay.io/afx_toxicleo/leo-md
 RUN git clone  https://github.com/Afx-ToxicLeo/ToxicLeo /root/Leo/
 WORKDIR /root/Leo/
 RUN yarn install --network-concurrency 1
