@@ -13,11 +13,11 @@ command(
   },
   async (message, match) => {
     if (!message.isGroup)
-      return await message.reply(" *This command is for groups*");
+      return await message.reply(" *_ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪs ғᴏʀ ɢʀᴏᴜᴘs_*");
     match = match || message.reply_message.jid;
-    if (!match) return await message.reply(" *Mention user to add*");
+    if (!match) return await message.reply(" *_ᴍᴇɴᴛɪᴏɴ ᴜsᴇʀ ᴛᴏ ᴀᴅᴅ_* ");
     let isadmin = await isAdmin(message.jid, message.user, message.client);
-    if (!isadmin) return await message.reply(" *I'm not admin*");
+    if (!isadmin) return await message.reply(" *_ɪ'ᴍ ɴᴏᴛ  ᴀᴅᴍɪɴ_*");
     let jid = parsedJid(match);
     await message.add(jid);
     return await message.reply(`@${jid[0].split("@")[0]} *added*`, {
@@ -36,14 +36,14 @@ command(
   },
   async (message, match) => {
     if (!message.isGroup)
-      return await message.reply(" *This command is for group only*");
+      return await message.reply(" *_ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪs ғᴏʀ ɢʀᴏᴜᴘ ᴏɴʟʏ_*");
     match = match || message.reply_message.jid;
-    if (!match) return await message.reply(" *Mention user to kick*");
+    if (!match) return await message.reply(" *_ᴍᴇɴᴛɪᴏɴ ᴜsᴇʀ ᴛᴏ ᴋɪᴄᴋ_*");
     let isadmin = await isAdmin(message.jid, message.user, message.client);
-    if (!isadmin) return await message.reply(" *I'm not an admin*");
+    if (!isadmin) return await message.reply(" *_ɪ'ᴍ ɴᴏᴛ ᴀɴ ᴀᴅᴍɪɴ_*");
     let jid = parsedJid(match);
     await message.kick(jid);
-    return await message.reply(`@${jid[0].split("@")[0]} *Kicked*`, {
+    return await message.reply(`@${jid[0].split("@")[0]} *_ᴋɪᴄᴋᴇᴅ_*`, {
       mentions: jid,
     });
   }
@@ -59,14 +59,14 @@ command(
   },
   async (message, match) => {
     if (!message.isGroup)
-      return await message.reply(" *This Command is for group Only*");
+      return await message.reply(" *_ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪs ғᴏʀ ɢʀᴏᴜᴘ ᴏɴʟʏ_*");
     match = match || message.reply_message.jid;
-    if (!match) return await message.reply(" *Mention user to Promote*");
+    if (!match) return await message.reply(" *_ᴍᴇɴᴛɪᴏɴ ᴜsᴇʀ ᴛᴏ ᴘʀᴏᴍᴏᴛᴇ_*");
     let isadmin = await isAdmin(message.jid, message.user, message.client);
-    if (!isadmin) return await message.reply(" *I'm not an Admin*");
+    if (!isadmin) return await message.reply(" *_ɪ'ᴍ ɴᴏᴛ ᴀɴ ᴀᴅᴍɪɴ_*");
     let jid = parsedJid(match);
     await message.promote(jid);
-    return await message.reply(`@${jid[0].split("@")[0]} *Promoted As Admin*`, {
+    return await message.reply(`@${jid[0].split("@")[0]} *_ᴘʀᴏᴍᴏᴛᴇᴅ ᴀs ᴀᴅᴍɪɴ_*`, {
       mentions: jid,
     });
   }
@@ -81,14 +81,14 @@ command(
   },
   async (message, match) => {
     if (!message.isGroup)
-      return await message.reply(" *This Command is for group Only*");
+      return await message.reply(" *_ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪs ғᴏʀ ɢʀᴏᴜᴘ ᴏɴʟʏ_*");
     match = match || message.reply_message.jid;
-    if (!match) return await message.reply(" *Mention user to Demote*");
+    if (!match) return await message.reply(" *_ᴍᴇɴᴛɪᴏɴ ᴜsᴇʀ ᴛᴏ ᴅᴇᴍᴏᴛᴇ_*");
     let isadmin = await isAdmin(message.jid, message.user, message.client);
-    if (!isadmin) return await message.reply(" *I'm not an Admin*");
+    if (!isadmin) return await message.reply(" *_ɪ'ᴍ ɴᴏᴛ ᴀɴ ᴀᴅᴍɪɴ_*");
     let jid = parsedJid(match);
     await message.demote(jid);
-    return await message.reply(`@${jid[0].split("@")[0]} *Demoted from Admin*`, {
+    return await message.reply(`@${jid[0].split("@")[0]} *_ᴅᴇᴍᴏᴛᴇᴅ ғʀᴏᴍ ᴀᴅᴍɪɴ_*`, {
       mentions: jid,
     });
   }
@@ -105,10 +105,10 @@ command(
   },
   async (message, match, m, client) => {
     if (!message.isGroup)
-      return await message.reply(" *This command is for groups*");
+      return await message.reply(" *_ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪs ғᴏʀ ɢʀᴏᴜᴘs_*");
     if (!isAdmin(message.jid, message.user, message.client))
-      return await message.reply(" *I'm not admin*");
-    await message.reply(" *Muting*");
+      return await message.reply(" *_ɪ'ᴍ ɴᴏᴛ ᴀᴅᴍɪɴ_*");
+    await message.reply(" *_ᴍᴜᴛɪɴɢ_*");
     return await client.groupSettingUpdate(message.jid, "announcement");
   }
 );
@@ -124,10 +124,10 @@ command(
   },
   async (message, match, m, client) => {
     if (!message.isGroup)
-      return await message.reply(" *This command is for groups*");
+      return await message.reply(" *_ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪs ғᴏʀ ɢʀᴏᴜᴘs_*");
     if (!isAdmin(message.jid, message.user, message.client))
       return await message.reply(" *I'm not admin*");
-    await message.reply(" *Unmuting*");
+    await message.reply(" *_ᴜɴᴍᴜᴛɪɴɢ_*");
     return await client.groupSettingUpdate(message.jid, "not_announcement");
   }
 );
@@ -142,14 +142,14 @@ command(
   },
   async (message, match, m, client) => {
     if (!message.isGroup)
-      return await message.reply(" *This command is for groups*");
-    if (!match) return message.reply(" *Enter time to mute*\nEg : *amute 20:10*");
+      return await message.reply(" *_ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪs ғᴏʀ ɢʀᴏᴜᴘs_*");
+    if (!match) return message.reply(" *_ᴇɴᴛᴇʀ ᴛɪᴍᴇ ᴛᴏ ᴍᴜᴛᴇ_*\nEg : *amute 20:10*");
 
     if (!isAdmin(message.jid, message.user, message.client))
-      return await message.reply(" *I'm not admin*");
+      return await message.reply(" *_ɪ'ᴍ ɴᴏᴛ ᴀᴅᴍɪɴ_*");
     message.reply(` *Group will mute at ${match}*`);
     await saveSchedule(message.jid, match, async () => {
-      await message.reply(" *Muting*");
+      await message.reply(" *_ᴍᴜᴛɪɴɢ_*");
       return await client.groupSettingUpdate(message.jid, "announcement");
     });
     return cron(match, async () => {
@@ -169,20 +169,20 @@ command(
   },
   async (message, match, m, client) => {
     if (!message.isGroup)
-      return await message.reply(" *This command is for groups*");
+      return await message.reply(" *_ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪs ғᴏʀ ɢʀᴏᴜᴘs_*");
     if (!match)
-      return message.reply(" *Enter time to unmute*\nEg : *aunmute 20:10*");
+      return message.reply(" *_ᴇɴᴛᴇʀ ᴛɪᴍᴇ ᴛᴏ ᴜɴᴍᴜᴛᴇ_*\nEg : *aunmute 20:10*");
 
     if (!isAdmin(message.jid, message.user, message.client))
-      return await message.reply(" *I'm not admin*");
-    message.reply(` *Group will unmute at ${match}*`);
+      return await message.reply(" *ɪ'ᴍ ɴᴏᴛ ᴀᴅᴍɪɴ_*");
+    message.reply(` *_ɢʀᴏᴜᴘ ᴡɪʟʟ ᴜɴᴍᴜᴛᴇ ᴀᴛ ${match}_*`);
     await saveSchedule(message.jid, match, async () => {
-      await message.reply(" *Auto Unmuting*");
-      return await client.groupSettingUpdate(message.jid, " *not_announcement*");
+      await message.reply(" *_ᴀᴜᴛᴏ ᴜɴᴍᴜᴛɪɴɢ_* ");
+      return await client.groupSettingUpdate(message.jid, " * _ɴᴏᴛ_ᴀɴɴᴏᴜɴᴄᴇᴍᴇɴᴛ_*");
     });
     return cron(match, async () => {
-      await message.reply(" *Auto Unmuting*");
-      return await client.groupSettingUpdate(message.jid, " *not_announcement*");
+      await message.reply(" *_ᴀᴜᴛᴏ ᴜɴᴍᴜᴛɪɴɢ_* ");
+      return await client.groupSettingUpdate(message.jid, " *_ɴᴏᴛ_ᴀɴɴᴏᴜɴᴄᴇᴍᴇɴᴛ_*");
     });
   }
 );
@@ -197,10 +197,10 @@ command(
   },
   async (message, match, m, client) => {
     if (!message.isGroup)
-      return await message.reply(" *This command is for groups*");
+      return await message.reply(" *_ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪs ғᴏʀ ɢʀᴏᴜᴘs_*");
     let { participants } = await client.groupMetadata(message.jid);
     let participant = participants.map((u) => u.id);
-    let str = "╭──〔 *Group Jids* 〕\n";
+    let str = "╭──〔 *ɢʀᴏᴜᴘ ᴊɪᴅs* 〕\n";
     participant.forEach((result) => {
       str += `├ *${result}*\n`;
     });
@@ -296,7 +296,7 @@ command(
     if (!message.isGroup) return;
     if (config.ANTILINK)
       if (isUrl(match)) {
-        await message.reply(" *Link detected❗*");
+        await message.reply(" *_ʟɪɴᴋ ᴅᴇᴛᴇᴄᴛᴇᴅ❗_*");
         let botadmin = await isAdmin(message.jid, message.user, message.client);
         let senderadmin = await isAdmin(
           message.jid,
@@ -306,12 +306,12 @@ command(
         if (botadmin) {
           if (!senderadmin) {
             await message.reply(
-              `;*Commencing Specified Action* :${config.ANTILINK_ACTION}_`
+              `;*_ᴄᴏᴍᴍᴇɴᴄɪɴɢ sᴘᴇᴄɪғɪᴇᴅ ᴀᴄᴛɪᴏɴ* :${config.ANTILINK_ACTION}_`
             );
             return await message[config.ANTILINK_ACTION]([message.participant]);
           }
         } else {
-          return await message.reply(" *I'm not am Admin*");
+          return await message.reply(" *_ɪ'ᴍ ɴᴏᴛ ᴀᴍ ᴀᴅᴍɪɴ_*");
         }
       }
   }
